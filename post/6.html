@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>苹果芯片的macOS安装命令行工具 | 繁体猴の客栈</title><meta name="author" content="Chen Zheng"><meta name="copyright" content="Chen Zheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="安装 Command Line Tools —— 搭建Mac开发环境的第一步">
+<meta property="og:type" content="article">
+<meta property="og:title" content="苹果芯片的macOS安装命令行工具">
+<meta property="og:url" content="https://fattymonkey.com/post/6.html">
+<meta property="og:site_name" content="繁体猴の客栈">
+<meta property="og:description" content="安装 Command Line Tools —— 搭建Mac开发环境的第一步">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.czblogs.cn/posts/macos/06/cover.jpeg">
+<meta property="article:published_time" content="2023-09-05T23:13:14.000Z">
+<meta property="article:modified_time" content="2023-09-06T15:52:21.000Z">
+<meta property="article:author" content="Chen Zheng">
+<meta property="article:tag" content="macOS">
+<meta property="article:tag" content="Command Line Tools">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.czblogs.cn/posts/macos/06/cover.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://fattymonkey.com/post/6.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":140},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '苹果芯片的macOS安装命令行工具',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-09-06 23:52:21'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/images/"><i class="fa-fw fas fa-images"></i><span> 图片展</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐汇</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影院</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://www.czblogs.cn/posts/macos/06/cover.jpeg')"><nav id="nav"><span id="blog-info"><a href="/" title="繁体猴の客栈"><span class="site-name">繁体猴の客栈</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/images/"><i class="fa-fw fas fa-images"></i><span> 图片展</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐汇</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影院</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">苹果芯片的macOS安装命令行工具</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-05T23:13:14.000Z" title="发表于 2023-09-06 07:13:14">2023-09-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-06T15:52:21.000Z" title="更新于 2023-09-06 23:52:21">2023-09-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="苹果芯片的macOS安装命令行工具"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：什么是命令行工具"><a href="#1-1：什么是命令行工具" class="headerlink" title="1.1：什么是命令行工具"></a>1.1：什么是命令行工具</h2><p>命令行工具（Command Line Tools）是 macOS 上至关重要的插件，苹果官方是这么介绍它的：下载 macOS SDK、标题和构建工具（如 Apple LLVM 编译器和 Make），能助您轻松安装开源软件或在终端内的 UNIX 上进行开发。macOS 可以在您首次尝试构建软件时自动下载这些工具，您也可以随时在下载页面找到它们。</p>
+<p>简单地说，命令行工具有两个用处：</p>
+<ul>
+<li><font color='red'>使用Mac电脑终端开发软件</font>；</li>
+<li><font color='red'>让开源软件能够顺利安装</font>；</li>
+</ul>
+<p>简单来说，Command Line Tools 就是一个小型独立包，为 macOS 终端用户提供了很多常用的工具、实用程序和一些编译器，包括但不限于 svn、git、make、gcc、clang、perl、size、strip、cpp、python3…</p>
+<p>在使用 Mac 终端进行开发的时候，需要用到比如 Git 之类的工具！在 macOS 系统中原本就存在一些命令，也就是可执行文件，在<code>/usr/bin</code>目录下的那些常用命令，如 git 和 python3 等，这些命令虽然原本就存在，但是并不能使用！如：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020135808310.png"></p>
+<p>再比如：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020135927169.png"></p>
+<p>这些命令本身就存在，但是在使用的时候，Mac 终端会给出如下提示（此图已经更新过）：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020135947454.png"></p>
+<p>这些工具会在我们安装完命令行开发者工具以后，就能正常使用了！</p>
+<h2 id="1-2：我的-macOS-版本"><a href="#1-2：我的-macOS-版本" class="headerlink" title="1.2：我的 macOS 版本"></a>1.2：我的 macOS 版本</h2><p>我这里安装命令行工具的 macOS 版本是 macOS Sonoma 14.0 版！</p>
+<h1 id="第二节：安装配置"><a href="#第二节：安装配置" class="headerlink" title="第二节：安装配置"></a>第二节：安装配置</h1><p>下载安装 Command Line Tools 有两种方式：</p>
+<ul>
+<li>第一种是去 Apple 开发者网站上去下载，下载之前需要先免费注册成为 Apple 开发者，然后再登陆下载；</li>
+<li>第二种方式就比较简单了，可以通过 Mac 自带的终端，执行命令来安装（国内可能会因为网络问题而失败）；</li>
+</ul>
+<h2 id="2-1：下载安装"><a href="#2-1：下载安装" class="headerlink" title="2.1：下载安装"></a>2.1：下载安装</h2><p>这里我选择使用第二种方式。打开终端，执行如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+
+<p>按下回车键的时候，终端会给出提示：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140409917.png"></p>
+<p>点击安装，又会弹出协议，点击“同意”：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140557483.png"></p>
+<p>然后会自动查找软件：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140734927.png"></p>
+<p>查找到以后，就自动下载了：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140805381.png"></p>
+<p>刚开始展示的下载时间很长，但是网络好的话，很快就展示真实的下载时长了：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140924113.png"></p>
+<p>下载完成后会自动安装：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020141134095.png"></p>
+<p>待安装完成后，点击“完成”即可：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020141405504.png"></p>
+<h2 id="2-2：安装位置"><a href="#2-2：安装位置" class="headerlink" title="2.2：安装位置"></a>2.2：安装位置</h2><p>原本在<code>/Library</code>目录下，以<code>D</code>开头的目录只有<code>DirectoryServices</code>、<code>Documentation</code>、<code>DriverExtensions</code>！</p>
+<p>安装完以后，就会在<code>/Library</code>下生成名为<code>/Developer/CommandLineTools</code>的目录，目录中的内容如下：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142024664.png"></p>
+<p>这些都是新生成的目录，其中三个子文件夹：</p>
+<ul>
+<li><code>Library</code>：安装的依赖库，我这里只能看到 python 的依赖库；</li>
+<li><code>SDKs</code>：Apple APP 开发依赖的开发环境；</li>
+<li><code>usr</code>：这个文件夹的内容是很多的，在它里面有很多的命令和依赖等，主要是 gcc、pip3、git 等等；</li>
+</ul>
+<p>注意：在这里的<code>/CommandLineTools/Library/Frameworks/Python3.framework/Versions</code>中安装了 python3 ！</p>
+<h2 id="2-3：环境变量"><a href="#2-3：环境变量" class="headerlink" title="2.3：环境变量"></a>2.3：环境变量</h2><p>在没安装命令行工具之前，macOS 的环境变量为(此图已经更新)：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142129128.png"></p>
+<p>而安装完以后，macOS的环境变量为：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142306822.png"></p>
+<p>可见此时系统环境变量实际上并没有什么变化！而且此时可以直接使用<code>/usr/bin</code>目录下的命令，而不用配置环境变量！</p>
+<h2 id="2-4：个人思考"><a href="#2-4：个人思考" class="headerlink" title="2.4：个人思考"></a>2.4：个人思考</h2><p>安装完命令行开发工具以后，我们在终端中就能使用这些命令了：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142434564.png"></p>
+<p>首先，我们先来看一下在终端中使用的这些命令来自哪里：</p>
+<p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142515905.png"></p>
+<p>查看安装命令行工具前后 macOS 的 PATH 变量和指定文件，发现没有任何变化！最重要的是，查看命令行开发者工具目录中的这些命令，他们也没有指向<code>/usr/bin/</code>目录中的那些命令；同时<code>/usr/bin</code>中那些系统原本就存在但是无法使用的命令也没指向 CLT 中安装的命令！那就很奇怪了，为什么在<code>/Library/Developer/CommandLineTools/</code>中安装的这些命令可以被终端找到并使用呢？？？</p>
+<p>其实这里就没必要关注这个问题了，即然 Mac 在<code>/usr/bin</code>目录中预留了<code>python3</code>和<code>pip3</code>等命令（虽然不能默认是不能使用的），而且命令行开发者工具又是为 macOS 量身定做，那么他们肯定在我们不得知的地方进行了特殊的处理，所以它就把<code>/Library/Developer/CommandLineTools/</code>目录中安装的这些命令都映射到了<code>/usr/bin</code>目录中原本存在的这些命令上了！</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://fattymonkey.com">Chen Zheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://fattymonkey.com/post/6.html">https://fattymonkey.com/post/6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://fattymonkey.com" target="_blank">繁体猴の客栈</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/macOS/">macOS</a><a class="post-meta__tags" href="/tags/Command-Line-Tools/">Command Line Tools</a></div><div class="post_share"><div class="social-share" data-image="https://www.czblogs.cn/posts/macos/06/cover.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/7.html" title="苹果芯片的macOS安装Git"><img class="cover" src="https://www.czblogs.cn/posts/macos/07/cover.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">苹果芯片的macOS安装Git</div></div></a></div><div class="next-post pull-right"><a href="/post/5.html" title="苹果芯片的macOS安装配置VSCode"><img class="cover" src="https://www.czblogs.cn/posts/macos/05/cover.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">苹果芯片的macOS安装配置VSCode</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/post/5.html" title="苹果芯片的macOS安装配置VSCode"><img class="cover" src="https://www.czblogs.cn/posts/macos/05/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-05</div><div class="title">苹果芯片的macOS安装配置VSCode</div></div></a></div><div><a href="/post/7.html" title="苹果芯片的macOS安装Git"><img class="cover" src="https://www.czblogs.cn/posts/macos/07/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-07</div><div class="title">苹果芯片的macOS安装Git</div></div></a></div><div><a href="/post/8.html" title="Homebrew的安装配置和使用"><img class="cover" src="https://www.czblogs.cn/posts/macos/08/cover.jpeg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-08</div><div class="title">Homebrew的安装配置和使用</div></div></a></div><div><a href="/post/9.html" title="在macOS上安装配置Nodejs的保姆级教程"><img class="cover" src="https://www.czblogs.cn/posts/macos/09/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-09</div><div class="title">在macOS上安装配置Nodejs的保姆级教程</div></div></a></div><div><a href="/post/10.html" title="M1安装python3的最佳实践"><img class="cover" src="https://www.czblogs.cn/posts/macos/10/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-10</div><div class="title">M1安装python3的最佳实践</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Chen Zheng</div><div class="author-info__description">记录学习过程，分享学习成果和心得，内容以编程技术为主</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9A%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text">第一节：写在前面</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7"><span class="toc-number">1.1.</span> <span class="toc-text">1.1：什么是命令行工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%EF%BC%9A%E6%88%91%E7%9A%84-macOS-%E7%89%88%E6%9C%AC"><span class="toc-number">1.2.</span> <span class="toc-text">1.2：我的 macOS 版本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E8%8A%82%EF%BC%9A%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">第二节：安装配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1%EF%BC%9A%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">2.1.</span> <span class="toc-text">2.1：下载安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%EF%BC%9A%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2.2：安装位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3%EF%BC%9A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">2.3.</span> <span class="toc-text">2.3：环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4%EF%BC%9A%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83"><span class="toc-number">2.4.</span> <span class="toc-text">2.4：个人思考</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/23.html" title="Github + Vercel 搭建免费的个人图床"><img src="https://www.czblogs.cn/posts/tools/03/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github + Vercel 搭建免费的个人图床"/></a><div class="content"><a class="title" href="/post/23.html" title="Github + Vercel 搭建免费的个人图床">Github + Vercel 搭建免费的个人图床</a><time datetime="2023-09-22T22:17:19.000Z" title="发表于 2023-09-23 06:17:19">2023-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/12.html" title="这篇文章或许能让你彻底了解Markdown"><img src="https://www.czblogs.cn/posts/tools/02/cover.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这篇文章或许能让你彻底了解Markdown"/></a><div class="content"><a class="title" href="/post/12.html" title="这篇文章或许能让你彻底了解Markdown">这篇文章或许能让你彻底了解Markdown</a><time datetime="2023-09-22T13:31:19.000Z" title="发表于 2023-09-22 21:31:19">2023-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/11.html" title="Github使用口令替代密码来进行上传验证"><img src="https://www.czblogs.cn/posts/tools/01/cover.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github使用口令替代密码来进行上传验证"/></a><div class="content"><a class="title" href="/post/11.html" title="Github使用口令替代密码来进行上传验证">Github使用口令替代密码来进行上传验证</a><time datetime="2023-09-21T13:35:10.000Z" title="发表于 2023-09-21 21:35:10">2023-09-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/10.html" title="M1安装python3的最佳实践"><img src="https://www.czblogs.cn/posts/macos/10/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="M1安装python3的最佳实践"/></a><div class="content"><a class="title" href="/post/10.html" title="M1安装python3的最佳实践">M1安装python3的最佳实践</a><time datetime="2023-09-09T22:12:28.000Z" title="发表于 2023-09-10 06:12:28">2023-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/9.html" title="在macOS上安装配置Nodejs的保姆级教程"><img src="https://www.czblogs.cn/posts/macos/09/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在macOS上安装配置Nodejs的保姆级教程"/></a><div class="content"><a class="title" href="/post/9.html" title="在macOS上安装配置Nodejs的保姆级教程">在macOS上安装配置Nodejs的保姆级教程</a><time datetime="2023-09-08T23:25:28.000Z" title="发表于 2023-09-09 07:25:28">2023-09-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Chen Zheng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
