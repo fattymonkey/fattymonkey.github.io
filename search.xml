@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Github + Vercel 搭建免费的个人图床</title>
+      <link href="/post/23.html"/>
+      <url>/post/23.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：各种图床"><a href="#1-1：各种图床" class="headerlink" title="1.1：各种图床"></a>1.1：各种图床</h2><p>经常使用 Markdown 进行文章创作的人，肯定对“图床”这个概念不陌生，拥有个人图床则更是一个刚需！现在市面上的图床产品非常多，有免费的也有收费的，也有一些是“限量免费”的。</p><p>其中收费的有腾讯云和阿里云等云服务商提供的对象存储服务，基本是按流量收费的，费用很低，如果你不想折腾，又不差这点钱，我还是强烈建议使用大厂的对象存储！它们能兼顾稳定性和存取速度！（<font color=red>友情提示</font>：假如你使用这种按流量收费的图床服务并将其中的图片放到自己的网站上的话，一定要处理好安全配置，并配合 CDN 来使用，否则一旦你的网站被攻击恶意刷流量的话，那么可能一觉起来你就欠费上千块了！）</p><p>以七牛云为代表的图床也是不错的，但免费的图床一般都会有空间限制，比如你只有500MB的免费空间，当你图片超过这个免费额度后，就得购买新的空间了。此外，免费的图床还有一个致命的缺点，就是稳定性差！所谓稳定性差，就是有可能会倒闭或者跑路！试想以下，你辛辛苦苦攒的图片，因为图床供应商倒闭了或者跑路了，你的所有图片都会化为泡影！</p><p>免费的和收费的图床各有优劣，我就不再赘述了，我这篇博文主要是用来记录如何使用 Github 来搭建一个免费的图床！</p><h2 id="1-2：Github"><a href="#1-2：Github" class="headerlink" title="1.2：Github"></a>1.2：Github</h2><p>对于免费的图床，我选择的是 Github，使用 Github 搭建图床具备以下优势：</p><ul><li>很稳定，不会跑路，作为全球最大的代码托管平台，这一点毋庸置疑；</li><li>使用自己的仓库来存储图片，图片可以增量快速更新，跨设备管理；</li><li>因为使用 Git 进行上传和下载，可以进行版本管理和查看之前的版本；</li></ul><p>当然，Github 图床也有一些显著的缺点：</p><ul><li>每个仓库限制 1 G，超过这个容量就要新建一个仓库；</li><li>在国内由于网络限制，访问速度很不理想，甚至不能访问，但配合免费公共的 CDN，读取速度还是相当不错的；</li><li>使用 Github 做图床，你就担上了滥用开源的罪名！（<del>当我没说，哈哈</del>）</li></ul><h2 id="1-3：我的选择"><a href="#1-3：我的选择" class="headerlink" title="1.3：我的选择"></a>1.3：我的选择</h2><p>总体而言，使用 Github 做图床还是很可取的，尤其是存放那些经常被访问的图片（毕竟是免费的啊）。比如，在我的博客网站中有很多图片，所有的图片主要分为两类：第一类是网站的背景图等公共图片；第二类是文章中的插图等非公共资源。前者被访问的频率显然要比后者更高，这也就意味着在我的博客网站中公共图片会产生更多的流量。所以，我采取如下策略：首先，将经常被访问的公共图片放在 Github 上，这样就不用为这部分流量付钱了；其次，将非公共图片放到腾讯云的对象存储 COS 中，因为非公共图片被访问的频率低，并且图片较多，可以集成 PicGo 来实现一键上传，重要的是使用对象存储可以显著提供文件的加载速度，省去了配置 CDN 的麻烦。</p><p><font color=red>特别提示</font>：无论你将自己的图片托管在哪个平台上，都应该做好备份，因为只要是第三方的服务，都有可能因为各种各样的原因而失去，谁也不能保证万无一失！</p><h1 id="第二节：具体配置"><a href="#第二节：具体配置" class="headerlink" title="第二节：具体配置"></a>第二节：具体配置</h1><h2 id="2-1：创建仓库"><a href="#2-1：创建仓库" class="headerlink" title="2.1：创建仓库"></a>2.1：创建仓库</h2><p>登录 Github 官网，假如你还没有账号则需要注册一个，然后创建一个仓库，比如我创建的图床仓库：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021205430860.png"></p><p>点击最后的<code>Create repository</code>后，就创建了一个仓库：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021205644236.png"></p><h2 id="2-2：克隆仓库"><a href="#2-2：克隆仓库" class="headerlink" title="2.2：克隆仓库"></a>2.2：克隆仓库</h2><p>在你计算机本地找一个目录，将 Github 上创建的图床仓库克隆下来，比如我将其放在我桌面的<code>repository</code>文件中：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021205919665.png"></p><p>然后本地仓库就生成了：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021211146191.png"></p><h2 id="2-4：上传图片"><a href="#2-4：上传图片" class="headerlink" title="2.4：上传图片"></a>2.4：上传图片</h2><p>此时就可以使用 Git 往这个仓库中推送图片了，但为了方便图片的管理，一般我们会在仓库中创建子目录。比如我先创建了一个名为<code>avatars</code>的文件夹，然后在其中放入了一张名为<code>boy.png</code>的图片（顺便创建<code>.gitignore</code>文件）：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021211333758.png"></p><p><font color=red><strong>友情注意</strong></font>：此时就可以将本地仓库推送到 Github 仓库了！但是第一次提交代码的时候，需要验证用户名和密码，这里用户名输入 Github 的用户名，<font color=red>但密码则不是你的登录密码，而是你仓库的口令——token</font>！因为从 2021 年 8 月 13 日开始，Github 就不再接受密码验证了，转而接受 token！所以为了建立你的计算机和 Github 仓库的通信，你首先需要创建一个口令（假如你不知道如何创建口令，可以参考我的这篇博文<a href="https://www.fattymonkey.com/post/11.html">《Github使用口令替代密码来进行上传验证》</a>）！</p><p>上传成功以后，可以在 Github 仓库看到上传的资源：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021211801431.png"></p><h2 id="2-5：访问图片"><a href="#2-5：访问图片" class="headerlink" title="2.5：访问图片"></a>2.5：访问图片</h2><p>将图片上传到 Github 仓库后，我们怎么样访问仓库中的图片呢？使用如下两种路径：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/用户名/仓库名/blob/分支名/图片在仓库中的绝对路径?raw=true</span><br><span class="line">https://github.com/用户名/仓库名/raw/分支名/图片在仓库中的绝对路径</span><br></pre></td></tr></table></figure><p>比如访问仓库中位于<code>avatars</code>文件夹中的名为<code>boy.png</code>的图片，那么它的路径就是：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/fattymonkey/blog-source/blob/main/avatars/boy.png?raw=true</span><br><span class="line">https://github.com/fattymonkey/blog-source/raw/main/avatars/boy.png</span><br></pre></td></tr></table></figure><h1 id="第三节：配置加速"><a href="#第三节：配置加速" class="headerlink" title="第三节：配置加速"></a>第三节：配置加速</h1><p>将图片上传到 Github 仓库以后，通过使用 Github 给我们的图片路径，就可以访问图片了。但此时还存在一个很严重的问题，就是网络问题。Github 是国外的网站，由于我们国内的网络限制，访问速度很慢，大多数时候甚至根本访问不了！为了解决这个问题，我们就必须为 Github 使用 CDN 加速！目前推荐的 CDN 加速有以下三种。</p><h2 id="3-1：Statically"><a href="#3-1：Statically" class="headerlink" title="3.1：Statically"></a>3.1：Statically</h2><p>很多人都知道 Jsdelivr，开发者们经常会用它来加速 CSS 或 JS 之类的静态资源，当然也会有部分哥们用它来加速图像服务（但在这里建议适量使用，滥用不是一个好的思想）。</p><p>Statically 也是一款为开发者免费提供的 CDN 加速服务，它与 Jsdelivr 一样有着深厚的资源支持，同时其支持的内容更加丰富一些。并且它目前是免费的，速度也是相当不错（且用且珍惜吧）。</p><h3 id="3-1-1：配置"><a href="#3-1-1：配置" class="headerlink" title="3.1.1：配置"></a>3.1.1：配置</h3><p>Statically 压根就不用配置，只需要在访问图片时，修改访问图片的 URL 路径即可。</p><h3 id="3-1-2：使用"><a href="#3-1-2：使用" class="headerlink" title="3.1.2：使用"></a>3.1.2：使用</h3><p>比如 Github 提供给我们的图片链接是：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/用户名/仓库名/blob/分支名/图片在仓库中的绝对路径?raw=true</span><br><span class="line">https://github.com/用户名/仓库名/raw/分支名/图片在仓库中的绝对路径</span><br></pre></td></tr></table></figure><p>我们只需要将其修改为：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.staticaly.com/gh/用户名/仓库名@分支名/图片在仓库中的绝对路径</span><br></pre></td></tr></table></figure><p>这样就可以访问了，简单且高效！</p><h2 id="3-2：Vercel"><a href="#3-2：Vercel" class="headerlink" title="3.2：Vercel"></a>3.2：Vercel</h2><p>Vercel 现在非常火爆，Vercel 类似 Github Pages，但远比 Github Pages 强大，速度也快得多，而且将 Github 授权给 Vercel 后，可以得到最优雅的发布体验只需要将代码推送，项目就自动更新部署了！Vercel 还支持 serverless 接口，这就意味着它不仅可以部署静态网站，还可以部署动态网站，而这些功能通通都是免费的，简直就是白嫖党的福利！Vercel 还支持 https ，不用自己去 FreeSSL 申请证书，更是省去了一大堆的证书配置，简直就是懒人的福利！</p><p>使用 Vercel 来部署我们的图床仓库，能极大的提升访问速度，因为它提供了全局的 CDN 加速！但是现在 Vercel 的域被墙了，需要绑定一个自己的域名才能在国内访问，并且有每个月 100 G 的流量限制（问题不大，我觉得完全够用）。</p><h3 id="3-2-1：注册账号"><a href="#3-2-1：注册账号" class="headerlink" title="3.2.1：注册账号"></a>3.2.1：注册账号</h3><p>访问 Vercel <a href="https://vercel.com/">官网</a>，建议选择使用 Github 账号来注册。<font color=red><strong>注意</strong></font>：大多数情况下我们的 Github 账号是用国内的邮箱注册的，但是 Vercel 在验证 Github 账号的时候会校验它的主邮箱，假如你 Github 的主邮箱是国内邮箱的话，就会注册失败！一旦你注册失败，就会出现下面的情况：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021212119857.png"></p><p>建议<font color=red>在注册 Vercel 之前就把你 Github 的主邮箱修改为国外的邮箱</font>，如果你已经使用了国内的邮箱注册了 Github，那么：</p><ol><li><p>注册一个谷歌邮箱，国内访问<code>Gmail</code>的方案：</p><ul><li><p>直接使用 QQ 邮箱手机版，它提供 <code>Gmail</code> 的访问路线，可以直接注册并使用；</p></li><li><p>使用 <code>Ghelper</code> 等浏览器插件访问。详情可以参考这篇文章：<a href="https://github.com/Zfour/python_github_calendar_api/blob/master/posts/8c8df126">玩转 Microsoft-Edge</a></p></li></ul></li><li><p>将注册的谷歌邮箱设置为 Github 的主邮箱</p><ul><li><p><code>头像</code> &gt; <code>Settings</code> &gt; <code>Emails</code>，然后添加注册的谷歌邮箱，然后验证添加的邮箱；</p></li><li><p>最后在<code>Primary email address</code>下方选择前面添加的谷歌邮箱；</p></li></ul></li><li><p>访问Vercel官网，使用谷歌邮箱进行注册，注册的时候需要验证手机号，国内手机号也可以，完成注册</p></li></ol><h3 id="3-2-2：部署仓库"><a href="#3-2-2：部署仓库" class="headerlink" title="3.2.2：部署仓库"></a>3.2.2：部署仓库</h3><p>进入 Vercel 控制面板，点击页面的“Create a New Project”，在“Import Git Repository”处选择前面创建的仓库：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021212501911.png"></p><p>然后点击对应仓库的“Import”按钮，然后直接点击“Deploy”按钮来部署：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021212641548.png"></p><p>稍等片刻，就能看到部署项目成功的提示（Congratulations）：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021212815121.png"></p><p><font color=red>友情提示</font>：此时可见左边的项目页面报错 404，这是因为我们仓库的根目录下没有名为<code>index.html</code>的文件，我们可以在仓库根目录下创建这个文件，就能消除这个警告！比如我在仓库根目录下创建了这个文件，并编辑它的内容如下</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的博客资源<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color:red;text-align: center;&quot;</span>&gt;</span>博客资源仓库部署成功<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>上传到仓库后，点击右上角的“Continue to Dashboard”，进入项目控制台，可见效果：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021213244947.png"></p><h3 id="3-2-3：绑定域名"><a href="#3-2-3：绑定域名" class="headerlink" title="3.2.3：绑定域名"></a>3.2.3：绑定域名</h3><p>Vercel 给我们分配了一个域名，也就是上图中的<code>blog-source-two.vercel.app</code>，原本我们可以使用这个域名来访问我们的仓库，但由于现<code>.app</code>这个域被墙了，所以我们需要配置一个自己的域名才能访问！</p><p>点击右上方的“Domains”，添加一个自己的域名：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021213457561.png"></p><p>然后点击“Add”，此时发现添加的域名是无效的：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021213951367.png"></p><h3 id="3-2-4：配置解析"><a href="#3-2-4：配置解析" class="headerlink" title="3.2.4：配置解析"></a>3.2.4：配置解析</h3><p>然后去我们购买域名的域名解析处，配置上图中提示给我们的两条解析记录，比如我的情况是：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021215659785.png"></p><p>配置完等待 DNS 生效，然后 Vercel 还会自动配置 SSL 安装证书，最终：</p><p><img src="https://www.czblogs.cn/posts/tools/03/image-20231021215815108.png"></p><h3 id="3-2-5：具体使用"><a href="#3-2-5：具体使用" class="headerlink" title="3.2.5：具体使用"></a>3.2.5：具体使用</h3><p>现在，我们就可以使用自定义的域名来访问图片了！访问的 URL 是：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">自定义域名/图片的仓库路径</span><br></pre></td></tr></table></figure><p>比如图片在仓库中的路径是<code>/avatars/boy.png</code>，那么就可以在浏览器地址栏中使用下面这两个路径来访问图片：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">czblogs.cn/avatars/boy.png</span><br><span class="line">www.czblogs.cn/avatars/boy.png</span><br></pre></td></tr></table></figure><p><font color=red>注意</font>：在 Markdown 中要加上<code>https://</code>，因为 Markdown 不能像浏览器那样自动为 URL 添加这个前缀！</p><h2 id="3-3：CloudFlare"><a href="#3-3：CloudFlare" class="headerlink" title="3.3：CloudFlare"></a>3.3：CloudFlare</h2><p>cloudflare 的访问速度比 Vercel 的速度差一点，Vercel 是我目前使用的方式，暂时先不更新 cloudflare 的配置和使用！</p><p>～～</p><p>～～</p><p>～～</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> CDN </tag>
+            
+            <tag> Vercel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>这篇文章或许能让你彻底了解Markdown</title>
       <link href="/post/12.html"/>
       <url>/post/12.html</url>
@@ -70,17 +99,6 @@
     
     
     <entry>
-      <title>comment</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -95,6 +113,28 @@
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图片展</title>
+      <link href="/images/index.html"/>
+      <url>/images/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中"><a href="#页面建设中" class="headerlink" title="页面建设中"></a>页面建设中</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -136,20 +176,9 @@
     
     
     <entry>
-      <title>图片展</title>
-      <link href="/images/index.html"/>
-      <url>/images/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中"><a href="#页面建设中" class="headerlink" title="页面建设中"></a>页面建设中</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>comment</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
