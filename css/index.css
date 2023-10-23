@@ -1484,7 +1484,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: 'Overpass', 'GlowSansSC';
+  font-family: 'HelveticaNeue', 'GlowSansSC';
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -6441,9 +6441,9 @@ blockquote.pullquote.right {
   }
 }
 @font-face {
-  font-family: 'Overpass';
+  font-family: 'HelveticaNeue';
   font-display: swap;
-  src: url("https://www.czblogs.cn/fonts/qFdH35WCmI96Ajtm81GrU9vgwBcIs1s.woff2") format('woff2');
+  src: url("https://www.czblogs.cn/fonts/HelveticaNeue-01.ttf") format('truetype');
 }
 @font-face {
   font-family: 'GlowSansSC';
