@@ -1476,6 +1476,7 @@ canvas:not(#ribbon-canvas),
   --default-bg-color: #49b1f5;
   --zoom-bg: #fff;
   --mark-bg: rgba(0,0,0,0.3);
+  --monkey-mask-color: rgba(0,0,0,0.3);
 }
 body {
   position: relative;
@@ -1483,7 +1484,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Overpass', 'GlowSansSC';
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -1503,6 +1504,17 @@ body {
 }
 input::placeholder {
   color: var(--font-color);
+}
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.czblogs.cn/backgrounds/whale.webp);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1,
 h2,
@@ -1744,7 +1756,7 @@ figure.highlight pre .javascript .function {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'JetBrains Mono' !important;
 }
 #article-container code {
   padding: 2px 4px;
@@ -3458,7 +3470,7 @@ h1.page-title + .tag-cloud-list {
 }
 #footer {
   position: relative;
-  background-color: #49b1f5;
+  background-color: var(--monkey-mask-color);
   background-attachment: scroll;
   background-position: bottom;
   background-size: cover;
@@ -3487,7 +3499,6 @@ h1.page-title + .tag-cloud-list {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #49b1f5;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3501,7 +3512,7 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--mark-bg);
+  background-color: var(--monkey-mask-color);
   content: '';
 }
 #page-header.full_page {
@@ -5962,6 +5973,7 @@ blockquote.pullquote.right {
   --timeline-bg: #1f1f1f;
   --zoom-bg: #121212;
   --mark-bg: rgba(0,0,0,0.6);
+  --monkey-mask-color: none;
 }
 [data-theme='dark'] #web_bg:before {
   position: absolute;
@@ -6400,4 +6412,46 @@ blockquote.pullquote.right {
   background: transparent;
   color: #f47466;
   font-weight: bold;
+}
+@media screen and (min-width: 900px) {
+  #nav .menus_items {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+  .menus_item:hover .menus_item_child {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+    display: flex !important;
+    position: absolute !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+}
+@font-face {
+  font-family: 'Overpass';
+  font-display: swap;
+  src: url("https://www.czblogs.cn/fonts/qFdH35WCmI96Ajtm81GrU9vgwBcIs1s.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'GlowSansSC';
+  font-display: swap;
+  src: url("https://www.czblogs.cn/fonts/GlowSansSC-Normal-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-display: swap;
+  src: url("https://www.czblogs.cn/fonts/JetBrainsMono-Regular.woff2") format('woff2');
 }
