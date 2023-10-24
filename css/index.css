@@ -6443,6 +6443,7 @@ blockquote.pullquote.right {
 @font-face {
   font-family: 'HelveticaNeue';
   font-display: swap;
+  src: url("../fonts/HelveticaNeue-01.ttf") format('truetype');
 }
 @font-face {
   font-family: 'GlowSansSC';
