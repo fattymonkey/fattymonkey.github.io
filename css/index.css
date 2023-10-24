@@ -6441,23 +6441,17 @@ blockquote.pullquote.right {
   }
 }
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../fontsdest/Helvetica-Neue-Regular.eot"); /* IE9 */
-  src: url("../fontsdest/Helvetica-Neue-Regular.eot?#iefix") format("embedded-opentype"), url("../fontsdest/Helvetica-Neue-Regular.woff2") format("woff2"), url("../fontsdest/Helvetica-Neue-Regular.woff") format("woff"), url("../fontsdest/Helvetica-Neue-Regular.ttf") format("truetype"), url("../fontsdest/Helvetica-Neue-Regular.svg#Helvetica Neue") format("svg"); /* iOS 4.1- */
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'HelveticaNeue';
+  font-display: swap;
+  src: url("../fonts/HelveticaNeue-01.ttf") format('truetype');
 }
 @font-face {
-  font-family: "GlowSansSC-Normal-Regular";
-  src: url("../fontsdest/GlowSansSC-Normal-Regular.eot"); /* IE9 */
-  src: url("../fontsdest/GlowSansSC-Normal-Regular.eot?#iefix") format("embedded-opentype"), url("../fontsdest/GlowSansSC-Normal-Regular.woff2") format("woff2"), url("../fontsdest/GlowSansSC-Normal-Regular.woff") format("woff"), url("../fontsdest/GlowSansSC-Normal-Regular.ttf") format("truetype"), url("../fontsdest/GlowSansSC-Normal-Regular.svg#GlowSansSC-Normal-Regular") format("svg"); /* iOS 4.1- */
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'GlowSansSC-Normal-Book';
+  font-display: swap;
+  src: url("../fontdest/GlowSansSC-Normal-Book.woff") format('woff');
 }
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("../fontsdest/JetBrainsMono-Regular.eot"); /* IE9 */
-  src: url("../fontsdest/JetBrainsMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fontsdest/JetBrainsMono-Regular.woff2") format("woff2"), url("../fontsdest/JetBrainsMono-Regular.woff") format("woff"), url("../fontsdest/JetBrainsMono-Regular.ttf") format("truetype"), url("../fontsdest/JetBrainsMono-Regular.svg#JetBrains Mono") format("svg"); /* iOS 4.1- */
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'JetBrains Mono';
+  font-display: swap;
+  src: url("JetBrainsMono-Regular.woff2") format('woff2');
 }
