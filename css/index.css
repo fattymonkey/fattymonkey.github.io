@@ -2379,7 +2379,7 @@ figure.highlight pre .javascript .function {
   -webkit-align-self: flex-start;
   align-self: flex-start;
   -ms-flex-item-align: start;
-  padding: 50px 27px;
+  padding: 50px 27.5px;
 }
 @media screen and (max-width: 768px) {
   .layout > div:first-child:not(.recent-posts) {
