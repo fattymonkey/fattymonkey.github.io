@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("Helvetica-Neue-Regular.eot"); /* IE9 */
+    src: url("Helvetica-Neue-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Helvetica-Neue-Regular.woff2") format("woff2"), /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+    url("Helvetica-Neue-Regular.woff") format("woff"), /* chrome, firefox */
+    url("Helvetica-Neue-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Helvetica-Neue-Regular.svg#Helvetica Neue") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

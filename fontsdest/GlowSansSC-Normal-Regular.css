@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "GlowSansSC-Normal-Regular";
+    src: url("GlowSansSC-Normal-Regular.eot"); /* IE9 */
+    src: url("GlowSansSC-Normal-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("GlowSansSC-Normal-Regular.woff2") format("woff2"), /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+    url("GlowSansSC-Normal-Regular.woff") format("woff"), /* chrome, firefox */
+    url("GlowSansSC-Normal-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("GlowSansSC-Normal-Regular.svg#GlowSansSC-Normal-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
