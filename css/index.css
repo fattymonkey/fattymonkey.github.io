@@ -1439,7 +1439,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 15px;
+  --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
@@ -2379,7 +2379,7 @@ figure.highlight pre .javascript .function {
   -webkit-align-self: flex-start;
   align-self: flex-start;
   -ms-flex-item-align: start;
-  padding: 50px 34px;
+  padding: 50px 8.5px;
 }
 @media screen and (max-width: 768px) {
   .layout > div:first-child:not(.recent-posts) {
