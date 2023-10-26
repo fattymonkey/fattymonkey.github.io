@@ -6487,3 +6487,29 @@ blockquote.pullquote.right {
   font-display: swap;
   src: url("../fonts/JetBrainsMono-Regular.woff2") format('woff2');
 }
+@font-face {
+  font-family: "iconfont";
+  src: url("/fonts/iconfont.ttf") format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-qq:before {
+  content: "\e64c";
+}
+.icon-weixin:before {
+  content: "\e60b";
+}
+.icon-weibo:before {
+  content: "\e60c";
+}
+.icon-rss:before {
+  content: "\e773";
+}
+.icon-circle-email:before {
+  content: "\e8cc";
+}
