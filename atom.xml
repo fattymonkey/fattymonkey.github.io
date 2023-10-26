@@ -83,9 +83,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
@@ -129,9 +129,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
     
   </entry>
   
