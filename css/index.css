@@ -6493,23 +6493,32 @@ blockquote.pullquote.right {
 }
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 20px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-qq:before {
-  content: "\e64c";
+.icon-circle-email:before {
+  font-size: 20px;
+  color: #5ea3ef;
+  content: "\e8cc";
 }
 .icon-weixin:before {
+  font-size: 20px;
+  color: #60ce41;
   content: "\e60b";
 }
+.icon-qq:before {
+  font-size: 20px;
+  color: #67ade4;
+  content: "\e64c";
+}
 .icon-weibo:before {
+  font-size: 20px;
+  color: #d33437;
   content: "\e60c";
 }
 .icon-rss:before {
+  font-size: 20px;
+  color: #ed702d;
   content: "\e773";
-}
-.icon-circle-email:before {
-  content: "\e8cc";
 }
