@@ -1488,7 +1488,7 @@ canvas:not(#ribbon-canvas),
   --monkey-text-color: #0a84ff;
   --monkey-footer-font-color: #fff;
   --monkey-comments-title-color: #0a84ff;
-  --monkey-card-bg: rgba(255,255,255,0.6);
+  --monkey-card-bg: rgba(255,255,255,0.7);
 }
 body {
   position: relative;
