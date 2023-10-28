@@ -1487,6 +1487,8 @@ canvas:not(#ribbon-canvas),
   --monkey-selected-text-color: #fff;
   --monkey-text-color: #0a84ff;
   --monkey-footer-font-color: #fff;
+  --monkey-comments-title-color: #0a84ff;
+  --monkey-card-bg: rgba(255,255,255,0.6);
 }
 body {
   position: relative;
@@ -2564,6 +2566,7 @@ figure.highlight pre .javascript .function {
   align-items: center;
   overflow: hidden;
   height: 16.8em;
+  background: var(--monkey-card-bg);
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item {
@@ -2754,6 +2757,7 @@ h1.page-title + .tag-cloud-list {
   overflow: hidden;
   margin-top: 20px;
   padding: 20px 24px;
+  background: var(--monkey-card-bg);
 }
 #aside-content .card-info .author-info__name {
   font-weight: 500;
@@ -4431,6 +4435,9 @@ h1.page-title + .tag-cloud-list {
 }
 #article-container hr {
   margin: 20px 0;
+}
+#post {
+  background: var(--monkey-card-bg);
 }
 #post .tag_share:after {
   display: block;
@@ -6295,16 +6302,18 @@ blockquote.pullquote.right {
   --zoom-bg: #121212;
   --mark-bg: rgba(0,0,0,0.6);
   --monkey-mask-color: none;
-  --monkey-btn-bg-color: #ffd60a;
+  --monkey-btn-bg-color: #b38f00;
   --monkey-btn-color: #000;
-  --monkey-scrollbar-color: #ffd60a;
-  --monkey-text-hover: #ffd60a;
-  --monkey-text-bg-hover: #ffd60a;
+  --monkey-scrollbar-color: #fc0;
+  --monkey-text-hover: #fc0;
+  --monkey-text-bg-hover: #fc0;
   --monkey-text-color-hover: #000;
-  --monkey-selected-bg-color: #ffd60a;
+  --monkey-selected-bg-color: #fc0;
   --monkey-selected-text-color: #000;
-  --monkey-text-color: #ffd60a;
+  --monkey-text-color: #fc0;
   --monkey-footer-font-color: rgba(255,255,255,0.7);
+  --monkey-comments-title-color: #b38f00;
+  --monkey-card-bg: rgba(18,18,18,0.6);
 }
 [data-theme='dark'] #web_bg:before {
   position: absolute;
@@ -6776,6 +6785,21 @@ blockquote.pullquote.right {
 }
 .aplayer-body:hover {
   left: 0px !important;
+}
+.comments-title {
+  position: relative;
+  margin: 20px 0 14px;
+  font-weight: bold;
+  font-size: 3em;
+  display: block;
+  text-align: center;
+  color: var(--monkey-comments-title-color);
+}
+.layout #archive {
+  background: var(--monkey-card-bg);
+}
+.layout #page {
+  background: var(--monkey-card-bg);
 }
 @font-face {
   font-family: 'HelveticaNeue';
