@@ -3607,12 +3607,6 @@ h1.page-title + .tag-cloud-list {
   -webkit-transform: scale(1.4);
   -webkit-transform: all 0.5s ease 0s;
 }
-#footer_social a.social_link:first-child {
-  margin-left: 1rem;
-}
-#footer_social a.social_link:last-child {
-  margin-right: 1rem;
-}
 #footer_social img.footer_mini_logo {
   width: 4rem;
   height: 4rem;
@@ -3665,26 +3659,6 @@ h1.page-title + .tag-cloud-list {
 #footer-menu .footer-group .footer-links a:hover {
   color: var(--monkey-text-hover);
 }
-@media screen and (min-width: 425px) {
-  #footer-menu {
-    padding: 1rem 5%;
-  }
-}
-@media screen and (min-width: 768px) {
-  #footer-menu {
-    padding: 1rem 10%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #footer-menu {
-    padding: 1rem 15%;
-  }
-}
-@media screen and (min-width: 2000px) {
-  #footer-menu {
-    padding: 1rem 20%;
-  }
-}
 #footer-banner {
   display: -webkit-box;
   display: -moz-box;
@@ -3708,6 +3682,75 @@ h1.page-title + .tag-cloud-list {
 }
 #footer-banner .footer-banner-link:hover {
   color: var(--monkey-text-hover);
+}
+@media screen and (min-width: 375px) {
+  #footer_social > a:first-child {
+    margin-left: 0;
+  }
+  #footer_social > a:last-child {
+    margin-right: 0;
+  }
+  #footer-menu {
+    padding: 1rem 5%;
+  }
+  #footer-banner {
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  #footer_social {
+    padding: 1rem 1rem;
+  }
+  #footer-menu {
+    padding: 1rem 5%;
+  }
+  #footer-banner {
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer_social {
+    padding: 1rem 1rem;
+  }
+  #footer-menu {
+    padding: 1rem 10%;
+  }
+  #footer-banner {
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #footer_social {
+    padding: 1rem 1rem;
+  }
+  #footer-menu {
+    padding: 1rem 15%;
+  }
+  #footer-banner {
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #footer_social {
+    padding: 1rem 1rem;
+  }
+  #footer-menu {
+    padding: 1rem 15%;
+  }
+  #footer-banner {
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #footer_social {
+    padding: 1rem 1rem;
+  }
+  #footer-menu {
+    padding: 1rem 20%;
+  }
+  #footer-banner {
+    padding: 1rem 0rem;
+  }
 }
 #page-header {
   position: relative;
