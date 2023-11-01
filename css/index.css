@@ -1488,7 +1488,9 @@ canvas:not(#ribbon-canvas),
   --monkey-text-color: #0a84ff;
   --monkey-footer-font-color: #fff;
   --monkey-comments-title-color: #0a84ff;
-  --monkey-card-bg: rgba(255,255,255,0.7);
+  --monkey-card-bg: rgba(255,255,255,0.8);
+  --monkey-checkbox-bg: #0a84ff;
+  --monkey-checkbox-text: #fff;
 }
 body {
   position: relative;
@@ -6258,6 +6260,8 @@ blockquote.pullquote.right {
   --monkey-footer-font-color: rgba(255,255,255,0.7);
   --monkey-comments-title-color: #b38f00;
   --monkey-card-bg: rgba(18,18,18,0.6);
+  --monkey-checkbox-bg: #b38f00;
+  --monkey-checkbox-text: #000;
 }
 [data-theme='dark'] #web_bg:before {
   position: absolute;
@@ -6748,6 +6752,23 @@ blockquote.pullquote.right {
 #monkey-footer-wrap {
   height: 40px;
   background-color: #0a84ff;
+}
+input[type=checkbox]::after {
+  position: absolute;
+  background-color: var(--monkey-checkbox-bg);
+  color: var(--monkey-checkbox-text);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  visibility: visible;
+  text-align: center;
+  content: ' ';
+  border-radius: 3px;
+}
+input[type=checkbox]:checked::after {
+  content: "✓";
+  font-size: 13px;
+  font-weight: bold;
 }
 @font-face {
   font-family: 'HelveticaNeue';
