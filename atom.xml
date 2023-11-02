@@ -56,9 +56,9 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
     
@@ -108,13 +108,13 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
-    
-    <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
     <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
+    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
+    
+    <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
     
   </entry>
   
@@ -156,9 +156,9 @@
     <category term="技术白话" scheme="https://fattymonkey.com/categories/%E6%8A%80%E6%9C%AF%E7%99%BD%E8%AF%9D/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     
@@ -186,6 +186,31 @@
   </entry>
   
   <entry>
+    <title>如何搭建私人的ChatGPT应用</title>
+    <link href="https://fattymonkey.com/post/10024.html"/>
+    <id>https://fattymonkey.com/post/10024.html</id>
+    <published>2023-09-23T23:11:24.000Z</published>
+    <updated>2023-11-02T15:28:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><p>当前，AI（人工智能）已经被炒得如火如荼，其实在生活中你肯定已经见过很多的人工智能技术，最常见的小爱同学和天猫精灵等就是最典型的例子。当然，ChatGPT 也是人工智能的产物，它的出现将人工智能的发展推上了顶峰，让 AI 以更加大众化的形象展现在世人的面前！</p><h2 id="1-1：它是什么"><a href="#1-1：它是什么" class="headerlink" title="1.1：它是什么"></a>1.1：它是什么</h2><p>它的全称是 Chat Generative Pre-trained Transformer，是由<a href="https://baike.baidu.com/item/OpenAI/19758408">OpenAI</a>公司开发的一款强大的人工智能聊天机器人。它利用基于神经网络的机器学习模型，可以根据前面单词的上下文预测序列中的下一个单词，从而生成类似人类的文本。自发布以来已有数百万用户注册了 ChatGPT，它可以以帮助人们做很多事情，例如快速回答问题、编写和调试计算机程序等。</p><p>ChatGPT 是人工智能技术驱动的自然语言处理工具，ChatGPT 能够通过理解和学习人类的语言来进行对话，还能根据聊天的上下文进行互动，真正像人类一样来聊天交流，甚至能完成撰写邮件、视频脚本、文案、翻译、代码、写论文等等任务，正是由于其极大程度的“智能”，所以才会在诞生之日就在全世界范围内引起了极大的反应。</p><h2 id="1-2：为何被禁"><a href="#1-2：为何被禁" class="headerlink" title="1.2：为何被禁"></a>1.2：为何被禁</h2><p>这里说的“被禁”只是在部分国家和地区被禁止使用，并非完全被禁。最先对它下手的是意大利，2022 年 3 月 31 日，意大利个人数据保护局宣布将暂时禁止使用聊天机器人 ChatGPT，以就 ChatGPT 涉嫌违反数据收集规则展开调查，并限制 其公司 OpenAI 处理意大利用户数据。这也只是 ChatGPT 被禁用的开始，从这时开始，世界上的很多国家&#x2F;地区都宣布禁用 ChatGPT。我们可以查看其支持的<a href="https://platform.openai.com/docs/supported-countries">国家列表</a>，中国大陆和香港均不在该名单上！</p><p>那么为什么这么多国家都要对 ChatGPT 发布禁令呢？我们先来看一下三个比较典型的案例：</p><ul><li>2022 年 5 月份，苹果因数据安全问题禁止员工使用 ChatGPT 等 AI 工具；</li><li>三星也被坑过，部分员工在进行软件测试的时候，把出问题的代码发给 ChatGPT 请教解决办法。这个操作让三星的一部分源代码变成了 ChatGPT 的学习资料，估计三星自己都没想到还能这样泄密。更严重的是三星大概率还没有办法追回或者彻底删除这些机密数据。它们已经被储存在 OpenAI 的服务器里，被训练到了 AI 的算法中。这类模型很难删除个人信息的所有痕迹，追踪溯源的难度更大；</li><li>2022 年 1 月初，纽约市教育部宣布禁止学生在其学校的设备和网络上使用它，以此来预防学生在诸如考试的过程中进行作弊。同时在欧洲，巴黎政治学院率先行动禁止各校区全体学生及教职工利用 ChatGPT 完成教学任务。在澳大利亚，新南威尔士州、昆士兰州、西澳洲和塔斯马尼亚州等多个州已宣布禁止在校内使用 ChatGPT。在是否禁用 ChatGPT 这一问题上，学生们的观点相对一致：72% 的大学生认为应该在学校网络中禁止 ChatGPT！它可能会导致学生实际上并不是在学习材料，而是依靠机器为他们做工作，这会导致批判性思维和分析能力的进一步贬值；</li></ul><p>整个人工智能领域的发展都会因此种种而产生深远的影响。被禁事件还表明，在人工智能的发展过程中，有必要建立一个可信赖和透明的机制，以便监管和解决人工智能可能带来的问题。这样，就可以避免 ChatGPT 这种事件再次发生。</p><p>对此，中国人民大学未来法治研究院执行院长张吉豫说道，为调节好发展和安全之间的冲突，构建以人民为中心的智能社会法律秩序，对于推动人工智能技术健康有序发展具有重要意义。</p><h2 id="1-3：一个故事"><a href="#1-3：一个故事" class="headerlink" title="1.3：一个故事"></a>1.3：一个故事</h2><p>不管是在什么领域，既得利益者都要去打击新技术（ChatGPT）来保持自己的优势地位，但由于落后就要挨打的铁律，很多人都是“心口不一”！这里就不得不提大名鼎鼎的马斯克了。</p><p>作为 ChatGPT 的先驱者，他在 2018 年离开了 OpenAI，对外宣称是为了避免跟特斯拉产生利益冲突，实则是因为夺权失败，感兴趣的小伙伴可以自己去了解一下。</p><p>之后，ChatGPT 3.0 发布并风靡全球，接着发生了一些上述“被禁事件”，然后马斯克联合千名科学家写公开信呼吁暂停 GPT 4 以上版本的开发，信中写道：“当代 AI 系统正在成为通用任务的人类竞争对手，我们必须问自己：我们应该让机器用宣传和虚假信息充斥我们的信息渠道吗？我们应该将所有工作自动化消除吗，包括那些有意义的工作？我们应该开发非人类的思维，这些思维最终可能超过、取代我们吗？我们应该冒险失去对我们文明的控制吗？在我们确信强大的人工智能系统的效果将是积极的，风险是可控的之后，才应该开发这些系统。”</p><p>话虽这么说，但马斯克转眼就投入巨资购入万块 GPU，全力投入 GPT 的开发，包括谷歌、百度、阿里等一大批业界知名企业也纷纷投入人工智能的创业热潮中。毕竟在全球人工智能竞赛升温和诱人发展机遇的当下，对大型科技公司来说，更实际的是如何在这波技术浪潮中保持核心竞争力，来巩固自己的优势地位。</p><h2 id="1-4：它的成本"><a href="#1-4：它的成本" class="headerlink" title="1.4：它的成本"></a>1.4：它的成本</h2><p>GPT-3 训练一次的成本大概为 140 万美元，针对一些更大的 LLM（大型语言模型），训练成本介于 200 万美元到 1200 万美元之间，ChatGPT 保持正常运行的成本约为 700 万 美元，每日光电费消耗就在 5 万美元左右。</p><p>目前对外开放的有两个版本：</p><ul><li><code>GPT 3.5</code>：每个注册用户的账户内有5美元余额供用户使用，使用完以后则需要绑定信用卡进行账单付款，但是官方有明确说明，不保证服务的可用性，如果算力压力过大，首先限流此部分用户；</li><li><code>GPT 4.0</code>：目前因为算力问题，该版本仅供 plus 会员使用，费用为每个月20美元，网页使用的话目前限制每3小时25次；</li></ul><h2 id="1-5：如何使用"><a href="#1-5：如何使用" class="headerlink" title="1.5：如何使用"></a>1.5：如何使用</h2><p>使用 ChatGPT 有两种方式，一是网页版应用，二是通过 API key 将其集成到软件中来使用。第二种方式需要使用者拥有一个可用的 key（网上搜索的 key 大多已被禁用），获取方式大家可以自行搜索，我这里只提供官方的获取方式！</p><h1 id="第二节：使用官网"><a href="#第二节：使用官网" class="headerlink" title="第二节：使用官网"></a>第二节：使用官网</h1><p>使用官网网页版的 ChatGPT 是最简单直接的方式，但是由于网络限制，这种方式基本不可取。但是假如你会科学上网或者有一个比较好的 VPN 的话，那就另当别论了！（其实即使你有一个 VPN，也不能保证你在任何地点任何设备上都能使用 ChatGPT，因为你的 VPN 不会一直都存在于你当前使用的设备上）</p><p>注意：我这里讲述的用法是基于你可以进行科学上网的，当然你可以科学上网，就没必要瞎折腾了，官网用起来非常香！</p><h2 id="2-1：注册账号"><a href="#2-1：注册账号" class="headerlink" title="2.1：注册账号"></a>2.1：注册账号</h2><p>访问 <a href="https://chat.openai.com/auth/login">ChatGPT</a> 登陆页：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190123386.png"></p><p>点击<code>Sign up</code>按钮，注册一个账号，我这里选择使用谷歌账号来注册，此时会进行人机验证：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190258555.png"></p><p>然后打开谷歌邮箱验证一下，最后再验证一下手机号（必须是国外手机号）！最后完成注册时是这样的：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190332523.png"></p><p>至此，我们就可以在这个网页上跟 ChatGPT 进行对话了，这个就是 ChatGPT 的官方 APP！</p><h2 id="2-2：版本区别"><a href="#2-2：版本区别" class="headerlink" title="2.2：版本区别"></a>2.2：版本区别</h2><p>从这里我们可以看到，ChatGPT 有两个版本，分别是 3.5 和 4.0（也就是 ChatGPT Plus）！实际上这两个版本之间的差距还是蛮大的，最明显的区别就是前者是免费的，后者是收费的！此外，下面这张图能很好的说明它们之间的区别：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190442575.png"></p><p>我个人感觉 ChatGPT 3.5 就已经够用了，而且 3.5 比 4.0 的响应速度更快，如果不打算付费（每个月 20 美刀）的话，就直接使用 3.5 即可！</p><h1 id="第三节：使用-API"><a href="#第三节：使用-API" class="headerlink" title="第三节：使用 API"></a>第三节：使用 API</h1><p>ChatGPT 的官方网站对外提供了 ChatGPT API（即 ChatGPT 接口），它可以让使用者将 ChatGPT 集成到自己的应用程序中使用，比如 Chrome 和 VSCode 等。我选择的是使用 Github 上的开源项目，这个开源项目可以通过 Vercel 将其一键部署成一个网页应用，然后将 API 集成到该网页中，这样就可以在任何地方访问这个网站，以此实现 ChatGPT 的使用！</p><p>注意：在搭建的过程中需要科学上网（翻墙），一旦完成部署以后就不再需要了！</p><h2 id="3-1：项目介绍"><a href="#3-1：项目介绍" class="headerlink" title="3.1：项目介绍"></a>3.1：项目介绍</h2><p><a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT-Next-Web</a> 是一个基于 TypeScript 编写的开源项目，可用于一键部署你的私人 ChatGPT 网页应用！</p><p>主要功能：</p><ul><li>在一分钟内使用 Vercel 免费一键部署；</li><li>完整的 Markdown 支持：LaTex 公式、Mermaid 流程图、代码高亮等；</li><li>精心设计的 UI，响应式设计，支持深色模式，支持 PWA；</li><li>极快的首屏加载速度（~100kb），支持流式响应；</li><li>隐私安全，所有用户数据都保存在浏览器本地；</li><li>预置角色功能（面具），方便地创建、分享和调试你的个性化对话；</li><li>海量内置的 prompt 列表，来自中文和英文；</li><li>自动压缩上下文聊天记录，在节省 Token 的同时支持超长对话；</li><li>多国语言支持；</li><li>可以绑定自己的域名，绑定以后即可在任何地方无障碍地使用而无需借助 VPN；</li></ul><h2 id="3-2：获取-API"><a href="#3-2：获取-API" class="headerlink" title="3.2：获取 API"></a>3.2：获取 API</h2><p>我们并不能通过 ChatGPT APP 本身来获取密钥，也不能通过直接询问 ChatGPT 来获取 API，而是在 openAI 的官网上！</p><p>浏览器访问 openAI 的官网：<a href="https://openai.com/">https://openai.com</a></p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190541749.png"></p><p>点击右上角的<code>log in</code>，然后用我们前面注册 ChatGPT 的账号来登陆，登陆进去以后，点击<code>API</code>：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190656564.png"></p><p>接着点击左上角的<code>Personal</code>，点击<code>View API keys</code>：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190746131.png"></p><p>此时会显示<code>You currently do not have any API keys</code>，点击<code>+ Create new secret key</code>：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190856533.png"></p><p>然后输入密钥的名称（任意名称都可以，比如我这里输入的是<code>MyGPT</code>），最后点击生成按钮：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012190908872.png"></p><p>如此以来就生成了<code>API key</code>，也就是密钥，这里先把密钥保存下来，后面会用到！</p><h2 id="3-3：注册-Vercel"><a href="#3-3：注册-Vercel" class="headerlink" title="3.3：注册 Vercel"></a>3.3：注册 Vercel</h2><p>注册自己的 Vercel 账号，这部分就不废话了，可以参考我这篇文章——<a href="https://www.fattymonkey.com/post/1173101312.html">《Github + Vercel搭建免费的个人图床》</a>，其中的 3.2 中有详细记录（注意绑定自己的 Github 账号）！</p><h2 id="3-4：一键部署"><a href="#3-4：一键部署" class="headerlink" title="3.4：一键部署"></a>3.4：一键部署</h2><p>返回到 Github 的 <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT-Next-Web</a> 项目中，在 readme 中找到如下位置：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231012191004914.png"></p><p>点击上图中的<code>Deploy</code>按钮，然后跳转到 Vercel 网站（提前登陆），修改仓库名（不修改也可以）后点击<code>Create</code>按钮：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231102225413433.png"></p><p>然后将前面获取的 API 复制进 OPENAI_API_KEY，再自己设置一个 CODE（这个就是后面使用 ChatGPT 的登陆密码）：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231102225754713.png"></p><p>点击上图中的<code>Deploy</code>后，就会自动部署了，稍等几分钟后，当页面撒花时，就是部署成功了：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231102231453644.png"></p><h2 id="3-5：测试功能"><a href="#3-5：测试功能" class="headerlink" title="3.5：测试功能"></a>3.5：测试功能</h2><p>此时，点击右上角的<code>Continue to Dashboard</code>（前往控制台），进入控制台：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231102231702849.png"></p><p>上图中的<code>Domains</code>中给出了两个链接，点击任意一个即可进入：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231102231938039.png"></p><p>点击上图中的<code>登陆</code>，输入前面设置的密码（即部署时设置的 CODE），然后就可以使用了：</p><p><img src="https://www.czblogs.cn/posts/tools/04/image-20231102232201934.png"></p><h2 id="3-6：绑定域名"><a href="#3-6：绑定域名" class="headerlink" title="3.6：绑定域名"></a>3.6：绑定域名</h2><p>由于网络限制，在中国大陆境内无法直接访问 Vercel 提供的<code>.app</code>域名，解决方案就是使用自己购买的域名来指向这个域名，以此来实现代理，这样就可以访问了！</p><p>关于这部分操作，我就不赘述了，可以参考我这篇文章——<a href="https://www.fattymonkey.com/post/1173101312.html">《Github + Vercel搭建免费的个人图床》</a>，其中的 3.2 中有详细记录（注意绑定自己的 Github 账号）！</p><p>之后，我们在国内的任何地点任何时间，只要能联网，就可以通过访问自己的域名来使用网页版的 ChatGPT 了！</p>]]></content>
+    
+    
+    <summary type="html">使用Github+Vercel搭建个人使用的ChatGPT应用</summary>
+    
+    
+    
+    <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="ChatGPT" scheme="https://fattymonkey.com/tags/ChatGPT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Github + Vercel 搭建免费的个人图床</title>
     <link href="https://fattymonkey.com/post/10023.html"/>
     <id>https://fattymonkey.com/post/10023.html</id>
@@ -202,11 +227,11 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
     <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
