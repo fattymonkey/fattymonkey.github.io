@@ -1491,6 +1491,8 @@ canvas:not(#ribbon-canvas),
   --monkey-card-bg: rgba(255,255,255,0.8);
   --monkey-checkbox-bg: #0a84ff;
   --monkey-checkbox-text: #fff;
+  --monkey-blockquote-border-left: #0a84ff;
+  --monkey-blockquote-bg: rgba(10,132,255,0.2);
 }
 body {
   position: relative;
@@ -1625,8 +1627,8 @@ img:not([src]) {
 blockquote {
   margin: 0 0 20px;
   padding: 12px 15px;
-  border-left: 3px solid #49b1f5;
-  background-color: var(--blockquote-bg);
+  border-left: 4px solid var(--monkey-blockquote-border-left);
+  background-color: var(--monkey-blockquote-bg);
   color: var(--blockquote-color);
 }
 blockquote footer cite:before {
@@ -6262,6 +6264,8 @@ blockquote.pullquote.right {
   --monkey-card-bg: rgba(18,18,18,0.6);
   --monkey-checkbox-bg: #b38f00;
   --monkey-checkbox-text: #000;
+  --monkey-blockquote-border-left: #b38f00;
+  --monkey-blockquote-bg: rgba(179,143,0,0.2);
 }
 [data-theme='dark'] #web_bg:before {
   position: absolute;
