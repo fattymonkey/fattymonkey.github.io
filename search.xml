@@ -248,9 +248,9 @@
             
             <tag> Github </tag>
             
-            <tag> CDN </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> CDN </tag>
             
         </tags>
       
@@ -303,6 +303,35 @@
         <tags>
             
             <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>苹果芯片的macOS安装Java</title>
+      <link href="/post/10011.html"/>
+      <url>/post/10011.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一节：先验知识"><a href="#第一节：先验知识" class="headerlink" title="第一节：先验知识"></a>第一节：先验知识</h1><h2 id="1-1：检查环境"><a href="#1-1：检查环境" class="headerlink" title="1.1：检查环境"></a>1.1：检查环境</h2><p>在安装软件之前检查是否已经安装了想要安装的软件，是一个必要的习惯，首先执行<code>java -version</code>来检查：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101221953861.png"></p><p>假如没有展示 JDK 的版本号，说明当前系统中没有 Java 环境！</p><p>当然，没有环境也不能完全表示系统中不存在 Java，也许是安装了以后没有配置 Java 环境，所以打开访达搜索<code>Java</code>关键字，发现系统中也没有名称中包含“Java”字样的文件夹（只有<code>/Library/Java</code>，这个文件夹是系统自带的，它的两个子文件夹都是空的，所以其中也没有安装 JDK），这就说明当前系统中不存在 Java 环境！</p><h2 id="1-2：系统内置"><a href="#1-2：系统内置" class="headerlink" title="1.2：系统内置"></a>1.2：系统内置</h2><p>实际上，系统自带的文件夹<code>/Library/Java</code>就是预留给用户来安装 Java 环境的！我们安装的 JDK 最终就会被安装到这个目录中！</p><h2 id="1-3：版本选择"><a href="#1-3：版本选择" class="headerlink" title="1.3：版本选择"></a>1.3：版本选择</h2><p>最为一个强迫症的晚期患者，我必须安装一个原生支持 ARM 架构的 JDK，并且现在的主流开发版本是 1.8 版本，并且不能够太新，结合这两点，我必须找到一个原生支持 ARM 架构且最好是 1.8 的 JDK！</p><h1 id="第二节：安装配置"><a href="#第二节：安装配置" class="headerlink" title="第二节：安装配置"></a>第二节：安装配置</h1><h2 id="2-1：下载"><a href="#2-1：下载" class="headerlink" title="2.1：下载"></a>2.1：下载</h2><p>在官网上提供了 macOS 的三种安装包：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101223758593.png"></p><ul><li>ARM64 Compressed Archive：基于CPU ARM 64位架构，压缩包版本，安装过程中需要用户自行配置；</li><li>Arm64 DMG Installer ： 基于CPU ARM 64位架构，安装版本，安装过程中无需用户自行配置；</li><li>x64 DMG Installer ： 基于CPU X86 64位架构，安装版本，安装过程中无需用户自行配置；</li></ul><p>建议使用第二个支持 ARM 的安装包版本，这样比较简单，无需自己配置！下载下来的是一个<code>dmg</code>格式的安装包！</p><h2 id="2-2：安装"><a href="#2-2：安装" class="headerlink" title="2.2：安装"></a>2.2：安装</h2><p>直接双击下载下来的安装版，显示一个<code>pkg</code>格式的文件：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101225226631.png"></p><p>然后接着双击这个<code>pkg</code>格式的文件，进入安装程序：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101225403720.png"></p><p>点击上图中的【继续】：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101225521344.png"></p><p>接着点击上图中的【继续】：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101225617908.png"></p><p>点击右下角的【安装】，然后输入开机密码，稍等片刻后：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101225758377.png"></p><p>点击右下角的【关闭】，完成安装！</p><h2 id="2-3：检查"><a href="#2-3：检查" class="headerlink" title="2.3：检查"></a>2.3：检查</h2><p>安装完成后，打开终端执行命令<code>java -version</code>后，显示 JDK 的版本号，则表示安装完成：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101230223871.png"></p><h2 id="2-4：配置"><a href="#2-4：配置" class="headerlink" title="2.4：配置"></a>2.4：配置</h2><p>安装完成以后，我们需要进行一些简单的配置来优化 JDK。首先，环境变量我们不需要自己配置；其次，一旦安装了 JDK 以后，我们就不需要再更新了，但是刚安装的 JDK 会自动检查更新，我们需要将其关闭！</p><p>打开系统偏好设置，拉到最下面有一个 Java 控制面板，点击后却展示如下：</p><p><img src="https://www.czblogs.cn/posts/macos/11/image-20240101231312546.png"></p><p>这种错误我也不清楚是由于什么导致的，但是可以通过如下两个步骤来进行修复：</p><p>第一步：重启系统。有时候这种问题是由于系统问题导致的，重启可以修复。假如不能修复，再进行第二步；</p><p>第二步：手动配置环境变量。直接打开终端，在<code>~/.zprofile</code>文件中加入如下内容后再执行<code>source ~/.zprofile</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Setting PATH <span class="keyword">for</span> JDK</span></span><br><span class="line">PATH=&quot;/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/bin:$&#123;PATH&#125;&quot;</span><br><span class="line">export PATH</span><br></pre></td></tr></table></figure><p>第三步：重新安装 JDK。把所有安装所得的文件全部删除以后，再重新安装即可；</p><h2 id="2-5：总结"><a href="#2-5：总结" class="headerlink" title="2.5：总结"></a>2.5：总结</h2><p>实际上，对于这种安装包的形式，我不是很赞成，实际上我更喜欢使用压缩包的形式，这种形式的 JDK 只需要解压到系统中的<code>/Library/Java/JavaVirtualMachines/</code>中就可以了，连环境变量都不用配置（我也不知道为啥，哈哈哈）！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 操作系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> macOS </tag>
+            
+            <tag> Java </tag>
+            
+            <tag> JDK </tag>
             
         </tags>
       
@@ -491,33 +520,11 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="页面建设中"><a href="#页面建设中" class="headerlink" title="页面建设中"></a>页面建设中</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
     </entry>
     
@@ -535,28 +542,6 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中"><a href="#页面建设中" class="headerlink" title="页面建设中"></a>页面建设中</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图片展</title>
       <link href="/album/index.html"/>
       <url>/album/index.html</url>
@@ -568,11 +553,33 @@
     
     
     <entry>
-      <title>开发记录</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="页面建设中"><a href="#页面建设中" class="headerlink" title="页面建设中"></a>页面建设中</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中"><a href="#页面建设中" class="headerlink" title="页面建设中"></a>页面建设中</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -584,6 +591,28 @@
       <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发记录</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
       
     </entry>
     
