@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> WebStorm </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> WebStorm </tag>
             
         </tags>
       
@@ -35,7 +35,7 @@
       <link href="/post/10101.html"/>
       <url>/post/10101.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>在 Windows 系统上安装配置 Maven 的操作已经很熟悉了，更换了 Mac 以后，如何安装配置 Maven 呢？我这篇文章只是用来记录安装配置的过程，因为经常需要安装配置 Maven，所以记录一下，也方便以后回头查询。</p></blockquote><h1 id="第一步：下载"><a href="#第一步：下载" class="headerlink" title="第一步：下载"></a>第一步：下载</h1><p>访问<a href="https://maven.apache.org/download.cgi">官方下载地址</a>，选择下载二进制压缩包版本：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240102222309682.png"></p><h1 id="第二步：安装"><a href="#第二步：安装" class="headerlink" title="第二步：安装"></a>第二步：安装</h1><p>安装就很简单了，只需要将下载下来的压缩包解压并放到自己的目录中，比如我这里解压出来的文件夹是：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240102223040446.png"></p><p>我选择将其放到<code>/usr/local/</code>目录下，因为 Mac 的这个目录一般是用来放置本地安装的程序的：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103220838220.png"></p><h1 id="第三步：配置"><a href="#第三步：配置" class="headerlink" title="第三步：配置"></a>第三步：配置</h1><h2 id="3-1：环境变量"><a href="#3-1：环境变量" class="headerlink" title="3.1：环境变量"></a>3.1：环境变量</h2><blockquote><p>跟安装 JDK 不同的是，安装 Maven 的同时不会自动配置环境变量，需要我们自己手动配置！</p></blockquote><p>此时安装的 Maven 并不在系统的环境变量 PATH 中：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103221709823.png"></p><p>然后在用户目录下的<code>.zprofile</code>文件中，追加如下内容：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Setting PATH <span class="keyword">for</span> apache-maven-3.9.6</span></span><br><span class="line">PATH=&quot;/usr/local/apache-maven-3.9.6/bin:$&#123;PATH&#125;&quot;</span><br><span class="line">export PATHH</span><br></pre></td></tr></table></figure><p>然后重新打开终端，执行命令<code>mvn -v</code>后可见 Maven 的版本号：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103222254628.png"></p><h2 id="3-2：本地仓库"><a href="#3-2：本地仓库" class="headerlink" title="3.2：本地仓库"></a>3.2：本地仓库</h2><blockquote><p>Maven 最重要的作用是下载依赖，下载的依赖所放置的地方就是本地仓库，它存在于本地。</p></blockquote><p>Maven 的配置文件<code>/usr/local/apache-maven-3.9.6/conf/settings.xml</code> 中指出了默认的本地仓库的路径：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103222702570.png"></p><p>我打算把仓库放在我安装的 Maven 的根目录下。</p><p>首先，在<code>/usr/local/apache-maven-3.9.6</code>目录下，新建名为<code>repository</code>的文件夹：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103223009068.png"></p><p>然后修改<code>/usr/local/apache-maven-3.9.6/conf/settings.xml</code>文件：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103223304270.png"></p><h2 id="3-3：阿里镜像"><a href="#3-3：阿里镜像" class="headerlink" title="3.3：阿里镜像"></a>3.3：阿里镜像</h2><blockquote><p>使用 Maven 下载依赖时，默认是从 Maven 官方网站下载，所以比较慢或者容易失败，可以配置阿里镜像来提速！</p></blockquote><p>在配置文件<code>/usr/local/apache-maven-3.9.6/conf/settings.xml</code>中找到<code>mirrors</code>标签，在里面添加如下内容：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>       </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure><p>但是需要注意缩进：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103230001477.png"></p><h2 id="3-4：JDK版本"><a href="#3-4：JDK版本" class="headerlink" title="3.4：JDK版本"></a>3.4：JDK版本</h2><blockquote><p>新版本的 Maven 默认使用本机中的默认 JDK，一般情况下本机只安装一个版本的 JDK，所以没有必要进行配置。</p></blockquote><h2 id="3-5：集成Idea"><a href="#3-5：集成Idea" class="headerlink" title="3.5：集成Idea"></a>3.5：集成Idea</h2><blockquote><p>通常情况下，我们都是通过 Idea 集成 Maven 来进行开发的，所以需要在 Maven 中正确设置 Maven！</p></blockquote><p>打开 Idea 的设置页面（建议从开始页面先后点击【Customer】和【All Settings】，这样以后就不用再设置了，否则以后针对每个项目都要单独设置），打开【Build, Execution, Deployment】&gt; 【Build Tools】&gt;【Maven】：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103230642805.png"></p><p>可见，默认的 Maven 是 3.9.5，并不是我们系统默认的 3.9.6，这是因为 Idea 会自己内置一个 Maven，我们需要将其修改为我们自己系统默认的！进行如下配置：</p><p><img src="https://www.czblogs.cn/posts/java/01/image-20240103232731014.png"></p><p>注意：当你选择了本地安装的 Maven 后，本地仓库的位置会自动更新，假如没有，就是你 Maven 中本地仓库的位置没有配置或配置错误！</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>在 Windows 系统上安装配置 Maven 的操作已经很熟悉了，更换了 Mac 以后，如何安装配置 Maven 呢？我这篇文章只是用来记录安装配置的过程，因为经常需要安装配置 Maven，所以记录一下，也方便以后回头查询。</p></blockquote><h1 id="第一步：下载"><a href="#第一步：下载" class="headerlink" title="第一步：下载"></a>第一步：下载</h1><p>访问<a href="https://maven.apache.org/download.cgi">官方下载地址</a>，选择下载二进制压缩包版本：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240102222309682.png"></p><h1 id="第二步：安装"><a href="#第二步：安装" class="headerlink" title="第二步：安装"></a>第二步：安装</h1><p>安装就很简单了，只需要将下载下来的压缩包解压并放到自己的目录中，比如我这里解压出来的文件夹是：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240102223040446.png"></p><p>我选择将其放到<code>/usr/local/</code>目录下，因为 Mac 的这个目录一般是用来放置本地安装的程序的：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103220838220.png"></p><h1 id="第三步：配置"><a href="#第三步：配置" class="headerlink" title="第三步：配置"></a>第三步：配置</h1><h2 id="3-1：环境变量"><a href="#3-1：环境变量" class="headerlink" title="3.1：环境变量"></a>3.1：环境变量</h2><blockquote><p>跟安装 JDK 不同的是，安装 Maven 的同时不会自动配置环境变量，需要我们自己手动配置！</p></blockquote><p>此时安装的 Maven 并不在系统的环境变量 PATH 中：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103221709823.png"></p><p>然后在用户目录下的<code>.zprofile</code>文件中，追加如下内容：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Setting PATH <span class="keyword">for</span> apache-maven-3.9.6</span></span><br><span class="line">PATH=&quot;/usr/local/apache-maven-3.9.6/bin:$&#123;PATH&#125;&quot;</span><br><span class="line">export PATHH</span><br></pre></td></tr></table></figure><p>然后重新打开终端，执行命令<code>mvn -v</code>后可见 Maven 的版本号：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103222254628.png"></p><h2 id="3-2：本地仓库"><a href="#3-2：本地仓库" class="headerlink" title="3.2：本地仓库"></a>3.2：本地仓库</h2><blockquote><p>Maven 最重要的作用是下载依赖，下载的依赖所放置的地方就是本地仓库，它存在于本地。</p></blockquote><p>Maven 的配置文件<code>/usr/local/apache-maven-3.9.6/conf/settings.xml</code> 中指出了默认的本地仓库的路径：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103222702570.png"></p><p>我打算把仓库放在我安装的 Maven 的根目录下。</p><p>首先，在<code>/usr/local/apache-maven-3.9.6</code>目录下，新建名为<code>repository</code>的文件夹：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103223009068.png"></p><p>然后修改<code>/usr/local/apache-maven-3.9.6/conf/settings.xml</code>文件：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103223304270.png"></p><h2 id="3-3：阿里镜像"><a href="#3-3：阿里镜像" class="headerlink" title="3.3：阿里镜像"></a>3.3：阿里镜像</h2><blockquote><p>使用 Maven 下载依赖时，默认是从 Maven 官方网站下载，所以比较慢或者容易失败，可以配置阿里镜像来提速！</p></blockquote><p>在配置文件<code>/usr/local/apache-maven-3.9.6/conf/settings.xml</code>中找到<code>mirrors</code>标签，在里面添加如下内容：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>       </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure><p>但是需要注意缩进：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103230001477.png"></p><h2 id="3-4：JDK版本"><a href="#3-4：JDK版本" class="headerlink" title="3.4：JDK版本"></a>3.4：JDK版本</h2><blockquote><p>新版本的 Maven 默认使用本机中的默认 JDK，一般情况下本机只安装一个版本的 JDK，所以没有必要进行配置。</p></blockquote><h2 id="3-5：集成Idea"><a href="#3-5：集成Idea" class="headerlink" title="3.5：集成Idea"></a>3.5：集成Idea</h2><blockquote><p>通常情况下，我们都是通过 Idea 集成 Maven 来进行开发的，所以需要在 Maven 中正确设置 Maven！</p></blockquote><p>打开 Idea 的设置页面（建议从开始页面先后点击【Customer】和【All Settings】，这样以后就不用再设置了，否则以后针对每个项目都要单独设置），打开【Build, Execution, Deployment】&gt; 【Build Tools】&gt;【Maven】：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103230642805.png"></p><p>可见，默认的 Maven 是 3.9.5，并不是我们系统默认的 3.9.6，这是因为 Idea 会自己内置一个 Maven，我们需要将其修改为我们自己系统默认的！进行如下配置：</p><p><img src="https://www.czblogs.cn/posts/java/10101/image-20240103232731014.png"></p><p>注意：当你选择了本地安装的 Maven 后，本地仓库的位置会自动更新，假如没有，就是你 Maven 中本地仓库的位置没有配置或配置错误！</p>]]></content>
       
       
       <categories>
@@ -47,15 +47,15 @@
       
         <tags>
             
-            <tag> IntelliJ Idea </tag>
-            
             <tag> macOS </tag>
             
             <tag> Java </tag>
             
+            <tag> Maven </tag>
+            
             <tag> JDK </tag>
             
-            <tag> Maven </tag>
+            <tag> IntelliJ Idea </tag>
             
         </tags>
       
@@ -196,11 +196,11 @@
             
             <tag> Vercel </tag>
             
+            <tag> 域名解析 </tag>
+            
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
-            
-            <tag> 域名解析 </tag>
             
         </tags>
       
@@ -304,9 +304,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> IntelliJ Idea </tag>
+            
+            <tag> Git </tag>
             
             <tag> Windows </tag>
             
@@ -557,9 +557,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -625,6 +625,39 @@
     
     
     <entry>
+      <title>404</title>
+      <link href="/404.html"/>
+      <url>/404.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发记录</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图片展</title>
+      <link href="/album/index.html"/>
+      <url>/album/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -647,9 +680,20 @@
     
     
     <entry>
-      <title>404</title>
-      <link href="/404.html"/>
-      <url>/404.html</url>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -663,17 +707,6 @@
       <url>/comment/index.html</url>
       
         <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>图片展</title>
-      <link href="/album/index.html"/>
-      <url>/album/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
     </entry>
     
@@ -694,39 +727,6 @@
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开发记录</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
