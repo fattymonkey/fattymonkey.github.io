@@ -33,9 +33,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
     <category term="WebStorm" scheme="https://fattymonkey.com/tags/WebStorm/"/>
+    
+    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
   </entry>
   
@@ -56,6 +56,8 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
@@ -64,7 +66,28 @@
     
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+  </entry>
+  
+  <entry>
+    <title>Butterfly主题之页面魔改</title>
+    <link href="https://fattymonkey.com/post/10065.html"/>
+    <id>https://fattymonkey.com/post/10065.html</id>
+    <published>2023-10-14T23:07:27.000Z</published>
+    <updated>2023-10-15T12:21:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Butterfly 主题的所有页面主要分为：首页和非首页这两种，在上一篇文章<a href="https://www.fattymonkey.com/post/10064.html">《Butterfly主题美化之首页魔改》</a>中，详细记录了我对首页的一些魔改操作，这篇文章就用来记录我对其他页面的魔改（我这里是基于 4.10 版本进行美化操作的）！</p><h1 id="第一节：侧边栏"><a href="#第一节：侧边栏" class="headerlink" title="第一节：侧边栏"></a>第一节：侧边栏</h1><p>正常情况下，只要我们将主体配置文件的<code>theme.aside.enable</code>设为<code>true</code>，那么每一个页面都会有侧边栏！而且对于那些具有 Markdown 文件的页面，我们可以通过将其 Front-matter 中的 aside 设置为 false 来关闭侧边栏！</p><p>侧边栏是 Butterfly 的最大亮点，但是我认为很多页面的侧边栏都应该被关闭，原因有二：</p><ul><li>除了首页和文章页，其他菜单页不应该展示侧边栏，因为存在太大的信息冗余，侧边栏实在是没存在的必要；</li><li>侧边栏很难根据不同的页面单独定义，即使可以也很费力，一般我们又想在首页的侧边栏尽量展示更多的内容，但是在别的页面就会造成主体内容留有大量的空白，很不美观；</li></ul><p>所以最终我决定：<font color='#e0736b'>仅保留首页和文章页的侧边栏，其他所有页面的侧边栏都关闭！</font>！</p><h2 id="1-1：普通页"><a href="#1-1：普通页" class="headerlink" title="1.1：普通页"></a>1.1：普通页</h2><p>普通页就是指那些通过<code>hexo new page xxx</code>命令生成的页面，这些页面都有对应的 Markdown 文件。比如标签页和分类页、关于页和友链页等等，当然也包括那些自己个性化的页面，如音乐页和视频页等等！</p><p>对于这些有 Markdown 文件的页面，若想关闭它们的侧边栏，只需要在 Front-matter 中添加<code>aside: false</code> 配置即可！</p><p>比如要关闭分类页的侧边栏，则可以在<code>/source/categories/index.md</code>中：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231028210720877.png"></p><h2 id="1-2：归档页"><a href="#1-2：归档页" class="headerlink" title="1.2：归档页"></a>1.2：归档页</h2><p>归档页面没有对应的 Markdown 文件，所以不能使用上面这种方式来关闭它的侧边栏，但可以通过主题配置文件来关闭！</p><p>打开主题配置文件，找到<code>aside</code>选项，将<code>aside.display.archive</code>设置为<code>false</code>即可：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231028213712200.png"></p><h2 id="1-3：子页面"><a href="#1-3：子页面" class="headerlink" title="1.3：子页面"></a>1.3：子页面</h2><p>经过上面的设置以后，虽然分类和标签页的侧边栏没了，但是子分类页和子标签页还有侧边栏。想要关闭这些子页面的侧边栏，也可以通过主题配置文件来关闭！</p><p>打开主题配置文件，找到<code>aside</code>选项，将<code>aside.display.archive</code>设置为<code>false</code>即可：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231028213919072.png"></p><h2 id="1-4：404-页"><a href="#1-4：404-页" class="headerlink" title="1.4：404 页"></a>1.4：404 页</h2><p>在创建 404 页面的时候，主题文档要求我们在其 Front-matter 中设置<code>type: &quot;404&quot;</code>，假如你设置了这个，那么就不会有侧边栏，不需要额外的设置。</p><h2 id="1-5：友链页"><a href="#1-5：友链页" class="headerlink" title="1.5：友链页"></a>1.5：友链页</h2><p>主题要求在友链页的 Front-matter 中设置<code>type: &quot;link&quot;</code>，但是主题的作者并没有在这个布局中默认取消侧边栏（跟 404 页不同），所以想要关闭友链页的侧边栏，还需要设置<code>aside: false</code>！</p><h1 id="第二节：评论区"><a href="#第二节：评论区" class="headerlink" title="第二节：评论区"></a>第二节：评论区</h1><h2 id="2-1：关闭评论区"><a href="#2-1：关闭评论区" class="headerlink" title="2.1：关闭评论区"></a>2.1：关闭评论区</h2><p>之前，我在<a href="https://www.fattymonkey.com/post/10063.html">《Butterfly主题之评论系统》</a>一文中详细描述了如何给主题配置评论系统，但是开启了评论系统以后，会存在这样一个问题：除了首页、归档页、404 页以外，所有的页面的最下面都会展示评论区，这显然不符合我们的需求，因为除了留言板页面和文章页，其他所有的页面都没必要展示评论区！</p><p>主题提供了关闭评论区的解决方案，跟关闭侧边栏类似，只需在相应的 Front-matter 中配置<code>comments: false</code>，比如：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231028214725420.png"></p><p>注意：404 页面本身是没有评论区的，但是这要求你在<code>404.md</code>文件的 Front-matter 中正确设置<code>type: &#39;404&#39;</code>！</p><h2 id="2-2：魔改留言板"><a href="#2-2：魔改留言板" class="headerlink" title="2.2：魔改留言板"></a>2.2：魔改留言板</h2><p>假如你像我一样，在导航栏的菜单中单独暴露出来一个留言板的页面，那么此时有一个很严重的痛点：留言板页面和文章页的评论区是一样的样式！默认的样式用在文章页还可以，但是用在评论区就显得差点意思了。实际上，这两个地方使用的是同样的组件，要想显示不同的样式，估计要费不小的力气，但是我们又该怎么样来区别这两者的样式呢？</p><p>其实，我们可以在留言板对应的 Markdown 文件中添加一些内容来充实页面，这样就不会让留言板看起来那么突兀了！我这里决定自己单独写几句话来充实一下。</p><p><strong>第一步：添加 HTML</strong></p><p>首先往留言板页面对应的 Markdown 文件中填入如下内容（除 Front-matter 外）：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;comments-title&quot;</span>&gt;</span></span>留言须知<span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> [X] 您对我的博客网站有任何想说的都可以给我留言</span><br><span class="line"><span class="bullet">-</span> [X] 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</span><br><span class="line"><span class="bullet">-</span> [X] 本站支持丰富的表情和图片上传，以满足您的需求</span><br><span class="line"><span class="bullet">-</span> [X] 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</span><br></pre></td></tr></table></figure><p>因为 Markdown 文件中可以直接插入 HTML 文件，使用这种方式是最简单的！</p><p><strong>第二步：添加 CSS</strong></p><p>然后在自定义的样式文件中添加样式代码，关于如何引入自定义样式，可以参考我的<a href="https://www.fattymonkey.com/posts/10064.html">《Butterfly主题之首页魔改》</a>的第二节。比如我这里是主题根目录下的<code>/source/css/_custom/custom.styl</code>：</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.comments-title</span></span><br><span class="line">  <span class="attribute">position</span>: relative</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">0</span> <span class="number">14px</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bold</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">3em</span></span><br><span class="line">  <span class="attribute">display</span>: block</span><br><span class="line">  <span class="attribute">text-align</span>: center</span><br><span class="line">  <span class="attribute">color</span>: <span class="built_in">var</span>(--monkey-comments-title-color)</span><br></pre></td></tr></table></figure><p>注意：这里的标题颜色是使用我自己的主题颜色，你需要设置一个自己的颜色，我这里是适配了深浅两种模式！</p><h1 id="第三节：文章页"><a href="#第三节：文章页" class="headerlink" title="第三节：文章页"></a>第三节：文章页</h1><h2 id="3-1：头图的优化"><a href="#3-1：头图的优化" class="headerlink" title="3.1：头图的优化"></a>3.1：头图的优化</h2><p>我希望保留文章的头图，因为文章的头图都是我精挑细选的图片，每个图片都能体现文章的主要内容，但是这样会存在一个问题，就是有时候如果头图的颜色不够纯粹时，就会导致在头图上展示的文章信息跟头图的信息“混”在一起，不仔细看的话很难清晰地将二者区分开来，这样就会造成很大的视觉疲劳！</p><p>最好的做法是给文章页设置毛玻璃效果，这样一来既能体现文章标题等信息，又能体现具有文章特色的背景图！但是我尝试了很多办法，都很难做到，于是放弃了，干脆就将文章页的头图页取消掉了！（<del>实际是自己能力有限，等后面有时间再来研究吧，哈哈哈</del>）</p><p>取消文章头图有三种方式：</p><ul><li>在文章的 Front-matter 中设定<code>cover: false</code>，但是这样做的话首页文章列表的卡片上的图片就没了，这不可取；</li><li>在文章的 Front-matter 中设定<code>top_img: false</code>，但是这样会把原本头图上展示的内容放到文章卡片中，不可取；</li><li>通过修改源码，实现既能在首页文章卡片上展示 cover 图，还能在文章页不加载头图，还预留出原本展示头图的位置不改变（其实也能可以通过将头图设置为透明，但是这样还会加载头图，属于浪费资源，最好不加载）；</li></ul><p>打开主题根目录下的<code>/layout/includes/header/index.pug</code>文件，文件的开头部分定义了文章页的头图：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231101222706067.png"></p><p>只需要将这段逻辑去掉，其他的什么都不用做，然后三连看效果就行了！</p><h2 id="3-2：美化选择框"><a href="#3-2：美化选择框" class="headerlink" title="3.2：美化选择框"></a>3.2：美化选择框</h2><p>在 Markdown 中编辑复选框使用下面的语法：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> [X] 这是一个选择框</span><br><span class="line"><span class="bullet">-</span> [ ] 这是一个选择框</span><br></pre></td></tr></table></figure><p>对于选择框而言，Butterfly 渲染的效果如下：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231101224415465.png"></p><p>感觉这个效果差太多了，选中和没选中的效果几乎相同，所以这里只需要修改它们的颜色即可！</p><p>打开自定义样式文件，在其中添加如下代码：</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 复选框的颜色</span></span><br><span class="line"><span class="selector-tag">input</span>(type=checkbox)</span><br><span class="line">  <span class="attribute">cursor</span>: pointer</span><br><span class="line">  <span class="attribute">position</span>: relative</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type=checkbox]</span>::after&#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--monkey-checkbox-bg);</span><br><span class="line">  <span class="attribute">color</span>: <span class="built_in">var</span>(--monkey-checkbox-text);</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">visibility</span>: visible;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type=checkbox]</span><span class="selector-pseudo">:checked</span>::after&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;✓&quot;</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>需要注意的是：这里我对选择框的背景设置了深浅模式，最终的样式为像下面这样</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231101234200388.png"></p><h2 id="3-3：美化引用框"><a href="#3-3：美化引用框" class="headerlink" title="3.3：美化引用框"></a>3.3：美化引用框</h2><p>默认情况下，文章中的引用样式如下：</p><p><img src="https://www.czblogs.cn/posts/hexo/05/image-20231115154751966.png"></p><p>这个颜色跟 Butterfly 原生的颜色一致，跟我个人的主题颜色有差距，所以打算对它的颜色进行修改，并且适配深浅模式！</p>]]></content>
+    
+    
+    <summary type="html">记录我对Butterfly其他页面（除首页）进行的个性化魔改</summary>
+    
+    
+    
+    <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
+    
+    <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
     
   </entry>
   
@@ -254,9 +277,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
     <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
+    
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
     <category term="Windows" scheme="https://fattymonkey.com/tags/Windows/"/>
     
@@ -471,32 +494,9 @@
     <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
     <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
     
-  </entry>
-  
-  <entry>
-    <title>苹果芯片的macOS安装命令行工具</title>
-    <link href="https://fattymonkey.com/post/10006.html"/>
-    <id>https://fattymonkey.com/post/10006.html</id>
-    <published>2023-09-05T23:13:14.000Z</published>
-    <updated>2023-09-06T15:52:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：什么是命令行工具"><a href="#1-1：什么是命令行工具" class="headerlink" title="1.1：什么是命令行工具"></a>1.1：什么是命令行工具</h2><p>命令行工具（Command Line Tools）是 macOS 上至关重要的插件，苹果官方是这么介绍它的：下载 macOS SDK、标题和构建工具（如 Apple LLVM 编译器和 Make），能助您轻松安装开源软件或在终端内的 UNIX 上进行开发。macOS 可以在您首次尝试构建软件时自动下载这些工具，您也可以随时在下载页面找到它们。</p><p>简单地说，命令行工具有两个用处：</p><ul><li><font color='red'>使用Mac电脑终端开发软件</font>；</li><li><font color='red'>让开源软件能够顺利安装</font>；</li></ul><p>简单来说，Command Line Tools 就是一个小型独立包，为 macOS 终端用户提供了很多常用的工具、实用程序和一些编译器，包括但不限于 svn、git、make、gcc、clang、perl、size、strip、cpp、python3…</p><p>在使用 Mac 终端进行开发的时候，需要用到比如 Git 之类的工具！在 macOS 系统中原本就存在一些命令，也就是可执行文件，在<code>/usr/bin</code>目录下的那些常用命令，如 git 和 python3 等，这些命令虽然原本就存在，但是并不能使用！如：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020135808310.png"></p><p>再比如：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020135927169.png"></p><p>这些命令本身就存在，但是在使用的时候，Mac 终端会给出如下提示（此图已经更新过）：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020135947454.png"></p><p>这些工具会在我们安装完命令行开发者工具以后，就能正常使用了！</p><h2 id="1-2：我的-macOS-版本"><a href="#1-2：我的-macOS-版本" class="headerlink" title="1.2：我的 macOS 版本"></a>1.2：我的 macOS 版本</h2><p>我这里安装命令行工具的 macOS 版本是 macOS Sonoma 14.0 版！</p><h1 id="第二节：安装配置"><a href="#第二节：安装配置" class="headerlink" title="第二节：安装配置"></a>第二节：安装配置</h1><p>下载安装 Command Line Tools 有两种方式：</p><ul><li>第一种是去 Apple 开发者网站上去下载，下载之前需要先免费注册成为 Apple 开发者，然后再登陆下载；</li><li>第二种方式就比较简单了，可以通过 Mac 自带的终端，执行命令来安装（国内可能会因为网络问题而失败）；</li></ul><h2 id="2-1：下载安装"><a href="#2-1：下载安装" class="headerlink" title="2.1：下载安装"></a>2.1：下载安装</h2><p>这里我选择使用第二种方式。打开终端，执行如下命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure><p>按下回车键的时候，终端会给出提示：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140409917.png"></p><p>点击安装，又会弹出协议，点击“同意”：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140557483.png"></p><p>然后会自动查找软件：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140734927.png"></p><p>查找到以后，就自动下载了：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140805381.png"></p><p>刚开始展示的下载时间很长，但是网络好的话，很快就展示真实的下载时长了：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020140924113.png"></p><p>下载完成后会自动安装：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020141134095.png"></p><p>待安装完成后，点击“完成”即可：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020141405504.png"></p><h2 id="2-2：安装位置"><a href="#2-2：安装位置" class="headerlink" title="2.2：安装位置"></a>2.2：安装位置</h2><p>原本在<code>/Library</code>目录下，以<code>D</code>开头的目录只有<code>DirectoryServices</code>、<code>Documentation</code>、<code>DriverExtensions</code>！</p><p>安装完以后，就会在<code>/Library</code>下生成名为<code>/Developer/CommandLineTools</code>的目录，目录中的内容如下：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142024664.png"></p><p>这些都是新生成的目录，其中三个子文件夹：</p><ul><li><code>Library</code>：安装的依赖库，我这里只能看到 python 的依赖库；</li><li><code>SDKs</code>：Apple APP 开发依赖的开发环境；</li><li><code>usr</code>：这个文件夹的内容是很多的，在它里面有很多的命令和依赖等，主要是 gcc、pip3、git 等等；</li></ul><p>注意：在这里的<code>/CommandLineTools/Library/Frameworks/Python3.framework/Versions</code>中安装了 python3 ！</p><h2 id="2-3：环境变量"><a href="#2-3：环境变量" class="headerlink" title="2.3：环境变量"></a>2.3：环境变量</h2><p>在没安装命令行工具之前，macOS 的环境变量为(此图已经更新)：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142129128.png"></p><p>而安装完以后，macOS的环境变量为：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142306822.png"></p><p>可见此时系统环境变量实际上并没有什么变化！而且此时可以直接使用<code>/usr/bin</code>目录下的命令，而不用配置环境变量！</p><h2 id="2-4：个人思考"><a href="#2-4：个人思考" class="headerlink" title="2.4：个人思考"></a>2.4：个人思考</h2><p>安装完命令行开发工具以后，我们在终端中就能使用这些命令了：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142434564.png"></p><p>首先，我们先来看一下在终端中使用的这些命令来自哪里：</p><p><img src="https://www.czblogs.cn/posts/macos/06/image-20231020142515905.png"></p><p>查看安装命令行工具前后 macOS 的 PATH 变量和指定文件，发现没有任何变化！最重要的是，查看命令行开发者工具目录中的这些命令，他们也没有指向<code>/usr/bin/</code>目录中的那些命令；同时<code>/usr/bin</code>中那些系统原本就存在但是无法使用的命令也没指向 CLT 中安装的命令！那就很奇怪了，为什么在<code>/Library/Developer/CommandLineTools/</code>中安装的这些命令可以被终端找到并使用呢？？？</p><p>其实这里就没必要关注这个问题了，即然 Mac 在<code>/usr/bin</code>目录中预留了<code>python3</code>和<code>pip3</code>等命令（虽然不能默认是不能使用的），而且命令行开发者工具又是为 macOS 量身定做，那么他们肯定在我们不得知的地方进行了特殊的处理，所以它就把<code>/Library/Developer/CommandLineTools/</code>目录中安装的这些命令都映射到了<code>/usr/bin</code>目录中原本存在的这些命令上了！</p>]]></content>
-    
-    
-    <summary type="html">安装 Command Line Tools —— 搭建Mac开发环境的第一步</summary>
-    
-    
-    
-    <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
-    <category term="Command Line Tools" scheme="https://fattymonkey.com/tags/Command-Line-Tools/"/>
     
   </entry>
   
