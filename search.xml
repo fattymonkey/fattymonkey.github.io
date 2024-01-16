@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>定制化你的WebStorm</title>
+      <link href="/post/10026.html"/>
+      <url>/post/10026.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：简介"><a href="#1-1：简介" class="headerlink" title="1.1：简介"></a>1.1：简介</h2><p>WebStorm 是一款集成开发工具（IDE），它是专门为开发 Web 应用程序而设计的，是由大名鼎鼎的 JetBrains 公司开发的。这个公司还开发了很多有名的工具，其中最有名气的就是 Java 开发工具 IntelliJ Idea，它几乎是现在 Java 开发者的不二选择！</p><h2 id="1-2：优点"><a href="#1-2：优点" class="headerlink" title="1.2：优点"></a>1.2：优点</h2><p>WebStorm 提供了许多功能，例如代码自动完成、错误突出显示、重构、调试、版本控制等，可以帮助开发人员提高效率和代码质量。WebStorm 支持多种前端技术，例如 HTML、CSS、JavaScript、React、Angular、Vue.js 等等，还支持 Node.js 和其它后端技术。</p><h2 id="1-3：缺点"><a href="#1-3：缺点" class="headerlink" title="1.3：缺点"></a>1.3：缺点</h2><p>在前端代码开发时，我会毫不犹豫地选择 WebStorm！对于使用者而言，我个人认为 WebStorm 唯一的缺点就是它是收费软件，（<del>这当然难不倒会白嫖的你，哈哈哈</del>）</p><h2 id="1-4：声明"><a href="#1-4：声明" class="headerlink" title="1.4：声明"></a>1.4：声明</h2><p>这篇文章只是用来记录我对 WebStorm 的一些个性化设置，通常是一个冷门且实用的设置，不包括那些简单的设置，比如更换主题和修改字体等！我跟 WebStorm 结缘是我维护魔改 Hexo 博客的时候，也是从 VSCode 转到 WebStorm 的。</p><h1 id="第二节：实用设置"><a href="#第二节：实用设置" class="headerlink" title="第二节：实用设置"></a>第二节：实用设置</h1><h2 id="2-1：打开项目"><a href="#2-1：打开项目" class="headerlink" title="2.1：打开项目"></a>2.1：打开项目</h2><p>打开软件，点击页面的<code>Open</code>按钮：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225454461.png"></p><p>选择我的博客文件夹后，打开项目：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225739106.png"></p><p>注意：使用 WebStorm 打开项目后，在项目的根目录下就会产生名为<code>.idea</code>的文件夹，这个文件夹不会出现在它左边的文件目录中，在日常的项目维护中也应该忽略这个文件夹！</p><h2 id="2-2：启动时行为"><a href="#2-2：启动时行为" class="headerlink" title="2.2：启动时行为"></a>2.2：启动时行为</h2><p>默认情况下，打开 WebStorm 会直接打开上次关闭时浏览或编辑的项目，我比较喜欢打开软件时让我自己选择打开哪个项目。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116230748912.png"></p><h2 id="2-3：文件编码"><a href="#2-3：文件编码" class="headerlink" title="2.3：文件编码"></a>2.3：文件编码</h2><p>WebStorm 打开和编辑文件的编码格式，尽量设置为 UTF-8。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231106429.png"></p><h2 id="2-4：编辑区选项卡"><a href="#2-4：编辑区选项卡" class="headerlink" title="2.4：编辑区选项卡"></a>2.4：编辑区选项卡</h2><p>默认情况下，编辑区选项卡只能在一行中展示，而且限制最多展示 10 个。这些都不够人性化，需要进行个性化设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231735577.png"></p><p>增加数量限制和新标签页打开的位置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231537581.png"></p><h2 id="2-5：关闭拼写检查"><a href="#2-5：关闭拼写检查" class="headerlink" title="2.5：关闭拼写检查"></a>2.5：关闭拼写检查</h2><p>编辑区默认是开启拼写检查的，拼写检查并不是检查编程语法，而是检查语法！我认为这个没必要，需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232416617.png"></p><h2 id="2-6：内存指示器"><a href="#2-6：内存指示器" class="headerlink" title="2.6：内存指示器"></a>2.6：内存指示器</h2><p>WebStorm 可以在右下角显示它可以使用的内存和当前使用的内存，但是需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232756070.png"></p><h2 id="2-7：优化智能提示"><a href="#2-7：优化智能提示" class="headerlink" title="2.7：优化智能提示"></a>2.7：优化智能提示</h2><p>默认情况下，WebStorm 的智能提示是区分大小写的，其实不区分大小写的提示更适合日常使用，设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233122944.png"></p><h2 id="2-8：视觉警示线"><a href="#2-8：视觉警示线" class="headerlink" title="2.8：视觉警示线"></a>2.8：视觉警示线</h2><p>编辑区默认有一条视觉警示线，用来提醒每行代码的最长字符数（默认 120 个），取消视觉警示线需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233811671.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WebStorm </tag>
+            
+            <tag> macOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在macOS上搭建Maven环境</title>
       <link href="/post/10101.html"/>
       <url>/post/10101.html</url>
@@ -20,6 +47,8 @@
       
         <tags>
             
+            <tag> IntelliJ Idea </tag>
+            
             <tag> macOS </tag>
             
             <tag> Java </tag>
@@ -27,8 +56,6 @@
             <tag> Maven </tag>
             
             <tag> JDK </tag>
-            
-            <tag> IntelliJ Idea </tag>
             
         </tags>
       
@@ -142,11 +169,11 @@
             
             <tag> Vercel </tag>
             
+            <tag> 域名解析 </tag>
+            
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
-            
-            <tag> 域名解析 </tag>
             
         </tags>
       
@@ -250,9 +277,9 @@
       
         <tags>
             
-            <tag> IntelliJ Idea </tag>
-            
             <tag> Git </tag>
+            
+            <tag> IntelliJ Idea </tag>
             
             <tag> Windows </tag>
             
@@ -503,9 +530,9 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> Git </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
@@ -582,42 +609,9 @@
     
     
     <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图片展</title>
       <link href="/album/index.html"/>
       <url>/album/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
@@ -637,17 +631,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -659,11 +642,11 @@
     
     
     <entry>
-      <title>开发记录</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
     </entry>
     
@@ -675,6 +658,50 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发记录</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
       
     </entry>
     

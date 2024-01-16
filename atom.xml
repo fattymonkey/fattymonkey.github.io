@@ -6,7 +6,7 @@
   <link href="https://fattymonkey.com/atom.xml" rel="self"/>
   
   <link href="https://fattymonkey.com/"/>
-  <updated>2024-01-01T14:37:11.000Z</updated>
+  <updated>2024-01-16T15:43:31.000Z</updated>
   <id>https://fattymonkey.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>定制化你的WebStorm</title>
+    <link href="https://fattymonkey.com/post/10026.html"/>
+    <id>https://fattymonkey.com/post/10026.html</id>
+    <published>2024-01-16T11:11:24.000Z</published>
+    <updated>2024-01-16T15:43:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：简介"><a href="#1-1：简介" class="headerlink" title="1.1：简介"></a>1.1：简介</h2><p>WebStorm 是一款集成开发工具（IDE），它是专门为开发 Web 应用程序而设计的，是由大名鼎鼎的 JetBrains 公司开发的。这个公司还开发了很多有名的工具，其中最有名气的就是 Java 开发工具 IntelliJ Idea，它几乎是现在 Java 开发者的不二选择！</p><h2 id="1-2：优点"><a href="#1-2：优点" class="headerlink" title="1.2：优点"></a>1.2：优点</h2><p>WebStorm 提供了许多功能，例如代码自动完成、错误突出显示、重构、调试、版本控制等，可以帮助开发人员提高效率和代码质量。WebStorm 支持多种前端技术，例如 HTML、CSS、JavaScript、React、Angular、Vue.js 等等，还支持 Node.js 和其它后端技术。</p><h2 id="1-3：缺点"><a href="#1-3：缺点" class="headerlink" title="1.3：缺点"></a>1.3：缺点</h2><p>在前端代码开发时，我会毫不犹豫地选择 WebStorm！对于使用者而言，我个人认为 WebStorm 唯一的缺点就是它是收费软件，（<del>这当然难不倒会白嫖的你，哈哈哈</del>）</p><h2 id="1-4：声明"><a href="#1-4：声明" class="headerlink" title="1.4：声明"></a>1.4：声明</h2><p>这篇文章只是用来记录我对 WebStorm 的一些个性化设置，通常是一个冷门且实用的设置，不包括那些简单的设置，比如更换主题和修改字体等！我跟 WebStorm 结缘是我维护魔改 Hexo 博客的时候，也是从 VSCode 转到 WebStorm 的。</p><h1 id="第二节：实用设置"><a href="#第二节：实用设置" class="headerlink" title="第二节：实用设置"></a>第二节：实用设置</h1><h2 id="2-1：打开项目"><a href="#2-1：打开项目" class="headerlink" title="2.1：打开项目"></a>2.1：打开项目</h2><p>打开软件，点击页面的<code>Open</code>按钮：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225454461.png"></p><p>选择我的博客文件夹后，打开项目：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225739106.png"></p><p>注意：使用 WebStorm 打开项目后，在项目的根目录下就会产生名为<code>.idea</code>的文件夹，这个文件夹不会出现在它左边的文件目录中，在日常的项目维护中也应该忽略这个文件夹！</p><h2 id="2-2：启动时行为"><a href="#2-2：启动时行为" class="headerlink" title="2.2：启动时行为"></a>2.2：启动时行为</h2><p>默认情况下，打开 WebStorm 会直接打开上次关闭时浏览或编辑的项目，我比较喜欢打开软件时让我自己选择打开哪个项目。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116230748912.png"></p><h2 id="2-3：文件编码"><a href="#2-3：文件编码" class="headerlink" title="2.3：文件编码"></a>2.3：文件编码</h2><p>WebStorm 打开和编辑文件的编码格式，尽量设置为 UTF-8。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231106429.png"></p><h2 id="2-4：编辑区选项卡"><a href="#2-4：编辑区选项卡" class="headerlink" title="2.4：编辑区选项卡"></a>2.4：编辑区选项卡</h2><p>默认情况下，编辑区选项卡只能在一行中展示，而且限制最多展示 10 个。这些都不够人性化，需要进行个性化设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231735577.png"></p><p>增加数量限制和新标签页打开的位置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231537581.png"></p><h2 id="2-5：关闭拼写检查"><a href="#2-5：关闭拼写检查" class="headerlink" title="2.5：关闭拼写检查"></a>2.5：关闭拼写检查</h2><p>编辑区默认是开启拼写检查的，拼写检查并不是检查编程语法，而是检查语法！我认为这个没必要，需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232416617.png"></p><h2 id="2-6：内存指示器"><a href="#2-6：内存指示器" class="headerlink" title="2.6：内存指示器"></a>2.6：内存指示器</h2><p>WebStorm 可以在右下角显示它可以使用的内存和当前使用的内存，但是需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232756070.png"></p><h2 id="2-7：优化智能提示"><a href="#2-7：优化智能提示" class="headerlink" title="2.7：优化智能提示"></a>2.7：优化智能提示</h2><p>默认情况下，WebStorm 的智能提示是区分大小写的，其实不区分大小写的提示更适合日常使用，设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233122944.png"></p><h2 id="2-8：视觉警示线"><a href="#2-8：视觉警示线" class="headerlink" title="2.8：视觉警示线"></a>2.8：视觉警示线</h2><p>编辑区默认有一条视觉警示线，用来提醒每行代码的最长字符数（默认 120 个），取消视觉警示线需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233811671.png"></p>]]></content>
+    
+    
+    <summary type="html">记录前端开发神器WebStorm的一些必要设置</summary>
+    
+    
+    
+    <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="WebStorm" scheme="https://fattymonkey.com/tags/WebStorm/"/>
+    
+    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
+    
+  </entry>
   
   <entry>
     <title>在macOS上搭建Maven环境</title>
@@ -33,6 +56,8 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
@@ -40,8 +65,6 @@
     <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
     
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
-    
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
   </entry>
   
@@ -139,11 +162,11 @@
     
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
-    
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -231,9 +254,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
     <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
+    
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
     <category term="Windows" scheme="https://fattymonkey.com/tags/Windows/"/>
     
@@ -448,9 +471,9 @@
     <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
     <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
+    
+    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
   </entry>
   
@@ -474,29 +497,6 @@
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
     <category term="Command Line Tools" scheme="https://fattymonkey.com/tags/Command-Line-Tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>苹果芯片的macOS安装配置VSCode</title>
-    <link href="https://fattymonkey.com/post/10005.html"/>
-    <id>https://fattymonkey.com/post/10005.html</id>
-    <published>2023-09-04T23:13:14.000Z</published>
-    <updated>2023-09-05T15:52:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="第一节：下载和安装"><a href="#第一节：下载和安装" class="headerlink" title="第一节：下载和安装"></a>第一节：下载和安装</h1><p>浏览器访问 VSCode 的<a href="https://code.visualstudio.com/">官网</a>，点击页面的下载链接：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020125527693.png"></p><p>下载下来的是一个<code>.app</code>格式的安装程序：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020125800526.png"></p><p>最后直接将这个文件拖动到应用程序文件夹中即可完成安装，之后从启动台来启动VSCode即可！</p><h1 id="第二节：自定义设置"><a href="#第二节：自定义设置" class="headerlink" title="第二节：自定义设置"></a>第二节：自定义设置</h1><h2 id="2-1：语言设置"><a href="#2-1：语言设置" class="headerlink" title="2.1：语言设置"></a>2.1：语言设置</h2><p>刚启动 VSCode 时，右下角会提示是否要切换到简体中文，点击“安装并重启”，稍等片刻即可切换语言为简体中文！</p><h2 id="2-2：用户登录"><a href="#2-2：用户登录" class="headerlink" title="2.2：用户登录"></a>2.2：用户登录</h2><p>VSCode 支持用户登陆，登陆用户可以同步自己的个性化设置，所以在设置之前最好登陆一下，然后以后每次重新安装的时候就不用重复设置了，只需要登陆即可。</p><p>点击左下角的头像按钮，选择“备份和同步设置…”，然后点击顶部的<code>登陆</code>：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020130801735.png"></p><p>最后选择使用 Github 账号或者 Microsoft 账号登陆都可以，在弹出的网页上输入账号和密码并点击登陆，当展示：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020131231669.png"></p><p>则表示登陆成功，此时右下角会展示：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020131327709.png"></p><h2 id="2-3：受信任区"><a href="#2-3：受信任区" class="headerlink" title="2.3：受信任区"></a>2.3：受信任区</h2><p>在 VSCode 中有“受信任区”这么个说法，所谓受信任区，简单理解就是 VSCode 可以访问和编辑的文件目录，假如使用 VSCode 打开非信任区的文件时，总是会给出提示：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020131517298.png"></p><p>我们需要将本机所有的目录都放到信任区中，这样以后使用 VSCode 打开任意位置的文件时，就不会有警告了！</p><p>点击左下角的盾牌图标，接着点击<code>添加文件夹</code>：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020131609871.png"></p><p>然后把本机根目录<code>/</code>添加进去：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020131715183.png"></p><p>然后直接关闭这个页面，即可完成设置！</p><h2 id="2-4：字体相关"><a href="#2-4：字体相关" class="headerlink" title="2.4：字体相关"></a>2.4：字体相关</h2><p>VSCode 的字体有两种，一是页面 UI 字体，二是编辑区的字体！我们可以通过<code>command</code>和<code>-</code>或<code>+</code>来调整界面 UI 字体大小，而对于编辑区的默认字体，需要打开设置，依次选择“文本编辑器” –&gt; “字体”：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020132806018.png"></p><p>还可以通过 Ctrl 和鼠标滚轮的组合来灵活修改编辑区字体。在设置页面搜索“Mouse Wheel Zoom”：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020132922757.png"></p><h2 id="2-5：Tab-Size"><a href="#2-5：Tab-Size" class="headerlink" title="2.5：Tab Size"></a>2.5：Tab Size</h2><p>在文本编辑器中，尤其是使用 VSCode 编辑代码时，我们一般会使用 Tab 键来执行缩进操作。但是 Tab 键有时候虽然看起来是缩进了 4 个空格，但是它在编码上并不代表 4 个空格。所以这里我们设置一下，设置后的效果就是：每当键入 Tab 时，都能不多不少地正确输入 4 个空格（但是假如你经常使用 VSCode 来编辑前段代码，那最好是设置为 2 个空格）！</p><p>第一步：设置一个制表符代表的空格数是 2。打开设置，搜索“Tab Size”，将一个制表符等于的空格数设置为 2：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020133228428.png"></p><p>第二步：关闭“Detect Indentation”。假如不关闭的话，VSCode 会根据文件内容自动推测 Tab 的空格数：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020133412652.png"></p><h2 id="2-6：控制字符"><a href="#2-6：控制字符" class="headerlink" title="2.6：控制字符"></a>2.6：控制字符</h2><p>VSCode 的编辑页面默认会隐藏空格等字符（其他编辑器基本也是这样），但我使用它主要是用来看代码的，所以我希望可以在编辑区展示包括空格在内的所有字符！</p><p>第一步：打开设置后搜索“Render Control Characters”，进行如下设置</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020133555571.png"></p><p>第二步：搜索“Render Whitespace”，将这一项的默认值由 selection 设置为 all</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020133756686.png"></p><h1 id="第三节：个性化插件"><a href="#第三节：个性化插件" class="headerlink" title="第三节：个性化插件"></a>第三节：个性化插件</h1><h2 id="3-1：文件图标"><a href="#3-1：文件图标" class="headerlink" title="3.1：文件图标"></a>3.1：文件图标</h2><p>当使用 VSCode 打开文件夹时，上级目录展示的图标都是箭头：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020133805147.png"></p><p>我们可以安装插件，让文件的图标更形象化，我使用的插件是<code>vscode-icons-mac</code>。打开插件市场搜索它：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020133947951.png"></p><p>点击安装，安装完成以后，可见效果：</p><p><img src="https://www.czblogs.cn/posts/macos/05/image-20231020134043705.png"></p>]]></content>
-    
-    
-    <summary type="html">详细记录搭载苹果芯片的Mac安装VSCode的全过程</summary>
-    
-    
-    
-    <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
-    <category term="VSCode" scheme="https://fattymonkey.com/tags/VSCode/"/>
     
   </entry>
   
