@@ -142,9 +142,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> GitHub </tag>
-            
             <tag> 域名解析 </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -224,6 +224,33 @@
         <tags>
             
             <tag> 域名解析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git不使用ignore文件来实现文件忽略</title>
+      <link href="/post/10025.html"/>
+      <url>/post/10025.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="场景描述"><a href="#场景描述" class="headerlink" title="场景描述"></a>场景描述</h1><p>在实际的开发工作中，尤其是在使用 Idea 的过程中，会产生很多新的文件，当然指那么不能或者没必要纳入版本库的文件（比如<code>.iml</code>和<code>.idea</code>文件等），但是每次查看文件状态时都会提示这些文件不在版本库中，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116142731666.png"></p><p>正常修改代码后，使用 Idea 提交代码时，修改的文件不会跟这些未纳入版本库的文件在同一个目录：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116143237645.png"></p><p>如果我们仅仅是修改代码（不新增文件），那么在提交代码的时候还是比较明确的，只需要关注修改的文件即可！</p><p>但是假如你新增了一个文件的话，比如我新增了一个名为<code>test.java</code>的文件，那么在提交代码时：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116145138773.png"></p><p>有人肯定会说：为什么不在<code>.gitignore</code>文件中将那些不需要纳入版本控制的文件忽略掉呢？？？第一：我们的项目代码中没有<code>.gitignore</code>文件，至于为什么没有我不清楚，反正我也不想自己去添加一个<code>.gitignore</code>文件；第二：实际上仅仅添加一个或几个文件的话，其实可以用终端执行命令<code>git add &lt;文件名&gt;</code>来实现，但是我认为既然都用图形界面了，没必要再混用命令了吧！</p><p>那么，怎么才能在不给项目添加<code>.gitignore</code>文件的同时，实现文件的忽略呢？</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="方式一：项目级别忽略"><a href="#方式一：项目级别忽略" class="headerlink" title="方式一：项目级别忽略"></a>方式一：项目级别忽略</h2><p>我们知道，项目级别的忽略是需要在项目中添加<code>.gitignore</code>文件来实现的，但是 Git 也提供了另外一种解决方案，让用户在不使用<code>.gitignore</code>文件的同时，同样实现项目级别的文件忽略，这就是<code>exclude</code>！</p><p>不同的是：<code>.gitignore</code>这个文件本身会被提交到项目版本库中去，用来保存的是公共的需要排除的文件，也就是每个项目参与者都要排除的文件；而<code>.git/info/exclude</code>这里设置的则是你自己本地需要排除的文件，不会影响到其他人，也不会提交到版本库中去！</p><p>比如我想要忽略项目中所有的<code>.iml</code>文件，就需要在项目根目录下的<code>.git/info/exclude</code>中添加如下内容：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116163102974.png"></p><p>这样就可以直接忽略掉项目中的这些文件了！</p><h2 id="方式二：全局级别忽略"><a href="#方式二：全局级别忽略" class="headerlink" title="方式二：全局级别忽略"></a>方式二：全局级别忽略</h2><p>Git 还提供了另外一个在不添加<code>.gitignore</code>文件的前提下进行全局忽略的解决方案（这个忽略对本机所有的版本库都有效）：在用户目录下创建一个文件，在文件中编辑忽略规则！具体的操作步骤如下（以 Windows 系统为例）。</p><p><font color="DC143c">**第一步：在用户目录下创建<code>.gitignore_global</code>**文件</font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116151614795.png"></p><p><font color="DC143c"><strong>第二步：按照正常<code>.gitignore</code>文件的写法，编辑需要全局忽略的文件</strong></font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155210741.png"></p><p>这里的设置，就是忽略所有名为<code>rebel.xml</code>的文件！</p><p><font color="DC143c"><strong>第三步：打开Dos并执行如下命令</strong></font>（没报错就表示执行成功了）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.excludesfile .gitignore_global</span><br></pre></td></tr></table></figure><p><font color="DC143c"><strong>第四步：验证，接着在Dos中执行如下命令</strong></font></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure><p>当发现输出结果中多出了一条如下配置，说明配置成功：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155624282.png"></p><p>这样一来，Git 就会全局忽略掉名为<code>rebel.xml</code>的文件了！</p><h1 id="总结归纳"><a href="#总结归纳" class="headerlink" title="总结归纳"></a>总结归纳</h1><p>以上两种不添加<code>.gitignore</code>文件的同时实现文件忽略的方式，我更推荐第一种<code>exclude</code>方式，这种方式不仅影响范围小（只对具体的版本库有效），而且操作简单（不用新增文件和执行命令）！</p><p>～～</p><p>～～</p><p>～～</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IntelliJ Idea </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -472,9 +499,9 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> Git </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
@@ -551,17 +578,6 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图片展</title>
       <link href="/album/index.html"/>
       <url>/album/index.html</url>
@@ -573,44 +589,11 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -639,11 +622,55 @@
     
     
     <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>开发记录</title>
       <link href="/devrecord/index.html"/>
       <url>/devrecord/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><blockquote><p>这个页面用来记录主题的魔改记录（选中的是已完成），以及一些灵感（未选中的记为待做）</p></blockquote><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> TOC 遮蔽色的颜色适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li></ul>]]></content>
       
     </entry>
     

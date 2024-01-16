@@ -139,9 +139,9 @@
     
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
-    <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
-    
     <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
+    <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
     
   </entry>
   
@@ -209,6 +209,29 @@
     
     
     <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git不使用ignore文件来实现文件忽略</title>
+    <link href="https://fattymonkey.com/post/10025.html"/>
+    <id>https://fattymonkey.com/post/10025.html</id>
+    <published>2023-09-24T23:11:24.000Z</published>
+    <updated>2024-01-10T14:43:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="场景描述"><a href="#场景描述" class="headerlink" title="场景描述"></a>场景描述</h1><p>在实际的开发工作中，尤其是在使用 Idea 的过程中，会产生很多新的文件，当然指那么不能或者没必要纳入版本库的文件（比如<code>.iml</code>和<code>.idea</code>文件等），但是每次查看文件状态时都会提示这些文件不在版本库中，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116142731666.png"></p><p>正常修改代码后，使用 Idea 提交代码时，修改的文件不会跟这些未纳入版本库的文件在同一个目录：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116143237645.png"></p><p>如果我们仅仅是修改代码（不新增文件），那么在提交代码的时候还是比较明确的，只需要关注修改的文件即可！</p><p>但是假如你新增了一个文件的话，比如我新增了一个名为<code>test.java</code>的文件，那么在提交代码时：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116145138773.png"></p><p>有人肯定会说：为什么不在<code>.gitignore</code>文件中将那些不需要纳入版本控制的文件忽略掉呢？？？第一：我们的项目代码中没有<code>.gitignore</code>文件，至于为什么没有我不清楚，反正我也不想自己去添加一个<code>.gitignore</code>文件；第二：实际上仅仅添加一个或几个文件的话，其实可以用终端执行命令<code>git add &lt;文件名&gt;</code>来实现，但是我认为既然都用图形界面了，没必要再混用命令了吧！</p><p>那么，怎么才能在不给项目添加<code>.gitignore</code>文件的同时，实现文件的忽略呢？</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="方式一：项目级别忽略"><a href="#方式一：项目级别忽略" class="headerlink" title="方式一：项目级别忽略"></a>方式一：项目级别忽略</h2><p>我们知道，项目级别的忽略是需要在项目中添加<code>.gitignore</code>文件来实现的，但是 Git 也提供了另外一种解决方案，让用户在不使用<code>.gitignore</code>文件的同时，同样实现项目级别的文件忽略，这就是<code>exclude</code>！</p><p>不同的是：<code>.gitignore</code>这个文件本身会被提交到项目版本库中去，用来保存的是公共的需要排除的文件，也就是每个项目参与者都要排除的文件；而<code>.git/info/exclude</code>这里设置的则是你自己本地需要排除的文件，不会影响到其他人，也不会提交到版本库中去！</p><p>比如我想要忽略项目中所有的<code>.iml</code>文件，就需要在项目根目录下的<code>.git/info/exclude</code>中添加如下内容：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116163102974.png"></p><p>这样就可以直接忽略掉项目中的这些文件了！</p><h2 id="方式二：全局级别忽略"><a href="#方式二：全局级别忽略" class="headerlink" title="方式二：全局级别忽略"></a>方式二：全局级别忽略</h2><p>Git 还提供了另外一个在不添加<code>.gitignore</code>文件的前提下进行全局忽略的解决方案（这个忽略对本机所有的版本库都有效）：在用户目录下创建一个文件，在文件中编辑忽略规则！具体的操作步骤如下（以 Windows 系统为例）。</p><p><font color="DC143c">**第一步：在用户目录下创建<code>.gitignore_global</code>**文件</font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116151614795.png"></p><p><font color="DC143c"><strong>第二步：按照正常<code>.gitignore</code>文件的写法，编辑需要全局忽略的文件</strong></font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155210741.png"></p><p>这里的设置，就是忽略所有名为<code>rebel.xml</code>的文件！</p><p><font color="DC143c"><strong>第三步：打开Dos并执行如下命令</strong></font>（没报错就表示执行成功了）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.excludesfile .gitignore_global</span><br></pre></td></tr></table></figure><p><font color="DC143c"><strong>第四步：验证，接着在Dos中执行如下命令</strong></font></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure><p>当发现输出结果中多出了一条如下配置，说明配置成功：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155624282.png"></p><p>这样一来，Git 就会全局忽略掉名为<code>rebel.xml</code>的文件了！</p><h1 id="总结归纳"><a href="#总结归纳" class="headerlink" title="总结归纳"></a>总结归纳</h1><p>以上两种不添加<code>.gitignore</code>文件的同时实现文件忽略的方式，我更推荐第一种<code>exclude</code>方式，这种方式不仅影响范围小（只对具体的版本库有效），而且操作简单（不用新增文件和执行命令）！</p><p>～～</p><p>～～</p><p>～～</p>]]></content>
+    
+    
+    <summary type="html">忽略文件必须使用.gitignore文件吗？显然不是！</summary>
+    
+    
+    
+    <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
+    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
     
   </entry>
   
@@ -421,9 +444,9 @@
     <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
     <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
+    
+    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
   </entry>
   
