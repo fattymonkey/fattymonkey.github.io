@@ -23,7 +23,7 @@
     <published>2024-01-16T11:11:24.000Z</published>
     <updated>2024-01-16T15:43:31.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：简介"><a href="#1-1：简介" class="headerlink" title="1.1：简介"></a>1.1：简介</h2><p>WebStorm 是一款集成开发工具（IDE），它是专门为开发 Web 应用程序而设计的，是由大名鼎鼎的 JetBrains 公司开发的。这个公司还开发了很多有名的工具，其中最有名气的就是 Java 开发工具 IntelliJ Idea，它几乎是现在 Java 开发者的不二选择！</p><h2 id="1-2：优点"><a href="#1-2：优点" class="headerlink" title="1.2：优点"></a>1.2：优点</h2><p>WebStorm 提供了许多功能，例如代码自动完成、错误突出显示、重构、调试、版本控制等，可以帮助开发人员提高效率和代码质量。WebStorm 支持多种前端技术，例如 HTML、CSS、JavaScript、React、Angular、Vue.js 等等，还支持 Node.js 和其它后端技术。</p><h2 id="1-3：缺点"><a href="#1-3：缺点" class="headerlink" title="1.3：缺点"></a>1.3：缺点</h2><p>在前端代码开发时，我会毫不犹豫地选择 WebStorm！对于使用者而言，我个人认为 WebStorm 唯一的缺点就是它是收费软件，（<del>这当然难不倒会白嫖的你，哈哈哈</del>）</p><h2 id="1-4：声明"><a href="#1-4：声明" class="headerlink" title="1.4：声明"></a>1.4：声明</h2><p>这篇文章只是用来记录我对 WebStorm 的一些个性化设置，通常是一个冷门且实用的设置，不包括那些简单的设置，比如更换主题和修改字体等！我跟 WebStorm 结缘是我维护魔改 Hexo 博客的时候，也是从 VSCode 转到 WebStorm 的。</p><h1 id="第二节：实用设置"><a href="#第二节：实用设置" class="headerlink" title="第二节：实用设置"></a>第二节：实用设置</h1><h2 id="2-1：打开项目"><a href="#2-1：打开项目" class="headerlink" title="2.1：打开项目"></a>2.1：打开项目</h2><p>打开软件，点击页面的<code>Open</code>按钮：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225454461.png"></p><p>选择我的博客文件夹后，打开项目：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225739106.png"></p><p>注意：使用 WebStorm 打开项目后，在项目的根目录下就会产生名为<code>.idea</code>的文件夹，这个文件夹不会出现在它左边的文件目录中，在日常的项目维护中也应该忽略这个文件夹！</p><h2 id="2-2：启动时行为"><a href="#2-2：启动时行为" class="headerlink" title="2.2：启动时行为"></a>2.2：启动时行为</h2><p>默认情况下，打开 WebStorm 会直接打开上次关闭时浏览或编辑的项目，我比较喜欢打开软件时让我自己选择打开哪个项目。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116230748912.png"></p><h2 id="2-3：文件编码"><a href="#2-3：文件编码" class="headerlink" title="2.3：文件编码"></a>2.3：文件编码</h2><p>WebStorm 打开和编辑文件的编码格式，尽量设置为 UTF-8。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231106429.png"></p><h2 id="2-4：编辑区选项卡"><a href="#2-4：编辑区选项卡" class="headerlink" title="2.4：编辑区选项卡"></a>2.4：编辑区选项卡</h2><p>默认情况下，编辑区选项卡只能在一行中展示，而且限制最多展示 10 个。这些都不够人性化，需要进行个性化设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231735577.png"></p><p>增加数量限制和新标签页打开的位置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231537581.png"></p><h2 id="2-5：关闭拼写检查"><a href="#2-5：关闭拼写检查" class="headerlink" title="2.5：关闭拼写检查"></a>2.5：关闭拼写检查</h2><p>编辑区默认是开启拼写检查的，拼写检查并不是检查编程语法，而是检查语法！我认为这个没必要，需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232416617.png"></p><h2 id="2-6：内存指示器"><a href="#2-6：内存指示器" class="headerlink" title="2.6：内存指示器"></a>2.6：内存指示器</h2><p>WebStorm 可以在右下角显示它可以使用的内存和当前使用的内存，但是需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232756070.png"></p><h2 id="2-7：优化智能提示"><a href="#2-7：优化智能提示" class="headerlink" title="2.7：优化智能提示"></a>2.7：优化智能提示</h2><p>默认情况下，WebStorm 的智能提示是区分大小写的，其实不区分大小写的提示更适合日常使用，设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233122944.png"></p><h2 id="2-8：视觉警示线"><a href="#2-8：视觉警示线" class="headerlink" title="2.8：视觉警示线"></a>2.8：视觉警示线</h2><p>编辑区默认有一条视觉警示线，用来提醒每行代码的最长字符数（默认 120 个），取消视觉警示线需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233811671.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><h2 id="1-1：简介"><a href="#1-1：简介" class="headerlink" title="1.1：简介"></a>1.1：简介</h2><p>WebStorm 是一款集成开发工具（IDE），它是专门为开发 Web 应用程序而设计的，是由大名鼎鼎的 JetBrains 公司开发的。这个公司还开发了很多有名的工具，其中最有名气的就是 Java 开发工具 IntelliJ Idea，它几乎是现在 Java 开发者的不二选择！</p><h2 id="1-2：优点"><a href="#1-2：优点" class="headerlink" title="1.2：优点"></a>1.2：优点</h2><p>WebStorm 提供了许多功能，例如代码自动完成、错误突出显示、重构、调试、版本控制等，可以帮助开发人员提高效率和代码质量。WebStorm 支持多种前端技术，例如 HTML、CSS、JavaScript、React、Angular、Vue.js 等等，还支持 Node.js 和其它后端技术。</p><h2 id="1-3：缺点"><a href="#1-3：缺点" class="headerlink" title="1.3：缺点"></a>1.3：缺点</h2><p>在前端代码开发时，我会毫不犹豫地选择 WebStorm！对于使用者而言，我个人认为 WebStorm 唯一的缺点就是它是收费软件，（<del>这当然难不倒会白嫖的你，哈哈哈</del>）</p><h2 id="1-4：声明"><a href="#1-4：声明" class="headerlink" title="1.4：声明"></a>1.4：声明</h2><p>这篇文章只是用来记录我对 WebStorm 的一些个性化设置，通常是一个冷门且实用的设置，不包括那些简单的设置，比如更换主题和修改字体等！我跟 WebStorm 结缘是我维护魔改 Hexo 博客的时候，也是从 VSCode 转到 WebStorm 的。</p><h1 id="第二节：基本设置"><a href="#第二节：基本设置" class="headerlink" title="第二节：基本设置"></a>第二节：基本设置</h1><h2 id="2-1：打开项目"><a href="#2-1：打开项目" class="headerlink" title="2.1：打开项目"></a>2.1：打开项目</h2><p>打开软件，点击页面的<code>Open</code>按钮：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225454461.png"></p><p>选择我的博客文件夹后，打开项目：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116225739106.png"></p><p>注意：使用 WebStorm 打开项目后，在项目的根目录下就会产生名为<code>.idea</code>的文件夹，这个文件夹不会出现在它左边的文件目录中，在日常的项目维护中也应该忽略这个文件夹！</p><h2 id="2-2：启动时行为"><a href="#2-2：启动时行为" class="headerlink" title="2.2：启动时行为"></a>2.2：启动时行为</h2><p>默认情况下，打开 WebStorm 会直接打开上次关闭时浏览或编辑的项目，我比较喜欢打开软件时让我自己选择打开哪个项目。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116230748912.png"></p><h2 id="2-3：文件编码"><a href="#2-3：文件编码" class="headerlink" title="2.3：文件编码"></a>2.3：文件编码</h2><p>WebStorm 打开和编辑文件的编码格式，尽量设置为 UTF-8。设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231106429.png"></p><h2 id="2-4：编辑区选项卡"><a href="#2-4：编辑区选项卡" class="headerlink" title="2.4：编辑区选项卡"></a>2.4：编辑区选项卡</h2><p>默认情况下，编辑区选项卡只能在一行中展示，而且限制最多展示 10 个。这些都不够人性化，需要进行个性化设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231735577.png"></p><p>增加数量限制和新标签页打开的位置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116231537581.png"></p><h2 id="2-5：关闭拼写检查"><a href="#2-5：关闭拼写检查" class="headerlink" title="2.5：关闭拼写检查"></a>2.5：关闭拼写检查</h2><p>编辑区默认是开启拼写检查的，拼写检查并不是检查编程语法，而是检查语法！我认为这个没必要，需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232416617.png"></p><h2 id="2-6：内存指示器"><a href="#2-6：内存指示器" class="headerlink" title="2.6：内存指示器"></a>2.6：内存指示器</h2><p>WebStorm 可以在右下角显示它可以使用的内存和当前使用的内存，但是需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116232756070.png"></p><h2 id="2-7：优化智能提示"><a href="#2-7：优化智能提示" class="headerlink" title="2.7：优化智能提示"></a>2.7：优化智能提示</h2><p>默认情况下，WebStorm 的智能提示是区分大小写的，其实不区分大小写的提示更适合日常使用，设置如下：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233122944.png"></p><h2 id="2-8：视觉警示线"><a href="#2-8：视觉警示线" class="headerlink" title="2.8：视觉警示线"></a>2.8：视觉警示线</h2><p>编辑区默认有一条视觉警示线，用来提醒每行代码的最长字符数（默认 120 个），取消视觉警示线需要进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240116233811671.png"></p><h2 id="2-9：黄色小灯泡"><a href="#2-9：黄色小灯泡" class="headerlink" title="2.9：黄色小灯泡"></a>2.9：黄色小灯泡</h2><p>在编辑代码时，经常会在光标所在行的上一行开头出现一个黄色小灯泡：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240117205926479.png"></p><p>这个小灯泡的作用跟快捷键<code>Alt</code>+<code>Enter</code>的作用是相同的，但是由于它影响了代码的美观，挺烦人的，所以我将其隐藏：</p><p><img src="https://www.czblogs.cn/posts/tools/06/image-20240117210726930.png"></p>]]></content>
     
     
     <summary type="html">介绍一款前端开发神器WebStorm！顺手记录一些个性化的设置</summary>
@@ -56,15 +56,15 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
+    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
-    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
   </entry>
   
@@ -183,9 +183,9 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
@@ -233,9 +233,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
@@ -277,9 +277,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
-    
     <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
+    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
     
     <category term="Windows" scheme="https://fattymonkey.com/tags/Windows/"/>
     
@@ -329,9 +329,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
     
   </entry>
   
@@ -494,9 +494,9 @@
     <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
-    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
+    
+    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
     
   </entry>
   
