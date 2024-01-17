@@ -194,13 +194,13 @@
       
         <tags>
             
+            <tag> 域名解析 </tag>
+            
             <tag> Vercel </tag>
             
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
-            
-            <tag> 域名解析 </tag>
             
         </tags>
       
@@ -252,9 +252,9 @@
             
             <tag> Github </tag>
             
-            <tag> Vercel </tag>
-            
             <tag> Gitee </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -364,9 +364,9 @@
             
             <tag> Github </tag>
             
-            <tag> CDN </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> CDN </tag>
             
         </tags>
       
@@ -647,39 +647,6 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图片展</title>
       <link href="/album/index.html"/>
       <url>/album/index.html</url>
@@ -702,11 +669,33 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -735,11 +724,22 @@
     
     
     <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>相册是快乐过的证据</title>
       <link href="/album/life/index.html"/>
       <url>/album/life/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/life/球队.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/兔子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/球鞋.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
