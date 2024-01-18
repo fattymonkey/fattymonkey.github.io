@@ -56,15 +56,15 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
+    
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
-    <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
-    
     <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    
+    <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
   </entry>
   
@@ -210,9 +210,9 @@
     
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
-    
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
+    
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
