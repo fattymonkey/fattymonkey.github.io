@@ -62,9 +62,9 @@
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
-    <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
-    
     <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    
+    <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
   </entry>
   
@@ -79,6 +79,29 @@
     
     
     <summary type="html">记录我对Butterfly其他页面（除首页）进行的个性化魔改</summary>
+    
+    
+    
+    <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
+    
+    <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Butterfly主题美化之相册页</title>
+    <link href="https://fattymonkey.com/post/10066.html"/>
+    <id>https://fattymonkey.com/post/10066.html</id>
+    <published>2023-10-14T23:07:27.000Z</published>
+    <updated>2024-01-17T13:21:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一节：基本设置"><a href="#第一节：基本设置" class="headerlink" title="第一节：基本设置"></a>第一节：基本设置</h1><p>相册页是 Butterfly 主题的一个亮点，官网上给出了图库集合页面的样式：</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117211819688.png"></p><p>但是我感觉官网上关于相册这块的设置，描述地不是很清楚，对小白很不友好，于是我打算详细记录一下如何设置主题的相册页，或者说是图库页！</p><h2 id="1-1：创建页面"><a href="#1-1：创建页面" class="headerlink" title="1.1：创建页面"></a>1.1：创建页面</h2><blockquote><p>跟创建分类页、标签页、友链页一样，相册页面也是通过命令<code>hexo new page xxx</code>创建出来的！</p></blockquote><p>第一步：执行如下命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page album</span><br></pre></td></tr></table></figure><p>这样就会在 Hexo 博客的根目录下的<code>/source</code>下生成<code>/album/index.md</code>文件，<code>album</code>可以是你自己定义的任意单词！</p><p>第二步：在<code>index.md</code>文件的 Front-matter 中添加如下内容（因为我不想在相册页面展示侧边栏和评论区）</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117211712566.png"></p><p>第三步：在主题配置文件的<code>menu</code>中设置路径，我这里是把相册页面设置到休闲这个菜单下，作为一个子菜单</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117212114858.png"></p><p>这样以来，点击首页菜单栏的<code>图片展</code>即可进入相册首页：</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117212413008.png"></p><p>可见，此时的相册页面是什么都没有的，只有一个用来展示内容的空白框！</p><h2 id="1-2：图库集合页"><a href="#1-2：图库集合页" class="headerlink" title="1.2：图库集合页"></a>1.2：图库集合页</h2><p>图库集合页面就是普通的页面，比如上面创建的<code>/album/index.md</code>页面，下面将其设置成一个图库集合页面！设置图库集合页面是使用外挂标签来实现的，书写格式如下：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p>这里面每个<code>galleryGroup</code>中设置的内容如下：</p><ul><li><code>name</code>：图库名字</li><li><code>description</code>：图库描述</li><li><code>link</code>：链接到对应相册的地址</li><li><code>img-url</code>：图库封面的地址</li></ul><p>比如我是这样设置的：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% galleryGroup &#x27;壁紙收藏&#x27; &#x27;收藏的一些壁纸，侵删&#x27; &#x27;/album/wallpaper&#x27; https://www.czblogs.cn/album/wallpaper.jpeg %&#125;</span><br><span class="line">&#123;% galleryGroup &#x27;生活记录&#x27; &#x27;相册是我快乐过的证据&#x27; &#x27;/album/life&#x27; https://www.czblogs.cn/album/life.jpeg %&#125;</span><br><span class="line">&#123;% galleryGroup &#x27;迫于生计&#x27; &#x27;谁又不是在努力地活着&#x27; &#x27;/album/work&#x27; https://www.czblogs.cn/album/work.jpeg %&#125;</span><br><span class="line">&#123;% galleryGroup &#x27;出差印度&#x27; &#x27;人生中的最后一段青春&#x27; &#x27;/album/indian&#x27; https://www.czblogs.cn/album/indian.jpeg %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p>这样以来，页面就变成了这样：</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240118211635766.png"></p><h2 id="1-3：图库子页面"><a href="#1-3：图库子页面" class="headerlink" title="1.3：图库子页面"></a>1.3：图库子页面</h2><p>此时，点击任何一个图集，都会重定向到 404 页！这是因为我们还没有创建相应的子页面！这里我以《生活》这个相册为例来创建它的子页面！</p><p>第一步：打开终端，切换到本地 Hexo 博客的根目录下，执行如下命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page life</span><br></pre></td></tr></table></figure><p>然后会在博客根目录下的<code>/source</code>目录下生成名为<code>life</code>的文件夹，并在其中生成一个名为<code>index.md</code>的文件，这个文件就对应着《生活》这个子页面！</p><p>但是此时图库子页面<code>/source/life/index.md</code>跟相册首页<code>/source/album/index.md</code>是平级的：</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117225259518.png"></p><p>第二步：将<code>life</code>整个文件夹都移动到<code>album</code>文件夹中：</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117225428141.png"></p><p>第三步：此时打开<code>/source/album/life/index.md</code>文件，修改如下</p><p><img src="https://www.czblogs.cn/posts/hexo/06/image-20240117230009632.png"></p><p>第四步：然后在子页面（也就是<code>/source/album/life/index.md</code>）中使用标签外挂挂上自己的照片，写法如下</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](<span class="link"></span>)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><p>比如我下面这样，填写很多个自己的图片（图片路径需要自己填充）：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/开锅.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/第一桶金.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/啤酒.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/鸽子.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/原浆.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/户外烧烤.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/篮球.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/螃蟹.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/骑行.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/软件园打球.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/球队.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/台式1.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/游玩.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/台式2.jpeg</span>)</span><br><span class="line">![](<span class="link">https://www.czblogs.cn/album/life/自拍.jpeg</span>)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><p>注意：</p><ul><li>这里使用的是外挂标签，其中的图片就是按照 Markdown 插入图片的格式书写的，这个标签外挂会自动根据图片的尺寸大小来调整图片的大小，你只需要将图片罗列上去即可！</li><li>这里存在一个Bug：因为标签外挂<code>gallery</code>是实时监测页面尺寸的大小，然后不断地变更图片的尺寸，所以当你放入图库子页面所有的图片尺寸不一致时，有可能会导致显示图片的页面元素的尺寸不断变化，从视觉上来看就是一直在抖动！（有时候使用不同的浏览器，会出现抖动与不抖动不同的效果，我也不知道为什么）</li></ul><h1 id="第二节：进阶设置"><a href="#第二节：进阶设置" class="headerlink" title="第二节：进阶设置"></a>第二节：进阶设置</h1><h2 id="2-1：嵌套图库集合"><a href="#2-1：嵌套图库集合" class="headerlink" title="2.1：嵌套图库集合"></a>2.1：嵌套图库集合</h2><p>因为图库集合和图库子页面的本质上都是普通的页面，也就是普通的 Markdown 文件，所以我们可以嵌套使用图库集合页面，这样就可以做出来层层递进的目录效果！</p><p>比如，图库集合首页有四个分类，其中壁纸这个集合点进去按道理应该是一个图库子页面，但是因为我想根据不同的屏幕尺寸再进行一次分类，所以可以在原本是图库子页面的页面不用<code>gallery</code>而是继续使用<code>galleryGroup</code>，这样就能实现了！具体的操作我就不掩饰了，可以参考本站的效果。</p><h2 id="2-2：是否压缩图片"><a href="#2-2：是否压缩图片" class="headerlink" title="2.2：是否压缩图片"></a>2.2：是否压缩图片</h2><p>放到图库上的图片，一方面是为了展示，比如我的《生活记录》，另一方面是为了共享，比如我的《壁纸收藏》。图片加载的速度是很慢的，我的策略是：</p><ul><li>所有图库集合的封面都压缩；</li><li>所有子页面，主要用于展示的图片进行压缩、用于资源分享的图片都不压缩；</li></ul><p>当然，假如你能完美掌握图片压缩的质量和大小之间的平衡的话，你也可以把所有的图片都进行压缩！</p>]]></content>
+    
+    
+    <summary type="html">详述我对Butterfly相册页的基本设置，以及我的一些魔改记录</summary>
     
     
     
@@ -185,11 +208,11 @@
     
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
-    
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
+    
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -329,9 +352,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
@@ -474,29 +497,6 @@
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
     <category term="Homebrew" scheme="https://fattymonkey.com/tags/Homebrew/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>苹果芯片的macOS安装Git</title>
-    <link href="https://fattymonkey.com/post/10007.html"/>
-    <id>https://fattymonkey.com/post/10007.html</id>
-    <published>2023-09-06T23:13:14.000Z</published>
-    <updated>2023-09-07T14:10:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="第一节：写在前面"><a href="#第一节：写在前面" class="headerlink" title="第一节：写在前面"></a>第一节：写在前面</h1><p>对于开发人员而言，肯定都使用过 Git，而且基本上每天都在使用，但是在 Windows 和 macOS 上安装 Git 是不同的：</p><ul><li><p>在 Windows 平台上安装很简单，只需要下载下来安装程序，进行傻瓜式安装就可以了。需要主要的是：因为 Git 的官网是国外的网站，直接从官网上下载的话，经常会因为网络问题而失败，常用的解决方式就是借助淘宝的 NPM 镜像站来下载。</p><p>友情提示：从 2022 年 05 月 31 日开始，淘宝 npm 镜像源的域名更改为：<a href="https://registry.npmmirror.com/">https://registry.npmmirror.com</a></p></li><li><p>在 macOS 平台上，安装 Git 有很多种方式，比如使用 Command Line Tools 或 Homebrew，虽然安装的方式有很多种，但是相对而言较简单。</p></li></ul><p>这篇博文的主要内容就是介绍如何在 macOS 平台上安装配置 Git，并且解释一些 Git 的配置原理！</p><h1 id="第二节：安装-Git"><a href="#第二节：安装-Git" class="headerlink" title="第二节：安装 Git"></a>第二节：安装 Git</h1><p>在 macOS 上安装 Git，不管是 Intel 芯片还是苹果芯片的电脑，最简单的方式就是通过安装命令行工具（Command Line Tools）！<font color='red'>实际上，命令行工具中内置 Git，根本不需要自己再去下载安装 Git，这也是我推荐的方式！</font></p><p>关于如何给 macOS 安装命令行工具，以及安装命令行工具后系统的变化，都不是这篇博文的重点，在这里就不赘述了！</p><p>在安装命令行工具之前，假如你还没安装 Git 的话，这个时候执行命令<code>git --version</code>，可见系统中找不到 Git：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020143147454.png"></p><p>刚安装完命令行工具后，再执行该命令后可见：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020143259395.png"></p><p>顺便提一句，在没安装命令行工具之前，系统的<code>/usr/bin/</code>目录下就已经有名为<code>git</code>的可执行文件：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020143308310.png"></p><p><font color='red'>安装完命令行工具后，这里的可执行文件就自动指向了其中安装的 Git</font>。跟 python3 一样，即使不安装命令行工具，该目录下也有这个命令，只是在安装完以后，<code>/usr/bin/python3</code>就会自动指向命令行工具中内置的 python 环境，并且从文件上来看并没有生成链接，这是 macOS 和 CLT 本身的处理，没必要关注！</p><h1 id="第三节：配置-Git"><a href="#第三节：配置-Git" class="headerlink" title="第三节：配置 Git"></a>第三节：配置 Git</h1><p><font color=red><strong>先验知识：Git 的所有配置是以文件的形式存储的！</strong></font></p><h2 id="3-1：Git的配置原理"><a href="#3-1：Git的配置原理" class="headerlink" title="3.1：Git的配置原理"></a>3.1：Git的配置原理</h2><p>Git 的配置分为系统级别、全局级别、项目级别这三个等级：</p><table><thead><tr><th align="center">权重</th><th align="center">中文名</th><th align="center">优先级</th><th align="center">配置文件</th></tr></thead><tbody><tr><td align="center">system</td><td align="center">系统级别</td><td align="center">低</td><td align="center"><code>etc/gitconfig</code></td></tr><tr><td align="center">global</td><td align="center">全局级别</td><td align="center">中</td><td align="center"><code>~/.gitconfig</code></td></tr><tr><td align="center">local</td><td align="center">仓库级别</td><td align="center">高</td><td align="center"><code>.git/config</code></td></tr></tbody></table><p>这三层配置具有不同的优先级，假如在这三个配置文件中定义的值有冲突的话，以优先级高的为准。比如在仓库级别和全局级别中都配置了用户名和邮箱，那么仓库级别的配置将发挥作用！</p><p><font color='red'><strong>Git 的配置文件</strong></font></p><ul><li>系统配置：配置文件一般是<code>/etc/gitcongif</code>，但假如使用的是CLT中内置的Git的话，配置文件是在CLT的安装目录中，具体位置是<code>/Library/Developer/CommandLineTools/usr/share/git-core/gitconfig</code>！</li><li>全局配置：配置文件是<code>~/.gitconfig</code>。默认该文件不存在，除非使用安装程序进行安装并在安装过程中进行全局配置时，才会生成这个文件；如果不是的话，这个文件只有在你第一次进行全局配置时才会自动生成！</li><li>项目配置：配置文件就是项目目录下的<code>.git/config</code>文件。这个文件不会发生变化，不管你是在什么平台上使用什么版本的 Git，项目级别的配置文件都不会发生变化！</li></ul><p><font color='red'><strong>查看 Git 的配置</strong></font></p><p>除了通过上面提到的三个配置文件来查看 Git 的配置以外，还可以使用<code>git config --list</code>来查看。比如我刚安装完命令行工具后、进行全局配置之前，查看 Git 的配置：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020143655398.png"></p><h2 id="3-2：配置环境变量"><a href="#3-2：配置环境变量" class="headerlink" title="3.2：配置环境变量"></a>3.2：配置环境变量</h2><p>终端中执<code>git --version</code>命令可以直接输出 Git 版本号，使用<code>which</code>命令可见 Git 的命令是在<code>/usr/bin</code>目录下的，而这个目录本来就在 macOS 的 PATH 环境变量中：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020143836079.png"></p><p>这两点都说明：<font color='red'><strong>使用命令行工具内置的 Git，我们不需要再单独配置环境变量</strong></font>！</p><h2 id="3-3：用户名和邮箱"><a href="#3-3：用户名和邮箱" class="headerlink" title="3.3：用户名和邮箱"></a>3.3：用户名和邮箱</h2><p>对于 Git 而言，用户名和邮箱地址这两条配置很重要，每次使用 Git 提交时都会引用这两条信息，用来说明是谁提交了内容更新，所以会随更新内容一起被永久纳入历史记录！而用户名和邮箱是用户可以任意自定义的，Git 在系统配置中不可能预先设置这两个配置，<font color='red'>所以在使用 Git 之前</font>，<font color='red'>配置用户名和邮箱就是必要的操作</font>！</p><p>Git 允许你设置一个全局的用户名和邮箱，同时也允许你为每个项目设置单独的用户名和邮箱。为了方便使用，我们一般会配置一个全局的，如果有需要的话，再在项目级别配置特殊的用户名和邮箱。</p><p>配置全局用户名和邮箱，使用下面的命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name 用户名</span><br><span class="line">git config --global user.email 邮箱地址</span><br></pre></td></tr></table></figure><p>比如我在配置用户名和邮箱时是这样的：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020144159787.png"></p><p>执行了全局配置以后，在用户目录下就会生成<code>.gitconfig</code>的配置文件，文件内容为：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020144359565.png"></p><p>此时再通过<code>git config --list</code>命令来查看 Git 的配置：</p><p><img src="https://www.czblogs.cn/posts/macos/07/image-20231020145010110.png"></p><p>假如要修改用户名和邮箱配置的话，只需要修改全局配置文件的内容即可，当然也可以通过<code>config</code>命令重新设置！</p>]]></content>
-    
-    
-    <summary type="html">不要再瞎折腾了！这才是macOS安装Git的正确方式！</summary>
-    
-    
-    
-    <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
-    
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
   </entry>
   
