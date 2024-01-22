@@ -3636,6 +3636,20 @@ h1.page-title + .tag-cloud-list {
   -webkit-transform: scale(1.4);
   -webkit-transform: all 0.5s ease 0s;
 }
+@media (max-width: 768px) {
+  #footer_social:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none; /* 取消放大效果 */
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none; /* 取消放大效果 */
+  }
+}
 #footer-menu {
   display: -webkit-box;
   display: -moz-box;
