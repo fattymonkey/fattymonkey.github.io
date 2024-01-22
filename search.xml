@@ -161,8 +161,6 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Hexo </tag>
             
             <tag> Butterfly </tag>
@@ -170,6 +168,8 @@
             <tag> Twikoo </tag>
             
             <tag> MongoDB </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -221,9 +221,9 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> GitHub </tag>
             
@@ -277,9 +277,9 @@
       
         <tags>
             
-            <tag> Github </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> Github </tag>
             
             <tag> Gitee </tag>
             
@@ -360,9 +360,9 @@
       
         <tags>
             
-            <tag> Github </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> Github </tag>
             
             <tag> ChatGPT </tag>
             
@@ -389,11 +389,11 @@
       
         <tags>
             
+            <tag> Vercel </tag>
+            
             <tag> Github </tag>
             
             <tag> CDN </tag>
-            
-            <tag> Vercel </tag>
             
         </tags>
       
@@ -696,28 +696,6 @@
     
     
     <entry>
-      <title>开发记录</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>这个页面用来记录主题的魔改记录以及一些灵感，选中的是已经完成的，未选中的是将来要做的</p></blockquote><h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任务列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input checked="" disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 添加一个个人简历页面，并设置访问密码</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> 文章页的目录遮蔽色修改，并适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="图片展"><a href="#图片展" class="headerlink" title="图片展"></a>图片展</h2><ul><li><input checked="" disabled="" type="checkbox"> 添加一个《壁纸收藏》的图集，并做四个子图集，最后在每个子页上上传几张喜欢的壁纸</li><li><input checked="" disabled="" type="checkbox"> 添加一个《生活记录》的图集，并上传几张生活照片</li><li><input disabled="" type="checkbox"> 添加一个《迫于生计》的图集，并上传一些工作照片</li><li><input disabled="" type="checkbox"> 添加一个《出差印度》的图集，并上传一些工作照片</li><li><input disabled="" type="checkbox"> 图集子页适用标签外挂gallery时，图片元素的大小存在细微的不断变化，看起来图片是一直抖动的，修复后更新博文</li></ul><h2 id="音乐汇（目前还没建设）"><a href="#音乐汇（目前还没建设）" class="headerlink" title="音乐汇（目前还没建设）"></a>音乐汇（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 做一个网页版的音乐播放器</li></ul><h2 id="电影院（目前还没建设）"><a href="#电影院（目前还没建设）" class="headerlink" title="电影院（目前还没建设）"></a>电影院（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 接入豆瓣的电影推荐之类的，需要从零规划</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li><li><input disabled="" type="checkbox"> 美化留言板对话框，看起来更和谐一些</li></ul><h2 id="关于我（目前还没建设）"><a href="#关于我（目前还没建设）" class="headerlink" title="关于我（目前还没建设）"></a>关于我（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 添加繁体猴这个名字的灵感由来</li><li><input disabled="" type="checkbox"> 添加个人简历的链接</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -740,11 +718,22 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发记录</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这个页面用来记录主题的魔改记录以及一些灵感，选中的是已经完成的，未选中的是将来要做的</p></blockquote><h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 所有的卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 添加赞助墙页面</li><li><input disabled="" type="checkbox"> 修改Markdown任务列表的渲染样式</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流</li><li><input checked="" disabled="" type="checkbox"> 导航栏的菜单水平居中</li><li><input checked="" disabled="" type="checkbox"> 社交图标的更换（引入阿里图标，并适配深浅模式）</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换</li><li><input disabled="" type="checkbox"> 引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 文章列表改成瀑布流</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口</li><li><input checked="" disabled="" type="checkbox"> 美化ChatGPT页面效果</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input checked="" disabled="" type="checkbox"> 需要给GPT的账号绑定虚拟信用卡，否则试用期过了以后就不能使用了</li><li><input disabled="" type="checkbox"> 添加一个个人简历页面，并设置访问密码</li><li><input disabled="" type="checkbox"> 增加一个博客统计的功能，并在页脚增加一个访问入口</li><li><input disabled="" type="checkbox"> 修复隐私协议、版权协议、Cookies这三个链接</li><li><input disabled="" type="checkbox"> 移动端的页脚社交链接存在Bug，点击会变大，之后就不再变小</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 选择框的颜色美化，设置适配深浅两种颜色</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 版权信息的颜色美化，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，添加圆角的边框</li><li><input disabled="" type="checkbox"> 文章页的目录遮蔽色修改，并适配深浅模式</li><li><input disabled="" type="checkbox"> 页脚的版权声明要适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块的样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="图片展"><a href="#图片展" class="headerlink" title="图片展"></a>图片展</h2><ul><li><input checked="" disabled="" type="checkbox"> 添加一个《壁纸收藏》的图集，并做四个子图集，最后在每个子页上上传几张喜欢的壁纸</li><li><input checked="" disabled="" type="checkbox"> 添加一个《生活记录》的图集，并上传几张生活照片</li><li><input disabled="" type="checkbox"> 添加一个《迫于生计》的图集，并上传一些工作照片</li><li><input disabled="" type="checkbox"> 添加一个《出差印度》的图集，并上传一些工作照片</li><li><input disabled="" type="checkbox"> 图集子页适用标签外挂gallery时，图片元素的大小存在细微的不断变化，看起来图片是一直抖动的，修复后更新博文</li></ul><h2 id="音乐汇（目前还没建设）"><a href="#音乐汇（目前还没建设）" class="headerlink" title="音乐汇（目前还没建设）"></a>音乐汇（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 做一个网页版的音乐播放器</li></ul><h2 id="电影院（目前还没建设）"><a href="#电影院（目前还没建设）" class="headerlink" title="电影院（目前还没建设）"></a>电影院（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 接入豆瓣的电影推荐之类的，需要从零规划</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当内容，不然看起来非常突兀</li><li><input disabled="" type="checkbox"> 美化留言板对话框，看起来更和谐一些</li></ul><h2 id="关于我（目前还没建设）"><a href="#关于我（目前还没建设）" class="headerlink" title="关于我（目前还没建设）"></a>关于我（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 添加繁体猴这个名字的灵感由来</li><li><input disabled="" type="checkbox"> 添加个人简历的链接</li></ul>]]></content>
       
     </entry>
     
@@ -762,22 +751,22 @@
     
     
     <entry>
-      <title>人生中的最后一段青春</title>
-      <link href="/album/indian/index.html"/>
-      <url>/album/indian/index.html</url>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>相册是我快乐过的证据</title>
-      <link href="/album/life/index.html"/>
-      <url>/album/life/index.html</url>
+      <title>人生中的最后一段青春</title>
+      <link href="/album/indian/index.html"/>
+      <url>/album/indian/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/life/开锅.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/第一桶金.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/啤酒.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/鸽子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/原浆.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/户外烧烤.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/篮球.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/螃蟹.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/软件园打球.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/骑行.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/球队.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/台式1.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/游玩.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/台式2.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/自拍.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
       
     </entry>
     
@@ -800,6 +789,17 @@
       <url>/album/work/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>相册是我快乐过的证据</title>
+      <link href="/album/life/index.html"/>
+      <url>/album/life/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/life/开锅.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/第一桶金.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/啤酒.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/鸽子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/原浆.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/户外烧烤.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/篮球.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/螃蟹.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/软件园打球.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/骑行.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/球队.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/台式1.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/游玩.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/台式2.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/life/自拍.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
@@ -843,7 +843,7 @@
       <link href="/album/wallpaper/1920/index.html"/>
       <url>/album/wallpaper/1920/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1920/天气之子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/焰灵姬01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/樱木花道.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鲸鱼01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/宅男01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/卡沙.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/科比.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/欧文.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/神泣.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1920/天气之子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/焰灵姬01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/樱木花道.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鲸鱼01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/宅男01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/卡沙.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/科比.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/欧文.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/神泣.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
