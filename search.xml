@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> WebStorm </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> WebStorm </tag>
             
         </tags>
       
@@ -47,15 +47,15 @@
       
         <tags>
             
-            <tag> IntelliJ Idea </tag>
-            
             <tag> macOS </tag>
             
             <tag> Java </tag>
             
+            <tag> Maven </tag>
+            
             <tag> JDK </tag>
             
-            <tag> Maven </tag>
+            <tag> IntelliJ Idea </tag>
             
         </tags>
       
@@ -221,9 +221,9 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> 域名解析 </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> Hexo </tag>
             
@@ -279,9 +279,9 @@
             
             <tag> Github </tag>
             
-            <tag> Vercel </tag>
-            
             <tag> Gitee </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -331,9 +331,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> IntelliJ Idea </tag>
+            
+            <tag> Git </tag>
             
             <tag> Windows </tag>
             
@@ -391,9 +391,9 @@
             
             <tag> Github </tag>
             
-            <tag> CDN </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> CDN </tag>
             
         </tags>
       
@@ -584,9 +584,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -663,17 +663,6 @@
     
     
     <entry>
-      <title>图片展</title>
-      <link href="/album/index.html"/>
-      <url>/album/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">壁紙收藏</div>  <p>收藏的一些壁纸，侵删</p>  <a href='/album/wallpaper'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/life.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">生活记录</div>  <p>相册是我快乐过的证据</p>  <a href='/album/life'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/work.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">迫于生计</div>  <p>谁又不是在努力地活着</p>  <a href='/album/work'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/indian.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">出差印度</div>  <p>人生中的最后一段青春</p>  <a href='/album/indian'></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -696,11 +685,11 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>图片展</title>
+      <link href="/album/index.html"/>
+      <url>/album/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">壁紙收藏</div>  <p>收藏的一些壁纸，侵删</p>  <a href='/album/wallpaper'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/life.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">生活记录</div>  <p>相册是我快乐过的证据</p>  <a href='/album/life'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/work.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">迫于生计</div>  <p>谁又不是在努力地活着</p>  <a href='/album/work'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/indian.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">出差印度</div>  <p>人生中的最后一段青春</p>  <a href='/album/indian'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -710,6 +699,17 @@
       <title>音乐汇</title>
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
       
@@ -740,17 +740,6 @@
     
     
     <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>开发记录</title>
       <link href="/devrecord/index.html"/>
       <url>/devrecord/index.html</url>
@@ -762,11 +751,11 @@
     
     
     <entry>
-      <title>收藏的一些壁纸，侵删</title>
-      <link href="/album/wallpaper/index.html"/>
-      <url>/album/wallpaper/index.html</url>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1280.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1280*720</div>  <p>较小尺寸，适合用作软件的背景图</p>  <a href='/album/wallpaper/1280'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1680.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1680*1050</div>  <p>适用小屏幕，比如常见的13寸屏幕</p>  <a href='/album/wallpaper/1680'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1920.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1080</div>  <p>适用中等屏幕，最常见的1K壁纸</p>  <a href='/album/wallpaper/1920'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2560.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2560*1440</div>  <p>适用大屏幕，最常见的2K壁纸</p>  <a href='/album/wallpaper/2560'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/3840.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">3840*2160</div>  <p>适用带鱼屏，我用过的4K壁纸</p>  <a href='/album/wallpaper/3840'></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -778,6 +767,17 @@
       <url>/album/indian/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>收藏的一些壁纸，侵删</title>
+      <link href="/album/wallpaper/index.html"/>
+      <url>/album/wallpaper/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1280.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1280*720</div>  <p>较小尺寸，适合用作软件的背景图</p>  <a href='/album/wallpaper/1280'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1680.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1680*1050</div>  <p>适用小屏幕，比如常见的13寸屏幕</p>  <a href='/album/wallpaper/1680'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1920.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1080</div>  <p>适用中等屏幕，最常见的1K壁纸</p>  <a href='/album/wallpaper/1920'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2560.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2560*1440</div>  <p>适用大屏幕，最常见的2K壁纸</p>  <a href='/album/wallpaper/2560'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2880.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2880*1800</div>  <p>适用大屏幕，联想小新Pro14</p>  <a href='/album/wallpaper/2880'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/3840.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">3840*2160</div>  <p>适用带鱼屏，我用过的4K壁纸</p>  <a href='/album/wallpaper/3840'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -806,11 +806,11 @@
     
     
     <entry>
-      <title>1680*1050，适用小屏幕，比如常见的13寸屏幕</title>
-      <link href="/album/wallpaper/1680/index.html"/>
-      <url>/album/wallpaper/1680/index.html</url>
+      <title>1280*720，较小尺寸，适合用作软件的背景图</title>
+      <link href="/album/wallpaper/1280/index.html"/>
+      <url>/album/wallpaper/1280/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1680/神泣02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/极光01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/非主流01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/神泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景07.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1280/00.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/08.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/09.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/10.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/11.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/12.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/13.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/14.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/15.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/16.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
@@ -828,6 +828,17 @@
     
     
     <entry>
+      <title>2880*1800，适用大屏幕，联想小新Pro14</title>
+      <link href="/album/wallpaper/2880/index.html"/>
+      <url>/album/wallpaper/2880/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/3840/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/08.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>3840*2160，适用带鱼屏，我用过的4K壁纸</title>
       <link href="/album/wallpaper/3840/index.html"/>
       <url>/album/wallpaper/3840/index.html</url>
@@ -839,22 +850,22 @@
     
     
     <entry>
-      <title>2560*1440，适用大屏幕，最常见的2K壁纸</title>
-      <link href="/album/wallpaper/2560/index.html"/>
-      <url>/album/wallpaper/2560/index.html</url>
+      <title>1680*1050，适用小屏幕，比如常见的13寸屏幕</title>
+      <link href="/album/wallpaper/1680/index.html"/>
+      <url>/album/wallpaper/1680/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/宇宙01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/科比01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/风景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/纯色01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1680/神泣02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/极光01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/非主流01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/神泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1680/风景07.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>1280*720，较小尺寸，适合用作软件的背景图</title>
-      <link href="/album/wallpaper/1280/index.html"/>
-      <url>/album/wallpaper/1280/index.html</url>
+      <title>2560*1440，适用大屏幕，最常见的2K壁纸</title>
+      <link href="/album/wallpaper/2560/index.html"/>
+      <url>/album/wallpaper/2560/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1280/00.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/08.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/09.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/10.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/11.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/12.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/13.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/14.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/15.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/16.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/宇宙01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/科比01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/风景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/纯色01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
