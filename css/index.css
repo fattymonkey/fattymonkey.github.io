@@ -3496,10 +3496,10 @@ h1.page-title + .tag-cloud-list {
 }
 #footer-wrap {
   position: relative;
-  padding: 40px 20px;
+  padding: 2rem 1rem;
   color: var(--light-grey);
   text-align: center;
-  -webkit-box-flex: 1;
+  -webkit-box-flex: 1 /* 新增样式 */;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -o-box-flex: 1;
@@ -3508,7 +3508,6 @@ h1.page-title + .tag-cloud-list {
   -ms-flex: 1 auto;
   flex: 1 auto;
   margin: 0 auto;
-  padding: 2rem 1rem;
   max-width: 1200px;
 }
 #footer-wrap a {
@@ -3565,6 +3564,8 @@ h1.page-title + .tag-cloud-list {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 1rem 0;
+/* 1.八个社交链接 */
+/* 2.中间返回顶部的头像 */
 }
 #footer_social a.social_link {
   display: -webkit-box;
@@ -3591,11 +3592,13 @@ h1.page-title + .tag-cloud-list {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+/* 在大屏幕上使用放大和过渡效果 */
+/* 在小屏幕上取消放大和过渡效果 */
 }
 #footer_social a.social_link:hover {
   -webkit-transform: scale(1.4);
@@ -3609,7 +3612,22 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   -webkit-transform: scale(1.4);
-  -webkit-transform: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+}
+@media (max-width: 1024px) {
+  #footer_social a.social_link:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+    -webkit-transform: none; /* 针对WebKit浏览器的取消放大效果 */
+  }
 }
 #footer_social img.footer_mini_logo {
   width: 4rem;
@@ -3621,6 +3639,8 @@ h1.page-title + .tag-cloud-list {
   -o-transition: cubic-bezier(0, 0, 0, 1.29) 0.5s;
   -ms-transition: cubic-bezier(0, 0, 0, 1.29) 0.5s;
   transition: cubic-bezier(0, 0, 0, 1.29) 0.5s;
+/* 在大屏幕上使用放大和过渡效果 */
+/* 在小屏幕上取消放大和过渡效果 */
 }
 #footer_social img.footer_mini_logo:hover {
   -webkit-transform: scale(1.4);
@@ -3634,20 +3654,21 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   -webkit-transform: scale(1.4);
-  -webkit-transform: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
 }
-@media (max-width: 768px) {
-  #footer_social:hover {
+@media (max-width: 1024px) {
+  #footer_social img.footer_mini_logo:hover {
     -webkit-transform: none;
     -moz-transform: none;
     -o-transform: none;
     -ms-transform: none;
-    transform: none; /* 取消放大效果 */
+    transform: none;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     -ms-transition: none;
-    transition: none; /* 取消放大效果 */
+    transition: none;
+    -webkit-transform: none; /* 针对WebKit浏览器的取消放大效果 */
   }
 }
 #footer-menu {
@@ -3712,7 +3733,7 @@ h1.page-title + .tag-cloud-list {
     padding: 1rem 5%;
   }
   #footer-banner {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 425px) {
@@ -3723,7 +3744,7 @@ h1.page-title + .tag-cloud-list {
     padding: 1rem 5%;
   }
   #footer-banner {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -3734,7 +3755,7 @@ h1.page-title + .tag-cloud-list {
     padding: 1rem 10%;
   }
   #footer-banner {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -3745,7 +3766,7 @@ h1.page-title + .tag-cloud-list {
     padding: 1rem 15%;
   }
   #footer-banner {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -3756,7 +3777,7 @@ h1.page-title + .tag-cloud-list {
     padding: 1rem 15%;
   }
   #footer-banner {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -3767,7 +3788,7 @@ h1.page-title + .tag-cloud-list {
     padding: 1rem 20%;
   }
   #footer-banner {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 }
 #page-header {
