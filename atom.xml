@@ -60,11 +60,11 @@
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
+    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
     <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
-    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
     
   </entry>
   
@@ -208,11 +208,11 @@
     
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
-    
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -300,9 +300,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
-    
     <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
+    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
     
     <category term="Windows" scheme="https://fattymonkey.com/tags/Windows/"/>
     
