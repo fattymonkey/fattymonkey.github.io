@@ -3626,7 +3626,7 @@ h1.page-title + .tag-cloud-list {
     -o-transition: none;
     -ms-transition: none;
     transition: none;
-    -webkit-transform: none; /* 针对WebKit浏览器的取消放大效果 */
+    -webkit-transform: none /* 针对WebKit浏览器的取消放大效果 */;
   }
 }
 #footer_social img.footer_mini_logo {
@@ -3668,7 +3668,7 @@ h1.page-title + .tag-cloud-list {
     -o-transition: none;
     -ms-transition: none;
     transition: none;
-    -webkit-transform: none; /* 针对WebKit浏览器的取消放大效果 */
+    -webkit-transform: none /* 针对WebKit浏览器的取消放大效果 */;
   }
 }
 #footer-menu {
