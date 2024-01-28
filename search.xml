@@ -31,6 +31,35 @@
     
     
     <entry>
+      <title>JRebel的安装激活和使用</title>
+      <link href="/post/10102.html"/>
+      <url>/post/10102.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一节：何为-JRebel"><a href="#第一节：何为-JRebel" class="headerlink" title="第一节：何为 JRebel"></a>第一节：何为 JRebel</h1><p>JRebel 是一套 JavaEE 开发工具。JRebel 允许开发团队在有限的时间内完成更多的任务修正更多的问题，发布更高质量的软件产品。</p><p>JRebel 可快速实现<a href="https://baike.baidu.com/item/%E7%83%AD%E9%83%A8%E7%BD%B2">热部署</a>，节省了大量重启时间，提高了个人开发效率。</p><p>JRebel 是一款 JAVA <a href="https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a>插件，它使得 Java 程序员能在不进行重部署的情况下，即时看到代码的改变对应用程序带来的影响。JRebel 使你能即时分别看到代码、类和资源的变化，你可以一个个地上传而不是一次性全部部署。当程序员在开发环境中对任何一个类或者资源作出修改的时候，这个变化会直接反应在部署好的应用程序上，从而跳过了构建和部署的过程，每年可以省去部署用的时间花费高达 5.25 个星期。</p><p>以上摘自百度百科，简单来说，用了 Jreble，你启动一次应用程序，就能一直搞，不管你怎么改代码，它都能立马部署进去，这就是<font color="DC143c">热部署</font>。</p><h1 id="第二节：下载-JRebel"><a href="#第二节：下载-JRebel" class="headerlink" title="第二节：下载 JRebel"></a>第二节：下载 JRebel</h1><p>下载安装 JRebel 有两种方式，分别是本地安装和在 IntelliJ Idea 的插件市场中直接安装，我更喜欢使用前者，因为在 Idea 中直接安装经常会遇到网络问题，所以我这里直接演示如何先下载再安装（而且直接在插件市场安装的话，还不能选择插件的下载位置，只能使用默认的）！</p><p>到 Idea 官方的插件库（<a href="https://plugins.jetbrains.com/idea">https://plugins.jetbrains.com/idea</a>）中进行搜索下载</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124131002940.png"></p><p>点进去可以选择最新版本，然后点击【Download】，下载下来的是一个<code>.zip</code>格式的压缩包：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124131341518.png"></p><p>注意：不要点击右上角的“Install to IntelliJ IDEA…”，这样会打开你的 Idea 然后在【设置】里面下载安装，同样很有可能会遇到网络问题！</p><h1 id="第三节：安装-JRebel"><a href="#第三节：安装-JRebel" class="headerlink" title="第三节：安装 JRebel"></a>第三节：安装 JRebel</h1><p>第一步：解压</p><p>将下载下来的压缩包解压出来，可以解压出一个名为<code>jr-ide-idea</code>的文件夹，将其放到本地的某个目录中，比如我将其放到了我本地的<code>E:\IdeaData\Plugins\JRebel</code>目录下。</p><p>第二步：安装</p><p>打开 Idea 并打开设置中的【Plugins】，点击右边【Installed】右边的小齿轮，点击“Install Plugin from Disk…”：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124132922648.png"></p><p>然后在弹出的选择框中选择下载下来的压缩包（注意是整个压缩包）：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124134505934.png"></p><p>最后点击【OK】自动安装，再点击【Apply】后，可见已经安装好的 JRebel：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124134722777.png"></p><h1 id="第四节：激活-JRebel"><a href="#第四节：激活-JRebel" class="headerlink" title="第四节：激活 JRebel"></a>第四节：激活 JRebel</h1><blockquote><p>这里我介绍三种激活方式，推荐第三种</p></blockquote><p>安装好以后，打开 Idea，会在右侧自动打开 JRebel 的设置指导，若该页面关闭了，也可以点击如下按钮来打开：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124171749916.png"></p><h2 id="4-1：官方激活"><a href="#4-1：官方激活" class="headerlink" title="4.1：官方激活"></a>4.1：官方激活</h2><p>正常的激活方式就是通过官网激活，这张方式可以忽略，因为我知道你肯定是想白嫖的~~</p><h2 id="4-2：本地激活"><a href="#4-2：本地激活" class="headerlink" title="4.2：本地激活"></a>4.2：本地激活</h2><p>第二种方式是使用反向代理，伪造官方的服务器地址，相当于本地激活。</p><p>首先需要下载一个工具，下载地址如下：<a href="https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4">https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4</a>。因为我使用的是 Windows 系统，所以下载如下的版本：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124135457205.png"></p><p>下载下来的是一个<code>.exe</code>的应用程序，直接双击运行，运行后的效果（没运行效果，就这一个黑窗口，不要关闭）：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124135722321.png"></p><p>然后打开 Idea，点击右侧绿色的 JRebel 按钮，进行如下操作：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124140427585.png"></p><p>如果使用上面的激活地址出现 “Incorrect license server group URL.Contact license severadministrator.”错误，是由于授权地址增加了GUID检测造成的，将 2 处的 URL 更换为下面这些地址中的某一个即可</p><ul><li><p><a href="http://127.0.0.1:8888/88414687-3b91-4286-89ba-2dc813b107ce">http://127.0.0.1:8888/88414687-3b91-4286-89ba-2dc813b107ce</a></p></li><li><p><a href="http://127.0.0.1:8888/ff47a3ac-c11e-4cb2-836b-9b2b26101696">http://127.0.0.1:8888/ff47a3ac-c11e-4cb2-836b-9b2b26101696</a></p></li><li><p><a href="http://127.0.0.1:8888/11d221d1-5cf0-4557-b023-4b4adfeeb36a">http://127.0.0.1:8888/11d221d1-5cf0-4557-b023-4b4adfeeb36a</a></p></li></ul><p>再点击<code>Activate JRebel</code>，显示已激活：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124140756140.png"></p><h2 id="4-3：在线激活"><a href="#4-3：在线激活" class="headerlink" title="4.3：在线激活"></a>4.3：在线激活</h2><p>第三种方式就是通过别人分享的激活地址和邮箱来激活，我猜测这种方式跟方式二是一样的，只不过我们不是通过本地服务来验证了，而是将验证这个环节放到了提供激活地址的人那里！</p><p>我在网页<a href="https://jpy.wang/page/jrebel.html">https://jpy.wang/page/jrebel.html</a>上找到了大神分享的激活网址，使用这个激活网址（邮箱可以随便填），也可以成功激活！</p><h2 id="4-4：离线工作"><a href="#4-4：离线工作" class="headerlink" title="4.4：离线工作"></a>4.4：离线工作</h2><p>不管是本地激活还是在线激活，在重启 Idea 或使用 JRebel 部署应用时，都会访问激活用的服务器校验证书，假如公网网络不能访问，或者许可证服务器没启动，都会导致 JRebel 不可用！</p><p>所以推荐采用离线模式来使用 JRebel，离线模式可以在激活后的 180 天内不用再激活，到期后只需要把许可证服务器启动一下，重新激活即可继续离线工作！</p><p>激活后，打开 Idea 设置，在【JRebel &amp; XRebel】菜单下点击按钮【Work Offline】：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124175657576.png"></p><p>点击后如下：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124175854098.png"></p><p>可见，此时显示 JRebel 将会离线工作到约 180 天以后！如此一来，无论我怎么重启 Idea，它也不会让我重新激活了！</p><h1 id="第五节：配置-JRebel"><a href="#第五节：配置-JRebel" class="headerlink" title="第五节：配置 JRebel"></a>第五节：配置 JRebel</h1><p>在使用 JRebel 之前，还需要在 Idea 中对它进行一些必要的设置，方便我们的使用！</p><h2 id="5-1：自动编译"><a href="#5-1：自动编译" class="headerlink" title="5.1：自动编译"></a>5.1：自动编译</h2><p>设置了自动编译，修改代码后 Idea 就会自动编译代码：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124180607657.png"></p><h2 id="5-2：运行时编译"><a href="#5-2：运行时编译" class="headerlink" title="5.2：运行时编译"></a>5.2：运行时编译</h2><p>自动编译只在当前程序不在运行时有效，当程序正在运行时，修改代码后，Idea 并不会自动编译修改的代码，那么与之对应的资源文件就不会更新，导致 JRebel 不能识别资源变化，就无法实现自动热部署！所以还需要设置运行时编译：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124192742243.png"></p><h2 id="5-3：响应时间"><a href="#5-3：响应时间" class="headerlink" title="5.3：响应时间"></a>5.3：响应时间</h2><p>JRebel 最核心的作用是可以实现热部署，单纯热部署的时间默认是 2 min 26 秒：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124193247754.png"></p><p>通过拖动上图中的游标来修改，我将其修改为 5 秒（也有人修改为 1 秒，据说越短越好，没试过，暂时设置为 5 秒吧）：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124193424510.png"></p><h2 id="5-4：设置路径"><a href="#5-4：设置路径" class="headerlink" title="5.4：设置路径"></a>5.4：设置路径</h2><p>假如你的计算机名称是中文的，那么你后续使用 JRebel 一定会遇到累死这种报错“JRebel-JVMTI [FATAL] Couldn‘t write to C:\Users\”！解决办法很简单，参考<a href="https://blog.csdn.net/chirp_CQ/article/details/124041059">这里</a>！</p><h1 id="第六节：使用-JRebel"><a href="#第六节：使用-JRebel" class="headerlink" title="第六节：使用 JRebel"></a>第六节：使用 JRebel</h1><h2 id="6-1：Project-configuration"><a href="#6-1：Project-configuration" class="headerlink" title="6.1：Project configuration"></a>6.1：Project configuration</h2><p>首先，需要配置项目，也就是先要选择 JRebel 管理哪些代码。点击 Idea 左侧边绿色的 JRebel 按钮：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124185749183.png"></p><p>然后代码目录会以 JRebel 的形式打开：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124185903478.png"></p><p>对于那些需要被 JRebel 管理的模块，勾选上即可，比如我这里（最顶部的选择框可以全选所有代码模块）：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124190132919.png"></p><p>注意：执行这个配置以后，在代码很多地方都会生成名为<code>rebel.xml</code>的文件，这些文件很重要，好在 Idea 会自动帮我们生成，所以不用自己配置！</p><h2 id="6-2：Startup-configuration"><a href="#6-2：Startup-configuration" class="headerlink" title="6.2：Startup configuration"></a>6.2：Startup configuration</h2><p>此时，可以通过点击右上角的这两个按钮来启动你的项目（在次之前要配置好自己的启动类）：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124190810460.png"></p><p>左边的按钮是 Run with JRebel，右边的按钮是 Debug with JRebel，根据自己的需要来选择！启动开始以后：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124191232536.png"></p><h2 id="6-3：Automatic-compilation"><a href="#6-3：Automatic-compilation" class="headerlink" title="6.3：Automatic compilation"></a>6.3：Automatic compilation</h2><p>启动成功以后，你可以任意修改自己的代码，修改后的代码自动编译，并被 JRebel 热部署到自己的项目上！比如我修改某个类的代码后点击保存，然后在 JRebel 的控制台会展示如下信息：</p><p><img src="https://www.czblogs.cn/posts/java/10102/image-20240124194556907.png"></p><p>当修改代码并手动保存修改，IDEA 会自动编译代码（因为设置了运行时编译和自动编译），编译完成以后，JRebel 就会识别对应的资源文件发生了变化，随之重新加载（Reloading）编译后的资源文件（比如这里的<code>.class</code>文件），最后把重新加载的资源文件热部署到项目中！</p><p><font color="DC143c">友情提示：</font>IDEA 本身是默认自动保存修改的文件的，因为我取消了 IDEA 自动保存的功能，所以在修改完代码后才需要手动保存修改！假如你没有关闭 IDEA 的自动保存功能，就不需要手动保存修改，IDEA 自动保存后，也能触发 JRebel “自动热部署”的功能！<font color="DC143c">总之，不管是自动保存还是手动保存，都需要保存才能实现“热部署”！</font></p><p>～～</p><p>～～</p><p>～～</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> IntelliJ Idea </tag>
+            
+            <tag> JRebel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在macOS上搭建Maven环境</title>
       <link href="/post/10101.html"/>
       <url>/post/10101.html</url>
@@ -223,11 +252,11 @@
             
             <tag> Vercel </tag>
             
-            <tag> 域名解析 </tag>
-            
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
+            
+            <tag> 域名解析 </tag>
             
         </tags>
       
@@ -319,7 +348,7 @@
       <link href="/post/10025.html"/>
       <url>/post/10025.html</url>
       
-        <content type="html"><![CDATA[<h1 id="场景描述"><a href="#场景描述" class="headerlink" title="场景描述"></a>场景描述</h1><p>在实际的开发工作中，尤其是在使用 Idea 的过程中，会产生很多新的文件，当然指那么不能或者没必要纳入版本库的文件（比如<code>.iml</code>和<code>.idea</code>文件等），但是每次查看文件状态时都会提示这些文件不在版本库中，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116142731666.png"></p><p>正常修改代码后，使用 Idea 提交代码时，修改的文件不会跟这些未纳入版本库的文件在同一个目录：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116143237645.png"></p><p>如果我们仅仅是修改代码（不新增文件），那么在提交代码的时候还是比较明确的，只需要关注修改的文件即可！</p><p>但是假如你新增了一个文件的话，比如我新增了一个名为<code>test.java</code>的文件，那么在提交代码时：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116145138773.png"></p><p>有人肯定会说：为什么不在<code>.gitignore</code>文件中将那些不需要纳入版本控制的文件忽略掉呢？？？第一：我们的项目代码中没有<code>.gitignore</code>文件，至于为什么没有我不清楚，反正我也不想自己去添加一个<code>.gitignore</code>文件；第二：实际上仅仅添加一个或几个文件的话，其实可以用终端执行命令<code>git add &lt;文件名&gt;</code>来实现，但是我认为既然都用图形界面了，没必要再混用命令了吧！</p><p>那么，怎么才能在不给项目添加<code>.gitignore</code>文件的同时，实现文件的忽略呢？</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="方式一：项目级别忽略"><a href="#方式一：项目级别忽略" class="headerlink" title="方式一：项目级别忽略"></a>方式一：项目级别忽略</h2><p>我们知道，项目级别的忽略是需要在项目中添加<code>.gitignore</code>文件来实现的，但是 Git 也提供了另外一种解决方案，让用户在不使用<code>.gitignore</code>文件的同时，同样实现项目级别的文件忽略，这就是<code>exclude</code>！</p><p>不同的是：<code>.gitignore</code>这个文件本身会被提交到项目版本库中去，用来保存的是公共的需要排除的文件，也就是每个项目参与者都要排除的文件；而<code>.git/info/exclude</code>这里设置的则是你自己本地需要排除的文件，不会影响到其他人，也不会提交到版本库中去！</p><p>比如我想要忽略项目中所有的<code>.iml</code>文件，就需要在项目根目录下的<code>.git/info/exclude</code>中添加如下内容：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116163102974.png"></p><p>这样就可以直接忽略掉项目中的这些文件了！</p><h2 id="方式二：全局级别忽略"><a href="#方式二：全局级别忽略" class="headerlink" title="方式二：全局级别忽略"></a>方式二：全局级别忽略</h2><p>Git 还提供了另外一个在不添加<code>.gitignore</code>文件的前提下进行全局忽略的解决方案（这个忽略对本机所有的版本库都有效）：在用户目录下创建一个文件，在文件中编辑忽略规则！具体的操作步骤如下（以 Windows 系统为例）。</p><p><font color="DC143c">**第一步：在用户目录下创建<code>.gitignore_global</code>**文件</font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116151614795.png"></p><p><font color="DC143c"><strong>第二步：按照正常<code>.gitignore</code>文件的写法，编辑需要全局忽略的文件</strong></font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155210741.png"></p><p>这里的设置，就是忽略所有名为<code>rebel.xml</code>的文件！</p><p><font color="DC143c"><strong>第三步：打开Dos并执行如下命令</strong></font>（没报错就表示执行成功了）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.excludesfile .gitignore_global</span><br></pre></td></tr></table></figure><p><font color="DC143c"><strong>第四步：验证，接着在Dos中执行如下命令</strong></font></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure><p>当发现输出结果中多出了一条如下配置，说明配置成功：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155624282.png"></p><p>这样一来，Git 就会全局忽略掉名为<code>rebel.xml</code>的文件了！</p><h1 id="总结归纳"><a href="#总结归纳" class="headerlink" title="总结归纳"></a>总结归纳</h1><p>以上两种不添加<code>.gitignore</code>文件的同时实现文件忽略的方式，我更推荐第一种<code>exclude</code>方式，这种方式不仅影响范围小（只对具体的版本库有效），而且操作简单（不用新增文件和执行命令）！</p><p>～～</p><p>～～</p><p>～～</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="场景描述"><a href="#场景描述" class="headerlink" title="场景描述"></a>场景描述</h1><p>在实际的开发工作中，尤其是在使用 Idea 的过程中，会产生很多新的文件，当然指那么不能或者没必要纳入版本库的文件（比如<code>.iml</code>和<code>.idea</code>文件等），但是每次查看文件状态时都会提示这些文件不在版本库中，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116142731666.png"></p><p>正常修改代码后，使用 Idea 提交代码时，修改的文件不会跟这些未纳入版本库的文件在同一个目录：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116143237645.png"></p><p>如果我们仅仅是修改代码（不新增文件），那么在提交代码的时候还是比较明确的，只需要关注修改的文件即可！</p><p>但是假如你新增了一个文件的话，比如我新增了一个名为<code>test.java</code>的文件，那么在提交代码时：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116145138773.png"></p><p>有人肯定会说：为什么不在<code>.gitignore</code>文件中将那些不需要纳入版本控制的文件忽略掉呢？？？第一：我们的项目代码中没有<code>.gitignore</code>文件，至于为什么没有我不清楚，反正我也不想自己去添加一个<code>.gitignore</code>文件；第二：实际上仅仅添加一个或几个文件的话，其实可以用终端执行命令<code>git add &lt;文件名&gt;</code>来实现，但是我认为既然都用图形界面了，没必要再混用命令了吧！</p><p>那么，怎么才能在不给项目添加<code>.gitignore</code>文件的同时，实现文件的忽略呢？</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="方式一：项目级别忽略"><a href="#方式一：项目级别忽略" class="headerlink" title="方式一：项目级别忽略"></a>方式一：项目级别忽略</h2><p>我们知道，项目级别的忽略是需要在项目中添加<code>.gitignore</code>文件来实现的，但是 Git 也提供了另外一种解决方案，让用户在不使用<code>.gitignore</code>文件的同时，同样实现项目级别的文件忽略，这就是<code>exclude</code>！</p><p>不同的是：<code>.gitignore</code>这个文件本身会被提交到项目版本库中去，用来保存的是公共的需要排除的文件，也就是每个项目参与者都要排除的文件；而<code>.git/info/exclude</code>这里设置的则是你自己本地需要排除的文件，不会影响到其他人，也不会提交到版本库中去！</p><p>如想要忽略项目中所有的<code>.iml</code>文件以及<code>.log</code>文件等，需要在项目根目录下的<code>.git/info/exclude</code>中添加如下内容：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116163102974.png"></p><p>这样就可以直接忽略掉项目中的这些文件了！</p><h2 id="方式二：全局级别忽略"><a href="#方式二：全局级别忽略" class="headerlink" title="方式二：全局级别忽略"></a>方式二：全局级别忽略</h2><p>Git 还提供了另外一个在不添加<code>.gitignore</code>文件的前提下进行全局忽略的解决方案（这个忽略对本机所有的版本库都有效）：在用户目录下创建一个文件，在文件中编辑忽略规则！具体的操作步骤如下（以 Windows 系统为例）。</p><p><font color="DC143c">**第一步：在用户目录下创建<code>.gitignore_global</code>**文件</font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116151614795.png"></p><p><font color="DC143c"><strong>第二步：按照正常<code>.gitignore</code>文件的写法，编辑需要全局忽略的文件</strong></font></p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155210741.png"></p><p>这里的设置，就是忽略所有名为<code>rebel.xml</code>的文件！</p><p><font color="DC143c"><strong>第三步：打开Dos并执行如下命令</strong></font>（没报错就表示执行成功了）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.excludesfile .gitignore_global</span><br></pre></td></tr></table></figure><p><font color="DC143c"><strong>第四步：验证，接着在Dos中执行如下命令</strong></font></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure><p>当发现输出结果中多出了一条如下配置，说明配置成功：</p><p><img src="https://www.czblogs.cn/posts/tools/05/image-20240116155624282.png"></p><p>这样一来，Git 就会全局忽略掉名为<code>rebel.xml</code>的文件了！</p><h1 id="总结归纳"><a href="#总结归纳" class="headerlink" title="总结归纳"></a>总结归纳</h1><p>以上两种不添加<code>.gitignore</code>文件的同时实现文件忽略的方式，我更推荐第一种<code>exclude</code>方式，这种方式不仅影响范围小（只对具体的版本库有效），而且操作简单（不用新增文件和执行命令）！</p><p>～～</p><p>～～</p><p>～～</p>]]></content>
       
       
       <categories>
@@ -685,11 +714,11 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
       
     </entry>
     
@@ -707,11 +736,11 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
+      <title>本站Cookies协议</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）。为了提供更好的用户体验，我们使用Cookie技术。请在使用本站服务之前仔细阅读以下Cookie协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-什么是-Cookie？"><a href="#1-什么是-Cookie？" class="headerlink" title="1. 什么是 Cookie？"></a>1. 什么是 Cookie？</h1><p>Cookie是一小段文本信息，由网站存储在用户计算机或移动设备上的浏览器中。这些文本文件允许网站记住用户的偏好设置、登录状态和其他信息，从而提供更个性化、高效的用户体验。</p><h1 id="2-本站使用的-Cookie"><a href="#2-本站使用的-Cookie" class="headerlink" title="2. 本站使用的 Cookie"></a>2. 本站使用的 Cookie</h1><h2 id="2-1-必要性-Cookie"><a href="#2-1-必要性-Cookie" class="headerlink" title="2.1 必要性 Cookie"></a>2.1 必要性 Cookie</h2><p>这些 Cookie 是为了使网站正常运行所必需的，包括用户登录状态、购物车等功能。禁用这些 Cookie 可能会导致网站部分功能无法正常使用。</p><h2 id="2-2-分析和性能-Cookie"><a href="#2-2-分析和性能-Cookie" class="headerlink" title="2.2 分析和性能 Cookie"></a>2.2 分析和性能 Cookie</h2><p>站长使用第三方工具（如Google Analytics）收集匿名的访问数据，帮助我们了解访问者如何使用本站。这些信息用于改进网站的功能和性能。</p><h2 id="2-3-广告-Cookie"><a href="#2-3-广告-Cookie" class="headerlink" title="2.3 广告 Cookie"></a>2.3 广告 Cookie</h2><p>本站可能使用广告服务商提供的 Cookie，以提供与用户兴趣相关的广告。</p><h1 id="3-如何控制-Cookie"><a href="#3-如何控制-Cookie" class="headerlink" title="3. 如何控制 Cookie"></a>3. 如何控制 Cookie</h1><h2 id="3-1-浏览器设置"><a href="#3-1-浏览器设置" class="headerlink" title="3.1 浏览器设置"></a>3.1 浏览器设置</h2><p>大多数浏览器允许用户管理Cookie的设置。您可以根据浏览器的说明自定义Cookie设置，包括禁用某些Cookie。</p><h2 id="3-2-第三方工具"><a href="#3-2-第三方工具" class="headerlink" title="3.2 第三方工具"></a>3.2 第三方工具</h2><p>您可以使用第三方工具，如Google Analytics Opt-out Browser Add-on，以拒绝Google Analytics收集您的信息。</p><h1 id="4-联系我"><a href="#4-联系我" class="headerlink" title="4. 联系我"></a>4. 联系我</h1><p>如果您对本Cookie协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#56;&#x35;&#51;&#x34;&#57;&#56;&#52;&#x33;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;">&#49;&#49;&#56;&#x35;&#51;&#x34;&#57;&#56;&#52;&#x33;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h1 id="5-更新-Cookie-协议"><a href="#5-更新-Cookie-协议" class="headerlink" title="5. 更新 Cookie 协议"></a>5. 更新 Cookie 协议</h1><p>站长保留随时修改和更新本Cookie协议的权利，在修改时，我将在本页发布生效日期！感谢您的理解与支持！</p>]]></content>
       
     </entry>
     
@@ -722,7 +751,18 @@
       <link href="/copyright/index.html"/>
       <url>/copyright/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！在使用本站的内容之前，请仔细阅读以下版权协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-知识产权所有权"><a href="#1-知识产权所有权" class="headerlink" title="1. 知识产权所有权"></a>1. 知识产权所有权</h1><h2 id="1-1-内容版权"><a href="#1-1-内容版权" class="headerlink" title="1.1 内容版权"></a>1.1 内容版权</h2><p>  本站上的所有内容，包括但不限于文章、图片、音频、视频等，均受到相关版权法律的保护。未经授权，禁止复制、转载、修改、发布、传播本站的内容。</p><h2 id="1-2-原创作品"><a href="#1-2-原创作品" class="headerlink" title="1.2 原创作品"></a>1.2 原创作品</h2><p>  除非另有说明，本站的所有原创作品（包括但不限于文章、插图、独立设计等）均为本站所有，未经允许不得转载或使用于其他场合。</p><h1 id="2-内容使用许可"><a href="#2-内容使用许可" class="headerlink" title="2. 内容使用许可"></a>2. 内容使用许可</h1><h2 id="2-1-授权范围"><a href="#2-1-授权范围" class="headerlink" title="2.1 授权范围"></a>2.1 授权范围</h2><p>  除非明确说明，本站上的内容仅供个人非商业用途使用。任何商业用途的使用都需要事先取得我们的书面许可。</p><h2 id="2-2-引用和链接"><a href="#2-2-引用和链接" class="headerlink" title="2.2 引用和链接"></a>2.2 引用和链接</h2><p>  欢迎其他网站引用本站的内容，但必须明确标明出处，并提供链接指向原始页面。</p><h1 id="3-第三方内容"><a href="#3-第三方内容" class="headerlink" title="3. 第三方内容"></a>3. 第三方内容</h1><h2 id="3-1-引用和链接"><a href="#3-1-引用和链接" class="headerlink" title="3.1 引用和链接"></a>3.1 引用和链接</h2><p>  本站可能包含引用或链接到第三方网站的内容，这些内容的版权归原作者所有。对于第三方内容的使用，请遵循原作者的版权声明。</p><h1 id="4-免责声明"><a href="#4-免责声明" class="headerlink" title="4. 免责声明"></a>4. 免责声明</h1><p>本站的内容可能包含一些参考性信息，但不对其准确性、完整性和实用性作任何明示或暗示的保证。使用本站内容所产生的风险由用户自行承担。</p><h1 id="5-联系我"><a href="#5-联系我" class="headerlink" title="5. 联系我"></a>5. 联系我</h1><p>如果您对本版权协议有任何疑问或意见，请通过以下联系方式与我联系：</p><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#x31;&#56;&#53;&#51;&#x34;&#x39;&#x38;&#52;&#51;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#49;&#x31;&#56;&#53;&#51;&#x34;&#x39;&#x38;&#52;&#51;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a></p></li><li><p>微信：18262607107</p></li></ul><h3 id="6-修改和更新"><a href="#6-修改和更新" class="headerlink" title="6. 修改和更新"></a>6. 修改和更新</h3><p>我们保留随时修改和更新本版权协议的权利，如果您发现本站在未声明的情况下使用了你受版权保护的内容，请与我联系，在修改时，我将在本页更新生效日期！ 感谢您的理解与支持！</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！在使用本站的内容之前，请仔细阅读以下版权协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-知识产权所有权"><a href="#1-知识产权所有权" class="headerlink" title="1. 知识产权所有权"></a>1. 知识产权所有权</h1><h2 id="1-1-内容版权"><a href="#1-1-内容版权" class="headerlink" title="1.1 内容版权"></a>1.1 内容版权</h2><p>  本站上的所有内容，包括但不限于文章、图片、音频、视频等，均受到相关版权法律的保护。未经授权，禁止复制、转载、修改、发布、传播本站的内容。</p><h2 id="1-2-原创作品"><a href="#1-2-原创作品" class="headerlink" title="1.2 原创作品"></a>1.2 原创作品</h2><p>  除非另有说明，本站的所有原创作品（包括但不限于文章、插图、独立设计等）均为本站所有，未经允许不得转载或使用于其他场合。</p><h1 id="2-内容使用许可"><a href="#2-内容使用许可" class="headerlink" title="2. 内容使用许可"></a>2. 内容使用许可</h1><h2 id="2-1-授权范围"><a href="#2-1-授权范围" class="headerlink" title="2.1 授权范围"></a>2.1 授权范围</h2><p>  除非明确说明，本站上的内容仅供个人非商业用途使用。任何商业用途的使用都需要事先取得我们的书面许可。</p><h2 id="2-2-引用和链接"><a href="#2-2-引用和链接" class="headerlink" title="2.2 引用和链接"></a>2.2 引用和链接</h2><p>  欢迎其他网站引用本站的内容，但必须明确标明出处，并提供链接指向原始页面。</p><h1 id="3-第三方内容"><a href="#3-第三方内容" class="headerlink" title="3. 第三方内容"></a>3. 第三方内容</h1><h2 id="3-1-引用和链接"><a href="#3-1-引用和链接" class="headerlink" title="3.1 引用和链接"></a>3.1 引用和链接</h2><p>  本站可能包含引用或链接到第三方网站的内容，这些内容的版权归原作者所有。对于第三方内容的使用，请遵循原作者的版权声明。</p><h1 id="4-免责声明"><a href="#4-免责声明" class="headerlink" title="4. 免责声明"></a>4. 免责声明</h1><p>本站的内容可能包含一些参考性信息，但不对其准确性、完整性和实用性作任何明示或暗示的保证。使用本站内容所产生的风险由用户自行承担。</p><h1 id="5-联系我"><a href="#5-联系我" class="headerlink" title="5. 联系我"></a>5. 联系我</h1><p>如果您对本版权协议有任何疑问或意见，请通过以下联系方式与我联系：</p><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#x38;&#53;&#x33;&#52;&#57;&#56;&#52;&#x33;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#49;&#49;&#x38;&#53;&#x33;&#52;&#57;&#56;&#52;&#x33;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h3 id="6-修改和更新"><a href="#6-修改和更新" class="headerlink" title="6. 修改和更新"></a>6. 修改和更新</h3><p>我们保留随时修改和更新本版权协议的权利，如果您发现本站在未声明的情况下使用了你受版权保护的内容，请与我联系，在修改时，我将在本页更新生效日期！ 感谢您的理解与支持！</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -740,9 +780,31 @@
     
     
     <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>优秀链接</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -762,17 +824,6 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>客官打赏单</title>
       <link href="/donate/index.html"/>
       <url>/donate/index.html</url>
@@ -784,33 +835,11 @@
     
     
     <entry>
-      <title>本站Cookies协议</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）。为了提供更好的用户体验，我们使用Cookie技术。请在使用本站服务之前仔细阅读以下Cookie协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-什么是-Cookie？"><a href="#1-什么是-Cookie？" class="headerlink" title="1. 什么是 Cookie？"></a>1. 什么是 Cookie？</h1><p>Cookie是一小段文本信息，由网站存储在用户计算机或移动设备上的浏览器中。这些文本文件允许网站记住用户的偏好设置、登录状态和其他信息，从而提供更个性化、高效的用户体验。</p><h1 id="2-本站使用的-Cookie"><a href="#2-本站使用的-Cookie" class="headerlink" title="2. 本站使用的 Cookie"></a>2. 本站使用的 Cookie</h1><h2 id="2-1-必要性-Cookie"><a href="#2-1-必要性-Cookie" class="headerlink" title="2.1 必要性 Cookie"></a>2.1 必要性 Cookie</h2><p>这些 Cookie 是为了使网站正常运行所必需的，包括用户登录状态、购物车等功能。禁用这些 Cookie 可能会导致网站部分功能无法正常使用。</p><h2 id="2-2-分析和性能-Cookie"><a href="#2-2-分析和性能-Cookie" class="headerlink" title="2.2 分析和性能 Cookie"></a>2.2 分析和性能 Cookie</h2><p>站长使用第三方工具（如Google Analytics）收集匿名的访问数据，帮助我们了解访问者如何使用本站。这些信息用于改进网站的功能和性能。</p><h2 id="2-3-广告-Cookie"><a href="#2-3-广告-Cookie" class="headerlink" title="2.3 广告 Cookie"></a>2.3 广告 Cookie</h2><p>本站可能使用广告服务商提供的 Cookie，以提供与用户兴趣相关的广告。</p><h1 id="3-如何控制-Cookie"><a href="#3-如何控制-Cookie" class="headerlink" title="3. 如何控制 Cookie"></a>3. 如何控制 Cookie</h1><h2 id="3-1-浏览器设置"><a href="#3-1-浏览器设置" class="headerlink" title="3.1 浏览器设置"></a>3.1 浏览器设置</h2><p>大多数浏览器允许用户管理Cookie的设置。您可以根据浏览器的说明自定义Cookie设置，包括禁用某些Cookie。</p><h2 id="3-2-第三方工具"><a href="#3-2-第三方工具" class="headerlink" title="3.2 第三方工具"></a>3.2 第三方工具</h2><p>您可以使用第三方工具，如Google Analytics Opt-out Browser Add-on，以拒绝Google Analytics收集您的信息。</p><h1 id="4-联系我"><a href="#4-联系我" class="headerlink" title="4. 联系我"></a>4. 联系我</h1><p>如果您对本Cookie协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#x31;&#49;&#56;&#53;&#51;&#x34;&#57;&#x38;&#x34;&#51;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x31;&#49;&#56;&#53;&#51;&#x34;&#57;&#x38;&#x34;&#51;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h1 id="5-更新-Cookie-协议"><a href="#5-更新-Cookie-协议" class="headerlink" title="5. 更新 Cookie 协议"></a>5. 更新 Cookie 协议</h1><p>站长保留随时修改和更新本Cookie协议的权利，在修改时，我将在本页发布生效日期！感谢您的理解与支持！</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>本站隐私协议</title>
       <link href="/privacy/index.html"/>
       <url>/privacy/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！我们重视您的隐私，并致力于保护您的个人信息。请在使用本站服务之前阅读本隐私协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1：第三方服务"><a href="#1：第三方服务" class="headerlink" title="1：第三方服务"></a>1：第三方服务</h1><p>本站可能使用第三方服务，如Google Analytics等，来分析用户的访问行为。这些服务可能会收集关于您的信息，包括但不限于您的IP地址、浏览器类型、访问时间等信息。</p><h1 id="2：广告"><a href="#2：广告" class="headerlink" title="2：广告"></a>2：广告</h1><p>本站可能展示广告，广告商通过Cookie技术可能会收集与您访问本站相关的信息。这些信息将用于定向广告。</p><h1 id="3：隐私权保护"><a href="#3：隐私权保护" class="headerlink" title="3：隐私权保护"></a>3：隐私权保护</h1><p>本站将尽力保护用户的个人信息安全，不会未经授权向第三方公开、分享或出售用户的个人信息。</p><h1 id="4：外部链接"><a href="#4：外部链接" class="headerlink" title="4：外部链接"></a>4：外部链接</h1><p>本站可能包含指向其他网站的外部链接。我们不对这些网站的隐私政策和内容负责，建议您在访问这些网站时仔细阅读其隐私政策。</p><h1 id="5：隐私协议的修改"><a href="#5：隐私协议的修改" class="headerlink" title="5：隐私协议的修改"></a>5：隐私协议的修改</h1><p>我们保留随时修改本隐私协议的权利。在修改时，我们将在本页发布生效日期。</p><h1 id="6：联系我"><a href="#6：联系我" class="headerlink" title="6：联系我"></a>6：联系我</h1><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#x31;&#49;&#x38;&#x35;&#51;&#52;&#57;&#56;&#x34;&#51;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;">&#x31;&#49;&#x38;&#x35;&#51;&#52;&#57;&#56;&#x34;&#51;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><p>请注意，本隐私协议的条款仅适用于本站<a href="https://www.fattymonkey.com/">繁体猴の客栈</a>，感谢您的信任与支持！！！</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！我们重视您的隐私，并致力于保护您的个人信息。请在使用本站服务之前阅读本隐私协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1：第三方服务"><a href="#1：第三方服务" class="headerlink" title="1：第三方服务"></a>1：第三方服务</h1><p>本站可能使用第三方服务，如Google Analytics等，来分析用户的访问行为。这些服务可能会收集关于您的信息，包括但不限于您的IP地址、浏览器类型、访问时间等信息。</p><h1 id="2：广告"><a href="#2：广告" class="headerlink" title="2：广告"></a>2：广告</h1><p>本站可能展示广告，广告商通过Cookie技术可能会收集与您访问本站相关的信息。这些信息将用于定向广告。</p><h1 id="3：隐私权保护"><a href="#3：隐私权保护" class="headerlink" title="3：隐私权保护"></a>3：隐私权保护</h1><p>本站将尽力保护用户的个人信息安全，不会未经授权向第三方公开、分享或出售用户的个人信息。</p><h1 id="4：外部链接"><a href="#4：外部链接" class="headerlink" title="4：外部链接"></a>4：外部链接</h1><p>本站可能包含指向其他网站的外部链接。我们不对这些网站的隐私政策和内容负责，建议您在访问这些网站时仔细阅读其隐私政策。</p><h1 id="5：隐私协议的修改"><a href="#5：隐私协议的修改" class="headerlink" title="5：隐私协议的修改"></a>5：隐私协议的修改</h1><p>我们保留随时修改本隐私协议的权利。在修改时，我们将在本页发布生效日期。</p><h1 id="6：联系我"><a href="#6：联系我" class="headerlink" title="6：联系我"></a>6：联系我</h1><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#x31;&#x38;&#53;&#51;&#52;&#x39;&#56;&#52;&#x33;&#x40;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#49;&#x31;&#x38;&#53;&#51;&#52;&#x39;&#56;&#52;&#x33;&#x40;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><p>请注意，本隐私协议的条款仅适用于本站<a href="https://www.fattymonkey.com/">繁体猴の客栈</a>，感谢您的信任与支持！！！</p>]]></content>
       
     </entry>
     
@@ -828,11 +857,11 @@
     
     
     <entry>
-      <title>人生中的最后一段青春</title>
-      <link href="/album/indian/index.html"/>
-      <url>/album/indian/index.html</url>
+      <title>收藏的一些壁纸，侵删</title>
+      <link href="/album/wallpaper/index.html"/>
+      <url>/album/wallpaper/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1280.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1280*720</div>  <p>较小尺寸，适合用作软件的背景图</p>  <a href='/album/wallpaper/1280'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1680.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1680*1050</div>  <p>适用小屏幕，比如常见的13寸屏幕</p>  <a href='/album/wallpaper/1680'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1920.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1080</div>  <p>适用中等屏幕，最常见的1K壁纸</p>  <a href='/album/wallpaper/1920'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1921.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1200</div>  <p>适用中等屏幕，比1K的屏幕稍高</p>  <a href='/album/wallpaper/1921'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2560.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2560*1440</div>  <p>适用大屏幕，最常见的2K壁纸</p>  <a href='/album/wallpaper/2560'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2880.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2880*1800</div>  <p>适用大屏幕，联想小新Pro14</p>  <a href='/album/wallpaper/2880'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/3840.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">3840*2160</div>  <p>适用带鱼屏，我用过的4K壁纸</p>  <a href='/album/wallpaper/3840'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -861,11 +890,11 @@
     
     
     <entry>
-      <title>收藏的一些壁纸，侵删</title>
-      <link href="/album/wallpaper/index.html"/>
-      <url>/album/wallpaper/index.html</url>
+      <title>人生中的最后一段青春</title>
+      <link href="/album/indian/index.html"/>
+      <url>/album/indian/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1280.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1280*720</div>  <p>较小尺寸，适合用作软件的背景图</p>  <a href='/album/wallpaper/1280'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1680.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1680*1050</div>  <p>适用小屏幕，比如常见的13寸屏幕</p>  <a href='/album/wallpaper/1680'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1920.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1080</div>  <p>适用中等屏幕，最常见的1K壁纸</p>  <a href='/album/wallpaper/1920'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1921.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1200</div>  <p>适用中等屏幕，比1K的屏幕稍高</p>  <a href='/album/wallpaper/1921'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2560.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2560*1440</div>  <p>适用大屏幕，最常见的2K壁纸</p>  <a href='/album/wallpaper/2560'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2880.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2880*1800</div>  <p>适用大屏幕，联想小新Pro14</p>  <a href='/album/wallpaper/2880'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/3840.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">3840*2160</div>  <p>适用带鱼屏，我用过的4K壁纸</p>  <a href='/album/wallpaper/3840'></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
       
     </entry>
     
@@ -883,33 +912,22 @@
     
     
     <entry>
+      <title>1280*720，较小尺寸，适合用作软件的背景图</title>
+      <link href="/album/wallpaper/1280/index.html"/>
+      <url>/album/wallpaper/1280/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1280/00.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/08.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/09.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/10.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/11.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/12.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/13.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/14.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/15.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/16.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2880*1800，适用大屏幕，联想小新Pro14</title>
       <link href="/album/wallpaper/2880/index.html"/>
       <url>/album/wallpaper/2880/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2880/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/08.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>1920*1080，适用中等屏幕，最常见的1K壁纸</title>
-      <link href="/album/wallpaper/1920/index.html"/>
-      <url>/album/wallpaper/1920/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/焰灵姬01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/樱木花道.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鲸鱼01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/宅男01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/卡沙.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/天气之子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/科比.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/欧文.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/神泣.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>19200</title>
-      <link href="/album/wallpaper/19200/index.html"/>
-      <url>/album/wallpaper/19200/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -927,11 +945,11 @@
     
     
     <entry>
-      <title>1280*720，较小尺寸，适合用作软件的背景图</title>
-      <link href="/album/wallpaper/1280/index.html"/>
-      <url>/album/wallpaper/1280/index.html</url>
+      <title>1920*1080，适用中等屏幕，最常见的1K壁纸</title>
+      <link href="/album/wallpaper/1920/index.html"/>
+      <url>/album/wallpaper/1920/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1280/00.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/08.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/09.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/10.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/11.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/12.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/13.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/14.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/15.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/16.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/焰灵姬01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/樱木花道.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鲸鱼01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/宅男01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/卡沙.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/天气之子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/科比.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/欧文.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/神泣.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
@@ -943,6 +961,17 @@
       <url>/album/wallpaper/3840/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/艾克01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/KDA01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/凤凰01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/湖泊01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/绿色01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/锐雯玉剑传说.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/萨勒芬妮01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/山景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/萨勒芬妮02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/雪景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/KDA萨勒芬妮01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>19200</title>
+      <link href="/album/wallpaper/19200/index.html"/>
+      <url>/album/wallpaper/19200/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
