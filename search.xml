@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> IntelliJ Idea </tag>
-            
             <tag> Java </tag>
+            
+            <tag> IntelliJ Idea </tag>
             
             <tag> JRebel </tag>
             
@@ -49,8 +49,6 @@
       
         <tags>
             
-            <tag> IntelliJ Idea </tag>
-            
             <tag> macOS </tag>
             
             <tag> Java </tag>
@@ -58,6 +56,8 @@
             <tag> Maven </tag>
             
             <tag> JDK </tag>
+            
+            <tag> IntelliJ Idea </tag>
             
         </tags>
       
@@ -82,9 +82,9 @@
       
         <tags>
             
-            <tag> WebStorm </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> WebStorm </tag>
             
         </tags>
       
@@ -250,9 +250,9 @@
       
         <tags>
             
-            <tag> 域名解析 </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> 域名解析 </tag>
             
             <tag> Hexo </tag>
             
@@ -308,9 +308,9 @@
             
             <tag> Github </tag>
             
-            <tag> Gitee </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> Gitee </tag>
             
         </tags>
       
@@ -360,9 +360,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> IntelliJ Idea </tag>
+            
+            <tag> Git </tag>
             
             <tag> Windows </tag>
             
@@ -420,9 +420,9 @@
             
             <tag> Github </tag>
             
-            <tag> Vercel </tag>
-            
             <tag> CDN </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -613,9 +613,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -714,44 +714,11 @@
     
     
     <entry>
-      <title>本站Cookies协议</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）。为了提供更好的用户体验，我们使用Cookie技术。请在使用本站服务之前仔细阅读以下Cookie协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-什么是-Cookie？"><a href="#1-什么是-Cookie？" class="headerlink" title="1. 什么是 Cookie？"></a>1. 什么是 Cookie？</h1><p>Cookie是一小段文本信息，由网站存储在用户计算机或移动设备上的浏览器中。这些文本文件允许网站记住用户的偏好设置、登录状态和其他信息，从而提供更个性化、高效的用户体验。</p><h1 id="2-本站使用的-Cookie"><a href="#2-本站使用的-Cookie" class="headerlink" title="2. 本站使用的 Cookie"></a>2. 本站使用的 Cookie</h1><h2 id="2-1-必要性-Cookie"><a href="#2-1-必要性-Cookie" class="headerlink" title="2.1 必要性 Cookie"></a>2.1 必要性 Cookie</h2><p>这些 Cookie 是为了使网站正常运行所必需的，包括用户登录状态、购物车等功能。禁用这些 Cookie 可能会导致网站部分功能无法正常使用。</p><h2 id="2-2-分析和性能-Cookie"><a href="#2-2-分析和性能-Cookie" class="headerlink" title="2.2 分析和性能 Cookie"></a>2.2 分析和性能 Cookie</h2><p>站长使用第三方工具（如Google Analytics）收集匿名的访问数据，帮助我们了解访问者如何使用本站。这些信息用于改进网站的功能和性能。</p><h2 id="2-3-广告-Cookie"><a href="#2-3-广告-Cookie" class="headerlink" title="2.3 广告 Cookie"></a>2.3 广告 Cookie</h2><p>本站可能使用广告服务商提供的 Cookie，以提供与用户兴趣相关的广告。</p><h1 id="3-如何控制-Cookie"><a href="#3-如何控制-Cookie" class="headerlink" title="3. 如何控制 Cookie"></a>3. 如何控制 Cookie</h1><h2 id="3-1-浏览器设置"><a href="#3-1-浏览器设置" class="headerlink" title="3.1 浏览器设置"></a>3.1 浏览器设置</h2><p>大多数浏览器允许用户管理Cookie的设置。您可以根据浏览器的说明自定义Cookie设置，包括禁用某些Cookie。</p><h2 id="3-2-第三方工具"><a href="#3-2-第三方工具" class="headerlink" title="3.2 第三方工具"></a>3.2 第三方工具</h2><p>您可以使用第三方工具，如Google Analytics Opt-out Browser Add-on，以拒绝Google Analytics收集您的信息。</p><h1 id="4-联系我"><a href="#4-联系我" class="headerlink" title="4. 联系我"></a>4. 联系我</h1><p>如果您对本Cookie协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#x31;&#49;&#56;&#x35;&#x33;&#x34;&#57;&#56;&#x34;&#x33;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#x31;&#49;&#56;&#x35;&#x33;&#x34;&#57;&#56;&#x34;&#x33;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h1 id="5-更新-Cookie-协议"><a href="#5-更新-Cookie-协议" class="headerlink" title="5. 更新 Cookie 协议"></a>5. 更新 Cookie 协议</h1><p>站长保留随时修改和更新本Cookie协议的权利，在修改时，我将在本页发布生效日期！感谢您的理解与支持！</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图片展</title>
       <link href="/album/index.html"/>
       <url>/album/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">壁紙收藏</div>  <p>收藏的一些壁纸，侵删</p>  <a href='/album/wallpaper'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/life.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">生活记录</div>  <p>这些是我快乐过的证据</p>  <a href='/album/life'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/work.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">迫于生计</div>  <p>谁又不是在努力地活着</p>  <a href='/album/work'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/indian.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">出差印度</div>  <p>人生中的最后一段青春</p>  <a href='/album/indian'></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>本站版权协议</title>
-      <link href="/copyright/index.html"/>
-      <url>/copyright/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！在使用本站的内容之前，请仔细阅读以下版权协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-知识产权所有权"><a href="#1-知识产权所有权" class="headerlink" title="1. 知识产权所有权"></a>1. 知识产权所有权</h1><h2 id="1-1-内容版权"><a href="#1-1-内容版权" class="headerlink" title="1.1 内容版权"></a>1.1 内容版权</h2><p>  本站上的所有内容，包括但不限于文章、图片、音频、视频等，均受到相关版权法律的保护。未经授权，禁止复制、转载、修改、发布、传播本站的内容。</p><h2 id="1-2-原创作品"><a href="#1-2-原创作品" class="headerlink" title="1.2 原创作品"></a>1.2 原创作品</h2><p>  除非另有说明，本站的所有原创作品（包括但不限于文章、插图、独立设计等）均为本站所有，未经允许不得转载或使用于其他场合。</p><h1 id="2-内容使用许可"><a href="#2-内容使用许可" class="headerlink" title="2. 内容使用许可"></a>2. 内容使用许可</h1><h2 id="2-1-授权范围"><a href="#2-1-授权范围" class="headerlink" title="2.1 授权范围"></a>2.1 授权范围</h2><p>  除非明确说明，本站上的内容仅供个人非商业用途使用。任何商业用途的使用都需要事先取得我们的书面许可。</p><h2 id="2-2-引用和链接"><a href="#2-2-引用和链接" class="headerlink" title="2.2 引用和链接"></a>2.2 引用和链接</h2><p>  欢迎其他网站引用本站的内容，但必须明确标明出处，并提供链接指向原始页面。</p><h1 id="3-第三方内容"><a href="#3-第三方内容" class="headerlink" title="3. 第三方内容"></a>3. 第三方内容</h1><h2 id="3-1-引用和链接"><a href="#3-1-引用和链接" class="headerlink" title="3.1 引用和链接"></a>3.1 引用和链接</h2><p>  本站可能包含引用或链接到第三方网站的内容，这些内容的版权归原作者所有。对于第三方内容的使用，请遵循原作者的版权声明。</p><h1 id="4-免责声明"><a href="#4-免责声明" class="headerlink" title="4. 免责声明"></a>4. 免责声明</h1><p>本站的内容可能包含一些参考性信息，但不对其准确性、完整性和实用性作任何明示或暗示的保证。使用本站内容所产生的风险由用户自行承担。</p><h1 id="5-联系我"><a href="#5-联系我" class="headerlink" title="5. 联系我"></a>5. 联系我</h1><p>如果您对本版权协议有任何疑问或意见，请通过以下联系方式与我联系：</p><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#x31;&#49;&#56;&#x35;&#51;&#x34;&#x39;&#56;&#x34;&#51;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#x31;&#49;&#56;&#x35;&#51;&#x34;&#x39;&#56;&#x34;&#51;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p></li><li><p>微信：18262607107</p></li></ul><h3 id="6-修改和更新"><a href="#6-修改和更新" class="headerlink" title="6. 修改和更新"></a>6. 修改和更新</h3><p>我们保留随时修改和更新本版权协议的权利，如果您发现本站在未声明的情况下使用了你受版权保护的内容，请与我联系，在修改时，我将在本页更新生效日期！ 感谢您的理解与支持！</p>]]></content>
       
     </entry>
     
@@ -769,11 +736,66 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="页面建设中～～"><a href="#页面建设中～～" class="headerlink" title="页面建设中～～"></a>页面建设中～～</h1>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>实际上这个页面什么都没有，只是借用了系统的评论功能！你可以向我吐槽任何事情，甚至你有什么想吃的都可以告诉我哦～～</p></blockquote><p class="comments-title">留言须知</p><ul><li><input checked="" disabled="" type="checkbox"> 您对我的博客网站有任何想说的都可以给我留言</li><li><input checked="" disabled="" type="checkbox"> 留言时建议填入正确的邮箱（在昵称处输入正确的QQ号可以获取您的头像、昵称、邮箱），方便交流互动</li><li><input checked="" disabled="" type="checkbox"> 本站支持丰富的表情和图片上传，以满足您的需求</li><li><input checked="" disabled="" type="checkbox"> 请不要发表违反法律道德的内容，否则博主有权利删除您的留言</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本站版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！在使用本站的内容之前，请仔细阅读以下版权协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-知识产权所有权"><a href="#1-知识产权所有权" class="headerlink" title="1. 知识产权所有权"></a>1. 知识产权所有权</h1><h2 id="1-1-内容版权"><a href="#1-1-内容版权" class="headerlink" title="1.1 内容版权"></a>1.1 内容版权</h2><p>  本站上的所有内容，包括但不限于文章、图片、音频、视频等，均受到相关版权法律的保护。未经授权，禁止复制、转载、修改、发布、传播本站的内容。</p><h2 id="1-2-原创作品"><a href="#1-2-原创作品" class="headerlink" title="1.2 原创作品"></a>1.2 原创作品</h2><p>  除非另有说明，本站的所有原创作品（包括但不限于文章、插图、独立设计等）均为本站所有，未经允许不得转载或使用于其他场合。</p><h1 id="2-内容使用许可"><a href="#2-内容使用许可" class="headerlink" title="2. 内容使用许可"></a>2. 内容使用许可</h1><h2 id="2-1-授权范围"><a href="#2-1-授权范围" class="headerlink" title="2.1 授权范围"></a>2.1 授权范围</h2><p>  除非明确说明，本站上的内容仅供个人非商业用途使用。任何商业用途的使用都需要事先取得我们的书面许可。</p><h2 id="2-2-引用和链接"><a href="#2-2-引用和链接" class="headerlink" title="2.2 引用和链接"></a>2.2 引用和链接</h2><p>  欢迎其他网站引用本站的内容，但必须明确标明出处，并提供链接指向原始页面。</p><h1 id="3-第三方内容"><a href="#3-第三方内容" class="headerlink" title="3. 第三方内容"></a>3. 第三方内容</h1><h2 id="3-1-引用和链接"><a href="#3-1-引用和链接" class="headerlink" title="3.1 引用和链接"></a>3.1 引用和链接</h2><p>  本站可能包含引用或链接到第三方网站的内容，这些内容的版权归原作者所有。对于第三方内容的使用，请遵循原作者的版权声明。</p><h1 id="4-免责声明"><a href="#4-免责声明" class="headerlink" title="4. 免责声明"></a>4. 免责声明</h1><p>本站的内容可能包含一些参考性信息，但不对其准确性、完整性和实用性作任何明示或暗示的保证。使用本站内容所产生的风险由用户自行承担。</p><h1 id="5-联系我"><a href="#5-联系我" class="headerlink" title="5. 联系我"></a>5. 联系我</h1><p>如果您对本版权协议有任何疑问或意见，请通过以下联系方式与我联系：</p><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#56;&#x35;&#x33;&#x34;&#57;&#56;&#52;&#51;&#64;&#113;&#x71;&#46;&#x63;&#111;&#109;">&#49;&#49;&#56;&#x35;&#x33;&#x34;&#57;&#56;&#52;&#51;&#64;&#113;&#x71;&#46;&#x63;&#111;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h3 id="6-修改和更新"><a href="#6-修改和更新" class="headerlink" title="6. 修改和更新"></a>6. 修改和更新</h3><p>我们保留随时修改和更新本版权协议的权利，如果您发现本站在未声明的情况下使用了你受版权保护的内容，请与我联系，在修改时，我将在本页更新生效日期！ 感谢您的理解与支持！</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发记录</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这个页面用来记录主题的魔改记录以及一些灵感，选中的是已经完成的，未选中的是将来要做的</p></blockquote><h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 添加全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 将所有页面中的所有卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改，尤其是切换深浅模式的提示弹窗</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下，目前用的这个不是很好</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流并优化图片加载</li><li><input checked="" disabled="" type="checkbox"> 将导航栏的菜单设置为水平居中</li><li><input checked="" disabled="" type="checkbox"> 引入阿里图标来替换社交图标，并适配深浅模式</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换（已完成），并引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 将首页的文章列表改成瀑布流效果</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框并适配深浅模式</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改，建设各个元素的效果并优化代码</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口，还要美化该页面的UI效果</li><li><input checked="" disabled="" type="checkbox"> 给 ChatGPT 账号绑定虚拟信用卡并充值，以便长久使用，否则以后就没办法使用了</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input checked="" disabled="" type="checkbox"> 社交链接存在问题，点击会变大，返回后图标不会重新变小，适配屏幕尺寸修复问题</li><li><input checked="" disabled="" type="checkbox"> 编写本站隐私协议、版权协议、Cookies协议，并修复页脚的访问链接指向这些文章</li><li><input checked="" disabled="" type="checkbox"> 新增页面《客官打赏》，并将创建好的页面链接设置到页脚的对应处（手动添加资料）</li><li><input disabled="" type="checkbox"> 新增一个《个人简历》页面，并设置访问密码，然后在页脚新增一个链接指向该页面</li><li><input disabled="" type="checkbox"> 目前页面《各种统计》已经创建好并设置好了页脚的链接，该页面的内容和布局还未建设</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 美化文本选择框的颜色，并适配深色浅色两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，为标签添加圆角边框</li><li><input disabled="" type="checkbox"> 美化文章页的目录遮蔽色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 美化页脚版权声明的颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="图片展"><a href="#图片展" class="headerlink" title="图片展"></a>图片展</h2><ul><li><input checked="" disabled="" type="checkbox"> 添加一个《壁纸收藏》的图集，并按照壁纸尺寸设置子图集，最后上传壁纸</li><li><input disabled="" type="checkbox"> 添加一个《生活记录》的图集，并上传几张生活照片（已经上传，持续更新）</li><li><input disabled="" type="checkbox"> 添加一个《迫于生计》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 添加一个《出差印度》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 图集子页适用标签外挂gallery时，图片元素的大小存在细微的不断变化，看起来图片是一直抖动的，需修复</li></ul><h2 id="电影院（目前还没建设）"><a href="#电影院（目前还没建设）" class="headerlink" title="电影院（目前还没建设）"></a>电影院（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 在电影院页面接入豆瓣电影推荐之类的插件，还需要从零规划</li></ul><h2 id="音乐汇（目前还没建设）"><a href="#音乐汇（目前还没建设）" class="headerlink" title="音乐汇（目前还没建设）"></a>音乐汇（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 做一个网页版的音乐播放器，最好能跟页脚的音乐播放器关联</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当的内容，不然看起来会非常突兀</li><li><input disabled="" type="checkbox"> 美化留言板对话框，类似聊天页，看起来会更和谐一些</li></ul><h2 id="关于我（目前还没建设）"><a href="#关于我（目前还没建设）" class="headerlink" title="关于我（目前还没建设）"></a>关于我（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 最前面添加繁体猴这个名字的灵感由来</li><li><input disabled="" type="checkbox"> 添加个人简历的链接（页脚也需添加）</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>客官打赏单</title>
+      <link href="/donate/index.html"/>
+      <url>/donate/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>感谢以下客官的打赏，每篇文章的结尾都有给我充电的入口哦～～</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">饭饭爱吃饭</td><td align="center">支付宝</td><td align="center">8.88</td><td align="center">无留言</td></tr><tr><td align="center">我是武松啊</td><td align="center">微信</td><td align="center">6.60</td><td align="center">无留言</td></tr></tbody></table>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本站Cookies协议</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）。为了提供更好的用户体验，我们使用Cookie技术。请在使用本站服务之前仔细阅读以下Cookie协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-什么是-Cookie？"><a href="#1-什么是-Cookie？" class="headerlink" title="1. 什么是 Cookie？"></a>1. 什么是 Cookie？</h1><p>Cookie是一小段文本信息，由网站存储在用户计算机或移动设备上的浏览器中。这些文本文件允许网站记住用户的偏好设置、登录状态和其他信息，从而提供更个性化、高效的用户体验。</p><h1 id="2-本站使用的-Cookie"><a href="#2-本站使用的-Cookie" class="headerlink" title="2. 本站使用的 Cookie"></a>2. 本站使用的 Cookie</h1><h2 id="2-1-必要性-Cookie"><a href="#2-1-必要性-Cookie" class="headerlink" title="2.1 必要性 Cookie"></a>2.1 必要性 Cookie</h2><p>这些 Cookie 是为了使网站正常运行所必需的，包括用户登录状态、购物车等功能。禁用这些 Cookie 可能会导致网站部分功能无法正常使用。</p><h2 id="2-2-分析和性能-Cookie"><a href="#2-2-分析和性能-Cookie" class="headerlink" title="2.2 分析和性能 Cookie"></a>2.2 分析和性能 Cookie</h2><p>站长使用第三方工具（如Google Analytics）收集匿名的访问数据，帮助我们了解访问者如何使用本站。这些信息用于改进网站的功能和性能。</p><h2 id="2-3-广告-Cookie"><a href="#2-3-广告-Cookie" class="headerlink" title="2.3 广告 Cookie"></a>2.3 广告 Cookie</h2><p>本站可能使用广告服务商提供的 Cookie，以提供与用户兴趣相关的广告。</p><h1 id="3-如何控制-Cookie"><a href="#3-如何控制-Cookie" class="headerlink" title="3. 如何控制 Cookie"></a>3. 如何控制 Cookie</h1><h2 id="3-1-浏览器设置"><a href="#3-1-浏览器设置" class="headerlink" title="3.1 浏览器设置"></a>3.1 浏览器设置</h2><p>大多数浏览器允许用户管理Cookie的设置。您可以根据浏览器的说明自定义Cookie设置，包括禁用某些Cookie。</p><h2 id="3-2-第三方工具"><a href="#3-2-第三方工具" class="headerlink" title="3.2 第三方工具"></a>3.2 第三方工具</h2><p>您可以使用第三方工具，如Google Analytics Opt-out Browser Add-on，以拒绝Google Analytics收集您的信息。</p><h1 id="4-联系我"><a href="#4-联系我" class="headerlink" title="4. 联系我"></a>4. 联系我</h1><p>如果您对本Cookie协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#56;&#53;&#x33;&#52;&#57;&#x38;&#52;&#x33;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#49;&#49;&#56;&#53;&#x33;&#52;&#57;&#x38;&#52;&#x33;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h1 id="5-更新-Cookie-协议"><a href="#5-更新-Cookie-协议" class="headerlink" title="5. 更新 Cookie 协议"></a>5. 更新 Cookie 协议</h1><p>站长保留随时修改和更新本Cookie协议的权利，在修改时，我将在本页发布生效日期！感谢您的理解与支持！</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -795,40 +817,7 @@
       <link href="/privacy/index.html"/>
       <url>/privacy/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！我们重视您的隐私，并致力于保护您的个人信息。请在使用本站服务之前阅读本隐私协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1：第三方服务"><a href="#1：第三方服务" class="headerlink" title="1：第三方服务"></a>1：第三方服务</h1><p>本站可能使用第三方服务，如Google Analytics等，来分析用户的访问行为。这些服务可能会收集关于您的信息，包括但不限于您的IP地址、浏览器类型、访问时间等信息。</p><h1 id="2：广告"><a href="#2：广告" class="headerlink" title="2：广告"></a>2：广告</h1><p>本站可能展示广告，广告商通过Cookie技术可能会收集与您访问本站相关的信息。这些信息将用于定向广告。</p><h1 id="3：隐私权保护"><a href="#3：隐私权保护" class="headerlink" title="3：隐私权保护"></a>3：隐私权保护</h1><p>本站将尽力保护用户的个人信息安全，不会未经授权向第三方公开、分享或出售用户的个人信息。</p><h1 id="4：外部链接"><a href="#4：外部链接" class="headerlink" title="4：外部链接"></a>4：外部链接</h1><p>本站可能包含指向其他网站的外部链接。我们不对这些网站的隐私政策和内容负责，建议您在访问这些网站时仔细阅读其隐私政策。</p><h1 id="5：隐私协议的修改"><a href="#5：隐私协议的修改" class="headerlink" title="5：隐私协议的修改"></a>5：隐私协议的修改</h1><p>我们保留随时修改本隐私协议的权利。在修改时，我们将在本页发布生效日期。</p><h1 id="6：联系我"><a href="#6：联系我" class="headerlink" title="6：联系我"></a>6：联系我</h1><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#x38;&#x35;&#x33;&#x34;&#57;&#x38;&#52;&#x33;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#49;&#49;&#x38;&#x35;&#x33;&#x34;&#57;&#x38;&#52;&#x33;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a></p></li><li><p>微信：18262607107</p></li></ul><p>请注意，本隐私协议的条款仅适用于本站<a href="https://www.fattymonkey.com/">繁体猴の客栈</a>，感谢您的信任与支持！！！</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>本站的各种统计</title>
-      <link href="/statistics/index.html"/>
-      <url>/statistics/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="页面正在建设中～～～"><a href="#页面正在建设中～～～" class="headerlink" title="页面正在建设中～～～"></a>页面正在建设中～～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>客官打赏单</title>
-      <link href="/donate/index.html"/>
-      <url>/donate/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>感谢以下客官的打赏，每篇文章的结尾都有给我充电的入口哦～～</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">饭饭爱吃饭</td><td align="center">支付宝</td><td align="center">8.88</td><td align="center">无留言</td></tr><tr><td align="center">我是武松啊</td><td align="center">微信</td><td align="center">6.60</td><td align="center">无留言</td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！我们重视您的隐私，并致力于保护您的个人信息。请在使用本站服务之前阅读本隐私协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1：第三方服务"><a href="#1：第三方服务" class="headerlink" title="1：第三方服务"></a>1：第三方服务</h1><p>本站可能使用第三方服务，如Google Analytics等，来分析用户的访问行为。这些服务可能会收集关于您的信息，包括但不限于您的IP地址、浏览器类型、访问时间等信息。</p><h1 id="2：广告"><a href="#2：广告" class="headerlink" title="2：广告"></a>2：广告</h1><p>本站可能展示广告，广告商通过Cookie技术可能会收集与您访问本站相关的信息。这些信息将用于定向广告。</p><h1 id="3：隐私权保护"><a href="#3：隐私权保护" class="headerlink" title="3：隐私权保护"></a>3：隐私权保护</h1><p>本站将尽力保护用户的个人信息安全，不会未经授权向第三方公开、分享或出售用户的个人信息。</p><h1 id="4：外部链接"><a href="#4：外部链接" class="headerlink" title="4：外部链接"></a>4：外部链接</h1><p>本站可能包含指向其他网站的外部链接。我们不对这些网站的隐私政策和内容负责，建议您在访问这些网站时仔细阅读其隐私政策。</p><h1 id="5：隐私协议的修改"><a href="#5：隐私协议的修改" class="headerlink" title="5：隐私协议的修改"></a>5：隐私协议的修改</h1><p>我们保留随时修改本隐私协议的权利。在修改时，我们将在本页发布生效日期。</p><h1 id="6：联系我"><a href="#6：联系我" class="headerlink" title="6：联系我"></a>6：联系我</h1><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#x31;&#x38;&#x35;&#x33;&#52;&#x39;&#x38;&#52;&#x33;&#x40;&#x71;&#x71;&#46;&#x63;&#111;&#109;">&#49;&#x31;&#x38;&#x35;&#x33;&#52;&#x39;&#x38;&#52;&#x33;&#x40;&#x71;&#x71;&#46;&#x63;&#111;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><p>请注意，本隐私协议的条款仅适用于本站<a href="https://www.fattymonkey.com/">繁体猴の客栈</a>，感谢您的信任与支持！！！</p>]]></content>
       
     </entry>
     
@@ -846,33 +835,11 @@
     
     
     <entry>
-      <title>开发记录</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
+      <title>本站的各种统计</title>
+      <link href="/statistics/index.html"/>
+      <url>/statistics/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>这个页面用来记录主题的魔改记录以及一些灵感，选中的是已经完成的，未选中的是将来要做的</p></blockquote><h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 添加全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 将所有页面中的所有卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改，尤其是切换深浅模式的提示弹窗</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下，目前用的这个不是很好</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流并优化图片加载</li><li><input checked="" disabled="" type="checkbox"> 将导航栏的菜单设置为水平居中</li><li><input checked="" disabled="" type="checkbox"> 引入阿里图标来替换社交图标，并适配深浅模式</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换（已完成），并引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 将首页的文章列表改成瀑布流效果</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框并适配深浅模式</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改，建设各个元素的效果并优化代码</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口，还要美化该页面的UI效果</li><li><input checked="" disabled="" type="checkbox"> 给 ChatGPT 账号绑定虚拟信用卡并充值，以便长久使用，否则以后就没办法使用了</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input checked="" disabled="" type="checkbox"> 社交链接存在问题，点击会变大，返回后图标不会重新变小，适配屏幕尺寸修复问题</li><li><input checked="" disabled="" type="checkbox"> 编写本站隐私协议、版权协议、Cookies协议，并修复页脚的访问链接指向这些文章</li><li><input disabled="" type="checkbox"> 新增一个《个人简历》页面，并设置访问密码，然后在页脚新增一个链接指向该页面</li><li><input disabled="" type="checkbox"> 目前页面《各种统计》已经创建好并设置好了页脚的链接，该页面的内容和布局还未建设</li><li><input disabled="" type="checkbox"> 目前页面《客官打赏》已经创建好并设置好了页脚的链接，该页面的内容和布局还未建设</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 美化文本选择框的颜色，并适配深色浅色两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 优化头图旁边的标签展示，为标签添加圆角边框</li><li><input disabled="" type="checkbox"> 美化文章页的目录遮蔽色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 美化页脚版权声明的颜色，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="图片展"><a href="#图片展" class="headerlink" title="图片展"></a>图片展</h2><ul><li><input checked="" disabled="" type="checkbox"> 添加一个《壁纸收藏》的图集，并按照壁纸尺寸设置子图集，最后上传壁纸</li><li><input disabled="" type="checkbox"> 添加一个《生活记录》的图集，并上传几张生活照片（已经上传，持续更新）</li><li><input disabled="" type="checkbox"> 添加一个《迫于生计》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 添加一个《出差印度》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 图集子页适用标签外挂gallery时，图片元素的大小存在细微的不断变化，看起来图片是一直抖动的，需修复</li></ul><h2 id="音乐汇（目前还没建设）"><a href="#音乐汇（目前还没建设）" class="headerlink" title="音乐汇（目前还没建设）"></a>音乐汇（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 做一个网页版的音乐播放器，最好能跟页脚的音乐播放器关联</li></ul><h2 id="电影院（目前还没建设）"><a href="#电影院（目前还没建设）" class="headerlink" title="电影院（目前还没建设）"></a>电影院（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 在电影院页面接入豆瓣电影推荐之类的插件，还需要从零规划</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当的内容，不然看起来会非常突兀</li><li><input disabled="" type="checkbox"> 美化留言板对话框，类似聊天页，看起来会更和谐一些</li></ul><h2 id="关于我（目前还没建设）"><a href="#关于我（目前还没建设）" class="headerlink" title="关于我（目前还没建设）"></a>关于我（目前还没建设）</h2><ul><li><input disabled="" type="checkbox"> 最前面添加繁体猴这个名字的灵感由来</li><li><input disabled="" type="checkbox"> 添加个人简历的链接（页脚也需添加）</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人生中的最后一段青春</title>
-      <link href="/album/indian/index.html"/>
-      <url>/album/indian/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>谁又不是在努力地活着</title>
-      <link href="/album/work/index.html"/>
-      <url>/album/work/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="页面正在建设中～～～"><a href="#页面正在建设中～～～" class="headerlink" title="页面正在建设中～～～"></a>页面正在建设中～～～</h1>]]></content>
       
     </entry>
     
@@ -890,11 +857,33 @@
     
     
     <entry>
+      <title>谁又不是在努力地活着</title>
+      <link href="/album/work/index.html"/>
+      <url>/album/work/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>收藏的一些壁纸，侵删</title>
       <link href="/album/wallpaper/index.html"/>
       <url>/album/wallpaper/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1280.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1280*720</div>  <p>较小尺寸，适合用作软件的背景图</p>  <a href='/album/wallpaper/1280'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1680.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1680*1050</div>  <p>适用小屏幕，比如常见的13寸屏幕</p>  <a href='/album/wallpaper/1680'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1920.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1080</div>  <p>适用中等屏幕，最常见的1K壁纸</p>  <a href='/album/wallpaper/1920'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/1921.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">1920*1200</div>  <p>适用中等屏幕，比1K的屏幕稍高</p>  <a href='/album/wallpaper/1921'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2560.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2560*1440</div>  <p>适用大屏幕，最常见的2K壁纸</p>  <a href='/album/wallpaper/2560'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/2880.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">2880*1800</div>  <p>适用大屏幕，联想小新Pro14</p>  <a href='/album/wallpaper/2880'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://www.czblogs.cn/album/wallpaper/3840.jpeg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">3840*2160</div>  <p>适用带鱼屏，我用过的4K壁纸</p>  <a href='/album/wallpaper/3840'></a>  </figcaption>  </figure>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人生中的最后一段青春</title>
+      <link href="/album/indian/index.html"/>
+      <url>/album/indian/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
       
     </entry>
     
@@ -912,17 +901,6 @@
     
     
     <entry>
-      <title>1920*1080，适用中等屏幕，最常见的1K壁纸</title>
-      <link href="/album/wallpaper/1920/index.html"/>
-      <url>/album/wallpaper/1920/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/焰灵姬01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/樱木花道.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鲸鱼01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/宅男01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/卡沙.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/天气之子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/科比.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/欧文.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/神泣.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>1680*1050，适用小屏幕，比如常见的13寸屏幕</title>
       <link href="/album/wallpaper/1680/index.html"/>
       <url>/album/wallpaper/1680/index.html</url>
@@ -934,11 +912,11 @@
     
     
     <entry>
-      <title>2560*1440，适用大屏幕，最常见的2K壁纸</title>
-      <link href="/album/wallpaper/2560/index.html"/>
-      <url>/album/wallpaper/2560/index.html</url>
+      <title>1920*1080，适用中等屏幕，最常见的1K壁纸</title>
+      <link href="/album/wallpaper/1920/index.html"/>
+      <url>/album/wallpaper/1920/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/宇宙01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/科比01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/风景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/纯色01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/焰灵姬01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/樱木花道.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鲸鱼01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/宅男01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/卡沙.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/天气之子.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/科比.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/欧文.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/鬼刀07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1920/神泣.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
@@ -950,6 +928,17 @@
       <url>/album/wallpaper/19200/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2560*1440，适用大屏幕，最常见的2K壁纸</title>
+      <link href="/album/wallpaper/2560/index.html"/>
+      <url>/album/wallpaper/2560/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/宇宙01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/科比01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/风景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2560/纯色01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
