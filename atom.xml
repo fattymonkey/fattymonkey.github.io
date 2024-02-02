@@ -256,11 +256,11 @@
     
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
-    
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -400,9 +400,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
     
   </entry>
   
