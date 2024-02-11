@@ -85,11 +85,11 @@
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
+    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
     <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
-    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
     
   </entry>
   
@@ -225,8 +225,6 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
@@ -234,6 +232,8 @@
     <category term="Twikoo" scheme="https://fattymonkey.com/tags/Twikoo/"/>
     
     <category term="MongoDB" scheme="https://fattymonkey.com/tags/MongoDB/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
@@ -277,13 +277,13 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
-    
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
+    
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -325,9 +325,9 @@
     <category term="技术白话" scheme="https://fattymonkey.com/categories/%E6%8A%80%E6%9C%AF%E7%99%BD%E8%AF%9D/"/>
     
     
-    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     
@@ -371,9 +371,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
-    
     <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
+    <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
     
     <category term="Windows" scheme="https://fattymonkey.com/tags/Windows/"/>
     
@@ -396,9 +396,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
     <category term="ChatGPT" scheme="https://fattymonkey.com/tags/ChatGPT/"/>
     
@@ -421,11 +421,11 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
     <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
-    
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
