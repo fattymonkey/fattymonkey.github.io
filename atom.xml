@@ -46,7 +46,7 @@
     <published>2024-01-20T13:16:49.000Z</published>
     <updated>2024-01-10T14:24:01.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="第一节：准备工作"><a href="#第一节：准备工作" class="headerlink" title="第一节：准备工作"></a>第一节：准备工作</h1><h2 id="1-1：本机准备"><a href="#1-1：本机准备" class="headerlink" title="1.1：本机准备"></a>1.1：本机准备</h2><p>首先，你的电脑需要先安装并配置好 Maven，具体的操作就不赘述了，主要包括下载、安装和配置，而其中配置又主要包括环境变量配置、本地仓库配置、镜像配置、JDK 版本配置等。</p><p>关于在 macOS 上安装配置 Maven 的教程，可以参考我的这篇博文：<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>。</p><h2 id="1-2：IDEA准备"><a href="#1-2：IDEA准备" class="headerlink" title="1.2：IDEA准备"></a>1.2：IDEA准备</h2><p>其次，你的 IDEA 还要配置好本机安装的 Maven！同样可以参考<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>的 3.5 中的内容！</p><h1 id="第二节：创建项目"><a href="#第二节：创建项目" class="headerlink" title="第二节：创建项目"></a>第二节：创建项目</h1><blockquote><p>使用 IDEA 创建 Maven 项目有两种方式，分别是普通创建和使用原型创建！</p></blockquote><h2 id="2-1：普通创建"><a href="#2-1：普通创建" class="headerlink" title="2.1：普通创建"></a>2.1：普通创建</h2><p>第一步：打开 IDEA，点击<code>New Project</code>，创建一个新项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212174840757.png"></p><p>第二步：选择创建 Maven 项目，并填入必要的信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212222949126.png"></p><p>最后，点击上图右下角的<code>Create</code>按钮，这样就创建了一个 Maven 项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212224125867.png"></p><p>注意此时有报错，这是因为 Maven 仓库中缺少必要的一些包，最下面的进度条正在下载这些包，需等待下载完成！</p><p>第三步：下载完成后，点击 IDEA 侧边栏的<code>m</code>图标后，再点击刷新按钮</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225500383.png"></p><p>然后报错就消失了，这样就创建了一个 Maven 项目：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225600012.png"></p><h2 id="2-2：使用原型"><a href="#2-2：使用原型" class="headerlink" title="2.2：使用原型"></a>2.2：使用原型</h2><p>在普通创建中，创建出来的 Maven 项目的目录结构是默认的，而使用项目原型（Maven Archetype）来创建时，可以在新项目创建的时候，将某一类项目的最佳模板应用进来！我在知乎上找到了关于 Maven Archetype 的如下介绍：</p><blockquote><p>项目原型（Maven Archetype）是一个 Maven 项目的模板工具包，它定义了一类项目的基本架构。Archetype 为开发人员提供了创建 Maven 项目的模板，同时它也可以根据已有的 Maven 项目生成参数化的模板。通过 Archetype 开发人员可以很方便地将一类项目的最佳实现应用到自己的项目中。在一个 Maven 项目中，开发者可以通过 Archetype 提供的范例快速入门并了解该项目的结构与特点。</p></blockquote><p>比如，我想创建一个<code>webapp</code>模板的 Maven 项目，就可以像下面这样来操作！</p><p>第一步：点击侧边栏的<code>Maven Archetype</code></p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225800013.png"></p><p>第二步：填写项目信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212230737456.png"></p><p>最后点击<code>Create</code>，项目就创建好了（注意此时控制台显示正在下载一些包）：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231044260.png"></p><p>第四步：等待下载完成（展示<code>Process finished with exit code 0</code>）后，项目就创建完成了，项目结构自动变化</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231743627.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一节：准备工作"><a href="#第一节：准备工作" class="headerlink" title="第一节：准备工作"></a>第一节：准备工作</h1><h2 id="1-1：本机准备"><a href="#1-1：本机准备" class="headerlink" title="1.1：本机准备"></a>1.1：本机准备</h2><p>首先，你的电脑需要先安装并配置好 Maven，具体的操作就不赘述了，主要包括下载、安装和配置，而其中配置又主要包括环境变量配置、本地仓库配置、镜像配置、JDK 版本配置等。</p><p>关于在 macOS 上安装配置 Maven 的教程，可以参考我的这篇博文：<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>。</p><h2 id="1-2：IDEA准备"><a href="#1-2：IDEA准备" class="headerlink" title="1.2：IDEA准备"></a>1.2：IDEA准备</h2><p>其次，你的 IDEA 还要配置好本机安装的 Maven！同样可以参考<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>的 3.5 中的内容！</p><h1 id="第二节：创建项目"><a href="#第二节：创建项目" class="headerlink" title="第二节：创建项目"></a>第二节：创建项目</h1><blockquote><p>使用 IDEA 创建 Maven 项目有两种方式，分别是普通创建和使用原型创建！</p></blockquote><h2 id="2-1：普通创建"><a href="#2-1：普通创建" class="headerlink" title="2.1：普通创建"></a>2.1：普通创建</h2><p>第一步：打开 IDEA，点击<code>New Project</code>，创建一个新项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212174840757.png"></p><p>第二步：选择创建 Maven 项目，并填入必要的信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212222949126.png"></p><p>最后，点击上图右下角的<code>Create</code>按钮，这样就创建了一个 Maven 项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212224125867.png"></p><p>注意此时有报错，这是因为 Maven 仓库中缺少必要的一些包，最下面的进度条正在下载这些包，需等待下载完成！</p><p>第三步：下载完成后，点击 IDEA 侧边栏的<code>m</code>图标后，再点击刷新按钮</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225500383.png"></p><p>然后报错就消失了，这样就创建了一个 Maven 项目：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225600012.png"></p><h2 id="2-2：使用原型"><a href="#2-2：使用原型" class="headerlink" title="2.2：使用原型"></a>2.2：使用原型</h2><p>在普通创建中，创建出来的 Maven 项目的目录结构是默认的，而使用项目原型（Maven Archetype）来创建时，可以在新项目创建的时候，将某一类项目的最佳模板应用进来！我在知乎上找到了关于 Maven Archetype 的如下介绍：</p><blockquote><p>项目原型（Maven Archetype）是一个 Maven 项目的模板工具包，它定义了一类项目的基本架构。Archetype 为开发人员提供了创建 Maven 项目的模板，同时它也可以根据已有的 Maven 项目生成参数化的模板。通过 Archetype 开发人员可以很方便地将一类项目的最佳实现应用到自己的项目中。在一个 Maven 项目中，开发者可以通过 Archetype 提供的范例快速入门并了解该项目的结构与特点。</p></blockquote><p>比如，我想创建一个<code>webapp</code>模板的 Maven 项目，就可以像下面这样来操作！</p><p>第一步：点击侧边栏的<code>Maven Archetype</code></p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225800013.png"></p><p>第二步：填写项目信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212230737456.png"></p><p>最后点击<code>Create</code>，项目就创建好了（注意此时控制台显示正在下载一些包）：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231044260.png"></p><p>第四步：等待下载完成（展示<code>Process finished with exit code 0</code>）后，项目就创建完成了，项目结构自动变化</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231743627.png"></p><h2 id="2-3：模块管理"><a href="#2-3：模块管理" class="headerlink" title="2.3：模块管理"></a>2.3：模块管理</h2><p>大多数情况下，我们都是使用模块化来管理项目的，Maven 也支持模块化管理，把一个大项目分拆为多个模块是降低软件复杂度的有效方法！</p><p>关于 Maven 的模块化管理，推荐看一下廖雪峰老师的这篇博文——<a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1309301243117601">《模块管理》</a>！我这里就不再赘述了～～</p>]]></content>
     
     
     <summary type="html">详细描述如何在IDEA(2023.3.3+)中创建Maven项目</summary>
@@ -56,11 +56,11 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
     <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
-    
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
   </entry>
   
@@ -81,9 +81,9 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
-    
     <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
+    <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
     <category term="JRebel" scheme="https://fattymonkey.com/tags/JRebel/"/>
     
@@ -106,6 +106,8 @@
     <category term="Java开发" scheme="https://fattymonkey.com/categories/Java%E5%BC%80%E5%8F%91/"/>
     
     
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+    
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
@@ -114,7 +116,28 @@
     
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
+  </entry>
+  
+  <entry>
+    <title>IntelliJ IDEA 的常用设置（总结篇）</title>
+    <link href="https://fattymonkey.com/post/10027.html"/>
+    <id>https://fattymonkey.com/post/10027.html</id>
+    <published>2024-01-17T11:11:24.000Z</published>
+    <updated>2024-01-17T15:43:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一节：全局的设置"><a href="#第一节：全局的设置" class="headerlink" title="第一节：全局的设置"></a>第一节：全局的设置</h1><h2 id="1-01：文件编码"><a href="#1-01：文件编码" class="headerlink" title="1.01：文件编码"></a>1.01：文件编码</h2><p>设置 IDEA 的全局和项目的文件编码为 UTF-8：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104222125664.png"></p><h2 id="1-02：隐藏文件"><a href="#1-02：隐藏文件" class="headerlink" title="1.02：隐藏文件"></a>1.02：隐藏文件</h2><p>有时候在 IDEA 的项目目录中会存在一些我们不会用到的文件，比如<code>.idea</code>和<code>.iml</code>这种文件：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104215058686.png"></p><p>尤其是<code>.idea</code>，它并不是项目本身的文件，我们也不会编辑和使用它，所以一般做法就是将其隐藏掉。打开设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104215346324.png"></p><p>最后点击<code>Apply</code>后，项目文件中就隐藏了这个文件夹：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104215448024.png"></p><p>PS：后缀名为<code>.iml</code>的文件是 IDEA 用来标识项目的，缺少这个文件，IDEA 就无法识别项目，跟 eclipse 中的<code>.project</code>文件是一样的性质。并且这个文件在不同的设备上也会有差异，所以我们在管理项目的时候，需要忽略这个文件，只需要在上面多配置一个<code>*.iml</code>即可！</p><h2 id="1-03：自动保存"><a href="#1-03：自动保存" class="headerlink" title="1.03：自动保存"></a>1.03：自动保存</h2><p>假如你编辑了很多代码，而且你当前正在编辑，突然发生意外情况（停电和IDEA卡死等），那所有的修改都没了，是不是很蛋疼！针对这种情况，IDEA给出了自己的解决方案：</p><ul><li>当你在IDEA和其它应用中切换时，IDEA会自动保存你的更改；</li><li>IDEA自动检查你是否修改代码，默认每隔 15 秒就会自动保存一次；</li></ul><p>原本这是很好的功能，但是试想一下，假如你无意中敲击了键盘，在代码中键入了错误的内容，此时IDEA并不能分辨你的修改是否是意外，它仍然会自动保存，这样就会产生意料之外的错误！</p><p>相比于自动保存功能，我更愿意由自己来决定是否保存和何时保存，可进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213211308511.png"></p><h2 id="1-04：内存指示器"><a href="#1-04：内存指示器" class="headerlink" title="1.04：内存指示器"></a>1.04：内存指示器</h2><p>IDEA 可以在右下角展示它当前使用的内存，只需要：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104220236183.png"></p><p>这样一来，就可以在右下角展示内存指示器：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104220456064.png"></p><h1 id="第二节：字体相关"><a href="#第二节：字体相关" class="headerlink" title="第二节：字体相关"></a>第二节：字体相关</h1><h2 id="2-01：界面字体"><a href="#2-01：界面字体" class="headerlink" title="2.01：界面字体"></a>2.01：界面字体</h2><p>整个 IDEA 的界面 UI 字体可以自己修改：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213214319417.png"></p><h2 id="2-02：编辑区字体"><a href="#2-02：编辑区字体" class="headerlink" title="2.02：编辑区字体"></a>2.02：编辑区字体</h2><p>编辑区代码的字体：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213215152720.png"></p><p>此外，IDEA 还提供了 Ctrl 和鼠标滚轮的组合来动态调整编辑区代码的字体大小，默认是关闭的，需要开启：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213215449354.png"></p><p>PS：选择 Active editor 表示只对当前激活的标签卡内容有效（包括控制台字体），其它标签卡的字体大小不受影响！</p><h2 id="2-03：控制台字体"><a href="#2-03：控制台字体" class="headerlink" title="2.03：控制台字体"></a>2.03：控制台字体</h2><p>控制台的字体默认使用 2.02 中设置的默认字体，我门也可以自己修改这个字体，我一般会把控制台字体设置小一些并减少行距，这样可以在有限的控制台窗口看到更多的内容：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213220311307.png"></p><h1 id="第三节：编辑区相关"><a href="#第三节：编辑区相关" class="headerlink" title="第三节：编辑区相关"></a>第三节：编辑区相关</h1><h2 id="2-01：选项卡片"><a href="#2-01：选项卡片" class="headerlink" title="2.01：选项卡片"></a>2.01：选项卡片</h2><p>默认情况下，编辑区上方的选项卡只在一行中显示，并且最多显示 10 个，超过了 10 个就会自动关闭之前打开的。但是我们在日常开发过程中，经常需要打开十几个甚至更多的选项卡，可以进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104221422209.png"></p><p>此外：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104221600903.png"></p><h2 id="2-02：拼写检查"><a href="#2-02：拼写检查" class="headerlink" title="2.02：拼写检查"></a>2.02：拼写检查</h2><p>IDEA 会对编辑区的文字进行检查，当你的单词拼写错误时，就会被检查出来，但是有时候单词拼写错误并不会印象代码的运行，所以一般情况下我会关闭这种拼写检查。操作如下：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213001418910.png"></p><h2 id="2-03：注释检查"><a href="#2-03：注释检查" class="headerlink" title="2.03：注释检查"></a>2.03：注释检查</h2><p>在编写方法的注释时，我们经常会忽略注释的描述，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213002545962.png"></p><p>解决这个警告只需要给注释添加描述即可。但是对于别人写的代码，我们可能不想去添加描述，所以可关闭这种检查：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213002833440.png"></p><h2 id="2-04：代码联想"><a href="#2-04：代码联想" class="headerlink" title="2.04：代码联想"></a>2.04：代码联想</h2><p>默认情况下当你输入<code>user</code>时，代码联想并不会显示<code>User</code>，这是因为 IDEA 在代码联想时是区分大小写的，关掉即可：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213002207999.png"></p><h2 id="2-05：代码折叠"><a href="#2-05：代码折叠" class="headerlink" title="2.05：代码折叠"></a>2.05：代码折叠</h2><p>编辑区中展示的代码，可以设置它们是折叠还是展开的：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213003457719.png"></p><h2 id="2-06：导包合并"><a href="#2-06：导包合并" class="headerlink" title="2.06：导包合并"></a>2.06：导包合并</h2><p>默认情况下，同一个类中导入某个包中的若干个包时，该类中的 import 语句就会变成<code>import xx.xx.*</code>，有时候这种方式会导致导入的资源过多，很多公司的代码规范不允许这样做！想要取消这种行为可以这样设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213004450658.png"></p><h2 id="2-07：显示空白"><a href="#2-07：显示空白" class="headerlink" title="2.07：显示空白"></a>2.07：显示空白</h2><p>在代码中，空白符号也是很重要的，它们完全可以影响代码的正确与否和运行行为！但是在编辑区有时候不会显示这些空白符号，我门可以通过设置来让 IDEA 显示这些空白符号：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213005316925.png"></p><h2 id="2-08：使用提示"><a href="#2-08：使用提示" class="headerlink" title="2.08：使用提示"></a>2.08：使用提示</h2><p>在类和方法等定义上，有时候会展示该类或该方法的使用提示，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213211909357.png"></p><p>从视觉上来看“no usages”占用一行，但这是 IDEA 用来标识的，实际上并没有占用一行，假如想去掉，可以这么设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213212238871.png"></p><h2 id="2-09：方法分隔符"><a href="#2-09：方法分隔符" class="headerlink" title="2.09：方法分隔符"></a>2.09：方法分隔符</h2><p>IDEA 可在类的每个方法之间添加分隔符，让方法看起来更直观，但是这个功能是默认关闭的，可以通过设置来开启：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213004923169.png"></p><h2 id="2-10：视觉参考线"><a href="#2-10：视觉参考线" class="headerlink" title="2.10：视觉参考线"></a>2.10：视觉参考线</h2><p>正常情况下，编辑区会有一个竖向的视觉参考线，参考线左边每行有 120 个字符，用来给开发者提示每行的最大长度：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213212800673.png"></p><p>但是强迫症表示真心受不了这个，要想去除这个视觉分界线，可以这么设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213213412367.png"></p><h2 id="2-11：黄色小灯泡"><a href="#2-11：黄色小灯泡" class="headerlink" title="2.11：黄色小灯泡"></a>2.11：黄色小灯泡</h2><p>使用 IDEA 编辑时，光标所在行行首经常出现一个黄色小灯泡：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213213818362.png"></p><p>其作用和快捷键 Alt + Enter 相同，因为会影响鼠标点击行首，所以一般情况下都是将其隐藏：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213214103889.png"></p>]]></content>
+    
+    
+    <summary type="html">详细记录 IntelliJ IDEA 的一些常用设置（持续更新～～）</summary>
+    
+    
+    
+    <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
+    
+    <category term="IntelliJ IDEA" scheme="https://fattymonkey.com/tags/IntelliJ-IDEA/"/>
     
   </entry>
   
@@ -135,9 +158,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
     <category term="WebStorm" scheme="https://fattymonkey.com/tags/WebStorm/"/>
+    
+    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
   </entry>
   
@@ -250,9 +273,9 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
     <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
     
@@ -302,13 +325,13 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
-    
-    <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
     <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
+    <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
+    
+    <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
     
   </entry>
   
@@ -350,9 +373,9 @@
     <category term="技术白话" scheme="https://fattymonkey.com/categories/%E6%8A%80%E6%9C%AF%E7%99%BD%E8%AF%9D/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     
@@ -396,9 +419,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
-    
     <category term="Git" scheme="https://fattymonkey.com/tags/Git/"/>
+    
+    <category term="IntelliJ Idea" scheme="https://fattymonkey.com/tags/IntelliJ-Idea/"/>
     
     <category term="Windows" scheme="https://fattymonkey.com/tags/Windows/"/>
     
@@ -421,9 +444,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
     <category term="ChatGPT" scheme="https://fattymonkey.com/tags/ChatGPT/"/>
     
@@ -446,11 +469,11 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
     <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
@@ -474,27 +497,6 @@
     <category term="Markdown" scheme="https://fattymonkey.com/tags/Markdown/"/>
     
     <category term="HTML" scheme="https://fattymonkey.com/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github使用口令替代密码来进行上传验证</title>
-    <link href="https://fattymonkey.com/post/10021.html"/>
-    <id>https://fattymonkey.com/post/10021.html</id>
-    <published>2023-09-21T13:35:10.000Z</published>
-    <updated>2023-09-21T15:46:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="第一节：错误描述"><a href="#第一节：错误描述" class="headerlink" title="第一节：错误描述"></a>第一节：错误描述</h1><h2 id="1-1：报错信息"><a href="#1-1：报错信息" class="headerlink" title="1.1：报错信息"></a>1.1：报错信息</h2><p>假如你在 2021 年 8 月 13 日前后都往 Github 上提交过代码，那么在这个时间点以后，你肯定遇到过类似下面的错误：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">remote: Support for password authentication was removed on August 13, 2021.</span><br></pre></td></tr></table></figure><p>比如，我在 Github 上创建了一个新的仓库，并且用一台新的电脑第一次往这个仓库中提交代码，当提示我输入用户名和密码的时候，我照做了（且用户名和密码都输入正确），但是结果却报错：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021170548378.png"></p><h2 id="1-2：分析原因"><a href="#1-2：分析原因" class="headerlink" title="1.2：分析原因"></a>1.2：分析原因</h2><p>由报错信息可知，从 2021 年 8 月 13 日开始，Github 删除了对使用密码进行身份验证的支持！也就是说，之前你在提交代码时（第一次提交）使用 GitHub 的用户名和密码进行验证的方式已经不能使用了，用户名是指 Github 的用户名，密码则是 Github 的登录密码！</p><p>通过查阅官方文档，我发现 <font color=red>Github 现在提交代码时使用 token（口令）来替代登录密码来进行验证！</font>即使在提交代码时要求你输入的是“Password”，你依然应该输入 token 而不是 password！</p><h1 id="第二节：使用口令"><a href="#第二节：使用口令" class="headerlink" title="第二节：使用口令"></a>第二节：使用口令</h1><h2 id="2-1：创建口令"><a href="#2-1：创建口令" class="headerlink" title="2.1：创建口令"></a>2.1：创建口令</h2><p>点击 Github 主页头像，选择<code>Settings</code>，然后点击侧边栏的<code>&lt;&gt;Developer settings</code>，跳转到如下页面：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021170651466.png"></p><p>展开侧边栏的<code>Personal access token</code>，并点击<code>Token(classic)</code>：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021170914227.png"></p><p>跳转后，假如你还没有创建口令，依次点击<code>Generate new token</code> &gt; <code>Generate new token(classic)</code>：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021171027238.png"></p><p>然后，对即将生成的口令进行初始化设置，比如我创建一个个人使用的永远不过期的口令：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021171238531.png"></p><p>解释一下这里的设置：</p><ul><li>Note：任意填写，因为我们可能会创建很多口令，这个用来标记不同的口令，防止忘记；</li><li>Expiration：有效期，可选的有7天、30天、60天、90天、不限制，还可以自己定制时长；</li><li>Select scopes：选择范围，就是说你创建的这个口令具备的权限，勾选 repo 表示赋予仓库级别的权限；</li></ul><p>最后点击最下面的<code>Generate token</code>按钮，完成创建，页面自动生成口令：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021171245030.png"></p><p>注意：口令生成以后记得保存下来，一旦离开这个页面再进来，就看不到之前生成的口令明文了</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021171329123.png"></p><h2 id="2-2：使用口令"><a href="#2-2：使用口令" class="headerlink" title="2.2：使用口令"></a>2.2：使用口令</h2><p>使用口令很简单，只需要在推送代码时将其作为密码来使用即可：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021171514066.png"></p><p>一旦你使用了口令以后，口令会自动保存在你的计算机缓存文件中，下次再推送的时候就不需要重复输入了。比如在 Mac 中，使用了口令以后，就可以在钥匙串中找到：</p><p><img src="https://www.czblogs.cn/posts/tools/01/image-20231021172121473.png"></p><p>友情提示：从这里可以找到明文的口令，但是前提是你已经用口令提交过至少一次代码，所以在上面生成口令的时候一定要先复制保存起来！！！</p><p>～～</p><p>～～</p><p>～～</p>]]></content>
-    
-    
-    <summary type="html">2021年8月13日起，Github 使用 username + token 的验证方式</summary>
-    
-    
-    
-    <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
   </entry>
   

@@ -35,7 +35,7 @@
       <link href="/post/10103.html"/>
       <url>/post/10103.html</url>
       
-        <content type="html"><![CDATA[<h1 id="第一节：准备工作"><a href="#第一节：准备工作" class="headerlink" title="第一节：准备工作"></a>第一节：准备工作</h1><h2 id="1-1：本机准备"><a href="#1-1：本机准备" class="headerlink" title="1.1：本机准备"></a>1.1：本机准备</h2><p>首先，你的电脑需要先安装并配置好 Maven，具体的操作就不赘述了，主要包括下载、安装和配置，而其中配置又主要包括环境变量配置、本地仓库配置、镜像配置、JDK 版本配置等。</p><p>关于在 macOS 上安装配置 Maven 的教程，可以参考我的这篇博文：<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>。</p><h2 id="1-2：IDEA准备"><a href="#1-2：IDEA准备" class="headerlink" title="1.2：IDEA准备"></a>1.2：IDEA准备</h2><p>其次，你的 IDEA 还要配置好本机安装的 Maven！同样可以参考<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>的 3.5 中的内容！</p><h1 id="第二节：创建项目"><a href="#第二节：创建项目" class="headerlink" title="第二节：创建项目"></a>第二节：创建项目</h1><blockquote><p>使用 IDEA 创建 Maven 项目有两种方式，分别是普通创建和使用原型创建！</p></blockquote><h2 id="2-1：普通创建"><a href="#2-1：普通创建" class="headerlink" title="2.1：普通创建"></a>2.1：普通创建</h2><p>第一步：打开 IDEA，点击<code>New Project</code>，创建一个新项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212174840757.png"></p><p>第二步：选择创建 Maven 项目，并填入必要的信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212222949126.png"></p><p>最后，点击上图右下角的<code>Create</code>按钮，这样就创建了一个 Maven 项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212224125867.png"></p><p>注意此时有报错，这是因为 Maven 仓库中缺少必要的一些包，最下面的进度条正在下载这些包，需等待下载完成！</p><p>第三步：下载完成后，点击 IDEA 侧边栏的<code>m</code>图标后，再点击刷新按钮</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225500383.png"></p><p>然后报错就消失了，这样就创建了一个 Maven 项目：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225600012.png"></p><h2 id="2-2：使用原型"><a href="#2-2：使用原型" class="headerlink" title="2.2：使用原型"></a>2.2：使用原型</h2><p>在普通创建中，创建出来的 Maven 项目的目录结构是默认的，而使用项目原型（Maven Archetype）来创建时，可以在新项目创建的时候，将某一类项目的最佳模板应用进来！我在知乎上找到了关于 Maven Archetype 的如下介绍：</p><blockquote><p>项目原型（Maven Archetype）是一个 Maven 项目的模板工具包，它定义了一类项目的基本架构。Archetype 为开发人员提供了创建 Maven 项目的模板，同时它也可以根据已有的 Maven 项目生成参数化的模板。通过 Archetype 开发人员可以很方便地将一类项目的最佳实现应用到自己的项目中。在一个 Maven 项目中，开发者可以通过 Archetype 提供的范例快速入门并了解该项目的结构与特点。</p></blockquote><p>比如，我想创建一个<code>webapp</code>模板的 Maven 项目，就可以像下面这样来操作！</p><p>第一步：点击侧边栏的<code>Maven Archetype</code></p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225800013.png"></p><p>第二步：填写项目信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212230737456.png"></p><p>最后点击<code>Create</code>，项目就创建好了（注意此时控制台显示正在下载一些包）：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231044260.png"></p><p>第四步：等待下载完成（展示<code>Process finished with exit code 0</code>）后，项目就创建完成了，项目结构自动变化</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231743627.png"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="第一节：准备工作"><a href="#第一节：准备工作" class="headerlink" title="第一节：准备工作"></a>第一节：准备工作</h1><h2 id="1-1：本机准备"><a href="#1-1：本机准备" class="headerlink" title="1.1：本机准备"></a>1.1：本机准备</h2><p>首先，你的电脑需要先安装并配置好 Maven，具体的操作就不赘述了，主要包括下载、安装和配置，而其中配置又主要包括环境变量配置、本地仓库配置、镜像配置、JDK 版本配置等。</p><p>关于在 macOS 上安装配置 Maven 的教程，可以参考我的这篇博文：<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>。</p><h2 id="1-2：IDEA准备"><a href="#1-2：IDEA准备" class="headerlink" title="1.2：IDEA准备"></a>1.2：IDEA准备</h2><p>其次，你的 IDEA 还要配置好本机安装的 Maven！同样可以参考<a href="https://www.fattymonkey.com/post/10101.html">《在macOS上搭建Maven环境》</a>的 3.5 中的内容！</p><h1 id="第二节：创建项目"><a href="#第二节：创建项目" class="headerlink" title="第二节：创建项目"></a>第二节：创建项目</h1><blockquote><p>使用 IDEA 创建 Maven 项目有两种方式，分别是普通创建和使用原型创建！</p></blockquote><h2 id="2-1：普通创建"><a href="#2-1：普通创建" class="headerlink" title="2.1：普通创建"></a>2.1：普通创建</h2><p>第一步：打开 IDEA，点击<code>New Project</code>，创建一个新项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212174840757.png"></p><p>第二步：选择创建 Maven 项目，并填入必要的信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212222949126.png"></p><p>最后，点击上图右下角的<code>Create</code>按钮，这样就创建了一个 Maven 项目</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212224125867.png"></p><p>注意此时有报错，这是因为 Maven 仓库中缺少必要的一些包，最下面的进度条正在下载这些包，需等待下载完成！</p><p>第三步：下载完成后，点击 IDEA 侧边栏的<code>m</code>图标后，再点击刷新按钮</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225500383.png"></p><p>然后报错就消失了，这样就创建了一个 Maven 项目：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225600012.png"></p><h2 id="2-2：使用原型"><a href="#2-2：使用原型" class="headerlink" title="2.2：使用原型"></a>2.2：使用原型</h2><p>在普通创建中，创建出来的 Maven 项目的目录结构是默认的，而使用项目原型（Maven Archetype）来创建时，可以在新项目创建的时候，将某一类项目的最佳模板应用进来！我在知乎上找到了关于 Maven Archetype 的如下介绍：</p><blockquote><p>项目原型（Maven Archetype）是一个 Maven 项目的模板工具包，它定义了一类项目的基本架构。Archetype 为开发人员提供了创建 Maven 项目的模板，同时它也可以根据已有的 Maven 项目生成参数化的模板。通过 Archetype 开发人员可以很方便地将一类项目的最佳实现应用到自己的项目中。在一个 Maven 项目中，开发者可以通过 Archetype 提供的范例快速入门并了解该项目的结构与特点。</p></blockquote><p>比如，我想创建一个<code>webapp</code>模板的 Maven 项目，就可以像下面这样来操作！</p><p>第一步：点击侧边栏的<code>Maven Archetype</code></p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212225800013.png"></p><p>第二步：填写项目信息，比如</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212230737456.png"></p><p>最后点击<code>Create</code>，项目就创建好了（注意此时控制台显示正在下载一些包）：</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231044260.png"></p><p>第四步：等待下载完成（展示<code>Process finished with exit code 0</code>）后，项目就创建完成了，项目结构自动变化</p><p><img src="https://www.czblogs.cn/posts/java/10103/image-20240212231743627.png"></p><h2 id="2-3：模块管理"><a href="#2-3：模块管理" class="headerlink" title="2.3：模块管理"></a>2.3：模块管理</h2><p>大多数情况下，我们都是使用模块化来管理项目的，Maven 也支持模块化管理，把一个大项目分拆为多个模块是降低软件复杂度的有效方法！</p><p>关于 Maven 的模块化管理，推荐看一下廖雪峰老师的这篇博文——<a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1309301243117601">《模块管理》</a>！我这里就不再赘述了～～</p>]]></content>
       
       
       <categories>
@@ -47,11 +47,11 @@
       
         <tags>
             
+            <tag> IntelliJ Idea </tag>
+            
             <tag> Java </tag>
             
             <tag> Maven </tag>
-            
-            <tag> IntelliJ Idea </tag>
             
         </tags>
       
@@ -76,9 +76,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> IntelliJ Idea </tag>
+            
+            <tag> Java </tag>
             
             <tag> JRebel </tag>
             
@@ -105,6 +105,8 @@
       
         <tags>
             
+            <tag> IntelliJ Idea </tag>
+            
             <tag> macOS </tag>
             
             <tag> Java </tag>
@@ -113,7 +115,32 @@
             
             <tag> JDK </tag>
             
-            <tag> IntelliJ Idea </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IntelliJ IDEA 的常用设置（总结篇）</title>
+      <link href="/post/10027.html"/>
+      <url>/post/10027.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一节：全局的设置"><a href="#第一节：全局的设置" class="headerlink" title="第一节：全局的设置"></a>第一节：全局的设置</h1><h2 id="1-01：文件编码"><a href="#1-01：文件编码" class="headerlink" title="1.01：文件编码"></a>1.01：文件编码</h2><p>设置 IDEA 的全局和项目的文件编码为 UTF-8：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104222125664.png"></p><h2 id="1-02：隐藏文件"><a href="#1-02：隐藏文件" class="headerlink" title="1.02：隐藏文件"></a>1.02：隐藏文件</h2><p>有时候在 IDEA 的项目目录中会存在一些我们不会用到的文件，比如<code>.idea</code>和<code>.iml</code>这种文件：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104215058686.png"></p><p>尤其是<code>.idea</code>，它并不是项目本身的文件，我们也不会编辑和使用它，所以一般做法就是将其隐藏掉。打开设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104215346324.png"></p><p>最后点击<code>Apply</code>后，项目文件中就隐藏了这个文件夹：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104215448024.png"></p><p>PS：后缀名为<code>.iml</code>的文件是 IDEA 用来标识项目的，缺少这个文件，IDEA 就无法识别项目，跟 eclipse 中的<code>.project</code>文件是一样的性质。并且这个文件在不同的设备上也会有差异，所以我们在管理项目的时候，需要忽略这个文件，只需要在上面多配置一个<code>*.iml</code>即可！</p><h2 id="1-03：自动保存"><a href="#1-03：自动保存" class="headerlink" title="1.03：自动保存"></a>1.03：自动保存</h2><p>假如你编辑了很多代码，而且你当前正在编辑，突然发生意外情况（停电和IDEA卡死等），那所有的修改都没了，是不是很蛋疼！针对这种情况，IDEA给出了自己的解决方案：</p><ul><li>当你在IDEA和其它应用中切换时，IDEA会自动保存你的更改；</li><li>IDEA自动检查你是否修改代码，默认每隔 15 秒就会自动保存一次；</li></ul><p>原本这是很好的功能，但是试想一下，假如你无意中敲击了键盘，在代码中键入了错误的内容，此时IDEA并不能分辨你的修改是否是意外，它仍然会自动保存，这样就会产生意料之外的错误！</p><p>相比于自动保存功能，我更愿意由自己来决定是否保存和何时保存，可进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213211308511.png"></p><h2 id="1-04：内存指示器"><a href="#1-04：内存指示器" class="headerlink" title="1.04：内存指示器"></a>1.04：内存指示器</h2><p>IDEA 可以在右下角展示它当前使用的内存，只需要：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104220236183.png"></p><p>这样一来，就可以在右下角展示内存指示器：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104220456064.png"></p><h1 id="第二节：字体相关"><a href="#第二节：字体相关" class="headerlink" title="第二节：字体相关"></a>第二节：字体相关</h1><h2 id="2-01：界面字体"><a href="#2-01：界面字体" class="headerlink" title="2.01：界面字体"></a>2.01：界面字体</h2><p>整个 IDEA 的界面 UI 字体可以自己修改：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213214319417.png"></p><h2 id="2-02：编辑区字体"><a href="#2-02：编辑区字体" class="headerlink" title="2.02：编辑区字体"></a>2.02：编辑区字体</h2><p>编辑区代码的字体：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213215152720.png"></p><p>此外，IDEA 还提供了 Ctrl 和鼠标滚轮的组合来动态调整编辑区代码的字体大小，默认是关闭的，需要开启：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213215449354.png"></p><p>PS：选择 Active editor 表示只对当前激活的标签卡内容有效（包括控制台字体），其它标签卡的字体大小不受影响！</p><h2 id="2-03：控制台字体"><a href="#2-03：控制台字体" class="headerlink" title="2.03：控制台字体"></a>2.03：控制台字体</h2><p>控制台的字体默认使用 2.02 中设置的默认字体，我门也可以自己修改这个字体，我一般会把控制台字体设置小一些并减少行距，这样可以在有限的控制台窗口看到更多的内容：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213220311307.png"></p><h1 id="第三节：编辑区相关"><a href="#第三节：编辑区相关" class="headerlink" title="第三节：编辑区相关"></a>第三节：编辑区相关</h1><h2 id="2-01：选项卡片"><a href="#2-01：选项卡片" class="headerlink" title="2.01：选项卡片"></a>2.01：选项卡片</h2><p>默认情况下，编辑区上方的选项卡只在一行中显示，并且最多显示 10 个，超过了 10 个就会自动关闭之前打开的。但是我们在日常开发过程中，经常需要打开十几个甚至更多的选项卡，可以进行如下设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104221422209.png"></p><p>此外：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240104221600903.png"></p><h2 id="2-02：拼写检查"><a href="#2-02：拼写检查" class="headerlink" title="2.02：拼写检查"></a>2.02：拼写检查</h2><p>IDEA 会对编辑区的文字进行检查，当你的单词拼写错误时，就会被检查出来，但是有时候单词拼写错误并不会印象代码的运行，所以一般情况下我会关闭这种拼写检查。操作如下：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213001418910.png"></p><h2 id="2-03：注释检查"><a href="#2-03：注释检查" class="headerlink" title="2.03：注释检查"></a>2.03：注释检查</h2><p>在编写方法的注释时，我们经常会忽略注释的描述，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213002545962.png"></p><p>解决这个警告只需要给注释添加描述即可。但是对于别人写的代码，我们可能不想去添加描述，所以可关闭这种检查：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213002833440.png"></p><h2 id="2-04：代码联想"><a href="#2-04：代码联想" class="headerlink" title="2.04：代码联想"></a>2.04：代码联想</h2><p>默认情况下当你输入<code>user</code>时，代码联想并不会显示<code>User</code>，这是因为 IDEA 在代码联想时是区分大小写的，关掉即可：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213002207999.png"></p><h2 id="2-05：代码折叠"><a href="#2-05：代码折叠" class="headerlink" title="2.05：代码折叠"></a>2.05：代码折叠</h2><p>编辑区中展示的代码，可以设置它们是折叠还是展开的：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213003457719.png"></p><h2 id="2-06：导包合并"><a href="#2-06：导包合并" class="headerlink" title="2.06：导包合并"></a>2.06：导包合并</h2><p>默认情况下，同一个类中导入某个包中的若干个包时，该类中的 import 语句就会变成<code>import xx.xx.*</code>，有时候这种方式会导致导入的资源过多，很多公司的代码规范不允许这样做！想要取消这种行为可以这样设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213004450658.png"></p><h2 id="2-07：显示空白"><a href="#2-07：显示空白" class="headerlink" title="2.07：显示空白"></a>2.07：显示空白</h2><p>在代码中，空白符号也是很重要的，它们完全可以影响代码的正确与否和运行行为！但是在编辑区有时候不会显示这些空白符号，我门可以通过设置来让 IDEA 显示这些空白符号：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213005316925.png"></p><h2 id="2-08：使用提示"><a href="#2-08：使用提示" class="headerlink" title="2.08：使用提示"></a>2.08：使用提示</h2><p>在类和方法等定义上，有时候会展示该类或该方法的使用提示，比如：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213211909357.png"></p><p>从视觉上来看“no usages”占用一行，但这是 IDEA 用来标识的，实际上并没有占用一行，假如想去掉，可以这么设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213212238871.png"></p><h2 id="2-09：方法分隔符"><a href="#2-09：方法分隔符" class="headerlink" title="2.09：方法分隔符"></a>2.09：方法分隔符</h2><p>IDEA 可在类的每个方法之间添加分隔符，让方法看起来更直观，但是这个功能是默认关闭的，可以通过设置来开启：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213004923169.png"></p><h2 id="2-10：视觉参考线"><a href="#2-10：视觉参考线" class="headerlink" title="2.10：视觉参考线"></a>2.10：视觉参考线</h2><p>正常情况下，编辑区会有一个竖向的视觉参考线，参考线左边每行有 120 个字符，用来给开发者提示每行的最大长度：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213212800673.png"></p><p>但是强迫症表示真心受不了这个，要想去除这个视觉分界线，可以这么设置：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213213412367.png"></p><h2 id="2-11：黄色小灯泡"><a href="#2-11：黄色小灯泡" class="headerlink" title="2.11：黄色小灯泡"></a>2.11：黄色小灯泡</h2><p>使用 IDEA 编辑时，光标所在行行首经常出现一个黄色小灯泡：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213213818362.png"></p><p>其作用和快捷键 Alt + Enter 相同，因为会影响鼠标点击行首，所以一般情况下都是将其隐藏：</p><p><img src="https://www.czblogs.cn/posts/tools/07/image-20240213214103889.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> IntelliJ IDEA </tag>
             
         </tags>
       
@@ -138,9 +165,9 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> WebStorm </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
@@ -273,9 +300,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Butterfly </tag>
             
@@ -333,13 +360,13 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
-            <tag> GitHub </tag>
-            
             <tag> Vercel </tag>
             
             <tag> 域名解析 </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -389,9 +416,9 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> Gitee </tag>
             
@@ -443,9 +470,9 @@
       
         <tags>
             
-            <tag> IntelliJ Idea </tag>
-            
             <tag> Git </tag>
+            
+            <tag> IntelliJ Idea </tag>
             
             <tag> Windows </tag>
             
@@ -472,9 +499,9 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> ChatGPT </tag>
             
@@ -501,11 +528,11 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Github </tag>
             
             <tag> CDN </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -696,9 +723,9 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> Git </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
@@ -786,17 +813,6 @@
     
     
     <entry>
-      <title>1920*1200，适用中等屏幕，比1K的屏幕稍高</title>
-      <link href="/1921/index.html"/>
-      <url>/1921/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1921/非主流01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/神泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/神泣02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/神泣03.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图片展</title>
       <link href="/album/index.html"/>
       <url>/album/index.html</url>
@@ -819,11 +835,22 @@
     
     
     <entry>
-      <title>本站版权协议</title>
-      <link href="/copyright/index.html"/>
-      <url>/copyright/index.html</url>
+      <title>1920*1200，适用中等屏幕，比1K的屏幕稍高</title>
+      <link href="/1921/index.html"/>
+      <url>/1921/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！在使用本站的内容之前，请仔细阅读以下版权协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-知识产权所有权"><a href="#1-知识产权所有权" class="headerlink" title="1. 知识产权所有权"></a>1. 知识产权所有权</h1><h2 id="1-1-内容版权"><a href="#1-1-内容版权" class="headerlink" title="1.1 内容版权"></a>1.1 内容版权</h2><p>  本站上的所有内容，包括但不限于文章、图片、音频、视频等，均受到相关版权法律的保护。未经授权，禁止复制、转载、修改、发布、传播本站的内容。</p><h2 id="1-2-原创作品"><a href="#1-2-原创作品" class="headerlink" title="1.2 原创作品"></a>1.2 原创作品</h2><p>  除非另有说明，本站的所有原创作品（包括但不限于文章、插图、独立设计等）均为本站所有，未经允许不得转载或使用于其他场合。</p><h1 id="2-内容使用许可"><a href="#2-内容使用许可" class="headerlink" title="2. 内容使用许可"></a>2. 内容使用许可</h1><h2 id="2-1-授权范围"><a href="#2-1-授权范围" class="headerlink" title="2.1 授权范围"></a>2.1 授权范围</h2><p>  除非明确说明，本站上的内容仅供个人非商业用途使用。任何商业用途的使用都需要事先取得我们的书面许可。</p><h2 id="2-2-引用和链接"><a href="#2-2-引用和链接" class="headerlink" title="2.2 引用和链接"></a>2.2 引用和链接</h2><p>  欢迎其他网站引用本站的内容，但必须明确标明出处，并提供链接指向原始页面。</p><h1 id="3-第三方内容"><a href="#3-第三方内容" class="headerlink" title="3. 第三方内容"></a>3. 第三方内容</h1><h2 id="3-1-引用和链接"><a href="#3-1-引用和链接" class="headerlink" title="3.1 引用和链接"></a>3.1 引用和链接</h2><p>  本站可能包含引用或链接到第三方网站的内容，这些内容的版权归原作者所有。对于第三方内容的使用，请遵循原作者的版权声明。</p><h1 id="4-免责声明"><a href="#4-免责声明" class="headerlink" title="4. 免责声明"></a>4. 免责声明</h1><p>本站的内容可能包含一些参考性信息，但不对其准确性、完整性和实用性作任何明示或暗示的保证。使用本站内容所产生的风险由用户自行承担。</p><h1 id="5-联系我"><a href="#5-联系我" class="headerlink" title="5. 联系我"></a>5. 联系我</h1><p>如果您对本版权协议有任何疑问或意见，请通过以下联系方式与我联系：</p><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#x31;&#49;&#x38;&#53;&#x33;&#x34;&#57;&#56;&#52;&#51;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#x31;&#49;&#x38;&#53;&#x33;&#x34;&#57;&#56;&#52;&#51;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a></p></li><li><p>微信：18262607107</p></li></ul><h3 id="6-修改和更新"><a href="#6-修改和更新" class="headerlink" title="6. 修改和更新"></a>6. 修改和更新</h3><p>我们保留随时修改和更新本版权协议的权利，如果您发现本站在未声明的情况下使用了你受版权保护的内容，请与我联系，在修改时，我将在本页更新生效日期！ 感谢您的理解与支持！</p>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1921/非主流01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/鬼刀01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/神泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/神泣02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1921/神泣03.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本站Cookies协议</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）。为了提供更好的用户体验，我们使用Cookie技术。请在使用本站服务之前仔细阅读以下Cookie协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-什么是-Cookie？"><a href="#1-什么是-Cookie？" class="headerlink" title="1. 什么是 Cookie？"></a>1. 什么是 Cookie？</h1><p>Cookie是一小段文本信息，由网站存储在用户计算机或移动设备上的浏览器中。这些文本文件允许网站记住用户的偏好设置、登录状态和其他信息，从而提供更个性化、高效的用户体验。</p><h1 id="2-本站使用的-Cookie"><a href="#2-本站使用的-Cookie" class="headerlink" title="2. 本站使用的 Cookie"></a>2. 本站使用的 Cookie</h1><h2 id="2-1-必要性-Cookie"><a href="#2-1-必要性-Cookie" class="headerlink" title="2.1 必要性 Cookie"></a>2.1 必要性 Cookie</h2><p>这些 Cookie 是为了使网站正常运行所必需的，包括用户登录状态、购物车等功能。禁用这些 Cookie 可能会导致网站部分功能无法正常使用。</p><h2 id="2-2-分析和性能-Cookie"><a href="#2-2-分析和性能-Cookie" class="headerlink" title="2.2 分析和性能 Cookie"></a>2.2 分析和性能 Cookie</h2><p>站长使用第三方工具（如Google Analytics）收集匿名的访问数据，帮助我们了解访问者如何使用本站。这些信息用于改进网站的功能和性能。</p><h2 id="2-3-广告-Cookie"><a href="#2-3-广告-Cookie" class="headerlink" title="2.3 广告 Cookie"></a>2.3 广告 Cookie</h2><p>本站可能使用广告服务商提供的 Cookie，以提供与用户兴趣相关的广告。</p><h1 id="3-如何控制-Cookie"><a href="#3-如何控制-Cookie" class="headerlink" title="3. 如何控制 Cookie"></a>3. 如何控制 Cookie</h1><h2 id="3-1-浏览器设置"><a href="#3-1-浏览器设置" class="headerlink" title="3.1 浏览器设置"></a>3.1 浏览器设置</h2><p>大多数浏览器允许用户管理Cookie的设置。您可以根据浏览器的说明自定义Cookie设置，包括禁用某些Cookie。</p><h2 id="3-2-第三方工具"><a href="#3-2-第三方工具" class="headerlink" title="3.2 第三方工具"></a>3.2 第三方工具</h2><p>您可以使用第三方工具，如Google Analytics Opt-out Browser Add-on，以拒绝Google Analytics收集您的信息。</p><h1 id="4-联系我"><a href="#4-联系我" class="headerlink" title="4. 联系我"></a>4. 联系我</h1><p>如果您对本Cookie协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#56;&#53;&#x33;&#52;&#57;&#56;&#x34;&#x33;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#49;&#49;&#56;&#53;&#x33;&#52;&#57;&#56;&#x34;&#x33;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><h1 id="5-更新-Cookie-协议"><a href="#5-更新-Cookie-协议" class="headerlink" title="5. 更新 Cookie 协议"></a>5. 更新 Cookie 协议</h1><p>站长保留随时修改和更新本Cookie协议的权利，在修改时，我将在本页发布生效日期！感谢您的理解与支持！</p>]]></content>
       
     </entry>
     
@@ -841,22 +868,11 @@
     
     
     <entry>
-      <title>开发记录</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
+      <title>本站版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>这个页面用来记录主题的魔改记录以及一些灵感，选中的是已经完成的，未选中的是将来要做的</p></blockquote><h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 添加全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 将所有页面中的所有卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改，尤其是切换深浅模式的提示弹窗</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下，目前用的这个不是很好</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流并优化图片加载</li><li><input checked="" disabled="" type="checkbox"> 将导航栏的菜单设置为水平居中</li><li><input checked="" disabled="" type="checkbox"> 引入阿里图标来替换社交图标，并适配深浅模式</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换（已完成），并引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li><li><input disabled="" type="checkbox"> 将首页的文章列表改成瀑布流效果</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框并适配深浅模式</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改，建设各个元素的效果并优化代码</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口，还要美化该页面的UI效果</li><li><input checked="" disabled="" type="checkbox"> 给 ChatGPT 账号绑定虚拟信用卡并充值，以便长久使用，否则以后就没办法使用了</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input checked="" disabled="" type="checkbox"> 社交链接存在问题，点击会变大，返回后图标不会重新变小，适配屏幕尺寸修复问题</li><li><input checked="" disabled="" type="checkbox"> 编写本站隐私协议、版权协议、Cookies协议，并修复页脚的访问链接指向这些文章</li><li><input checked="" disabled="" type="checkbox"> 新增页面《客官打赏》，并将创建好的页面链接设置到页脚的对应处（手动添加资料）</li><li><input disabled="" type="checkbox"> 新增一个《个人简历》页面，并设置访问密码，然后在页脚新增一个链接指向该页面</li><li><input disabled="" type="checkbox"> 目前页面《各种统计》已经创建好并设置好了页脚的链接，该页面的内容和布局还未建设</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 美化文本选择框的颜色，并适配深色浅色两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的目录遮蔽色，并适配深浅两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化页脚版权声明的颜色，并适配深浅两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化页脚标签的边框和背景，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="照片展"><a href="#照片展" class="headerlink" title="照片展"></a>照片展</h2><ul><li><input checked="" disabled="" type="checkbox"> 添加一个《壁纸收藏》的图集，并按照壁纸尺寸设置子图集，最后上传壁纸</li><li><input disabled="" type="checkbox"> 添加一个《生活记录》的图集，并上传几张生活照片（已经上传，持续更新）</li><li><input disabled="" type="checkbox"> 添加一个《迫于生计》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 添加一个《出差印度》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 图集子页的图片大小存在细微的不断变化，看起来图片是一直抖动的，需修复</li></ul><h2 id="休闲页"><a href="#休闲页" class="headerlink" title="休闲页"></a>休闲页</h2><ul><li><input checked="" disabled="" type="checkbox"> 使用插件 <a href="https://github.com/mythsman/hexo-douban">hexo-douban</a> 创建图书馆、玩游戏、电影院、音乐汇页面</li><li><input checked="" disabled="" type="checkbox"> 娱乐页面的侧边栏和主体内容长度差别大，主题添加新布局来去除侧边栏，保留评论区</li><li><input disabled="" type="checkbox"> 丰富自己的豆瓣资料（持续优化）</li><li><input disabled="" type="checkbox"> 网易云音乐整理，使音乐汇页面所有的推荐音乐跟网站左下角的音乐播放器联动（持续优化）</li><li><input disabled="" type="checkbox"> 豆瓣页的所有标题链接等颜色需要适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当的内容，不然看起来会非常突兀</li><li><input disabled="" type="checkbox"> 美化留言板对话框，类似聊天页，看起来会更和谐一些</li></ul><h2 id="关于我（目前还没开发）"><a href="#关于我（目前还没开发）" class="headerlink" title="关于我（目前还没开发）"></a>关于我（目前还没开发）</h2><ul><li><input disabled="" type="checkbox"> 最前面添加繁体猴这个名字的灵感由来</li><li><input disabled="" type="checkbox"> 添加个人简历的链接（页脚也需添加）</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>本站Cookies协议</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）。为了提供更好的用户体验，我们使用Cookie技术。请在使用本站服务之前仔细阅读以下Cookie协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-什么是-Cookie？"><a href="#1-什么是-Cookie？" class="headerlink" title="1. 什么是 Cookie？"></a>1. 什么是 Cookie？</h1><p>Cookie是一小段文本信息，由网站存储在用户计算机或移动设备上的浏览器中。这些文本文件允许网站记住用户的偏好设置、登录状态和其他信息，从而提供更个性化、高效的用户体验。</p><h1 id="2-本站使用的-Cookie"><a href="#2-本站使用的-Cookie" class="headerlink" title="2. 本站使用的 Cookie"></a>2. 本站使用的 Cookie</h1><h2 id="2-1-必要性-Cookie"><a href="#2-1-必要性-Cookie" class="headerlink" title="2.1 必要性 Cookie"></a>2.1 必要性 Cookie</h2><p>这些 Cookie 是为了使网站正常运行所必需的，包括用户登录状态、购物车等功能。禁用这些 Cookie 可能会导致网站部分功能无法正常使用。</p><h2 id="2-2-分析和性能-Cookie"><a href="#2-2-分析和性能-Cookie" class="headerlink" title="2.2 分析和性能 Cookie"></a>2.2 分析和性能 Cookie</h2><p>站长使用第三方工具（如Google Analytics）收集匿名的访问数据，帮助我们了解访问者如何使用本站。这些信息用于改进网站的功能和性能。</p><h2 id="2-3-广告-Cookie"><a href="#2-3-广告-Cookie" class="headerlink" title="2.3 广告 Cookie"></a>2.3 广告 Cookie</h2><p>本站可能使用广告服务商提供的 Cookie，以提供与用户兴趣相关的广告。</p><h1 id="3-如何控制-Cookie"><a href="#3-如何控制-Cookie" class="headerlink" title="3. 如何控制 Cookie"></a>3. 如何控制 Cookie</h1><h2 id="3-1-浏览器设置"><a href="#3-1-浏览器设置" class="headerlink" title="3.1 浏览器设置"></a>3.1 浏览器设置</h2><p>大多数浏览器允许用户管理Cookie的设置。您可以根据浏览器的说明自定义Cookie设置，包括禁用某些Cookie。</p><h2 id="3-2-第三方工具"><a href="#3-2-第三方工具" class="headerlink" title="3.2 第三方工具"></a>3.2 第三方工具</h2><p>您可以使用第三方工具，如Google Analytics Opt-out Browser Add-on，以拒绝Google Analytics收集您的信息。</p><h1 id="4-联系我"><a href="#4-联系我" class="headerlink" title="4. 联系我"></a>4. 联系我</h1><p>如果您对本Cookie协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#x38;&#53;&#51;&#52;&#x39;&#x38;&#x34;&#x33;&#x40;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;">&#49;&#49;&#x38;&#53;&#51;&#52;&#x39;&#x38;&#x34;&#x33;&#x40;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;</a></p></li><li><p>微信：18262607107</p></li></ul><h1 id="5-更新-Cookie-协议"><a href="#5-更新-Cookie-协议" class="headerlink" title="5. 更新 Cookie 协议"></a>5. 更新 Cookie 协议</h1><p>站长保留随时修改和更新本Cookie协议的权利，在修改时，我将在本页发布生效日期！感谢您的理解与支持！</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！在使用本站的内容之前，请仔细阅读以下版权协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1-知识产权所有权"><a href="#1-知识产权所有权" class="headerlink" title="1. 知识产权所有权"></a>1. 知识产权所有权</h1><h2 id="1-1-内容版权"><a href="#1-1-内容版权" class="headerlink" title="1.1 内容版权"></a>1.1 内容版权</h2><p>  本站上的所有内容，包括但不限于文章、图片、音频、视频等，均受到相关版权法律的保护。未经授权，禁止复制、转载、修改、发布、传播本站的内容。</p><h2 id="1-2-原创作品"><a href="#1-2-原创作品" class="headerlink" title="1.2 原创作品"></a>1.2 原创作品</h2><p>  除非另有说明，本站的所有原创作品（包括但不限于文章、插图、独立设计等）均为本站所有，未经允许不得转载或使用于其他场合。</p><h1 id="2-内容使用许可"><a href="#2-内容使用许可" class="headerlink" title="2. 内容使用许可"></a>2. 内容使用许可</h1><h2 id="2-1-授权范围"><a href="#2-1-授权范围" class="headerlink" title="2.1 授权范围"></a>2.1 授权范围</h2><p>  除非明确说明，本站上的内容仅供个人非商业用途使用。任何商业用途的使用都需要事先取得我们的书面许可。</p><h2 id="2-2-引用和链接"><a href="#2-2-引用和链接" class="headerlink" title="2.2 引用和链接"></a>2.2 引用和链接</h2><p>  欢迎其他网站引用本站的内容，但必须明确标明出处，并提供链接指向原始页面。</p><h1 id="3-第三方内容"><a href="#3-第三方内容" class="headerlink" title="3. 第三方内容"></a>3. 第三方内容</h1><h2 id="3-1-引用和链接"><a href="#3-1-引用和链接" class="headerlink" title="3.1 引用和链接"></a>3.1 引用和链接</h2><p>  本站可能包含引用或链接到第三方网站的内容，这些内容的版权归原作者所有。对于第三方内容的使用，请遵循原作者的版权声明。</p><h1 id="4-免责声明"><a href="#4-免责声明" class="headerlink" title="4. 免责声明"></a>4. 免责声明</h1><p>本站的内容可能包含一些参考性信息，但不对其准确性、完整性和实用性作任何明示或暗示的保证。使用本站内容所产生的风险由用户自行承担。</p><h1 id="5-联系我"><a href="#5-联系我" class="headerlink" title="5. 联系我"></a>5. 联系我</h1><p>如果您对本版权协议有任何疑问或意见，请通过以下联系方式与我联系：</p><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#x31;&#x38;&#x35;&#x33;&#x34;&#x39;&#x38;&#x34;&#51;&#64;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#49;&#x31;&#x38;&#x35;&#x33;&#x34;&#x39;&#x38;&#x34;&#51;&#64;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a></p></li><li><p>微信：18262607107</p></li></ul><h3 id="6-修改和更新"><a href="#6-修改和更新" class="headerlink" title="6. 修改和更新"></a>6. 修改和更新</h3><p>我们保留随时修改和更新本版权协议的权利，如果您发现本站在未声明的情况下使用了你受版权保护的内容，请与我联系，在修改时，我将在本页更新生效日期！ 感谢您的理解与支持！</p>]]></content>
       
     </entry>
     
@@ -874,6 +890,17 @@
     
     
     <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
@@ -885,22 +912,11 @@
     
     
     <entry>
-      <title>本站隐私协议</title>
-      <link href="/privacy/index.html"/>
-      <url>/privacy/index.html</url>
+      <title>开发记录</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！我们重视您的隐私，并致力于保护您的个人信息。请在使用本站服务之前阅读本隐私协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1：第三方服务"><a href="#1：第三方服务" class="headerlink" title="1：第三方服务"></a>1：第三方服务</h1><p>本站可能使用第三方服务，如Google Analytics等，来分析用户的访问行为。这些服务可能会收集关于您的信息，包括但不限于您的IP地址、浏览器类型、访问时间等信息。</p><h1 id="2：广告"><a href="#2：广告" class="headerlink" title="2：广告"></a>2：广告</h1><p>本站可能展示广告，广告商通过Cookie技术可能会收集与您访问本站相关的信息。这些信息将用于定向广告。</p><h1 id="3：隐私权保护"><a href="#3：隐私权保护" class="headerlink" title="3：隐私权保护"></a>3：隐私权保护</h1><p>本站将尽力保护用户的个人信息安全，不会未经授权向第三方公开、分享或出售用户的个人信息。</p><h1 id="4：外部链接"><a href="#4：外部链接" class="headerlink" title="4：外部链接"></a>4：外部链接</h1><p>本站可能包含指向其他网站的外部链接。我们不对这些网站的隐私政策和内容负责，建议您在访问这些网站时仔细阅读其隐私政策。</p><h1 id="5：隐私协议的修改"><a href="#5：隐私协议的修改" class="headerlink" title="5：隐私协议的修改"></a>5：隐私协议的修改</h1><p>我们保留随时修改本隐私协议的权利。在修改时，我们将在本页发布生效日期。</p><h1 id="6：联系我"><a href="#6：联系我" class="headerlink" title="6：联系我"></a>6：联系我</h1><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#x31;&#56;&#x35;&#51;&#x34;&#57;&#x38;&#52;&#x33;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;">&#49;&#x31;&#56;&#x35;&#51;&#x34;&#57;&#x38;&#52;&#x33;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><p>请注意，本隐私协议的条款仅适用于本站<a href="https://www.fattymonkey.com/">繁体猴の客栈</a>，感谢您的信任与支持！！！</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>这个页面用来记录主题的魔改记录以及一些灵感，选中的是已经完成的，未选中的是将来要做的</p></blockquote><h1 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list:"></a>To do list:</h1><h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><ul><li><input checked="" disabled="" type="checkbox"> 移除自定义页面和归档页侧边栏</li><li><input checked="" disabled="" type="checkbox"> 移除页面的评论区（文章页和留言板页面除外）</li><li><input checked="" disabled="" type="checkbox"> 关闭除首页外所有页面的侧边栏</li><li><input checked="" disabled="" type="checkbox"> 添加全局吸底的音乐播放器设置（Aplayer）</li><li><input checked="" disabled="" type="checkbox"> 将所有页面中的所有卡片设置为透明</li><li><input disabled="" type="checkbox"> 弹窗的样式修改，尤其是切换深浅模式的提示弹窗</li><li><input disabled="" type="checkbox"> 配置搜索引擎收录，SEO优化</li><li><input disabled="" type="checkbox"> 所有的分割线都要替换，默认的分割线是剪刀形，还要修改颜色跟主题一致</li><li><input disabled="" type="checkbox"> 文章页末尾的微信赞赏图要重新生成一下，目前用的这个不是很好</li></ul><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><ul><li><input checked="" disabled="" type="checkbox"> 全局设置一图流并优化图片加载</li><li><input checked="" disabled="" type="checkbox"> 将导航栏的菜单设置为水平居中</li><li><input checked="" disabled="" type="checkbox"> 引入阿里图标来替换社交图标，并适配深浅模式</li><li><input checked="" disabled="" type="checkbox"> 全局字体更换（已完成），并引入不同字重，因为此时很多字重效果没有</li><li><input disabled="" type="checkbox"> 把深浅模式切换按钮搬到导航栏</li><li><input disabled="" type="checkbox"> 将首页的文章列表改成瀑布流效果</li><li><input disabled="" type="checkbox"> 鼠标移动到文章卡片上时，显示卡片边框并适配深浅模式</li><li><input disabled="" type="checkbox"> 文章卡片加上标签，并将分类和标签单独占一行</li></ul><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><ul><li><input checked="" disabled="" type="checkbox"> 页脚样式的基本魔改，建设各个元素的效果并优化代码</li><li><input checked="" disabled="" type="checkbox"> 搭建自己的 ChatGPT 网站，并在页脚增加一个访问入口，还要美化该页面的UI效果</li><li><input checked="" disabled="" type="checkbox"> 给 ChatGPT 账号绑定虚拟信用卡并充值，以便长久使用，否则以后就没办法使用了</li><li><input checked="" disabled="" type="checkbox"> 开发一个生成随机文章链接的功能，能通过点击页脚实现随机访问某一篇文章的功能</li><li><input checked="" disabled="" type="checkbox"> 社交链接存在问题，点击会变大，返回后图标不会重新变小，适配屏幕尺寸修复问题</li><li><input checked="" disabled="" type="checkbox"> 编写本站隐私协议、版权协议、Cookies协议，并修复页脚的访问链接指向这些文章</li><li><input checked="" disabled="" type="checkbox"> 新增页面《客官打赏》，并将创建好的页面链接设置到页脚的对应处（手动添加资料）</li><li><input disabled="" type="checkbox"> 新增一个《个人简历》页面，并设置访问密码，然后在页脚新增一个链接指向该页面</li><li><input disabled="" type="checkbox"> 目前页面《各种统计》已经创建好并设置好了页脚的链接，该页面的内容和布局还未建设</li></ul><h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><ul><li><input checked="" disabled="" type="checkbox"> 取消头图的加载，但是保留原本头图所占据的空间</li><li><input checked="" disabled="" type="checkbox"> 美化文本选择框的颜色，并适配深色浅色两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的引用框颜色，并适配深浅两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化文章页的目录遮蔽色，并适配深浅两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化页脚版权声明的颜色，并适配深浅两种模式</li><li><input checked="" disabled="" type="checkbox"> 美化页脚标签的边框和背景，并适配深浅两种模式</li><li><input disabled="" type="checkbox"> 代码块样式不够美观，而且不适配深浅两种模式</li></ul><h2 id="照片展"><a href="#照片展" class="headerlink" title="照片展"></a>照片展</h2><ul><li><input checked="" disabled="" type="checkbox"> 添加一个《壁纸收藏》的图集，并按照壁纸尺寸设置子图集，最后上传壁纸</li><li><input disabled="" type="checkbox"> 添加一个《生活记录》的图集，并上传几张生活照片（已经上传，持续更新）</li><li><input disabled="" type="checkbox"> 添加一个《迫于生计》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 添加一个《出差印度》的图集，并上传一些工作照片（还未上传）</li><li><input disabled="" type="checkbox"> 图集子页的图片大小存在细微的不断变化，看起来图片是一直抖动的，需修复</li></ul><h2 id="休闲页"><a href="#休闲页" class="headerlink" title="休闲页"></a>休闲页</h2><ul><li><input checked="" disabled="" type="checkbox"> 使用插件 <a href="https://github.com/mythsman/hexo-douban">hexo-douban</a> 创建图书馆、玩游戏、电影院、音乐汇页面</li><li><input checked="" disabled="" type="checkbox"> 娱乐页面的侧边栏和主体内容长度差别大，主题添加新布局来去除侧边栏，保留评论区</li><li><input disabled="" type="checkbox"> 丰富自己的豆瓣资料（持续优化）</li><li><input disabled="" type="checkbox"> 网易云音乐整理，使音乐汇页面所有的推荐音乐跟网站左下角的音乐播放器联动（持续优化）</li><li><input disabled="" type="checkbox"> 豆瓣页的所有标题链接等颜色需要适配深浅两种模式</li></ul><h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><ul><li><input checked="" disabled="" type="checkbox"> 在留言板页面填充适当的内容，不然看起来会非常突兀</li><li><input disabled="" type="checkbox"> 美化留言板对话框，类似聊天页，看起来会更和谐一些</li></ul><h2 id="关于我（目前还没开发）"><a href="#关于我（目前还没开发）" class="headerlink" title="关于我（目前还没开发）"></a>关于我（目前还没开发）</h2><ul><li><input disabled="" type="checkbox"> 最前面添加繁体猴这个名字的灵感由来</li><li><input disabled="" type="checkbox"> 添加个人简历的链接（页脚也需添加）</li></ul>]]></content>
       
     </entry>
     
@@ -918,11 +934,11 @@
     
     
     <entry>
-      <title>人生中的最后一段青春</title>
-      <link href="/album/indian/index.html"/>
-      <url>/album/indian/index.html</url>
+      <title>本站隐私协议</title>
+      <link href="/privacy/index.html"/>
+      <url>/privacy/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>欢迎访问 <a href="https://fattymonkey.com/">fattymonkey.com</a>（以下简称“本站”）！我们重视您的隐私，并致力于保护您的个人信息。请在使用本站服务之前阅读本隐私协议。</p></blockquote><p>生效日期：2023年09月01日～至今</p><h1 id="1：第三方服务"><a href="#1：第三方服务" class="headerlink" title="1：第三方服务"></a>1：第三方服务</h1><p>本站可能使用第三方服务，如Google Analytics等，来分析用户的访问行为。这些服务可能会收集关于您的信息，包括但不限于您的IP地址、浏览器类型、访问时间等信息。</p><h1 id="2：广告"><a href="#2：广告" class="headerlink" title="2：广告"></a>2：广告</h1><p>本站可能展示广告，广告商通过Cookie技术可能会收集与您访问本站相关的信息。这些信息将用于定向广告。</p><h1 id="3：隐私权保护"><a href="#3：隐私权保护" class="headerlink" title="3：隐私权保护"></a>3：隐私权保护</h1><p>本站将尽力保护用户的个人信息安全，不会未经授权向第三方公开、分享或出售用户的个人信息。</p><h1 id="4：外部链接"><a href="#4：外部链接" class="headerlink" title="4：外部链接"></a>4：外部链接</h1><p>本站可能包含指向其他网站的外部链接。我们不对这些网站的隐私政策和内容负责，建议您在访问这些网站时仔细阅读其隐私政策。</p><h1 id="5：隐私协议的修改"><a href="#5：隐私协议的修改" class="headerlink" title="5：隐私协议的修改"></a>5：隐私协议的修改</h1><p>我们保留随时修改本隐私协议的权利。在修改时，我们将在本页发布生效日期。</p><h1 id="6：联系我"><a href="#6：联系我" class="headerlink" title="6：联系我"></a>6：联系我</h1><p>如果您对本隐私协议有任何疑问或意见，请通过以下联系方式与我联系：</p><ul><li><p>邮件：<a href="mailto:&#49;&#49;&#x38;&#x35;&#x33;&#52;&#57;&#56;&#52;&#51;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;">&#49;&#49;&#x38;&#x35;&#x33;&#52;&#57;&#56;&#52;&#51;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;</a></p></li><li><p>微信：18262607107</p></li></ul><p>请注意，本隐私协议的条款仅适用于本站<a href="https://www.fattymonkey.com/">繁体猴の客栈</a>，感谢您的信任与支持！！！</p>]]></content>
       
     </entry>
     
@@ -951,6 +967,17 @@
     
     
     <entry>
+      <title>人生中的最后一段青春</title>
+      <link href="/album/indian/index.html"/>
+      <url>/album/indian/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="图片整理中～～"><a href="#图片整理中～～" class="headerlink" title="图片整理中～～"></a>图片整理中～～</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谁又不是在努力地活着</title>
       <link href="/album/work/index.html"/>
       <url>/album/work/index.html</url>
@@ -967,17 +994,6 @@
       <url>/album/wallpaper/1280/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/1280/00.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/08.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/09.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/10.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/11.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/12.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/13.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/14.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/15.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/1280/16.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>19200</title>
-      <link href="/album/wallpaper/19200/index.html"/>
-      <url>/album/wallpaper/19200/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -1017,22 +1033,33 @@
     
     
     <entry>
-      <title>3840*2160，适用带鱼屏，我用过的4K壁纸</title>
-      <link href="/album/wallpaper/3840/index.html"/>
-      <url>/album/wallpaper/3840/index.html</url>
+      <title>2880*1800，适用大屏幕，联想小新Pro14</title>
+      <link href="/album/wallpaper/2880/index.html"/>
+      <url>/album/wallpaper/2880/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/艾克01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/KDA01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/凤凰01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/湖泊01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/绿色01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/锐雯玉剑传说.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/萨勒芬妮01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/山景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/萨勒芬妮02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/雪景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/KDA萨勒芬妮01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2880/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/08.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>2880*1800，适用大屏幕，联想小新Pro14</title>
-      <link href="/album/wallpaper/2880/index.html"/>
-      <url>/album/wallpaper/2880/index.html</url>
+      <title>19200</title>
+      <link href="/album/wallpaper/19200/index.html"/>
+      <url>/album/wallpaper/19200/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/2880/06.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/05.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/07.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/2880/08.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>3840*2160，适用带鱼屏，我用过的4K壁纸</title>
+      <link href="/album/wallpaper/3840/index.html"/>
+      <url>/album/wallpaper/3840/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/艾克01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/KDA01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/凤凰01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼刀02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/女孩04.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼刀03.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/鬼泣01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/湖泊01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/绿色01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/锐雯玉剑传说.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/萨勒芬妮01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/山景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/萨勒芬妮02.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/雪景01.jpeg","alt":""},{"url":"https://www.czblogs.cn/album/wallpaper/3840/KDA萨勒芬妮01.jpeg","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
