@@ -17,7 +17,7 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Spring学习笔记(01)-从零开始</title>
+    <title>Spring学习笔记(01)之从零开始</title>
     <link href="https://fattymonkey.com/post/10151.html"/>
     <id>https://fattymonkey.com/post/10151.html</id>
     <published>2024-02-10T23:01:09.000Z</published>
@@ -58,9 +58,9 @@
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
-    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
-    
     <category term="IntelliJ IDEA" scheme="https://fattymonkey.com/tags/IntelliJ-IDEA/"/>
+    
+    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
     
   </entry>
   
@@ -110,11 +110,11 @@
     
     <category term="Java" scheme="https://fattymonkey.com/tags/Java/"/>
     
-    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
+    <category term="IntelliJ IDEA" scheme="https://fattymonkey.com/tags/IntelliJ-IDEA/"/>
     
     <category term="JDK" scheme="https://fattymonkey.com/tags/JDK/"/>
     
-    <category term="IntelliJ IDEA" scheme="https://fattymonkey.com/tags/IntelliJ-IDEA/"/>
+    <category term="Maven" scheme="https://fattymonkey.com/tags/Maven/"/>
     
   </entry>
   
@@ -158,9 +158,9 @@
     <category term="工具相关" scheme="https://fattymonkey.com/categories/%E5%B7%A5%E5%85%B7%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    
     <category term="WebStorm" scheme="https://fattymonkey.com/tags/WebStorm/"/>
+    
+    <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
     
   </entry>
   
@@ -325,9 +325,9 @@
     <category term="静态博客" scheme="https://fattymonkey.com/categories/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="域名解析" scheme="https://fattymonkey.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
     
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     
@@ -375,9 +375,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
-    
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    
+    <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     
   </entry>
   
@@ -471,9 +471,9 @@
     
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     
-    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    
     <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
+    
+    <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
     
   </entry>
   
