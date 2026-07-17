@@ -1657,7 +1657,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-color: #1f2d3d;
   --tab-button-hover-bg: #dcdcdc;
   --tab-button-active-bg: #fff;
-  --card-bg: #fff;
+  --card-bg: rgba(255,255,255,0.75);
   --card-meta: #858585;
   --sidebar-bg: #f6f8fa;
   --sidebar-menu-bg: #fff;
@@ -7731,7 +7731,7 @@ blockquote.pullquote.right {
   --tab-button-color: rgba(255,255,255,0.7);
   --tab-button-hover-bg: #383838;
   --tab-button-active-bg: #121212;
-  --card-bg: #121212;
+  --card-bg: 1;
   --sidebar-bg: #121212;
   --sidebar-menu-bg: #1f1f1f;
   --btn-hover-color: #787878;
@@ -8573,4 +8573,13 @@ blockquote.pullquote.right {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+#recent-post-items {
+  background: rgba(255,255,255,0.6);
+}
+[data-theme="dark"] #content-inner,
+[data-theme="dark"] #sidebar {
+  background: rgba(26,26,30,0.66);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
