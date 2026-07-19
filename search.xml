@@ -427,33 +427,11 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/fonts/extract-font-text.js"/>
-      <url>/fonts/extract-font-text.js</url>
-      
-        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// Hexo生成的静态页面根目录，根据你的层级配置const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'chars.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    const htmlContent = fs.readFileSync(fullFilePath, 'utf8');    const $ = cheerio.load(htmlContent);    // 累加页面所有可见文字    allRawText += $('body').text();  });}// 执行全站扫描scanAllHtml(publicDir);// 字符去重，大幅减少字体体积const uniqueCharSet = new Set(allRawText);const uniqueCharString = [...uniqueCharSet].join('');// 写入字符文件fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字符提取已经完成，共收集：${uniqueCharString.length} 个 ====`);]]></content>
       
     </entry>
     
@@ -471,42 +449,9 @@
     
     
     <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -526,9 +471,64 @@
     
     
     <entry>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/fonts/extract-font-text.js"/>
+      <url>/fonts/extract-font-text.js</url>
+      
+        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// Hexo生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出纯中文字符清单（无英文/数字）const charOutputFile = path.join(__dirname, 'chars.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    if (!fileName.endsWith('.html')) return;    const htmlContent = fs.readFileSync(fullFilePath, 'utf8');    const $ = cheerio.load(htmlContent);    allRawText += $('body').text();  });}scanAllHtml(publicDir);// 1. 去重全部字符const uniqueCharSet = new Set(allRawText);// 2. 过滤规则：只保留汉字、中文全角标点，剔除英文、数字、半角符号const chineseOnlyChars = [...uniqueCharSet].filter(char => {  const code = char.charCodeAt(0);  // 匹配中文字符范围：  // 汉字 0x4E00 ~ 0x9FFF | 中文标点 0x3000 ~ 0x303F | 全角符号 0xFF00 ~ 0xFFEF  return (code >= 0x4E00 && code <= 0x9FFF)      || (code >= 0x3000 && code <= 0x303F)      || (code >= 0xFF00 && code <= 0xFFEF);});const chineseOnlyStr = chineseOnlyChars.join('');// 写入纯中文字符文件fs.writeFileSync(charOutputFile, chineseOnlyStr, 'utf8');console.log(`  ===================== ✅ 仅仅提取中文字符完成，共收集：${chineseOnlyStr.length} 个 ====`);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
