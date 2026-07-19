@@ -8597,7 +8597,7 @@ blockquote.pullquote.right {
 }
 @font-face {
   font-family: "NimbusSansL";
-  src: url("/fonts/NimbusSanL-Bol.woff2.woff2") format("woff2");
+  src: url("/fonts/NimbusSanL-Bol.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
