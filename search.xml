@@ -80,13 +80,13 @@
       
         <tags>
             
-            <tag> DNS </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> GitHub </tag>
             
             <tag> Vercel </tag>
             
-            <tag> GitHub </tag>
+            <tag> DNS </tag>
             
             <tag> CDN </tag>
             
@@ -138,11 +138,11 @@
       
         <tags>
             
+            <tag> Vercel </tag>
+            
             <tag> Github </tag>
             
             <tag> Gitee </tag>
-            
-            <tag> Vercel </tag>
             
         </tags>
       
@@ -192,11 +192,11 @@
       
         <tags>
             
-            <tag> Github </tag>
-            
             <tag> Vercel </tag>
             
             <tag> CDN </tag>
+            
+            <tag> Github </tag>
             
         </tags>
       
@@ -416,9 +416,86 @@
     
     
     <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>图书馆</title>
       <link href="/books/index.html"/>
       <url>/books/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站开发</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cookies</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -449,28 +526,6 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -482,9 +537,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -515,9 +570,31 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>隐私协议</title>
+      <link href="/privacy/index.html"/>
+      <url>/privacy/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>各种统计</title>
+      <link href="/statistics/index.html"/>
+      <url>/statistics/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>打赏列表</title>
+      <link href="/donate/index.html"/>
+      <url>/donate/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
