@@ -4501,8 +4501,14 @@ figure.highlight pre .javascript .function {
   padding: 20px 60px 0 60px;
   max-width: 1200px;
   width: 100%;
+/* 适配小屏幕 */
 /* 1.八个社交链接 */
 /* 2.中间返回顶部的头像 */
+}
+@media screen and (max-width: 768px) {
+  #footer .footer_social {
+    padding: 20px 10px 0 10px;
+  }
 }
 #footer .footer_social a.social_link {
   display: -webkit-box;
