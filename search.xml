@@ -80,15 +80,15 @@
       
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> DNS </tag>
             
-            <tag> GitHub </tag>
+            <tag> Hexo </tag>
             
             <tag> Vercel </tag>
             
-            <tag> DNS </tag>
-            
             <tag> CDN </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> Gitee </tag>
             
@@ -192,11 +192,11 @@
       
         <tags>
             
+            <tag> Github </tag>
+            
             <tag> Vercel </tag>
             
             <tag> CDN </tag>
-            
-            <tag> Github </tag>
             
         </tags>
       
@@ -416,39 +416,6 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>留言板</title>
       <link href="/comment/index.html"/>
       <url>/comment/index.html</url>
@@ -460,9 +427,9 @@
     
     
     <entry>
-      <title>网站开发</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -482,44 +449,11 @@
     
     
     <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
+      <title>开发面板</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>免责声明</title>
-      <link href="/disclaimer/index.html"/>
-      <url>/disclaimer/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本站跟踪清单：缺陷修复 + 样式美化 + 功能开发</p></blockquote><h2 id="⏳-待解决（必须修复）"><a href="#⏳-待解决（必须修复）" class="headerlink" title="⏳ 待解决（必须修复）"></a>⏳ 待解决（必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 侧边栏不显示最近评论</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，有正方形白底</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li></ul><h2 id="🎨-待美化（界面调整）"><a href="#🎨-待美化（界面调整）" class="headerlink" title="🎨 待美化（界面调整）"></a>🎨 待美化（界面调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端首页中，文章卡片中的字太大了，导致换行，不美观</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化，并增加开发面板，记录网站问题与解决状态</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li></ul><h2 id="💡-待优化（功能增强）"><a href="#💡-待优化（功能增强）" class="headerlink" title="💡 待优化（功能增强）"></a>💡 待优化（功能增强）</h2><ul><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式</li><li><input disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能直接定位到具体的评论</li></ul>]]></content>
       
     </entry>
     
@@ -529,28 +463,6 @@
       <title>Cookies</title>
       <link href="/cookies/index.html"/>
       <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>隐私协议</title>
-      <link href="/privacy/index.html"/>
-      <url>/privacy/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>照片展</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -570,9 +482,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -581,9 +493,53 @@
     
     
     <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>照片展</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -595,6 +551,50 @@
       <title>各种统计</title>
       <link href="/statistics/index.html"/>
       <url>/statistics/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>隐私协议</title>
+      <link href="/privacy/index.html"/>
+      <url>/privacy/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
