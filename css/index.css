@@ -3637,6 +3637,9 @@ figure.highlight pre .javascript .function {
   color: var(--font-color);
   font-size: 1.4em;
 }
+#aside-content .card-info .card-info-social-icons .social-icon .iconfont {
+  font-size: 22px;
+}
 #aside-content .card-info .card-info-social-icons i {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3685,10 +3688,32 @@ figure.highlight pre .javascript .function {
     transition: top 0.3s;
   }
 }
+#aside-content .card-tag-cloud {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  row-gap: 8px;
+}
 #aside-content .card-tag-cloud a {
   display: inline-block;
   padding: 0 4px;
   line-height: 1.8;
+  margin: 0;
 }
 #aside-content .card-tag-cloud a:hover {
   color: #49b1f5 !important;
@@ -4542,6 +4567,9 @@ figure.highlight pre .javascript .function {
 /* 各图标独立品牌彩色 */
 /* 在默认屏幕（大屏幕）上使用放大和过渡效果 */
 /* 在小屏幕上取消放大和过渡效果 */
+}
+#footer .footer_social a.social_link .iconfont {
+  font-size: 32px;
 }
 #footer .footer_social a.social_link .icon-email {
   color: #1677ff;
@@ -8773,7 +8801,7 @@ blockquote.pullquote.right {
 }
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 32px;
+  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
