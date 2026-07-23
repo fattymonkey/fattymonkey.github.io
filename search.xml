@@ -252,9 +252,9 @@
             
             <tag> macOS </tag>
             
-            <tag> CLT </tag>
-            
             <tag> Python </tag>
+            
+            <tag> CLT </tag>
             
         </tags>
       
@@ -416,9 +416,86 @@
     
     
     <entry>
+      <title>版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><h2 id="1-原创内容界定"><a href="#1-原创内容界定" class="headerlink" title="1. 原创内容界定"></a>1. 原创内容界定</h2><p>本站内由站长原创撰写的文章、教程、截图、自制插图，著作权归本站站长所有。</p><h2 id="2-转载规范"><a href="#2-转载规范" class="headerlink" title="2. 转载规范"></a>2. 转载规范</h2><p>✅ <strong>允许非商业转载条件：</strong></p><ol><li>转载必须注明原文出处、原文链接；</li><li>完整保留文章原有内容，禁止篡改、删减、二次修改后发布；</li><li>禁止将原创内容打包售卖、用于商业盈利场景。</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>去除原文来源、冒充原创发布；</li><li>大规模批量爬取本站原创内容并分发；</li><li>将本站原创内容用于广告、付费课程、商业产品。</li></ol><h2 id="3-非原创内容说明"><a href="#3-非原创内容说明" class="headerlink" title="3. 非原创内容说明"></a>3. 非原创内容说明</h2><p>部分文章引用的网络素材、第三方开源截图、工具文档，版权归原作者。<br>如您发现本站存在侵权内容，请联系站长，核实后将第一时间删除。</p><h2 id="4-开源相关"><a href="#4-开源相关" class="headerlink" title="4. 开源相关"></a>4. 开源相关</h2><p>文中涉及开源代码、开源项目，代码版权遵循对应项目开源协议，不受本文约束。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发面板</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本站开发跟踪清单：缺陷修复 + 样式美化 + 功能开发。</p></blockquote><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 移动端首页中，文章卡片中的字太大了，导致换行</li><li><input disabled="" type="checkbox"> 微信和QQ的社交链接优化，现在是跳转到新网页展示二维码</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能直接定位到具体的评论</li><li><input disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 增加各种统计页面</li><li><input disabled="" type="checkbox"> 增加隐私协议页面</li><li><input disabled="" type="checkbox"> 增加版权协议页面</li><li><input disabled="" type="checkbox"> 增加免责声明页面</li><li><input disabled="" type="checkbox"> 增加Cookies页面</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 所有协议页面关闭评论功能</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cookies</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Cookie-政策"><a href="#Cookie-政策" class="headerlink" title="Cookie 政策"></a>Cookie 政策</h1><p>本文用于说明本站如何使用 Cookie、LocalStorage 等浏览器本地存储技术。</p><h2 id="1-什么是本地存储"><a href="#1-什么是本地存储" class="headerlink" title="1. 什么是本地存储"></a>1. 什么是本地存储</h2><p>Cookie、LocalStorage 是网站存储在你设备浏览器内的小型文本数据，不会主动读取你硬盘内其他文件。</p><h2 id="2-本站使用本地存储的用途"><a href="#2-本站使用本地存储的用途" class="headerlink" title="2. 本站使用本地存储的用途"></a>2. 本站使用本地存储的用途</h2><ol><li>保存页面显示偏好：深色&#x2F;浅色模式；</li><li>临时缓存评论表单填写记录，减少重复输入；</li><li>维持网站基础交互功能正常运行。</li></ol><h2 id="3-重要说明"><a href="#3-重要说明" class="headerlink" title="3. 重要说明"></a>3. 重要说明</h2><ol><li>本地存储文件<strong>不会收集身份证、手机号等敏感隐私信息</strong>；</li><li>不会利用 Cookie 追踪你的跨网站上网行为；</li><li>所有存储数据仅保存在你的浏览器，不会持续上传服务器。</li></ol><h2 id="4-您的控制权"><a href="#4-您的控制权" class="headerlink" title="4. 您的控制权"></a>4. 您的控制权</h2><p>你可以随时在浏览器设置中清除 Cookie，或设置阻止站点使用本地存储。<br>⚠️ 关闭本地存储可能造成主题模式、评论表单等功能异常。</p><h2 id="5-第三方Cookie"><a href="#5-第三方Cookie" class="headerlink" title="5. 第三方Cookie"></a>5. 第三方Cookie</h2><p>加载CDN、评论组件时，第三方服务可能生成独立Cookie，遵循对应服务商Cookie规则。</p><p>持续浏览本站，代表你知悉并同意本站依照本政策使用本地存储。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><h2 id="1-内容性质"><a href="#1-内容性质" class="headerlink" title="1. 内容性质"></a>1. 内容性质</h2><p>本站所有文章、教程、技术笔记仅作为个人学习经验分享，<strong>不构成任何专业建议</strong>。<br>读者依据本站内容进行操作产生的设备故障、数据丢失、财产损失，由操作者自行承担风险。</p><h2 id="2-外部链接"><a href="#2-外部链接" class="headerlink" title="2. 外部链接"></a>2. 外部链接</h2><p>网站内可能存在跳转至第三方网站的链接。<br>第三方站点内容不受本站控制，打开外链产生的一切风险，本站不承担连带责任。</p><h2 id="3-信息时效性"><a href="#3-信息时效性" class="headerlink" title="3. 信息时效性"></a>3. 信息时效性</h2><p>技术文档、配置教程会随软件版本迭代失效，本站不保证所有内容永久有效，读者请自行甄别版本与环境差异。</p><h2 id="4-评论区言论"><a href="#4-评论区言论" class="headerlink" title="4. 评论区言论"></a>4. 评论区言论</h2><p>评论区内容均由访客自主发布，仅代表访客个人观点。<br>站长有权删除恶意、违规评论，但不对访客评论内容承担法律责任。</p><h2 id="5-不可抗力"><a href="#5-不可抗力" class="headerlink" title="5. 不可抗力"></a>5. 不可抗力</h2><p>因网络故障、服务商宕机、政策调整等不可抗因素导致网站临时无法访问、数据丢失，本站不承担赔偿责任。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>打赏列表</title>
+      <link href="/donate/index.html"/>
+      <url>/donate/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>感谢以下客官的打赏，每篇文章的结尾都有给我充电的入口哦～～</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">饭饭爱吃饭</td><td align="center">支付宝</td><td align="center">8.88</td><td align="center">无留言</td></tr><tr><td align="center">我是武松啊</td><td align="center">微信</td><td align="center">6.60</td><td align="center">无留言</td></tr></tbody></table>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -438,83 +515,6 @@
     
     
     <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>打赏列表</title>
-      <link href="/donate/index.html"/>
-      <url>/donate/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>免责声明</title>
-      <link href="/disclaimer/index.html"/>
-      <url>/disclaimer/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>版权协议</title>
-      <link href="/copyright/index.html"/>
-      <url>/copyright/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开发面板</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本站开发跟踪清单：缺陷修复 + 样式美化 + 功能开发</p></blockquote><h2 id="⏳-待解决（必须修复）"><a href="#⏳-待解决（必须修复）" class="headerlink" title="⏳ 待解决（必须修复）"></a>⏳ 待解决（必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待美化（界面调整）"><a href="#🎨-待美化（界面调整）" class="headerlink" title="🎨 待美化（界面调整）"></a>🎨 待美化（界面调整）</h2><ul><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 移动端首页中，文章卡片中的字太大了，导致换行</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化，并增加开发面板，记录网站问题与解决状态</li></ul><h2 id="💡-待优化（功能增强）"><a href="#💡-待优化（功能增强）" class="headerlink" title="💡 待优化（功能增强）"></a>💡 待优化（功能增强）</h2><ul><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input disabled="" type="checkbox"> 微信和QQ的社交链接优化，现在是跳转到新网页展示二维码</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能直接定位到具体的评论</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Cookies</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>照片展</title>
       <link href="/gallery/index.html"/>
       <url>/gallery/index.html</url>
@@ -526,20 +526,20 @@
     
     
     <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
+      <title>隐私协议</title>
+      <link href="/privacy/index.html"/>
+      <url>/privacy/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="隐私协议"><a href="#隐私协议" class="headerlink" title="隐私协议"></a>隐私协议</h1><p>欢迎访问本站。访问本站即代表您同意本协议全部条款。</p><h2 id="1-信息收集范围"><a href="#1-信息收集范围" class="headerlink" title="1. 信息收集范围"></a>1. 信息收集范围</h2><ol><li><p>评论主动提交信息<br>当您在 Twikoo 评论区留言，自愿填写昵称、邮箱、个人网址、评论正文。<br>邮箱仅用于评论回复通知，不会对外公开展示；请勿主动提交身份证、手机号等敏感资料。</p></li><li><p>被动收集访问数据<br>网站访问过程中会自动记录匿名访问信息：访问页面、设备型号、浏览器标识、匿名IP。<br>数据仅用于网站访问统计、防范恶意爬虫与攻击，不会定位到具体自然人。</p></li></ol><h2 id="2-信息使用规则"><a href="#2-信息使用规则" class="headerlink" title="2. 信息使用规则"></a>2. 信息使用规则</h2><ol><li>用于展示、回复访客评论；</li><li>分析访问数据，持续优化网站内容与页面体验；</li><li>拦截垃圾评论、恶意访问，保障网站稳定运行。</li></ol><p>本站郑重承诺：不会出售、出租、有偿向第三方转让您的个人信息。</p><h2 id="3-第三方服务说明"><a href="#3-第三方服务说明" class="headerlink" title="3. 第三方服务说明"></a>3. 第三方服务说明</h2><p>本站使用 Twikoo 评论系统，访客评论数据存储于第三方数据库，同时遵循 Twikoo 官方隐私规范。</p><h2 id="4-您享有的权利"><a href="#4-您享有的权利" class="headerlink" title="4. 您享有的权利"></a>4. 您享有的权利</h2><ol><li>联系站长申请删除本人发布的评论；</li><li>申请清除与自身相关的访客记录。</li></ol><h2 id="5-未成年人说明"><a href="#5-未成年人说明" class="headerlink" title="5. 未成年人说明"></a>5. 未成年人说明</h2><p>未满16周岁访客，请在监护人知情、同意前提下访问本站。</p><h2 id="6-协议修订"><a href="#6-协议修订" class="headerlink" title="6. 协议修订"></a>6. 协议修订</h2><p>本站可随时修订本协议，更新后直接在页面公示，持续访问代表接受最新版本。</p><p>如有疑问，请通过站点预留联系方式联系站长。</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -559,31 +559,9 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>隐私协议</title>
-      <link href="/privacy/index.html"/>
-      <url>/privacy/index.html</url>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -595,6 +573,28 @@
       <title>各种统计</title>
       <link href="/statistics/index.html"/>
       <url>/statistics/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
