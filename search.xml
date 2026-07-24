@@ -80,15 +80,15 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
-            <tag> CDN </tag>
-            
             <tag> DNS </tag>
             
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
+            
+            <tag> Vercel </tag>
+            
+            <tag> CDN </tag>
             
         </tags>
       
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> Github </tag>
-            
             <tag> Vercel </tag>
+            
+            <tag> Github </tag>
             
             <tag> Gitee </tag>
             
@@ -192,11 +192,11 @@
       
         <tags>
             
-            <tag> Github </tag>
-            
             <tag> Vercel </tag>
             
             <tag> CDN </tag>
+            
+            <tag> Github </tag>
             
         </tags>
       
@@ -427,22 +427,11 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Cookies</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="Cookie-政策"><a href="#Cookie-政策" class="headerlink" title="Cookie 政策"></a>Cookie 政策</h1><p>本文用于说明本站如何使用 Cookie、LocalStorage 等浏览器本地存储技术。</p><h2 id="1-什么是本地存储"><a href="#1-什么是本地存储" class="headerlink" title="1. 什么是本地存储"></a>1. 什么是本地存储</h2><p>Cookie、LocalStorage 是网站存储在你设备浏览器内的小型文本数据，不会主动读取你硬盘内其他文件。</p><h2 id="2-本站使用本地存储的用途"><a href="#2-本站使用本地存储的用途" class="headerlink" title="2. 本站使用本地存储的用途"></a>2. 本站使用本地存储的用途</h2><ol><li>保存页面显示偏好：深色&#x2F;浅色模式；</li><li>临时缓存评论表单填写记录，减少重复输入；</li><li>维持网站基础交互功能正常运行。</li></ol><h2 id="3-重要说明"><a href="#3-重要说明" class="headerlink" title="3. 重要说明"></a>3. 重要说明</h2><ol><li>本地存储文件<strong>不会收集身份证、手机号等敏感隐私信息</strong>；</li><li>不会利用 Cookie 追踪你的跨网站上网行为；</li><li>所有存储数据仅保存在你的浏览器，不会持续上传服务器。</li></ol><h2 id="4-您的控制权"><a href="#4-您的控制权" class="headerlink" title="4. 您的控制权"></a>4. 您的控制权</h2><p>你可以随时在浏览器设置中清除 Cookie，或设置阻止站点使用本地存储。<br>⚠️ 关闭本地存储可能造成主题模式、评论表单等功能异常。</p><h2 id="5-第三方Cookie"><a href="#5-第三方Cookie" class="headerlink" title="5. 第三方Cookie"></a>5. 第三方Cookie</h2><p>加载CDN、评论组件时，第三方服务可能生成独立Cookie，遵循对应服务商Cookie规则。</p><p>持续浏览本站，代表你知悉并同意本站依照本政策使用本地存储。</p>]]></content>
       
     </entry>
     
@@ -460,9 +449,9 @@
     
     
     <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -482,22 +471,11 @@
     
     
     <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
+      <title>Cookies</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开发面板</title>
-      <link href="/devrecord/index.html"/>
-      <url>/devrecord/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本站开发跟踪清单：缺陷修复 + 样式美化 + 功能开发。</p></blockquote><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 移动端首页中，文章卡片中的字太大了，导致换行</li><li><input disabled="" type="checkbox"> 微信和QQ的社交链接优化，现在是跳转到新网页展示二维码</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能直接定位到具体的评论</li><li><input disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 增加各种统计页面</li><li><input disabled="" type="checkbox"> 增加隐私协议页面</li><li><input disabled="" type="checkbox"> 增加版权协议页面</li><li><input disabled="" type="checkbox"> 增加免责声明页面</li><li><input disabled="" type="checkbox"> 增加Cookies页面</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 所有协议页面关闭评论功能</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Cookie-政策"><a href="#Cookie-政策" class="headerlink" title="Cookie 政策"></a>Cookie 政策</h1><p>本文用于说明本站如何使用 Cookie、LocalStorage 等浏览器本地存储技术。</p><h2 id="1-什么是本地存储"><a href="#1-什么是本地存储" class="headerlink" title="1. 什么是本地存储"></a>1. 什么是本地存储</h2><p>Cookie、LocalStorage 是网站存储在你设备浏览器内的小型文本数据，不会主动读取你硬盘内其他文件。</p><h2 id="2-本站使用本地存储的用途"><a href="#2-本站使用本地存储的用途" class="headerlink" title="2. 本站使用本地存储的用途"></a>2. 本站使用本地存储的用途</h2><ol><li>保存页面显示偏好：深色&#x2F;浅色模式；</li><li>临时缓存评论表单填写记录，减少重复输入；</li><li>维持网站基础交互功能正常运行。</li></ol><h2 id="3-重要说明"><a href="#3-重要说明" class="headerlink" title="3. 重要说明"></a>3. 重要说明</h2><ol><li>本地存储文件<strong>不会收集身份证、手机号等敏感隐私信息</strong>；</li><li>不会利用 Cookie 追踪你的跨网站上网行为；</li><li>所有存储数据仅保存在你的浏览器，不会持续上传服务器。</li></ol><h2 id="4-您的控制权"><a href="#4-您的控制权" class="headerlink" title="4. 您的控制权"></a>4. 您的控制权</h2><p>你可以随时在浏览器设置中清除 Cookie，或设置阻止站点使用本地存储。<br>⚠️ 关闭本地存储可能造成主题模式、评论表单等功能异常。</p><h2 id="5-第三方Cookie"><a href="#5-第三方Cookie" class="headerlink" title="5. 第三方Cookie"></a>5. 第三方Cookie</h2><p>加载CDN、评论组件时，第三方服务可能生成独立Cookie，遵循对应服务商Cookie规则。</p><p>持续浏览本站，代表你知悉并同意本站依照本政策使用本地存储。</p>]]></content>
       
     </entry>
     
@@ -515,9 +493,20 @@
     
     
     <entry>
-      <title>照片展</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>开发面板</title>
+      <link href="/devrecord/index.html"/>
+      <url>/devrecord/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本站开发跟踪清单：缺陷修复 + 样式美化 + 功能开发。</p></blockquote><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 移动端首页中，文章卡片中的字太大了，导致换行</li><li><input disabled="" type="checkbox"> 微信和QQ的社交链接优化，现在是跳转到新网页展示二维码</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能直接定位到具体的评论</li><li><input disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input checked="" disabled="" type="checkbox"> 把所有的图片都改到博客根目录下（除文章插图），加快本地预览时的加载速度</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 增加各种统计页面</li><li><input disabled="" type="checkbox"> 增加隐私协议页面</li><li><input disabled="" type="checkbox"> 增加版权协议页面</li><li><input disabled="" type="checkbox"> 增加免责声明页面</li><li><input disabled="" type="checkbox"> 增加Cookies页面</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 所有协议页面关闭评论功能</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -548,6 +537,17 @@
     
     
     <entry>
+      <title>照片展</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -570,17 +570,6 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>各种统计</title>
       <link href="/statistics/index.html"/>
       <url>/statistics/index.html</url>
@@ -595,6 +584,17 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
