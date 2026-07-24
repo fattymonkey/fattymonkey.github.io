@@ -64,7 +64,7 @@
     
     
     <entry>
-      <title>Hexo静态博客之整体搭建流程</title>
+      <title>Hexo博客之整体搭建流程</title>
       <link href="/post/10301.html"/>
       <url>/post/10301.html</url>
       
@@ -80,13 +80,13 @@
       
         <tags>
             
-            <tag> DNS </tag>
+            <tag> Vercel </tag>
             
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
             
-            <tag> Vercel </tag>
+            <tag> DNS </tag>
             
             <tag> CDN </tag>
             
@@ -138,11 +138,11 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> Github </tag>
             
             <tag> Gitee </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -192,11 +192,11 @@
       
         <tags>
             
+            <tag> Github </tag>
+            
             <tag> Vercel </tag>
             
             <tag> CDN </tag>
-            
-            <tag> Github </tag>
             
         </tags>
       
@@ -438,20 +438,20 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="/comment/index.html"/>
-      <url>/comment/index.html</url>
+      <title>Cookies</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="Cookie-政策"><a href="#Cookie-政策" class="headerlink" title="Cookie 政策"></a>Cookie 政策</h1><p>本文用于说明本站如何使用 Cookie、LocalStorage 等浏览器本地存储技术。</p><h2 id="1-什么是本地存储"><a href="#1-什么是本地存储" class="headerlink" title="1. 什么是本地存储"></a>1. 什么是本地存储</h2><p>Cookie、LocalStorage 是网站存储在你设备浏览器内的小型文本数据，不会主动读取你硬盘内其他文件。</p><h2 id="2-本站使用本地存储的用途"><a href="#2-本站使用本地存储的用途" class="headerlink" title="2. 本站使用本地存储的用途"></a>2. 本站使用本地存储的用途</h2><ol><li>保存页面显示偏好：深色&#x2F;浅色模式；</li><li>临时缓存评论表单填写记录，减少重复输入；</li><li>维持网站基础交互功能正常运行。</li></ol><h2 id="3-重要说明"><a href="#3-重要说明" class="headerlink" title="3. 重要说明"></a>3. 重要说明</h2><ol><li>本地存储文件<strong>不会收集身份证、手机号等敏感隐私信息</strong>；</li><li>不会利用 Cookie 追踪你的跨网站上网行为；</li><li>所有存储数据仅保存在你的浏览器，不会持续上传服务器。</li></ol><h2 id="4-您的控制权"><a href="#4-您的控制权" class="headerlink" title="4. 您的控制权"></a>4. 您的控制权</h2><p>你可以随时在浏览器设置中清除 Cookie，或设置阻止站点使用本地存储。<br>⚠️ 关闭本地存储可能造成主题模式、评论表单等功能异常。</p><h2 id="5-第三方Cookie"><a href="#5-第三方Cookie" class="headerlink" title="5. 第三方Cookie"></a>5. 第三方Cookie</h2><p>加载CDN、评论组件时，第三方服务可能生成独立Cookie，遵循对应服务商Cookie规则。</p><p>持续浏览本站，代表你知悉并同意本站依照本政策使用本地存储。</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>留言板</title>
+      <link href="/comment/index.html"/>
+      <url>/comment/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -471,22 +471,11 @@
     
     
     <entry>
-      <title>Cookies</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Cookie-政策"><a href="#Cookie-政策" class="headerlink" title="Cookie 政策"></a>Cookie 政策</h1><p>本文用于说明本站如何使用 Cookie、LocalStorage 等浏览器本地存储技术。</p><h2 id="1-什么是本地存储"><a href="#1-什么是本地存储" class="headerlink" title="1. 什么是本地存储"></a>1. 什么是本地存储</h2><p>Cookie、LocalStorage 是网站存储在你设备浏览器内的小型文本数据，不会主动读取你硬盘内其他文件。</p><h2 id="2-本站使用本地存储的用途"><a href="#2-本站使用本地存储的用途" class="headerlink" title="2. 本站使用本地存储的用途"></a>2. 本站使用本地存储的用途</h2><ol><li>保存页面显示偏好：深色&#x2F;浅色模式；</li><li>临时缓存评论表单填写记录，减少重复输入；</li><li>维持网站基础交互功能正常运行。</li></ol><h2 id="3-重要说明"><a href="#3-重要说明" class="headerlink" title="3. 重要说明"></a>3. 重要说明</h2><ol><li>本地存储文件<strong>不会收集身份证、手机号等敏感隐私信息</strong>；</li><li>不会利用 Cookie 追踪你的跨网站上网行为；</li><li>所有存储数据仅保存在你的浏览器，不会持续上传服务器。</li></ol><h2 id="4-您的控制权"><a href="#4-您的控制权" class="headerlink" title="4. 您的控制权"></a>4. 您的控制权</h2><p>你可以随时在浏览器设置中清除 Cookie，或设置阻止站点使用本地存储。<br>⚠️ 关闭本地存储可能造成主题模式、评论表单等功能异常。</p><h2 id="5-第三方Cookie"><a href="#5-第三方Cookie" class="headerlink" title="5. 第三方Cookie"></a>5. 第三方Cookie</h2><p>加载CDN、评论组件时，第三方服务可能生成独立Cookie，遵循对应服务商Cookie规则。</p><p>持续浏览本站，代表你知悉并同意本站依照本政策使用本地存储。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>打赏列表</title>
-      <link href="/donate/index.html"/>
-      <url>/donate/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>感谢以下客官的打赏，每篇文章的结尾都有给我充电的入口哦～～</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">饭饭爱吃饭</td><td align="center">支付宝</td><td align="center">8.88</td><td align="center">无留言</td></tr><tr><td align="center">我是武松啊</td><td align="center">微信</td><td align="center">6.60</td><td align="center">无留言</td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -504,17 +493,6 @@
     
     
     <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>免责声明</title>
       <link href="/disclaimer/index.html"/>
       <url>/disclaimer/index.html</url>
@@ -526,11 +504,11 @@
     
     
     <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>打赏列表</title>
+      <link href="/donate/index.html"/>
+      <url>/donate/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>感谢以下客官的打赏，每篇文章的结尾都有给我充电的入口哦～～</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">饭饭爱吃饭</td><td align="center">支付宝</td><td align="center">8.88</td><td align="center">无留言</td></tr><tr><td align="center">我是武松啊</td><td align="center">微信</td><td align="center">6.60</td><td align="center">无留言</td></tr></tbody></table>]]></content>
       
     </entry>
     
@@ -548,9 +526,31 @@
     
     
     <entry>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -592,9 +592,9 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
