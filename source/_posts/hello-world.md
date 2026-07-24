@@ -1,38 +1,40 @@
 ---
-title: Hello World
+title: 完成博客网站搭建流程
+date: 2023-01-01 05:00:00
+updated: 2026-01-01 17:00:00
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+我的 Hexo 博客搭建成功了，这是一篇用来做测试的博文（这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本）。
 
-### Create a new post
+# 这是标题一
+## 这是标题二
 
-``` bash
-$ hexo new "My New Post"
+> 这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本这是一段引用文本
+
+下面是一段 Python 代码：
+
+```python
+# 这是一段Python代码
+myStr = {'a', 'b', 'c', 'd'}
+    for i in myStr:
+        print(i)
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+下面是一段 HTML 代码：
 
-### Run server
-
-``` bash
-$ hexo server
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面标题</title>
+</head>
+<body>
+	<h1>标题内容</h1>
+  <p>一段正文测试文字，用于调试屏幕适配、字体样式。</p>
+</body>
+</html>
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+显示一个微笑的emoji表情：:smile:
