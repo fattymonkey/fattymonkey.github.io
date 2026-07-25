@@ -1,0 +1,31 @@
+- class_name: 友情链接
+  class_desc: 一些优秀的博客网站
+  link_list:
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://img02.anheyu.com/adminuploads/1/2022/09/02/6311fc38f1465.webp
+      descr: 一个真正的大佬
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 极致的Butterfly
+    - name: Leonus
+      link: https://blog.leonus.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5
+      descr: 优秀的Butterfly
+
+- class_name: 技术站点
+  class_desc: 一些优秀的技术站点
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: Hexo官方网站
+    - name: Butterfly
+      link: https://butterfly.js.org
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: 美观且强大的Hexo主题
+    - name: Pug
+      link: https://www.pugjs.cn/
+      avatar: https://www.pugjs.cn/img/logo.png
+      descr: Pug模板引擎中文文档

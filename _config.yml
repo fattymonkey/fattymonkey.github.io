@@ -3,22 +3,30 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 繁体猴の客栈 # 网站标题
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+description: '专注网络技术学习，记录建站踩坑经验，顺带记录日常碎片与生活感悟'
+keywords: [HTML, CSS, JavaScript, Java, Linux, Python, Mac, macOS, shell]
+author: Chen Zheng
+language: zh-CN   # 网站默认语言：en、zh-CN、zh-TW、zh-HK、ja、ko
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://fattymonkey.github.io # 域名备案完成之前，先用这个域名
+permalink: posts/:abbrlink.html    # 修改这里，使用hexo-abbrlink生成永久链接
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_html: true  # Set to false to remove trailing '.html' from permalinks
+
+# 新增abbrlink配置，支持博文永久链接
+abbrlink:
+  alg: crc32      # 用于计算短链接的算法，支持crc16(默认)和crc32
+  rep: dec        # URL中短链接的编码格式，支持dec(十进制，默认)和hex(十六进制)
+  drafts: false   # 是否为草稿文章生成短链接，默认关闭(false)
+  force: false    # 开启强制生成模式。开启后插件会忽略缓存，为所有文章重新计算短链接，即便文章已有短链接，默认关闭(false)
+  writeback: true # 是否将修改后的配置写回Markdown文件头部元数据(front-matter)，默认开启(true)
 
 # Directory
 source_dir: source

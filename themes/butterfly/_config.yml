@@ -5,10 +5,8 @@
 # English: https://butterfly.js.org/en/
 # --------------------------------------
 
-# --------------------------------------
-# Navigation Settings
-# --------------------------------------
 
+# ------------------------------------------------------------- Navigation Settings ------------------------------------------------------------- #
 nav:
   # Navigation bar logo image
   logo:
@@ -16,93 +14,105 @@ nav:
   display_post_title: true
   # Whether to fix navigation bar
   fixed: false
-
 menu:
   # Home: / || fas fa-home
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  文章||fas fa-list:
+    分类: /categories/ || fas fa-folder-open
+    标签: /tags/ || fas fa-tags
+    归档: /archives/ || fas fa-archive
+  休闲||fas fa-list:
+    照片展: /gallery/ || fas fa-images
+    图书馆: /books/ || fas fa-book
+    电影院: /movies/ || fas fa-video
+    音乐汇: /music/ || fas fa-music
+    玩游戏: /games/ || fas fa-gamepad
+  友链: /link/ || fas fa-link
+  留言板: /comment/ || fas fa-comment-dots
+  关于我: /about/ || fas fa-heart
 
-# --------------------------------------
-# Code Blocks Settings
-# --------------------------------------
 
+# ------------------------------------------------------------- Code Blocks Settings ------------------------------------------------------------ #
 code_blocks:
-  # Code block theme: darker / pale night / light / ocean / false
-  theme: light
-  macStyle: false
-  # Code block height limit (unit: px)
-  height_limit: false
-  word_wrap: false
+  theme: ocean      # 代码高亮配色主题：darker / pale night / light / ocean / false
+  macStyle: true    # 是否开启 macOS 风格代码块头部
+  height_limit: 150 # 代码块默认折叠高度（单位px）
+  word_wrap: false  # 代码文字自动换行
+  copy: true        # 显示复制代码的按钮
+  language: true    # 展示代码语言标签
+  shrink: false     # 代码块初始 展开/收缩 策略
+  fullpage: true    # 代码全屏查看功能
 
-  # Toolbar
-  copy: true
-  language: true
-  # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
-  shrink: false
-  fullpage: false
 
-# Social media links
+# ------------------------------------------------------------- Social media links -------------------------------------------------------------- #
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/fattymonkey || Github || '#24292e'
+  fas fa-envelope: mailto:1185349843@qq.com || Email || '#4a7dbe'
 
-# --------------------------------------
-# Image Settings
-# --------------------------------------
 
-favicon: /img/favicon.png
+# ------------------------------------------------------------- Meta Settings ------------------------------------------------------------------- #
+post_meta:
+  # 在首页上的显示
+  page:
+    date_type: both    # 日期显示创建日期还是更新日期或都显示，created / updated / both
+    date_format: date  # 显示明确时间还是相对时间，date / relative
+    categories: true   # 是否显示文章分类
+    tags: true         # 是否显示文章标签
+    label: true        # 是否显示时间前的文字（“发表于”、“更新于”）
+  # 在文章页的显示
+  post:
+    position: left     # 显示位置，left / center
+    date_type: both    # 日期显示创建日期还是更新日期或都显示，created / updated / both
+    date_format: date  # 显示明确时间还是相对时间，date / relative
+    categories: true   # 是否显示文章分类（在文章页的标题下面）
+    tags: true         # 是否显示文章标签（在文章页的最后）
+    label: true        # 是否显示时间前的文字（“发表于”、“更新于”）
 
+
+# ------------------------------------------------------------- Image Settings ------------------------------------------------------------------ #
+favicon: /img/favicon/favicon.ico
 avatar:
-  img: /img/butterfly-icon.png
-  effect: false
-
+  img: /img/avatar/boy.webp
+  effect: false # false：鼠标悬浮和离开时头像快速旋转；true：头像一直旋转，并且兼具鼠标悬浮和离开时头像快速旋转
 # Disable all banner images
 disable_top_img: false
-
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
-
+default_top_img: /img/top_img/whale.webp
 # The banner image of index page
 index_img:
-
 # The banner image of archive page
 archive_img:
-
 # Note: tag page, not tags page
 tag_img:
-
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
 tag_per_img:
-
 # Note: category page, not categories page
 category_img:
-
 # The banner image of category page, you can set the banner image for each category
 # Format:
 #  - category name: xxxxx
 category_per_img:
-
 # The background image of footer
-footer_img: false
-
+footer_img: transparent
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background:
-
+background: /img/background/whale.webp
 cover:
   # Disable the cover or not
-  index_enable: true
-  aside_enable: true
-  archives_enable: true
-  # When cover is not set, the default cover is displayed
+  index_enable: true    # 是否在首页文章列表展示文章封面图
+  aside_enable: true    # 是否在侧边栏中展示文章封面
+  archives_enable: true # 是否在归档页展示文章封面
   default_cover:
-    # - xxx.jpg
+    - /img/covers/default_cover_01.webp
+    - /img/covers/default_cover_02.webp
 
 # Replace Broken Images
 error_img:
@@ -111,61 +121,32 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: '您访问的页面找不到了~'
   background: /img/error-page.png
 
-post_meta:
-  # Home Page
-  page:
-    # Choose: created / updated / both
-    date_type: created
-    # Choose: date / relative
-    date_format: date
-    categories: true
-    tags: false
-    label: true
-  post:
-    # Choose: left / center
-    position: left
-    # Choose: created / updated / both
-    date_type: both
-    # Choose: date / relative
-    date_format: date
-    categories: true
-    tags: true
-    label: true
 
-# --------------------------------------
-# Index page settings
-# --------------------------------------
-
-# The top_img settings of home page
-# default: top img - full screen, site info - middle
-# The position of site info, eg: 300px/300em/300rem/10%
-index_site_info_top:
-# The height of top_img, eg: 300px/300em/300rem
-index_top_img_height:
-
-# The subtitle on homepage
+# ------------------------------------------------------------- Index page settings ------------------------------------------------------------- #
+# 首页副标题，The subtitle on homepage
+# 主题提供了在主页标题的下面展示副标题，也可以用自己语言替换副标题，或者调用第三方服务
 subtitle:
-  enable: false
-  # Typewriter Effect
-  effect: true
-  # Customize typed.js
+  enable: true # 总开关，设置为true的同时又不设置下面的内容，那么在主页的标题下面会显示副标题
+  effect: true # Typewriter Effect (打字效果)
+  # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # Source - Call the third-party service API (Chinese only)
-  # It will show the source first, then show the content of sub
-  # Choose: false/1/2/3
-  # false - disable the function
-  # 1 - hitokoto.cn
-  # 2 - https://api.aa1.cn/doc/yiyan.html
-  # 3 - jinrishici.com
+  # source 调用第三方服务
+  # source: false 关闭调用
+  # source: 1 调用一言网的一句话(简体) https://hitokoto.cn/
+  # source: 2 调用一句网(简体)        https://yijuzhan.com/
+  # source: 3 调用今日诗词(简体)      https://www.jinrishici.com/
+  # subtitle 會先显示source，再显示sub的內容
   source: false
-  # If you close the typewriter effect, the subtitle will only show the first line of sub
+  # 如果关闭打字效果，subtitle只会显示sub的第一行文字
   sub:
-
+    - 凡是可能出错的事，终将会出错。 -- 墨菲定律
+    - If it can go wrong,it will -- Murphy's Law
+# 首页文章卡片布局
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
@@ -175,95 +156,164 @@ subtitle:
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
 index_layout: 3
-
+# 首页文章卡片的节选内容
 # Display the article introduction on homepage
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
   length: 500
 
-# --------------------------------------
-# Post Settings
-# --------------------------------------
 
+# ------------------------------------------------------------- Post Settings ------------------------------------------------------------------- #
+# TOC目录
 toc:
-  post: true
-  page: false
-  number: true
-  expand: false
-  # Only for post
-  style_simple: false
-  scroll_percent: true
-
+  post: true           # 是否在文章页展示TOC目录
+  page: false          # 是否在普通页展示TOC目录
+  number: false        # 是否自动给TOC添加章节数(因为我编辑文章时会自己添加数字，所以设置为false)
+  expand: true         # 是否默认展开TOC(我不喜欢目录收起的功能)
+  style_simple: false  # 简洁模式，设置为true的话，侧边栏就只展示TOC，只对文章页有效
+  scroll_percent: true # 是否展示滚动百分比
+# 文章版权
 post_copyright:
-  enable: true
-  decode: false
-  author_href:
+  enable: true  # 是否启用版权声明
+  decode: true  # 是否进行URL解码，为了美观，设置为true
+  author_href:  # 版权栏作者名点击的跳转链接（这里不配置也可，因为站点配置文件中已配置URL）
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-
-# Sponsor/reward
+# 打赏/赞助
 reward:
-  enable: false
-  text:
+  enable: true
+  text: 支持一下
   QR_code:
-    # - img: /img/wechat.jpg
+    - img: /img/sponsor/wexin.webp
     #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
+      text: 微信
+    - img: /img/sponsor/zhifubao.webp
     #   link:
-    #   text: alipay
-
-# Post edit
+      text: 支付宝
+# 在线编辑
 # Easily browse and edit blog source code online.
 post_edit:
   enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
-
-# Related Articles
+# 相关文章
 related_post:
   enable: true
-  # Number of posts displayed
-  limit: 6
-  # Choose: created / updated
-  date_type: created
-
+  limit: 6           # 展示的相关文章最大数量
+  date_type: created # 显示文章的创建日期或更新日期，created / updated
+# 上/下一篇
 # Choose: 1 / 2 / false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
-
-# Displays outdated notice for a post
+post_pagination: 2
+# 过期提醒
 noticeOutdate:
   enable: false
-  # Style: simple / flat
-  style: flat
-  # When will it be shown
-  limit_day: 365
-  # Position: top / bottom
-  position: top
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  style: flat    # simple / flat
+  limit_day: 365 # When will it be shown
+  position: top  # Position: top / bottom
+  message_prev: 这篇文章距离上次更新已经有
+  message_next: 天了，或许部分内容已经不够准确，请注意甄别，欢迎留言提醒！
+# 图片描述
+photofigcaption: true
+# 分享系统
+share:
+  use: sharejs # Choose: sharejs / addtoany，Leave it empty if you don't need share
+  # Share.js
+  # https://github.com/overtrue/share.js
+  sharejs:
+    sites: facebook,x,wechat,weibo,qq
+  # AddToAny
+  # https://www.addtoany.com/
+  addtoany:
+    item: facebook,x,wechat,sina_weibo,facebook_messenger,email,copy_link
+# 数学公式
+# About the per_page
+# if you set it to true, it will load mathjax/katex script in each page
+# if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' or 'katex: true' in page's front-matter)
+math:
+  # Choose: mathjax, katex
+  # Leave it empty if you don't need math
+  use:
+  per_page: true
+  hide_scrollbar: false
+  mathjax:
+    # Enable the contextual menu
+    enableMenu: true
+    # Choose: all / ams / none, This controls whether equations are numbered and how
+    tags: none
+  katex:
+    # Enable the copy KaTeX formula
+    copy_tex: false
+# 大图模式
+# Choose: fancybox / medium_zoom
+# https://github.com/francoischalifour/medium-zoom
+# https://fancyapps.com/fancybox/
+# Leave it empty if you don't need lightbox
+lightbox: fancybox
 
-# --------------------------------------
-# Footer Settings
-# --------------------------------------
+
+# ------------------------------------------------------------- Footer Settings ----------------------------------------------------------------- #
 footer:
   nav:
+    - content:
+      - title: 直达
+        item:
+          - title: 我的主页
+            url: /
+          - title: 随机文章
+            url:
+          - title: 优质网站
+            url:
+          - title: 访客留言
+            url:
+    - content:
+      - title: 热类
+        item:
+          - title: 操作系统
+            url:
+          - title: 技术杂谈
+            url:
+          - title: 工具使用
+            url:
+          - title: 静态博客
+            url:
+    - content:
+      - title: 本站
+        item:
+          - title: 各种统计
+            url:
+          - title: 文章归档
+            url:
+          - title: 打赏列表
+            url:
+          - title: 开发面板
+            url:
+    - content:
+      - title: 关于
+        item:
+          - title: Cookies
+            url:
+          - title: 版权协议
+            url:
+          - title: 隐私协议
+            url:
+          - title: 免责声明
+            url:
   owner:
     enable: true
-    since: 2025
+    since: 2023
   # Copyright of theme and framework
   copyright:
     enable: true
-    version: true
+    version: false
   custom_text:
 
 # --------------------------------------
@@ -418,8 +468,6 @@ anchor:
   # Click the headline to scroll and update the anchor
   click_to_scroll: false
 
-photofigcaption: false
-
 copy:
   enable: true
   # Add the copyright information after copied content
@@ -443,29 +491,6 @@ busuanzi:
   site_pv: true
   page_pv: true
 
-# --------------------------------------
-# Math
-# --------------------------------------
-
-# About the per_page
-# if you set it to true, it will load mathjax/katex script in each page
-# if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' or 'katex: true' in page's front-matter)
-math:
-  # Choose: mathjax, katex
-  # Leave it empty if you don't need math
-  use:
-  per_page: true
-  hide_scrollbar: false
-
-  mathjax:
-    # Enable the contextual menu
-    enableMenu: true
-    # Choose: all / ams / none, This controls whether equations are numbered and how
-    tags: none
-
-  katex:
-    # Enable the copy KaTeX formula
-    copy_tex: false
 
 # --------------------------------------
 # Search
@@ -504,25 +529,6 @@ search:
     apiKey:
     indexName:
     option:
-
-# --------------------------------------
-# Share System
-# --------------------------------------
-
-share:
-  # Choose: sharejs / addtoany
-  # Leave it empty if you don't need share
-  use: sharejs
-
-  # Share.js
-  # https://github.com/overtrue/share.js
-  sharejs:
-    sites: facebook,x,wechat,weibo,qq
-
-  # AddToAny
-  # https://www.addtoany.com/
-  addtoany:
-    item: facebook,x,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
 # Comments System
@@ -905,15 +911,6 @@ clickShowText:
   random: false
   mobile: false
 
-# --------------------------------------
-# Lightbox Settings
-# --------------------------------------
-
-# Choose: fancybox / medium_zoom
-# https://github.com/francoischalifour/medium-zoom
-# https://fancyapps.com/fancybox/
-# Leave it empty if you don't need lightbox
-lightbox:
 
 # --------------------------------------
 # Tag Plugins settings
