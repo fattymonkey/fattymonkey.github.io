@@ -31,7 +31,7 @@ menu:
     音乐汇: /music/ || fas fa-music
     玩游戏: /games/ || fas fa-gamepad
   友链: /link/ || fas fa-link
-  留言板: /comment/ || fas fa-comment-dots
+  留言板: /comments/ || fas fa-comment-dots
   关于我: /about/ || fas fa-heart
 
 
@@ -62,7 +62,7 @@ post_meta:
     date_type: both    # 日期显示创建日期还是更新日期或都显示，created / updated / both
     date_format: date  # 显示明确时间还是相对时间，date / relative
     categories: true   # 是否显示文章分类
-    tags: true         # 是否显示文章标签
+    tags: false        # 是否显示文章标签(标签多了的话就很丑)
     label: true        # 是否显示时间前的文字（“发表于”、“更新于”）
   # 在文章页的显示
   post:
@@ -281,7 +281,7 @@ footer:
             url:
           - title: 技术杂谈
             url:
-          - title: 工具使用
+          - title: 实操手记
             url:
           - title: 静态博客
             url:
@@ -314,7 +314,7 @@ footer:
   copyright:
     enable: true
     version: false
-  custom_text:
+  custom_text: 山河漫漫，伏案拾光，留存每一段瞎折腾的细碎日常
 
 # --------------------------------------
 # Aside Settings
