@@ -348,7 +348,7 @@ template {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0c4';
+  content: '\f120';
   font-size: 20px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -5316,6 +5316,7 @@ figure.highlight pre .javascript .function {
 .container {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  text-align: justify;
 }
 .container a {
   color: #49b1f5;
@@ -8289,6 +8290,20 @@ blockquote.pullquote.right {
   -o-animation: spin 1s linear infinite;
   -ms-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
+}
+@media screen and (max-width: 768px) {
+  #local-search .search-dialog .search-result-list {
+    min-height: calc(var(--search-height) - 255px) !important;
+  }
+}
+#local-search #local-search-stats .search-result-stats {
+  text-align: left;
+}
+#local-search .search-keyword {
+  font-weight: 600;
+}
+#local-search #loading-database ~ * {
+  visibility: hidden;
 }
 @-moz-keyframes spin {
   to {
