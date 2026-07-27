@@ -189,7 +189,7 @@ reward:
   enable: true
   text: 支持一下
   QR_code:
-    - img: /img/sponsor/wexin.webp
+    - img: /img/sponsor/weixin.webp
     #   link:
       text: 微信
     - img: /img/sponsor/zhifubao.webp
