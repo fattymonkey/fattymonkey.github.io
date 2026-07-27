@@ -316,104 +316,92 @@ footer:
     version: false
   custom_text: 山河漫漫，伏案拾光，留存每一段瞎折腾的细碎日常
 
-# --------------------------------------
-# Aside Settings
-# --------------------------------------
 
+# ------------------------------------------------------------- Aside Settings ------------------------------------------------------------------ #
 aside:
-  enable: true
-  hide: false
-  # Show the button to hide the aside in bottom right button
-  button: true
-  mobile: true
-  # Position: left / right
-  position: right
+  enable: true     # 是否启用侧边栏，设置为false的话可以关闭所有的侧边栏，并且让主体内容变宽，占据侧边栏原本的空间
+  hide: false      # 是否隐藏侧边栏，设置为true的话，侧边栏会被隐藏，原本显示侧边栏的地方就成了空白区域
+  button: true     # 是否在右下角显示隐藏侧边栏的按钮
+  mobile: true     # 是否在移动端展示侧边栏
+  position: right  # 侧边栏展示位置，left/right
+  # 在下面页面是否展示侧边栏
   display:
-    archive: true
-    tag: true
-    category: true
+    archive: true  # 归档页是否展示侧边栏
+    tag: true      # 标签页是否展示侧边栏
+    category: true # 分类页是否展示侧边栏
+  # 站长信息卡片
   card_author:
-    enable: true
-    description:
+    enable: true   # 是否显示作者信息
+    description: 进一步有近一步的欢喜 # 是否展示作者名称下面的文字描述，假如不设置的话，就展示站点配置文件中的description
     button:
-      enable: true
+      enable: true # 是否显示头像下面的大按钮
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 我的GitHub
+      link: https://github.com/fattymonkey
+  # 公告信息卡片
   card_announcement:
-    enable: true
-    content: This is my Blog
+    enable: true   # 是否显示公告卡片
+    content: 网站重建不久，功能尚未完善，正努力建设中～～ # 公告内容
+  # 最新文章卡片
   card_recent_post:
-    enable: true
-    # If set 0 will show all
-    limit: 5
-    # Sort: date / updated
-    sort: date
+    enable: true   # 是否显示最新文章
+    limit: 5       # 显示的数量，设置为0表示显示全部
+    sort: date     # 排序方式：date / updated
     sort_order:
+  # 最新评论卡片
   card_newest_comments:
-    enable: false
-    sort_order:
-    limit: 6
-    # Unit: mins, save data to localStorage
-    storage: 10
-    avatar: true
+    enable: false  # 暂时关闭
+    sort_order:    # 控制评论排序规则，底层由评论接口返回默认「最新在前」，随意填写容易导致排序错乱
+    limit: 6       # 最多展示多少条评论，设置为0表示展示全部
+    storage: 10    # 缓存时长，单位分钟，保存到本地存储，避免每次刷新都重新请求数据
+    avatar: true   # 是否显示评论者头像
+  # 分类卡片
   card_categories:
-    enable: true
-    # If set 0 will show all
-    limit: 8
-    # Choose: none / true / false
-    expand: none
+    enable: true   # 是否显示分类卡片信息
+    limit: 0       # 显示分类数量，设置为0表示显示所有分类
+    expand: none   # 是否展开分类，none / true / false
     sort_order:
+  # 标签卡片
   card_tags:
-    enable: true
-    # If set 0 will show all
-    limit: 40
-    color: false
+    enable: true    # 是否显示标签卡片
+    limit: 0        # 显示标签的数量，设置为0表示显示所有分类
+    color: true     # 是否显示标签颜色
     custom_colors:
-    # Order of tags, random/name/length
-    orderby: random
-    # Sort of order. 1, asc for ascending; -1, desc for descending
-    order: 1
+    orderby: random # 标签排序方式，random/name/length
+    order: 1        # 排序方式，1为生序，-1为降序
     sort_order:
+  # 归档卡片
   card_archives:
-    enable: true
-    # Type: monthly / yearly
-    type: monthly
-    # Eg: YYYY年MM月
-    format: MMMM YYYY
-    # Sort of order. 1, asc for ascending; -1, desc for descending
-    order: -1
-    # If set 0 will show all
-    limit: 8
+    enable: true      # 是否显示归档卡片
+    type: monthly     # 归档类型，monthly / yearly
+    format: MMMM YYYY # 归档显示格式，Eg: YYYY年MM月
+    order: -1         # 排序方式，1为生序，-1为降序
+    limit: 8          # 显示归档文章数量，设置为0表示显示所有分类
     sort_order:
+  # 系列卡片
   card_post_series:
-    enable: true
-    # The title shows the series name
-    series_title: false
-    # Order by title or date
-    orderBy: 'date'
-    # Sort of order. 1, asc for ascending; -1, desc for descending
-    order: -1
+    enable: true        # 是否显示文章系列卡片
+    series_title: true  # 是否显示系列名称，The title shows the series name
+    orderBy: 'date'     # # Order by title or date
+    order: -1           # 排序方式，1为生序，-1为降序
+  # 网站信息卡片
   card_webinfo:
-    enable: true
-    post_count: true
-    last_push_date: true
+    enable: true         # 是否显示网站信息卡片
+    post_count: true     # 是否显示文章数量
+    last_push_date: true # 是否显示最后更新时间
     sort_order:
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
-    runtime_date:
+    runtime_date: 2023/01/01 # 网站开始运行的时间
 
-# --------------------------------------
-# Bottom right button
-# --------------------------------------
 
+# ------------------------------------------------------------- Bottom right button ------------------------------------------------------------- #
 # The distance between the bottom right button and the bottom (default unit: px)
 rightside_bottom:
-
-# Conversion between Traditional and Simplified Chinese
+# 繁简转换按钮
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -423,12 +411,10 @@ translate:
   # The text of the button when the language is Simplified Chinese
   msgToTraditionalChinese: '繁'
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
-
-# Read Mode
+  msgToSimplifiedChinese: '简'
+# 阅读模式
 readmode: true
-
-# Dark Mode
+# 深色模式
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
@@ -441,10 +427,9 @@ darkmode:
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start:
   end:
-
-# Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
-
+# 显示百分比，Show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
+# 按钮排序
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
 # Don't repeat the same value
@@ -454,8 +439,7 @@ rightside_item_order:
   hide:
   # Default: toc,chat,comment
   show:
-
-# Animation for the bottom right config button
+# 右下角组建弹出动画，Animation for the bottom right config button
 rightside_config_animation: true
 
 # --------------------------------------
