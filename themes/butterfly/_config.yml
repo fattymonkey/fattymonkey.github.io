@@ -442,70 +442,53 @@ rightside_item_order:
 # 右下角组建弹出动画，Animation for the bottom right config button
 rightside_config_animation: true
 
-# --------------------------------------
-# Global Settings
-# --------------------------------------
 
+# ------------------------------------------------------------- Global Settings ----------------------------------------------------------------- #
+# 页面锚点
 anchor:
   # When you scroll, the URL will update according to header id.
   auto_update: false
   # Click the headline to scroll and update the anchor
   click_to_scroll: false
 
+# 复制行为
 copy:
-  enable: true
-  # Add the copyright information after copied content
+  enable: true       # 是否允许复制(设置为false后，代码块仍然可以通过点击来复制全部)
   copyright:
-    enable: false
-    limit_count: 150
+    enable: true     # 是否在复制的内容后面加上版权信息
+    limit_count: 100 # 字数限制，当复制的文字大于这个数字的时候，才增加版权信息
 
-# Need to install the hexo-wordcount plugin
+# 字数统计，Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
-  # Display the word count of the article in post meta
-  post_wordcount: true
-  # Display the time to read the article in post meta
-  min2read: true
-  # Display the total word count of the website in aside's webinfo
-  total_wordcount: true
+  enable: true          # 字数统计开关
+  post_wordcount: true  # 文章页是否展示字数
+  min2read: true        # 文章页是否展示阅读时长
+  total_wordcount: true # 侧边栏站点信息中是否展示本站总字数
 
-# Busuanzi count for PV / UV in site
+# 不蒜子访问统计，Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: true # 显示独立访客数量
+  site_pv: true # 显示总浏览量
+  page_pv: true # 显示文章浏览量
 
-
-# --------------------------------------
-# Search
-# --------------------------------------
-
+# 搜索功能
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
-  placeholder:
-
+  use: local_search                   # 选择使用哪一套搜索引擎
+  placeholder: 请输入您要搜索的关键字     # 搜索框显示的提示词
   # Algolia Search
   algolia_search:
-    # Number of search results per page
     hitsPerPage: 6
-
   # Local Search
   local_search:
-    # Preload the search data when the page loads.
-    preload: false
-    # Show top n results per article, show all results by setting to -1
-    top_n_per_article: 1
-    # Unescape html strings to the readable one.
-    unescape: false
-    # Enable pagination for search results
+    preload: false       # 是否预加载search.xml索引文件，true：用户打开页面就开始加载；false：用户打开搜索框才加载
+    top_n_per_article: 1 # 每一篇文章最多提取几条匹配片段展示
+    unescape: true       # 是否反转义 HTML 字符，处理文章里 &lt; &gt; 这类转义字符，适合代码量大的技术博客，防止搜索结果显示乱码
     pagination:
-      enable: false
-      # Number of search results per page
-      hitsPerPage: 8
-    CDN:
-
+      enable: true       # 是否开启搜索结果分页
+      hitsPerPage: 8     # 搜索弹窗里，每页最多展示8条文章结果。
+    CDN: # 自定义search.xml文件的CDN地址，配合preload=false，这里留白即可
   # Docsearch
   # https://docsearch.algolia.com/
   docsearch:
@@ -514,140 +497,7 @@ search:
     indexName:
     option:
 
-# --------------------------------------
-# Comments System
-# --------------------------------------
-
-comments:
-  # Up to two comments system, the first will be shown as default
-  # Leave it empty if you don't need comments
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  # Format of two comments system : Disqus,Waline
-  use:
-  # Display the comment name next to the button
-  text: true
-  # Lazyload: The comment system will be load when comment element enters the browser's viewport.
-  # If you set it to true, the comment count will be invalid
-  lazyload: false
-  # Display comment count in post's top_img
-  count: false
-  # Display comment count in Home Page
-  card_post_count: false
-
-# Disqus
-# https://disqus.com/
-disqus:
-  shortname:
-  # For newest comments widget
-  apikey:
-
-# Alternative Disqus - Render comments with Disqus API
-# https://github.com/SukkaW/DisqusJS
-disqusjs:
-  shortname:
-  apikey:
-  option:
-
-# Livere
-# https://www.livere.com/
-livere:
-  uid:
-
-# Gitalk
-# https://github.com/gitalk/gitalk
-gitalk:
-  client_id:
-  client_secret:
-  repo:
-  owner:
-  admin:
-  option:
-
-# Valine
-# https://valine.js.org
-valine:
-  appId:
-  appKey:
-  avatar: monsterid
-  # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  serverURLs:
-  bg:
-  # Use Valine visitor count as the page view count
-  visitor: false
-  option:
-
-# Waline - A simple comment system with backend support fork from Valine
-# https://waline.js.org/
-waline:
-  serverURL:
-  bg:
-  # Use Waline pageview count as the page view count
-  pageview: false
-  option:
-
-# Utterances
-# https://utteranc.es/
-utterances:
-  repo:
-  # Issue Mapping: pathname/url/title/og:title
-  issue_term: pathname
-  # Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
-  light_theme: github-light
-  dark_theme: photon-dark
-  js:
-  option:
-
-# Facebook Comments Plugin
-# https://developers.facebook.com/docs/plugins/comments/
-facebook_comments:
-  app_id:
-  # optional
-  user_id:
-  pageSize: 10
-  # Choose: social / time / reverse_time
-  order_by: social
-  lang: en_US
-
-# Twikoo
-# https://github.com/imaegoo/twikoo
-twikoo:
-  envId:
-  region:
-  # Use Twikoo visitor count as the page view count
-  visitor: false
-  option:
-
-# Giscus
-# https://giscus.app/
-giscus:
-  repo:
-  repo_id:
-  category_id:
-  light_theme: light
-  dark_theme: dark
-  js:
-  option:
-
-# Remark42
-# https://remark42.com/docs/configuration/frontend/
-remark42:
-  host:
-  siteId:
-  option:
-
-# Artalk
-# https://artalk.js.org/guide/frontend/config.html
-artalk:
-  server:
-  site:
-  # Use Artalk visitor count as the page view count
-  visitor: false
-  option:
-
-# --------------------------------------
-# Chat Services
-# --------------------------------------
-
+# 在线聊天，对于博客网站来说，我觉得没必要，保持默认配置，不开启
 chat:
   # Choose: chatra/tidio/crisp/knocket
   # Leave it empty if you don't need chat
@@ -657,39 +507,28 @@ chat:
   rightside_button: false
   # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
   button_hide_show: false
-
 # https://chatra.io/
 chatra:
   id:
-
 # https://www.tidio.com/
 tidio:
   public_key:
-
 # https://crisp.chat/en/
 crisp:
   website_id:
-
 # https://trtc.io/solutions/knocket
 knocket:
   identifier:
 
-# --------------------------------------
-# Analysis
-# --------------------------------------
-
+# 访客分析统计，我觉得作用不大，不配置不开启（如果后期增加网站统计页面，或许可以从这里面找到灵感）
 # https://tongji.baidu.com/web/welcome/login
 baidu_analytics:
-
 # https://analytics.google.com/analytics/web/
 google_analytics:
-
 # https://www.cloudflare.com/zh-tw/web-analytics/
 cloudflare_analytics:
-
 # https://clarity.microsoft.com/
 microsoft_clarity:
-
 # https://umami.is/
 umami_analytics:
   enable: false
@@ -704,17 +543,13 @@ umami_analytics:
     page_pv: false
     # Umami Cloud (API key) / self-hosted Umami (token)
     token:
-
 # https://www.googletagmanager.com/
 google_tag_manager:
   tag_id:
   # optional
   domain:
 
-# --------------------------------------
-# Advertisement
-# --------------------------------------
-
+# 广告，Advertisement，暂时不开启，保持默认配置
 # Google Adsense
 google_adsense:
   enable: false
@@ -722,7 +557,6 @@ google_adsense:
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: true
-
 # Insert ads manually
 # Leave it empty if you don't need ads
 ad:
@@ -733,23 +567,18 @@ ad:
   # Insert ads in the post (before pagination)
   post:
 
-# --------------------------------------
-# Verification
-# --------------------------------------
-
+# 网站验证，Verification，域名备案完成以后，再来考虑配置网站验证
 site_verification:
   # - name: google-site-verification
   #   content: xxxxxx
   # - name: baidu-site-verification
   #   content: xxxxxxx
 
-# --------------------------------------
-# Beautify / Effect
-# --------------------------------------
 
+# ------------------------------------------------------------- Beautify / Effect --------------------------------------------------------------- #
+# 自定义主题配色
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
-
 # theme_color:
 #   enable: true
 #   main: "#49B1F5"
@@ -768,24 +597,22 @@ site_verification:
 #   meta_theme_color_light: "ffffff"
 #   meta_theme_color_dark: "#0d0d0d"
 
-# The user interface setting of category and tag page
-# Choose: index - same as Homepage UI / default - same as archives UI
-# leave it empty or index
+# 文章列表样式（设置为index可以让分类页和标签页的文章列表跟主页一样，留空则跟归档页一样）
 category_ui:
 tag_ui:
 
-# Rounded corners for UI elements
+# 界面组件圆角样式（true：开启圆角，false：关闭圆角）
 rounded_corners_ui: true
 
-# Stretches the lines so that each line has equal width
-text_align_justify: false
+# 文本行两端对齐
+text_align_justify: true
 
-# Add a mask to the header and footer
+# 头部页脚遮蔽色
 mask:
   header: true
   footer: true
 
-# Loading Animation
+# 预加载动画配置
 preloader:
   enable: false
   # source
@@ -795,13 +622,13 @@ preloader:
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
-# Page Transition
+# 页面的过渡动画，Page Transition，开启的话也需要开启Pjax才有效
 enter_transitions: true
 
-# Default display mode - light (default) / dark
+# 默认的明暗模式 - light (default) / dark
 display_mode: light
 
-# Configuration for beautifying the content of the article
+# 页面的美化增强，Configuration for beautifying the content of the article
 beautify:
   enable: false
   # Specify the field to beautify (site or post)
@@ -811,38 +638,35 @@ beautify:
   # Specify the color of the title prefix icon, such as '#F47466'
   title_prefix_icon_color:
 
-# Global font settings
+# 全局的字体设置，Global font settings，不在这里修改，后续魔改再来分析
 # Don't modify the following settings unless you know how they work
 font:
   global_font_size:
   code_font_size:
   font_family:
   code_font_family:
-
+# 标题专用的字体，不在这里进行配置
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
   font_family:
 
-# The setting of divider icon
+# 分割线图标设置，没啥改头，先随便换个图标
 hr_icon:
   enable: true
   # The unicode value of Font Awesome icon, such as '\3423'
-  icon:
+  icon: '\f120' # 填入FontAwesome图标的Unicode编码，格式示例：'\f120'
   icon_top:
 
-# Typewriter Effect
+# 打字的火花特效
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
-  colorful: true
-  shake: true
-  mobile: false
+  enable: true   # 总开关
+  colorful: true # true：彩色火花粒子，false：单色粒子
+  shake: false   # 屏幕震动效果
+  mobile: true   # 移动端是否开启
 
-# Background effects
-# --------------------------------------
-
-# canvas_ribbon
+# 背景特效，彩带飘带
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: false
@@ -853,38 +677,32 @@ canvas_ribbon:
   zIndex: -1
   click_to_change: false
   mobile: false
-
-# Fluttering Ribbon
+# 背景特效，飘动丝带
 canvas_fluttering_ribbon:
   enable: false
   mobile: false
-
-# canvas_nest
+# 背景特效，鼠标连线粒子
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
-  # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  color: '0,0,255'
-  # The opacity of line (0~1)
-  opacity: 0.7
+  enable: true
+  color: '0,0,255' # 线条RGB颜色，蓝色
+  opacity: 0.7     # 线条透明度
   # The z-index property of the background
   zIndex: -1
   # The number of lines
-  count: 99
-  mobile: false
+  count: 199       # 粒子数量，数字越大越耗性能
+  mobile: true     # 移动端
 
-# Mouse click effects: fireworks
+# 鼠标点击烟花特效
 fireworks:
   enable: false
   zIndex: 9999
   mobile: false
-
-# Mouse click effects: Heart symbol
+# 鼠标点击爱心特效
 click_heart:
-  enable: false
-  mobile: false
-
-# Mouse click effects: words
+  enable: true
+  mobile: true
+# 鼠标点击文字特效
 clickShowText:
   enable: false
   text:
@@ -969,7 +787,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -1119,3 +937,130 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+# ------------------------------------------------------------- Comments Settings --------------------------------------------------------------- #
+comments:
+  # Up to two comments system, the first will be shown as default
+  # Leave it empty if you don't need comments
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
+  # Format of two comments system : Disqus,Waline
+  use:
+  # Display the comment name next to the button
+  text: true
+  # Lazyload: The comment system will be load when comment element enters the browser's viewport.
+  # If you set it to true, the comment count will be invalid
+  lazyload: false
+  # Display comment count in post's top_img
+  count: false
+  # Display comment count in Home Page
+  card_post_count: false
+
+# Disqus
+# https://disqus.com/
+disqus:
+  shortname:
+  # For newest comments widget
+  apikey:
+
+# Alternative Disqus - Render comments with Disqus API
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  shortname:
+  apikey:
+  option:
+
+# Livere
+# https://www.livere.com/
+livere:
+  uid:
+
+# Gitalk
+# https://github.com/gitalk/gitalk
+gitalk:
+  client_id:
+  client_secret:
+  repo:
+  owner:
+  admin:
+  option:
+
+# Valine
+# https://valine.js.org
+valine:
+  appId:
+  appKey:
+  avatar: monsterid
+  # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs:
+  bg:
+  # Use Valine visitor count as the page view count
+  visitor: false
+  option:
+
+# Waline - A simple comment system with backend support fork from Valine
+# https://waline.js.org/
+waline:
+  serverURL:
+  bg:
+  # Use Waline pageview count as the page view count
+  pageview: false
+  option:
+
+# Utterances
+# https://utteranc.es/
+utterances:
+  repo:
+  # Issue Mapping: pathname/url/title/og:title
+  issue_term: pathname
+  # Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
+  light_theme: github-light
+  dark_theme: photon-dark
+  js:
+  option:
+
+# Facebook Comments Plugin
+# https://developers.facebook.com/docs/plugins/comments/
+facebook_comments:
+  app_id:
+  # optional
+  user_id:
+  pageSize: 10
+  # Choose: social / time / reverse_time
+  order_by: social
+  lang: en_US
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId:
+  region:
+  # Use Twikoo visitor count as the page view count
+  visitor: false
+  option:
+
+# Giscus
+# https://giscus.app/
+giscus:
+  repo:
+  repo_id:
+  category_id:
+  light_theme: light
+  dark_theme: dark
+  js:
+  option:
+
+# Remark42
+# https://remark42.com/docs/configuration/frontend/
+remark42:
+  host:
+  siteId:
+  option:
+
+# Artalk
+# https://artalk.js.org/guide/frontend/config.html
+artalk:
+  server:
+  site:
+  # Use Artalk visitor count as the page view count
+  visitor: false
+  option:
