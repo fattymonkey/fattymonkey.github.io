@@ -177,6 +177,7 @@ toc:
   expand: true         # 是否默认展开TOC(我不喜欢目录收起的功能)
   style_simple: false  # 简洁模式，设置为true的话，侧边栏就只展示TOC，只对文章页有效
   scroll_percent: true # 是否展示滚动百分比
+
 # 文章版权
 post_copyright:
   enable: true  # 是否启用版权声明
@@ -184,6 +185,7 @@ post_copyright:
   author_href:  # 版权栏作者名点击的跳转链接（这里不配置也可，因为站点配置文件中已配置URL）
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 # 打赏/赞助
 reward:
   enable: true
@@ -195,6 +197,7 @@ reward:
     - img: /img/sponsor/zhifubao.webp
     #   link:
       text: 支付宝
+
 # 在线编辑
 # Easily browse and edit blog source code online.
 post_edit:
@@ -202,17 +205,20 @@ post_edit:
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
+
 # 相关文章
 related_post:
   enable: true
   limit: 6           # 展示的相关文章最大数量
   date_type: created # 显示文章的创建日期或更新日期，created / updated
+
 # 上/下一篇
 # Choose: 1 / 2 / false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
 post_pagination: 2
+
 # 过期提醒
 noticeOutdate:
   enable: false
@@ -221,8 +227,10 @@ noticeOutdate:
   position: top  # Position: top / bottom
   message_prev: 这篇文章距离上次更新已经有
   message_next: 天了，或许部分内容已经不够准确，请注意甄别，欢迎留言提醒！
+
 # 图片描述
 photofigcaption: true
+
 # 分享系统
 share:
   use: sharejs # Choose: sharejs / addtoany，Leave it empty if you don't need share
@@ -234,6 +242,7 @@ share:
   # https://www.addtoany.com/
   addtoany:
     item: facebook,x,wechat,sina_weibo,facebook_messenger,email,copy_link
+
 # 数学公式
 # About the per_page
 # if you set it to true, it will load mathjax/katex script in each page
@@ -252,6 +261,7 @@ math:
   katex:
     # Enable the copy KaTeX formula
     copy_tex: false
+
 # 大图模式
 # Choose: fancybox / medium_zoom
 # https://github.com/francoischalifour/medium-zoom
@@ -259,6 +269,67 @@ math:
 # Leave it empty if you don't need lightbox
 lightbox: fancybox
 
+# 文章连载功能，Series，暂时不开启
+series:
+  enable: false    # 总开关
+  orderBy: 'title' # title or date
+  order: 1         # 排序方式，1为生序，-1为降序
+  number: true     # 是否在系列列表前显示序号
+
+# 乐谱代码块，暂时用不上，保持默认关闭
+# ABCJS - The ABC Music Notation Plugin
+# https://github.com/paulrosen/abcjs
+abcjs:
+  enable: false
+  per_page: true
+
+# 绘图语法库，Mermaid，暂时用不上，保持默认的关闭
+# https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: false
+  # Write Mermaid diagrams using code blocks
+  code_write: false
+  # built-in themes: default / forest / dark / neutral
+  theme:
+    light: default
+    dark: dark
+  # Enable "Open in New Tab" button to view diagram in a separate window
+  open_in_new_tab: true
+  # Enable zoom and pan interactions on diagrams
+  zoom_pan: true
+
+# 前端图表库，chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: false
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: 'rgba(0, 0, 0, 0.8)'
+    dark: 'rgba(255, 255, 255, 0.8)'
+  # General border color for the chart
+  borderColor:
+    light: 'rgba(0, 0, 0, 0.1)'
+    dark: 'rgba(255, 255, 255, 0.2)'
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: 'transparent'
+    dark: 'transparent'
+
+# Note提示块，Note - Bootstrap Callout
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: flat
+  icons: true
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
 
 # ------------------------------------------------------------- Footer Settings ----------------------------------------------------------------- #
 footer:
@@ -283,7 +354,7 @@ footer:
             url:
           - title: 实操手记
             url:
-          - title: 静态博客
+          - title: 建站实录
             url:
     - content:
       - title: 本站
@@ -655,7 +726,7 @@ blog_title_font:
 hr_icon:
   enable: true
   # The unicode value of Font Awesome icon, such as '\3423'
-  icon: '\f120' # 填入FontAwesome图标的Unicode编码，格式示例：'\f120'
+  icon: '\f0c4' # 填入FontAwesome图标的Unicode编码，格式示例：'\f0c4'
   icon_top:
 
 # 打字的火花特效
@@ -714,117 +785,48 @@ clickShowText:
   mobile: false
 
 
-# --------------------------------------
-# Tag Plugins settings
-# --------------------------------------
-
-# Series
-series:
-  enable: false
-  # Order by title or date
-  orderBy: 'title'
-  # Sort of order. 1, asc for ascending; -1, desc for descending
-  order: 1
-  number: true
-
-# ABCJS - The ABC Music Notation Plugin
-# https://github.com/paulrosen/abcjs
-abcjs:
-  enable: false
-  per_page: true
-
-# Mermaid
-# https://github.com/mermaid-js/mermaid
-mermaid:
-  enable: false
-  # Write Mermaid diagrams using code blocks
-  code_write: false
-  # built-in themes: default / forest / dark / neutral
-  theme:
-    light: default
-    dark: dark
-  # Enable "Open in New Tab" button to view diagram in a separate window
-  open_in_new_tab: true
-  # Enable zoom and pan interactions on diagrams
-  zoom_pan: true
-
-# chartjs
-# see https://www.chartjs.org/docs/latest/
-chartjs:
-  enable: false
-  # Do not modify unless you understand how they work.
-  # The default settings are only used when the MD syntax is not specified.
-  # General font color for the chart
-  fontColor:
-    light: 'rgba(0, 0, 0, 0.8)'
-    dark: 'rgba(255, 255, 255, 0.8)'
-  # General border color for the chart
-  borderColor:
-    light: 'rgba(0, 0, 0, 0.1)'
-    dark: 'rgba(255, 255, 255, 0.2)'
-  # Background color for scale labels on radar and polar area charts
-  scale_ticks_backdropColor:
-    light: 'transparent'
-    dark: 'transparent'
-
-# Note - Bootstrap Callout
-note:
-  # Note tag style values:
-  #  - simple    bs-callout old alert style. Default.
-  #  - modern    bs-callout new (v2-v3) alert style.
-  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-  #  - disabled  disable all CSS styles import of note tag.
-  style: flat
-  icons: true
-  border_radius: 3
-  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
-  # Offset also applied to label tag variables. This option can work with disabled note tag.
-  light_bg_offset: 0
-
-# --------------------------------------
-# Other Settings
-# --------------------------------------
-
+# ------------------------------------------------------------- Other Settings ------------------------------------------------------------------ #
 # https://github.com/MoOx/pjax
 pjax:
+  # 总开关
   enable: true
-  # Exclude the specified pages from pjax, such as '/music/'
+  # 排除的页面，列表内的页面被访问时，会强制整页刷新，不使用 Pjax，such as '/music/'
   exclude:
     # - /xxxxxx/
 
+# 音乐播放器 Aplayer
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
-  per_page: true
+  enable: false  # 总开关
+  per_page: true # true:只有页面检测到存在嵌入式播放器代码才加载播放器脚本；false:所有页面一律强制加载播放器资源
 
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
-  # The background color of Toast Notification in light mode and dark mode
-  bg_light: '#49b1f5'
-  bg_dark: '#1f1f1f'
+  enable: true        # 总开关
+  position: top-right # top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+  bg_light: '#49b1f5' # 浅色模式时的弹窗背景
+  bg_dark: '#1f1f1f'  # 深色模式时的弹窗背景
 
+# 当鼠标悬停到链接上超过65毫秒时，Instantpage会对该链接进行预加载
+# 可以提升访问速度，但是只要鼠标划过就加载，浪费资源
 # Instant.page
-# https://instant.page/
+# https://instant.page/1
 instantpage: false
 
-# Lazyload
+# 图片懒加载，Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
-  # Use browser's native lazyload instead of vanilla-lazyload
-  native: false
-  # Specify the field to use lazyload (site or post)
-  field: site
-  placeholder:
-  blur: false
+  enable: true # 总开关
+  native: true # 使用浏览器原生懒加载
+  field: post  # 只对文章页的图片生效
+  placeholder: # 占位图片地址，留空则使用默认空白占位
+  blur: true   # 启用模糊渐进加载，如果不启用图片加载完成就直接出现
 
-# PWA
+# Progressive Web App 渐进式网页应用，PWA
+# 我不打算开启这个功能
 # See https://github.com/JLHwung/hexo-offline
-# ---------------
 pwa:
   enable: false
   manifest:
@@ -833,7 +835,7 @@ pwa:
   favicon_16_16:
   mask_icon:
 
-# Open graph meta tags
+# Open graph meta tags，社交分享预览，保持默认开启即可
 # https://hexo.io/docs/helpers#open-graph
 Open_Graph_meta:
   enable: true
@@ -846,18 +848,17 @@ Open_Graph_meta:
     # fb_admins:
     # fb_app_id:
 
-# Structured Data
+# Structured Data，结构化数据，优化SEO
 # https://developers.google.com/search/docs/guides/intro-structured-data
 structured_data:
-  enable: false
+  enable: true
   # Alternate name for the site, used in structured data
   # Format: ['name1', 'name2']
   alternate_name:
 
-# Add the vendor prefixes to ensure compatibility
+# CSS前缀，Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
-# Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
@@ -874,10 +875,8 @@ CDN:
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
   third_party_provider: jsdelivr
-
   # Add version number to url, true or false
   version: true
-
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
@@ -954,26 +953,22 @@ comments:
   count: false
   # Display comment count in Home Page
   card_post_count: false
-
 # Disqus
 # https://disqus.com/
 disqus:
   shortname:
   # For newest comments widget
   apikey:
-
 # Alternative Disqus - Render comments with Disqus API
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname:
   apikey:
   option:
-
 # Livere
 # https://www.livere.com/
 livere:
   uid:
-
 # Gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
@@ -983,7 +978,6 @@ gitalk:
   owner:
   admin:
   option:
-
 # Valine
 # https://valine.js.org
 valine:
@@ -996,7 +990,6 @@ valine:
   # Use Valine visitor count as the page view count
   visitor: false
   option:
-
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
@@ -1005,7 +998,6 @@ waline:
   # Use Waline pageview count as the page view count
   pageview: false
   option:
-
 # Utterances
 # https://utteranc.es/
 utterances:
@@ -1017,7 +1009,6 @@ utterances:
   dark_theme: photon-dark
   js:
   option:
-
 # Facebook Comments Plugin
 # https://developers.facebook.com/docs/plugins/comments/
 facebook_comments:
@@ -1028,7 +1019,6 @@ facebook_comments:
   # Choose: social / time / reverse_time
   order_by: social
   lang: en_US
-
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
@@ -1037,7 +1027,6 @@ twikoo:
   # Use Twikoo visitor count as the page view count
   visitor: false
   option:
-
 # Giscus
 # https://giscus.app/
 giscus:
@@ -1048,14 +1037,12 @@ giscus:
   dark_theme: dark
   js:
   option:
-
 # Remark42
 # https://remark42.com/docs/configuration/frontend/
 remark42:
   host:
   siteId:
   option:
-
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:

@@ -4,8 +4,8 @@ date: 2023-01-01 06:00:00
 ---
 
 
-{% note primary %}
-📚 图书馆正在建设中，图书资源整理开发，敬请期待！
+{% note warning %}
+图书馆正在建设中，图书资源整理开发，敬请期待！
 {% endnote %}
 
 <div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">

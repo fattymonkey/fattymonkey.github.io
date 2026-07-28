@@ -4,7 +4,7 @@ date: 2023-04-01 07:03:10
 updated: 2026-04-01 21:49:50
 description: 本地安装 + 远程部署 + 域名配置
 categories:
-  - 静态博客
+  - 建站实录
 tags:
   - Hexo
   - GitHub

@@ -4,8 +4,8 @@ date: 2023-01-01 06:00:00
 ---
 
 
-{% note primary %}
-🎵 音乐汇正在建设中，曲库资源整理开发，敬请期待！
+{% note warning %}
+音乐汇正在建设中，曲库资源整理开发，敬请期待！
 {% endnote %}
 
 <div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
