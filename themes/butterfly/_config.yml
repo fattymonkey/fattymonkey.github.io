@@ -82,7 +82,7 @@ avatar:
 # Disable all banner images
 disable_top_img: false
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /img/top_img/whale.webp
+default_top_img: # /img/top_img/whale.webp 设置一图流后，取消默认头图
 # The banner image of index page
 index_img:
 # The banner image of archive page
@@ -340,44 +340,44 @@ footer:
           - title: 我的主页
             url: /
           - title: 随机文章
-            url:
+            url: javascript:goRandom()
           - title: 优质网站
-            url:
+            url: /link
           - title: 访客留言
-            url:
+            url: /comments
     - content:
       - title: 热类
         item:
           - title: 操作系统
-            url:
+            url: /categories/操作系统
           - title: 技术杂谈
-            url:
+            url: /categories/技术杂谈
           - title: 实操手记
-            url:
+            url: /categories/实操手记
           - title: 建站实录
-            url:
+            url: /categories/建站实录
     - content:
       - title: 本站
         item:
-          - title: 各种统计
-            url:
+          - title: 网站统计
+            url: /statistics
           - title: 文章归档
-            url:
+            url: /archives
           - title: 打赏列表
-            url:
+            url: /sponsor
           - title: 开发面板
-            url:
+            url: /devpanel
     - content:
       - title: 关于
         item:
           - title: Cookies
-            url:
+            url: /cookies
           - title: 版权协议
-            url:
+            url: /copyright
           - title: 隐私协议
-            url:
+            url: /privacy
           - title: 免责声明
-            url:
+            url: /disclaimer
   owner:
     enable: true
     since: 2023

@@ -12,7 +12,13 @@ if nav
                 if subitem.html
                   div!= subitem.html
                 else if subitem.url
-                  a(href=url_for(subitem.url), target='_blank' title=subitem.title)= subitem.title
+                  - let rawUrl = subitem.url
+                  if rawUrl.startsWith('javascript:')
+                    a(href=rawUrl, target='_self', title=subitem.title)= subitem.title
+                  else
+                    - const linkUrl = url_for(rawUrl)
+                    - const isExternal = linkUrl.startsWith('http')
+                    a(href=linkUrl, target= isExternal ? '_blank' : '_self', title=subitem.title)= subitem.title
                 else if subitem.title
                   div!= subitem.title
 .footer-other

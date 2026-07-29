@@ -14,7 +14,7 @@ $code-background = $themeColorEnable && hexo-config('theme_color.code_background
 $theme-toc-color = $themeColorEnable && hexo-config('theme_color.toc_color') ? convert(hexo-config('theme_color.toc_color')) : $strong-cyan
 // font
 $chineseFont = $language == 'zh-CN' ? 'Microsoft YaHei' : 'Microsoft JhengHei'
-$default-font-family = -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', $chineseFont, sans-serif
+$default-font-family = NimbusSanL, GlowSansSC, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', $chineseFont, sans-serif
 $default-code-font = consolas, Menlo, monospace, 'PingFang SC', $chineseFont, sans-serif
 $font-family = hexo-config('font.font_family') ? unquote(hexo-config('font.font_family')) : $default-font-family
 $code-font-family = hexo-config('font.code_font_family') ? unquote(hexo-config('font.code_font_family')) : $default-code-font
@@ -231,3 +231,13 @@ $note-dark-modern-danger-border = #c7898c
 $note-dark-modern-danger-bg = #4d2b2e
 $note-dark-modern-danger-text = #d98b8e
 $note-dark-modern-danger-hover = #e59fa2
+
+// 自定义颜色
+$monkey-black = #000000
+$monkey-white = #FFFFFF
+// 浅色模式
+$monkey-light-mark-bg = alpha($monkey-black, .5)
+$monkey-light-card-bg = alpha($monkey-white, .75)
+// 深色模式
+$monkey-dark-mark-bg = alpha($monkey-black, .2)
+$monkey-dark-card-bg = alpha(#121212, .6)
