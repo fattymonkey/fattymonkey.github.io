@@ -4611,12 +4611,22 @@ figure.highlight pre .javascript .function {
     padding: 30px;
     gap: 10px;
   }
+  #footer .footer-flex .footer-flex-items {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 0 0 40%;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    min-width: unset;
+  }
 }
 #footer .footer-flex .footer-flex-items {
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   min-width: 100px;
-  text-align: left;
+  text-align: center;
   white-space: nowrap;
 }
 #footer .footer-flex .footer-flex-title {
