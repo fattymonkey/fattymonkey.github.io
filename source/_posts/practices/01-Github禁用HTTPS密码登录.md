@@ -2,7 +2,7 @@
 title: Github禁用HTTPS密码登录
 date: 2023-03-01 07:35:10
 updated: 2026-03-01 23:46:39
-description: 从2021年8月13日起，GitHub正式禁用HTTPS使用账户密码登录
+description: 从2021年08月13日起，HTTPS正式禁用账户密码登录
 categories:
   - 实操手记
 tags:

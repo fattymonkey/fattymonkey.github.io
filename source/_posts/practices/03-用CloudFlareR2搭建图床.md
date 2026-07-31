@@ -2,7 +2,7 @@
 title: 使用 Cloudflare R2 搭建个人图床
 date: 2023-03-03 08:20:06
 updated: 2026-03-03 18:29:45
-description: R2存储桶搭建图床，配置自定义域名、CDN缓存与CORS跨域
+description: R2 搭建图床，自定义域名 + CDN缓存 + CORS跨域
 categories: 
   - 实操手记
 tags: 

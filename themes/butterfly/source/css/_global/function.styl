@@ -108,6 +108,58 @@ addBorderRadius(x = 6, hide = false)
   width: 100%
   transform: translate(0, -50%)
 
+/*
+新增移动端屏幕的适配
+*/
+maxWidth375() // iPhone SE2 / SE3
+  @media screen and (max-width: 375px)
+    {block}
+minWidth376()
+  @media screen and (min-width: 376px)
+    {block}
+
+maxWidth390() // iPhone 12/13/14 标准版/Pro
+  @media screen and (max-width: 390px)
+    {block}
+minWidth391()
+  @media screen and (min-width: 391px)
+    {block}
+
+maxWidth393() // iPhone 15/16/17 标准版/Pro
+  @media screen and (max-width: 393px)
+    {block}
+minWidth394()
+  @media screen and (min-width: 394px)
+    {block}
+
+maxWidth430() // iPhone14/15/16 Plus / Pro Max
+  @media screen and (max-width: 430px)
+    {block}
+minWidth431()
+  @media screen and (min-width: 431px)
+    {block}
+
+maxWidth440() // iPhone 17 Plus / Pro Max
+  @media screen and (max-width: 440px)
+    {block}
+minWidth441()
+  @media screen and (min-width: 441px)
+    {block}
+
+maxWidth480()
+  @media screen and (max-width: 480px)
+    {block}
+minWidth481()
+  @media screen and (min-width: 481px)
+    {block}
+
+minWidth601() // 为了保持跟主题原生逻辑一致，这里再加一个
+  @media screen and (min-width: 601px)
+    {block}
+
+/*
+保留主题原生屏幕适配
+*/
 maxWidth600()
   @media screen and (max-width: 600px)
     {block}

@@ -137,6 +137,25 @@ $indexEnable = hexo-config('cover.index_enable')
         color: var(--card-meta)
         font-size: .9em
 
+        /* 屏幕宽度 ≤ 480px */
+        +maxWidth480()
+          font-size: 1.04em
+        /* 屏幕宽度 ≤ 440px */
+        +maxWidth440()
+          font-size: .94em
+        /* 屏幕宽度 ≤ 430px */
+        +maxWidth430()
+          font-size: .91em
+        /* 屏幕宽度 ≤ 393px */
+        +maxWidth393()
+          font-size: .81em
+        /* 屏幕宽度 ≤ 390px */
+        +maxWidth390()
+          font-size: .80em
+        /* 屏幕宽度 ≤ 375px */
+        +maxWidth375()
+          font-size: .76em
+
         & > .post-meta-date
           cursor: default
 
@@ -173,3 +192,19 @@ $indexEnable = hexo-config('cover.index_enable')
         @extend .limit-more-line
         -webkit-line-clamp: 2
         word-break: break-word
+
+        /* 屏幕宽度 ≤ 440px */
+        +maxWidth440()
+          font-size: 1.07em
+        /* 屏幕宽度 ≤ 430px */
+        +maxWidth430()
+          font-size: 1.04em
+        /* 屏幕宽度 ≤ 393px */
+        +maxWidth393()
+          font-size: .94em
+        /* 屏幕宽度 ≤ 390px */
+        +maxWidth390()
+          font-size: .92em
+        /* 屏幕宽度 ≤ 375px */
+        +maxWidth375()
+          font-size: .89em

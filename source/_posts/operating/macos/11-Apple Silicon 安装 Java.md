@@ -2,7 +2,7 @@
 title: Apple Silicon 安装 Java
 date: 2023-01-11 06:12:28
 updated: 2026-01-11 22:37:11
-description: 在新版Mac上如何选择JDK？如何下载安装合适的JDK？
+description: 当下选择什么版本的JDK？如何下载安装和配置？
 categories:
   - 操作系统
 tags:
