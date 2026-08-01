@@ -56,8 +56,8 @@ social:
   iconfont icon-square-youxiang: mailto:1185349843@qq.com || 给我发邮件 || '#FF8901'
   iconfont icon-square-weibo: https://weibo.com/u/5102287461 || 访问我的微博 || '#E6162D'
   iconfont icon-square-douyin: https://v.douyin.com/bmpNaH4XdmI || 访问我的抖音 || '#000000'
-  # iconfont icon-square-weixin: javascript:void(0) || 查看我的微信 || '#0CC161'
-  # iconfont icon-square-qq: javascript:void(0) || 查看我的QQ || '#0FB8F6'
+  iconfont icon-square-weixin: javascript:getCode('weixin') || 扫码添加我的微信 || '#0CC161'
+  iconfont icon-square-qq: javascript:getCode('qq') || 扫码添加我的QQ || '#0FB8F6'
 
 
 # ------------------------------------------------------------- Meta Settings ------------------------------------------------------------------- #

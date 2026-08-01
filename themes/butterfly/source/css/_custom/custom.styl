@@ -30,80 +30,98 @@
   font-style: normal
   font-display: swap
 
-// 引入阿里图标
+/*! 引入阿里图标 */
 @font-face
   font-family "iconfont"
   src url('/icons/iconfont.woff2?t=1785494740304') format('woff2'),
       url('/icons/iconfont.woff?t=1785494740304') format('woff'),
       url('/icons/iconfont.ttf?t=1785494740304') format('truetype')
   font-display swap
-
 .iconfont
   font-family "iconfont" !important
-  font-size 16px
+  font-size 1em
   font-style normal
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-
 .icon-square-douyin:before
   content "\e61b"
-
 .icon-circle-weibo:before
   content "\e6f5"
-
 .icon-circle-github:before
   content "\e60d"
-
 .icon-circle-rss:before
   content "\e777"
-
 .icon-circle-gitee:before
   content "\e600"
-
 .icon-circle-zhihu:before
   content "\ecb2"
-
 .icon-circle-weixin:before
   content "\e61f"
-
 .icon-circle-youxiang:before
   content "\e62e"
-
 .icon-circle-qq:before
   content "\e64c"
-
 .icon-square-qq:before
   content "\e625"
-
 .icon-square-weibo:before
   content "\e6c3"
-
 .icon-square-weixin:before
   content "\e6ba"
-
 .icon-square-youxiang:before
   content "\e623"
 
-.qr-bubble
-  display none
-  position absolute
-  width 220px
-  background var(--card-bg)
-  padding 12px
-  border-radius 8px
-  box-shadow 0 4px 16px rgba(0,0,0,0.15)
-  z-index 9999
-  text-align center
-  transition opacity 0.2s
-
-  &.show
-    display block
-
+/*! 设定社交二维码弹窗的样式 */
+.qr-modal
+  display: none
+  position: fixed
+  inset: 0
+  background: rgba(0,0,0,0.72)
+  z-index: 9999
+  align-items: center
+  justify-content: center
+  backdrop-filter: blur(4px)
+.qr-modal.show
+  display: flex
+.qr-modal-inner
+  position: relative
+  background: #fff
+  padding: 32px 28px
+  border-radius: 16px
+  text-align: center
+  box-shadow: 0 8px 30px rgba(0,0,0,0.22)
+  max-width: 320px
+.qr-close
+  position: absolute
+  right: 16px
+  top: 12px
+  font-size: 26px
+  cursor: pointer
+  color: #888
+  width: 32px
+  height: 32px
+  display flex
+  align-items center
+  justify-content center
+  border-radius: 50%
+  transition: all 0.2s ease
+  &:hover
+    background rgba(0,0,0,0.08)
+    color: #222
+#qr-title
+  font-size: 16px
+  margin: 0 0 16px
+  color: #333
+#qr-img
+  width: 220px
+  border-radius: 8px
+// 适配Butterfly暗色模式
+[data-theme="dark"]
+  .qr-modal-inner
+    background: #242424
   #qr-title
-    margin 0 0 8px
-    font-size 14px
-
-  #qr-img
-    width 190px
-    height auto
-    border-radius 4px
+    color: #e5e5e5
+  .qr-close
+    color: #aaa
+    &:hover
+      background rgba(255,255,255,0.1)
+      color: #fff

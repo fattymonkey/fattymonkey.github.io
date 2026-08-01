@@ -56,4 +56,6 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
         !=partial('includes/footer', {}, {cache: true})
 
     include ./rightside.pug
+    //- 加载社交弹窗的DOM
+    include ./qrmodal.pug
     include ./additional-js.pug

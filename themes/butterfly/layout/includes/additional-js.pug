@@ -5,6 +5,9 @@ div
   if theme.translate.enable
     script(src=url_for(theme.asset.translate))
 
+  // 加载社交弹窗的脚本
+  script(src=url_for('/js/qr-popup.js'))
+
   if theme.lightbox
     script(src=url_for(theme.asset[theme.lightbox]))
 
