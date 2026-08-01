@@ -20,6 +20,8 @@
       
         <tags>
             
+            <tag> Netlify </tag>
+            
             <tag> Hexo </tag>
             
             <tag> Butterfly </tag>
@@ -27,8 +29,6 @@
             <tag> Twikoo </tag>
             
             <tag> MongoDB </tag>
-            
-            <tag> Netlify </tag>
             
         </tags>
       
@@ -84,11 +84,11 @@
             
             <tag> DNS </tag>
             
+            <tag> EdgeOne </tag>
+            
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
-            
-            <tag> EdgeOne </tag>
             
         </tags>
       
@@ -225,13 +225,13 @@
             
             <tag> Github </tag>
             
-            <tag> Netlify </tag>
-            
-            <tag> EdgeOne </tag>
-            
             <tag> Gitee </tag>
             
             <tag> Vercel </tag>
+            
+            <tag> Netlify </tag>
+            
+            <tag> EdgeOne </tag>
             
         </tags>
       
@@ -449,28 +449,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>图书馆正在建设中，图书资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-book" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">图书馆 · 建设中</h2>  <p style="opacity:0.6;">正在整理书籍资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>留言板</title>
       <link href="/comments/index.html"/>
       <url>/comments/index.html</url>
@@ -504,11 +482,33 @@
     
     
     <entry>
-      <title></title>
-      <link href="/fonts/extract-font-glyphs.js"/>
-      <url>/fonts/extract-font-glyphs.js</url>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
       
-        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// 生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'all-font-glyphs.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    try {      const htmlContent = fs.readFileSync(fullFilePath, 'utf8');      const $ = cheerio.load(htmlContent, {        decodeEntities: false,        scriptingEnabled: false      });      // 移除不需要的区块，避免抓取脚本、样式、代码      $('script, style, noscript, template, pre, figure.highlight').remove();      // 页面正文      allRawText += $('body').text();      // 追加 alt title aria-label 文字      $('[alt]').each((_, el) => allRawText += $(el).attr('alt') || '');      $('[title]').each((_, el) => allRawText += $(el).attr('title') || '');      $('[aria-label]').each((_, el) => allRawText += $(el).attr('aria-label') || '');    } catch (err) {      console.warn(`文件解析跳过：${fullFilePath}，错误：${err.message}`);    }  });}// 执行全站扫描scanAllHtml(publicDir);// 只保留中文字符【重要！你原版脚本缺少这一步，混杂大量符号英文】const chineseReg = /[\u4e00-\u9fa5]/g;const onlyChineseList = allRawText.match(chineseReg) || [];// 字符去重const uniqueCharSet = new Set(onlyChineseList);const uniqueCharString = [...uniqueCharSet].sort().join('');// 自动创建目录，解决文件夹不存在报错fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字形提取已经完成,共收集：${uniqueCharString.length} 个汉字 =`);]]></content>
+        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>请在遵守本版权协议前提下阅读、转载本站内容。</p></div><h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><p>站点名称：繁体猴の客栈<br>站点域名：fattymonkey.com（fattymonkey.github.io）</p><h1 id="一、著作权归属"><a href="#一、著作权归属" class="headerlink" title="一、著作权归属"></a>一、著作权归属</h1><ol><li>本站所有原创文章、图文、代码示例，著作权归本站作者所有；</li><li>页面中引用的第三方图文、开源项目、公开资料版权归原权利人。</li></ol><h1 id="二、转载规范"><a href="#二、转载规范" class="headerlink" title="二、转载规范"></a>二、转载规范</h1><p>✅ <strong>允许条件</strong><br>非商业用途转载，同时满足以下全部要求：</p><ol><li>完整标明原文链接、作者来源；</li><li>不得篡改文章内容、删减段落；</li><li>禁止去除原文标识、宣称内容为自己原创；</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>未经许可将原创内容用于商业盈利、付费课程、付费文档；</li><li>大批量爬虫抓取全站内容进行镜像建站；</li><li>篡改原文后重新发布；</li><li>将站点代码、原创教程打包售卖。</li></ol><h1 id="三、开源代码说明"><a href="#三、开源代码说明" class="headerlink" title="三、开源代码说明"></a>三、开源代码说明</h1><p>文章内附带的代码片段，若无特殊声明，仅供个人学习研究使用；如需商用，请联系作者取得授权。</p><h1 id="四、侵权反馈"><a href="#四、侵权反馈" class="headerlink" title="四、侵权反馈"></a>四、侵权反馈</h1><p>如果你发现本站存在侵犯你著作权的内容，可联系站长，核验后将第一时间下架相关内容。</p><h1 id="五、协议修订"><a href="#五、协议修订" class="headerlink" title="五、协议修订"></a>五、协议修订</h1><p>本站保留随时修改本版权协议的权利，修改后公示于本页面，长期有效。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -537,22 +537,11 @@
     
     
     <entry>
-      <title>版权协议</title>
-      <link href="/copyright/index.html"/>
-      <url>/copyright/index.html</url>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>请在遵守本版权协议前提下阅读、转载本站内容。</p></div><h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><p>站点名称：繁体猴の客栈<br>站点域名：fattymonkey.com（fattymonkey.github.io）</p><h1 id="一、著作权归属"><a href="#一、著作权归属" class="headerlink" title="一、著作权归属"></a>一、著作权归属</h1><ol><li>本站所有原创文章、图文、代码示例，著作权归本站作者所有；</li><li>页面中引用的第三方图文、开源项目、公开资料版权归原权利人。</li></ol><h1 id="二、转载规范"><a href="#二、转载规范" class="headerlink" title="二、转载规范"></a>二、转载规范</h1><p>✅ <strong>允许条件</strong><br>非商业用途转载，同时满足以下全部要求：</p><ol><li>完整标明原文链接、作者来源；</li><li>不得篡改文章内容、删减段落；</li><li>禁止去除原文标识、宣称内容为自己原创；</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>未经许可将原创内容用于商业盈利、付费课程、付费文档；</li><li>大批量爬虫抓取全站内容进行镜像建站；</li><li>篡改原文后重新发布；</li><li>将站点代码、原创教程打包售卖。</li></ol><h1 id="三、开源代码说明"><a href="#三、开源代码说明" class="headerlink" title="三、开源代码说明"></a>三、开源代码说明</h1><p>文章内附带的代码片段，若无特殊声明，仅供个人学习研究使用；如需商用，请联系作者取得授权。</p><h1 id="四、侵权反馈"><a href="#四、侵权反馈" class="headerlink" title="四、侵权反馈"></a>四、侵权反馈</h1><p>如果你发现本站存在侵犯你著作权的内容，可联系站长，核验后将第一时间下架相关内容。</p><h1 id="五、协议修订"><a href="#五、协议修订" class="headerlink" title="五、协议修订"></a>五、协议修订</h1><p>本站保留随时修改本版权协议的权利，修改后公示于本页面，长期有效。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>图书馆正在建设中，图书资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-book" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">图书馆 · 建设中</h2>  <p style="opacity:0.6;">正在整理书籍资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -570,33 +559,22 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title></title>
+      <link href="/fonts/extract-font-glyphs.js"/>
+      <url>/fonts/extract-font-glyphs.js</url>
       
-        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">电影院 · 建设中</h2>  <p style="opacity:0.6;">正在整理影视资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">音乐汇 · 建设中</h2>  <p style="opacity:0.6;">正在整理曲目歌单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// 生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'all-font-glyphs.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    try {      const htmlContent = fs.readFileSync(fullFilePath, 'utf8');      const $ = cheerio.load(htmlContent, {        decodeEntities: false,        scriptingEnabled: false      });      // 移除不需要的区块，避免抓取脚本、样式、代码      $('script, style, noscript, template, pre, figure.highlight').remove();      // 页面正文      allRawText += $('body').text();      // 追加 alt title aria-label 文字      $('[alt]').each((_, el) => allRawText += $(el).attr('alt') || '');      $('[title]').each((_, el) => allRawText += $(el).attr('title') || '');      $('[aria-label]').each((_, el) => allRawText += $(el).attr('aria-label') || '');    } catch (err) {      console.warn(`文件解析跳过：${fullFilePath}，错误：${err.message}`);    }  });}// 执行全站扫描scanAllHtml(publicDir);// 只保留中文字符【重要！你原版脚本缺少这一步，混杂大量符号英文】const chineseReg = /[\u4e00-\u9fa5]/g;const onlyChineseList = allRawText.match(chineseReg) || [];// 字符去重const uniqueCharSet = new Set(onlyChineseList);const uniqueCharString = [...uniqueCharSet].sort().join('');// 自动创建目录，解决文件夹不存在报错fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字形提取已经完成,共收集：${uniqueCharString.length} 个汉字 =`);]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>网站统计</title>
-      <link href="/statistics/index.html"/>
-      <url>/statistics/index.html</url>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note warning flat"><p>站点统计面板正在开发调试，数据可视化功能尚未开放，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-chart-line" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">站点统计 · 建设中</h2>  <p style="opacity:0.6;">访问数据、文章统计、可视化面板正在搭建</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -614,22 +592,33 @@
     
     
     <entry>
-      <title>隐私协议</title>
-      <link href="/privacy/index.html"/>
-      <url>/privacy/index.html</url>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>本协议说明本站收集、使用访客信息的规则，保护你的个人隐私。</p></div><h1 id="一、信息收集范围"><a href="#一、信息收集范围" class="headerlink" title="一、信息收集范围"></a>一、信息收集范围</h1><ol><li><strong>主动提供信息</strong>：在评论区自愿填写昵称、邮箱；邮箱仅用于评论回复通知，不会公开展示。</li><li><strong>自动采集信息</strong>：浏览器型号、访问时间、页面、匿名访问日志，仅用于统计站点访问情况。</li><li><strong>不会主动收集</strong>：真实姓名、身份证号、住址、银行卡等敏感隐私信息。</li></ol><h1 id="二、信息用途"><a href="#二、信息用途" class="headerlink" title="二、信息用途"></a>二、信息用途</h1><ol><li>回复访客评论、沟通交流；</li><li>统计站点访问热度，优化页面布局与内容；</li><li>排查网站异常访问、爬虫攻击；</li></ol><h1 id="三、信息共享说明"><a href="#三、信息共享说明" class="headerlink" title="三、信息共享说明"></a>三、信息共享说明</h1><ol><li>未经你明确同意，不会向第三方出售、出租你的个人信息；</li><li>第三方服务（评论系统、访问统计）收集的数据，遵守第三方自身隐私政策；</li></ol><h1 id="四、数据保存期限"><a href="#四、数据保存期限" class="headerlink" title="四、数据保存期限"></a>四、数据保存期限</h1><p>评论信息长期保存，你可联系站长申请删除自己发布的评论；<br>匿名访问日志定期清理，不作永久留存。</p><h1 id="五、访客权利"><a href="#五、访客权利" class="headerlink" title="五、访客权利"></a>五、访客权利</h1><p>你有权要求站长删除你发布的评论；可自行清理浏览器 Cookie 阻止非必要信息采集。</p><h1 id="六、安全保障"><a href="#六、安全保障" class="headerlink" title="六、安全保障"></a>六、安全保障</h1><p>站点采取合理技术手段保护数据，但无法绝对杜绝网络环境下的数据泄露风险，请谨慎主动提交敏感信息。</p><h1 id="七、协议更新"><a href="#七、协议更新" class="headerlink" title="七、协议更新"></a>七、协议更新</h1><p>本隐私协议可不定期更新，更新后发布于本页面，持续生效。</p>]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">音乐汇 · 建设中</h2>  <p style="opacity:0.6;">正在整理曲目歌单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>免责声明</title>
-      <link href="/disclaimer/index.html"/>
-      <url>/disclaimer/index.html</url>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">电影院 · 建设中</h2>  <p style="opacity:0.6;">正在整理影视资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>隐私协议</title>
+      <link href="/privacy/index.html"/>
+      <url>/privacy/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>本协议说明本站收集、使用访客信息的规则，保护你的个人隐私。</p></div><h1 id="一、信息收集范围"><a href="#一、信息收集范围" class="headerlink" title="一、信息收集范围"></a>一、信息收集范围</h1><ol><li><strong>主动提供信息</strong>：在评论区自愿填写昵称、邮箱；邮箱仅用于评论回复通知，不会公开展示。</li><li><strong>自动采集信息</strong>：浏览器型号、访问时间、页面、匿名访问日志，仅用于统计站点访问情况。</li><li><strong>不会主动收集</strong>：真实姓名、身份证号、住址、银行卡等敏感隐私信息。</li></ol><h1 id="二、信息用途"><a href="#二、信息用途" class="headerlink" title="二、信息用途"></a>二、信息用途</h1><ol><li>回复访客评论、沟通交流；</li><li>统计站点访问热度，优化页面布局与内容；</li><li>排查网站异常访问、爬虫攻击；</li></ol><h1 id="三、信息共享说明"><a href="#三、信息共享说明" class="headerlink" title="三、信息共享说明"></a>三、信息共享说明</h1><ol><li>未经你明确同意，不会向第三方出售、出租你的个人信息；</li><li>第三方服务（评论系统、访问统计）收集的数据，遵守第三方自身隐私政策；</li></ol><h1 id="四、数据保存期限"><a href="#四、数据保存期限" class="headerlink" title="四、数据保存期限"></a>四、数据保存期限</h1><p>评论信息长期保存，你可联系站长申请删除自己发布的评论；<br>匿名访问日志定期清理，不作永久留存。</p><h1 id="五、访客权利"><a href="#五、访客权利" class="headerlink" title="五、访客权利"></a>五、访客权利</h1><p>你有权要求站长删除你发布的评论；可自行清理浏览器 Cookie 阻止非必要信息采集。</p><h1 id="六、安全保障"><a href="#六、安全保障" class="headerlink" title="六、安全保障"></a>六、安全保障</h1><p>站点采取合理技术手段保护数据，但无法绝对杜绝网络环境下的数据泄露风险，请谨慎主动提交敏感信息。</p><h1 id="七、协议更新"><a href="#七、协议更新" class="headerlink" title="七、协议更新"></a>七、协议更新</h1><p>本隐私协议可不定期更新，更新后发布于本页面，持续生效。</p>]]></content>
       
     </entry>
     
@@ -652,6 +641,17 @@
       <url>/gallery/ohmygirl/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站统计</title>
+      <link href="/statistics/index.html"/>
+      <url>/statistics/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>站点统计面板正在开发调试，数据可视化功能尚未开放，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-chart-line" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">站点统计 · 建设中</h2>  <p style="opacity:0.6;">访问数据、文章统计、可视化面板正在搭建</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     

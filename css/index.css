@@ -8454,6 +8454,7 @@ blockquote.pullquote.right {
   font-style: normal;
   font-display: swap;
 }
+/* 引入阿里图标 */
 @font-face {
   font-family: "iconfont";
   src: url("/icons/iconfont.woff2?t=1785494740304") format('woff2'), url("/icons/iconfont.woff?t=1785494740304") format('woff'), url("/icons/iconfont.ttf?t=1785494740304") format('truetype');
@@ -8461,7 +8462,7 @@ blockquote.pullquote.right {
 }
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8505,32 +8506,102 @@ blockquote.pullquote.right {
 .icon-square-youxiang:before {
   content: "\e623";
 }
-.qr-bubble {
+/* 设定社交二维码弹窗的样式 */
+.qr-modal {
   display: none;
-  position: absolute;
-  width: 220px;
-  background: var(--card-bg);
-  padding: 12px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
   z-index: 9999;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+.qr-modal.show {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.qr-modal-inner {
+  position: relative;
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 16px;
   text-align: center;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-box-shadow: 0 8px 30px rgba(0,0,0,0.22);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.22);
+  max-width: 320px;
 }
-.qr-bubble.show {
-  display: block;
+.qr-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #888;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
-.qr-bubble #qr-title {
-  margin: 0 0 8px;
-  font-size: 14px;
+.qr-close:hover {
+  background: rgba(0,0,0,0.08);
+  color: #222;
 }
-.qr-bubble #qr-img {
-  width: 190px;
-  height: auto;
-  border-radius: 4px;
+#qr-title {
+  font-size: 16px;
+  margin: 0 0 16px;
+  color: #333;
+}
+#qr-img {
+  width: 220px;
+  border-radius: 8px;
+}
+[data-theme="dark"] .qr-modal-inner {
+  background: #242424;
+}
+[data-theme="dark"] #qr-title {
+  color: #e5e5e5;
+}
+[data-theme="dark"] .qr-close {
+  color: #aaa;
+}
+[data-theme="dark"] .qr-close:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
 }
