@@ -135,7 +135,23 @@ $indexEnable = hexo-config('cover.index_enable')
       & > .article-meta-wrap
         margin: 6px 0
         color: var(--card-meta)
-        font-size: .9em
+        font-size: .92em
+
+        // 窄屏手机（≤440px）
+        +maxWidth440()
+          font-size: 1em
+        // 窄屏手机（≤430px）
+        +maxWidth430()
+          font-size: .97em
+        // 超小屏手机（≤393px）
+        +maxWidth393()
+          font-size: .87em
+        // 超小屏手机（≤390px）
+        +maxWidth390()
+          font-size: .86em
+        // 极限小屏（≤375px）
+        +maxWidth375()
+          font-size: .81em
 
         & > .post-meta-date
           cursor: default
