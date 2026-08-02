@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Chen Zheng</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://fattymonkey.github.io/</id>
+  <link href="https://fattymonkey.github.io/" rel="alternate"/>
+  <link href="https://fattymonkey.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Chen Zheng</rights>
+  <subtitle>专注网络技术学习，记录建站踩坑经验，顺带记录日常碎片与生活感悟</subtitle>
+  <title>繁体猴の客栈</title>
+  <updated>2026-04-03T11:33:58.000Z</updated>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="建站实录" scheme="https://fattymonkey.github.io/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
+    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
+    <category term="Butterfly" scheme="https://fattymonkey.github.io/tags/Butterfly/"/>
+    <category term="Twikoo" scheme="https://fattymonkey.github.io/tags/Twikoo/"/>
+    <category term="MongoDB" scheme="https://fattymonkey.github.io/tags/MongoDB/"/>
+    <category term="Netlify" scheme="https://fattymonkey.github.io/tags/Netlify/"/>
+    <id>https://fattymonkey.github.io/posts/10403.html</id>
+    <link href="https://fattymonkey.github.io/posts/10403.html"/>
+    <published>2023-04-02T22:06:18.000Z</published>
+    <summary>Hexo + Butterfly + Twikoo，保姆级教程</summary>
+    <title>Butterfly主题之评论系统</title>
+    <updated>2026-04-03T11:33:58.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="建站实录" scheme="https://fattymonkey.github.io/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
+    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
+    <category term="Butterfly" scheme="https://fattymonkey.github.io/tags/Butterfly/"/>
+    <id>https://fattymonkey.github.io/posts/10402.html</id>
+    <link href="https://fattymonkey.github.io/posts/10402.html"/>
+    <published>2023-04-02T11:06:18.000Z</published>
+    <summary>更换Butterfly主题 + Butterfly主题基本设置</summary>
+    <title>Butterfly主题之开始使用</title>
+    <updated>2026-04-02T13:33:58.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="建站实录" scheme="https://fattymonkey.github.io/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
+    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
+    <category term="GitHub" scheme="https://fattymonkey.github.io/tags/GitHub/"/>
+    <category term="EdgeOne" scheme="https://fattymonkey.github.io/tags/EdgeOne/"/>
+    <category term="CDN" scheme="https://fattymonkey.github.io/tags/CDN/"/>
+    <category term="DNS" scheme="https://fattymonkey.github.io/tags/DNS/"/>
+    <id>https://fattymonkey.github.io/posts/10401.html</id>
+    <link href="https://fattymonkey.github.io/posts/10401.html"/>
+    <published>2023-03-31T23:03:10.000Z</published>
+    <summary>本地安装 + 远程部署 + 域名配置</summary>
+    <title>Hexo博客之整体搭建流程</title>
+    <updated>2026-04-01T13:49:50.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="实操手记" scheme="https://fattymonkey.github.io/categories/%E5%AE%9E%E6%93%8D%E6%89%8B%E8%AE%B0/"/>
+    <category term="Markdown" scheme="https://fattymonkey.github.io/tags/Markdown/"/>
+    <category term="CDN" scheme="https://fattymonkey.github.io/tags/CDN/"/>
+    <category term="DNS" scheme="https://fattymonkey.github.io/tags/DNS/"/>
+    <category term="Cloudflare" scheme="https://fattymonkey.github.io/tags/Cloudflare/"/>
+    <id>https://fattymonkey.github.io/posts/10303.html</id>
+    <link href="https://fattymonkey.github.io/posts/10303.html"/>
+    <published>2023-03-03T00:20:06.000Z</published>
+    <summary>R2 搭建图床，自定义域名 + CDN缓存 + CORS跨域</summary>
+    <title>使用 Cloudflare R2 搭建个人图床</title>
+    <updated>2026-03-03T10:29:45.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="实操手记" scheme="https://fattymonkey.github.io/categories/%E5%AE%9E%E6%93%8D%E6%89%8B%E8%AE%B0/"/>
+    <category term="Markdown" scheme="https://fattymonkey.github.io/tags/Markdown/"/>
+    <id>https://fattymonkey.github.io/posts/10302.html</id>
+    <link href="https://fattymonkey.github.io/posts/10302.html"/>
+    <published>2023-03-02T01:31:19.000Z</published>
+    <summary>详解Markdown是什么，并记录其常用语法</summary>
+    <title>Markdown理解和语法备忘</title>
+    <updated>2026-03-02T15:58:41.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="实操手记" scheme="https://fattymonkey.github.io/categories/%E5%AE%9E%E6%93%8D%E6%89%8B%E8%AE%B0/"/>
+    <category term="Github" scheme="https://fattymonkey.github.io/tags/Github/"/>
+    <id>https://fattymonkey.github.io/posts/10301.html</id>
+    <link href="https://fattymonkey.github.io/posts/10301.html"/>
+    <published>2023-02-28T23:35:10.000Z</published>
+    <summary>从2021年08月13日起，HTTPS正式禁用账户密码登录</summary>
+    <title>Github禁用HTTPS密码登录</title>
+    <updated>2026-03-01T15:46:39.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="技术杂谈" scheme="https://fattymonkey.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
+    <category term="Hugo" scheme="https://fattymonkey.github.io/tags/Hugo/"/>
+    <category term="Halo" scheme="https://fattymonkey.github.io/tags/Halo/"/>
+    <id>https://fattymonkey.github.io/posts/10203.html</id>
+    <link href="https://fattymonkey.github.io/posts/10203.html"/>
+    <published>2023-02-03T00:03:10.000Z</published>
+    <summary>梳理主流博客框架优劣，理清如何抉择静态博客框架</summary>
+    <title>博客框架该怎么选</title>
+    <updated>2026-02-03T12:50:50.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="技术杂谈" scheme="https://fattymonkey.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    <category term="EdgeOne" scheme="https://fattymonkey.github.io/tags/EdgeOne/"/>
+    <category term="Netlify" scheme="https://fattymonkey.github.io/tags/Netlify/"/>
+    <category term="Github" scheme="https://fattymonkey.github.io/tags/Github/"/>
+    <category term="Gitee" scheme="https://fattymonkey.github.io/tags/Gitee/"/>
+    <category term="Vercel" scheme="https://fattymonkey.github.io/tags/Vercel/"/>
+    <id>https://fattymonkey.github.io/posts/10202.html</id>
+    <link href="https://fattymonkey.github.io/posts/10202.html"/>
+    <published>2023-02-02T00:35:10.000Z</published>
+    <summary>静态博客托管是什么？该如何选择静态博客托管平台？</summary>
+    <title>静态博客托管平台</title>
+    <updated>2026-02-02T12:48:50.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="技术杂谈" scheme="https://fattymonkey.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    <category term="DNS" scheme="https://fattymonkey.github.io/tags/DNS/"/>
+    <id>https://fattymonkey.github.io/posts/10201.html</id>
+    <link href="https://fattymonkey.github.io/posts/10201.html"/>
+    <published>2023-01-31T23:35:10.000Z</published>
+    <summary>IP地址是什么？DNS是什么？ 二级域名又是什么？</summary>
+    <title>域名背后那些事儿</title>
+    <updated>2026-02-01T12:48:50.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="操作系统" scheme="https://fattymonkey.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="macOS" scheme="https://fattymonkey.github.io/tags/macOS/"/>
+    <category term="Java" scheme="https://fattymonkey.github.io/tags/Java/"/>
+    <category term="JDK" scheme="https://fattymonkey.github.io/tags/JDK/"/>
+    <id>https://fattymonkey.github.io/posts/10011.html</id>
+    <link href="https://fattymonkey.github.io/posts/10011.html"/>
+    <published>2023-01-10T22:12:28.000Z</published>
+    <summary>当下选择什么版本的JDK？如何下载安装和配置？</summary>
+    <title>Apple Silicon 安装 Java</title>
+    <updated>2026-01-11T14:37:11.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="操作系统" scheme="https://fattymonkey.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="macOS" scheme="https://fattymonkey.github.io/tags/macOS/"/>
+    <category term="CLT" scheme="https://fattymonkey.github.io/tags/CLT/"/>
+    <category term="Python" scheme="https://fattymonkey.github.io/tags/Python/"/>
+    <id>https://fattymonkey.github.io/posts/10010.html</id>
+    <link href="https://fattymonkey.github.io/posts/10010.html"/>
+    <published>2023-01-09T22:12:28.000Z</published>
+    <summary>详解在新版的Mac上安装python3的详细过程和思考</summary>
+    <title>新版Mac安装Python的最佳实践</title>
+    <updated>2026-01-10T14:37:11.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="操作系统" scheme="https://fattymonkey.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="macOS" scheme="https://fattymonkey.github.io/tags/macOS/"/>
+    <category term="Nodejs" scheme="https://fattymonkey.github.io/tags/Nodejs/"/>
+    <category term="npm" scheme="https://fattymonkey.github.io/tags/npm/"/>
+    <id>https://fattymonkey.github.io/posts/10009.html</id>
+    <link href="https://fattymonkey.github.io/posts/10009.html"/>
+    <published>2023-01-08T23:25:28.000Z</published>
+    <summary>Mac上搭建Nodejs开发环境，可不只是安装那么简单！</summary>
+    <title>安装配置Nodejs的保姆级教程</title>
+    <updated>2026-01-09T13:53:23.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="操作系统" scheme="https://fattymonkey.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="macOS" scheme="https://fattymonkey.github.io/tags/macOS/"/>
+    <category term="Homebrew" scheme="https://fattymonkey.github.io/tags/Homebrew/"/>
+    <id>https://fattymonkey.github.io/posts/10008.html</id>
+    <link href="https://fattymonkey.github.io/posts/10008.html"/>
+    <published>2023-01-08T00:13:14.000Z</published>
+    <summary>详细记录在macOS上安装配置Homebrew，避坑！！！</summary>
+    <title>Homebrew的安装配置和使用</title>
+    <updated>2026-01-08T14:34:47.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="操作系统" scheme="https://fattymonkey.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="macOS" scheme="https://fattymonkey.github.io/tags/macOS/"/>
+    <category term="Git" scheme="https://fattymonkey.github.io/tags/Git/"/>
+    <id>https://fattymonkey.github.io/posts/10007.html</id>
+    <link href="https://fattymonkey.github.io/posts/10007.html"/>
+    <published>2023-01-06T23:13:14.000Z</published>
+    <summary>不要再瞎折腾了！这才是macOS安装Git的正确方式！</summary>
+    <title>在macOS上安装配置Git</title>
+    <updated>2026-01-07T14:10:41.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="操作系统" scheme="https://fattymonkey.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="macOS" scheme="https://fattymonkey.github.io/tags/macOS/"/>
+    <category term="CLT" scheme="https://fattymonkey.github.io/tags/CLT/"/>
+    <id>https://fattymonkey.github.io/posts/10006.html</id>
+    <link href="https://fattymonkey.github.io/posts/10006.html"/>
+    <published>2023-01-05T23:13:14.000Z</published>
+    <summary>安装 Command Line Tools —— 搭建Mac开发环境的第一步</summary>
+    <title>macOS安装命令行工具</title>
+    <updated>2026-01-06T15:52:21.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <id>https://fattymonkey.github.io/posts/10000.html</id>
+    <link href="https://fattymonkey.github.io/posts/10000.html"/>
+    <published>2022-12-31T21:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>我的 Hexo 博客搭建成功了，这是一篇用来做测试的博文（这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本这是一段普通的文本）。</p>
+<h1 id="这是标题一"><a href="#这是标题一" class=]]>
+    </summary>
+    <title>完成博客网站搭建流程</title>
+    <updated>2026-01-01T09:00:00.000Z</updated>
+  </entry>
+</feed>
