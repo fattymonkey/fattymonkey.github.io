@@ -51,8 +51,6 @@
       
         <tags>
             
-            <tag> Netlify </tag>
-            
             <tag> Hexo </tag>
             
             <tag> Butterfly </tag>
@@ -60,6 +58,8 @@
             <tag> Twikoo </tag>
             
             <tag> MongoDB </tag>
+            
+            <tag> Netlify </tag>
             
         </tags>
       
@@ -111,15 +111,15 @@
       
         <tags>
             
-            <tag> EdgeOne </tag>
-            
-            <tag> CDN </tag>
+            <tag> Hexo </tag>
             
             <tag> DNS </tag>
             
-            <tag> Hexo </tag>
+            <tag> EdgeOne </tag>
             
             <tag> GitHub </tag>
+            
+            <tag> CDN </tag>
             
         </tags>
       
@@ -144,13 +144,13 @@
       
         <tags>
             
-            <tag> Markdown </tag>
-            
-            <tag> Cloudflare </tag>
+            <tag> DNS </tag>
             
             <tag> CDN </tag>
             
-            <tag> DNS </tag>
+            <tag> Markdown </tag>
+            
+            <tag> Cloudflare </tag>
             
         </tags>
       
@@ -254,13 +254,13 @@
       
         <tags>
             
+            <tag> Netlify </tag>
+            
             <tag> Github </tag>
             
             <tag> Gitee </tag>
             
             <tag> Vercel </tag>
-            
-            <tag> Netlify </tag>
             
             <tag> EdgeOne </tag>
             
@@ -491,33 +491,11 @@
     
     
     <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>图书馆正在建设中，图书资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-book" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">图书馆 · 建设中</h2>  <p style="opacity:0.6;">正在整理书籍资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Cookies 政策</title>
       <link href="/cookies/index.html"/>
       <url>/cookies/index.html</url>
       
         <content type="html"><![CDATA[<div class="note primary flat"><p>本政策说明本站如何使用 Cookie 及同类本地存储技术，持续优化你的浏览体验</p></div><h1 id="一、什么是-Cookie"><a href="#一、什么是-Cookie" class="headerlink" title="一、什么是 Cookie"></a>一、什么是 Cookie</h1><p>Cookie 是网站发送至你浏览器并存储在设备上的小型文本文件，能够保存浏览状态、偏好设置，帮助网站识别回访访客，提升访问流畅度。</p><h1 id="二、本站使用-Cookie-的目的"><a href="#二、本站使用-Cookie-的目的" class="headerlink" title="二、本站使用 Cookie 的目的"></a>二、本站使用 Cookie 的目的</h1><ol><li>记忆页面浏览设置、深色&#x2F;浅色模式偏好；</li><li>维持评论组件会话状态；</li><li>统计站点基础访问数据，用于站点优化；</li><li>区分新访客与回访访客，不用于追踪用户网络行为。</li></ol><h1 id="三、Cookie-分类"><a href="#三、Cookie-分类" class="headerlink" title="三、Cookie 分类"></a>三、Cookie 分类</h1><ul><li><strong>必要 Cookie</strong>：保障网站基础功能正常运行，无法关闭；</li><li><strong>功能性 Cookie</strong>：保存你的界面偏好，可通过浏览器设置拒绝；</li><li><strong>统计 Cookie</strong>：匿名汇总访问数据，不会收集姓名、手机号等个人信息。</li></ul><h1 id="四、你如何管理-Cookie"><a href="#四、你如何管理-Cookie" class="headerlink" title="四、你如何管理 Cookie"></a>四、你如何管理 Cookie</h1><p>你可以通过浏览器设置：阻止Cookie、清除已有Cookie、退出浏览器自动删除Cookie。<br>关闭 Cookie 可能导致评论系统、主题模式切换等功能异常。</p><h1 id="五、第三方-Cookie"><a href="#五、第三方-Cookie" class="headerlink" title="五、第三方 Cookie"></a>五、第三方 Cookie</h1><p>本站部分功能（评论系统、访问统计）可能由第三方服务写入Cookie，相关行为遵循对应服务商隐私条款。</p><h1 id="六、政策更新"><a href="#六、政策更新" class="headerlink" title="六、政策更新"></a>六、政策更新</h1><p>本站有权随时修订本 Cookie 政策，修订内容将直接在页面更新，不再单独通知。如有疑问，请通过页面评论或联系方式与站长沟通</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comments/index.html"/>
-      <url>/comments/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎在此留下你的想法与疑问，期待你的声音</p></div>]]></content>
       
     </entry>
     
@@ -535,11 +513,77 @@
     
     
     <entry>
+      <title>留言板</title>
+      <link href="/comments/index.html"/>
+      <url>/comments/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎在此留下你的想法与疑问，期待你的声音</p></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>开发面板</title>
       <link href="/devpanel/index.html"/>
       <url>/devpanel/index.html</url>
       
         <content type="html"><![CDATA[<div class="note primary flat"><p>本站专属开发跟踪清单：缺陷修复 + 样式美化 + 功能开发，实时同步站点开发状态，欢迎留言提出问题</p></div><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 移动端首页中，文章卡片中的字太大了，导致换行</li><li><input disabled="" type="checkbox"> 微信和QQ的社交链接优化，现在是跳转到新网页展示二维码</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能直接定位到具体的评论</li><li><input disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input checked="" disabled="" type="checkbox"> 把所有的图片都改到博客根目录下（除文章插图），加快本地预览时的加载速度</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 增加各种统计页面</li><li><input disabled="" type="checkbox"> 增加隐私协议页面</li><li><input disabled="" type="checkbox"> 增加版权协议页面</li><li><input disabled="" type="checkbox"> 增加免责声明页面</li><li><input disabled="" type="checkbox"> 增加Cookies页面</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 所有协议页面关闭评论功能</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li></ul><hr><h2 id="面板说明："><a href="#面板说明：" class="headerlink" title="面板说明："></a>面板说明：</h2><ul><li><input checked="" disabled="" type="checkbox"> 已完成：功能优化 &#x2F; 问题修复 已上线生效</li><li><input disabled="" type="checkbox"> 待处理：待开发、待优化、待修复项目，持续迭代中</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>图书馆正在建设中，图书资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-book" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">图书馆 · 建设中</h2>  <p style="opacity:0.6;">正在整理书籍资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">电影院 · 建设中</h2>  <p style="opacity:0.6;">正在整理影视资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -568,61 +612,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>免责声明</title>
-      <link href="/disclaimer/index.html"/>
-      <url>/disclaimer/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">电影院 · 建设中</h2>  <p style="opacity:0.6;">正在整理影视资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优秀链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>隐私协议</title>
       <link href="/privacy/index.html"/>
       <url>/privacy/index.html</url>
@@ -645,17 +634,6 @@
     
     
     <entry>
-      <title>OH MY GIRL</title>
-      <link href="/gallery/ohmygirl/index.html"/>
-      <url>/gallery/ohmygirl/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>网站统计</title>
       <link href="/statistics/index.html"/>
       <url>/statistics/index.html</url>
@@ -667,9 +645,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>优秀链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -683,6 +661,28 @@
       <url>/music/index.html</url>
       
         <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">音乐汇 · 建设中</h2>  <p style="opacity:0.6;">正在整理曲目歌单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OH MY GIRL</title>
+      <link href="/gallery/ohmygirl/index.html"/>
+      <url>/gallery/ohmygirl/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
