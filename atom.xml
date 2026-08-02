@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, Chen Zheng</rights>
   <subtitle>专注网络技术学习，记录建站踩坑经验，顺带记录日常碎片与生活感悟</subtitle>
   <title>繁体猴の客栈</title>
-  <updated>2026-04-03T11:33:58.000Z</updated>
+  <updated>2026-04-04T11:33:58.000Z</updated>
   <entry>
     <author>
       <name>Chen Zheng</name>
@@ -18,9 +18,25 @@
     <category term="建站实录" scheme="https://fattymonkey.github.io/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
     <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
     <category term="Butterfly" scheme="https://fattymonkey.github.io/tags/Butterfly/"/>
+    <category term="Stylus" scheme="https://fattymonkey.github.io/tags/Stylus/"/>
+    <category term="Pug" scheme="https://fattymonkey.github.io/tags/Pug/"/>
+    <id>https://fattymonkey.github.io/posts/10404.html</id>
+    <link href="https://fattymonkey.github.io/posts/10404.html"/>
+    <published>2023-04-04T00:06:18.000Z</published>
+    <summary>给Butterfly主题首页进行细致的个性化魔改</summary>
+    <title>Butterfly主题之首页魔改</title>
+    <updated>2026-04-04T11:33:58.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Zheng</name>
+    </author>
+    <category term="建站实录" scheme="https://fattymonkey.github.io/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
+    <category term="Netlify" scheme="https://fattymonkey.github.io/tags/Netlify/"/>
+    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
+    <category term="Butterfly" scheme="https://fattymonkey.github.io/tags/Butterfly/"/>
     <category term="Twikoo" scheme="https://fattymonkey.github.io/tags/Twikoo/"/>
     <category term="MongoDB" scheme="https://fattymonkey.github.io/tags/MongoDB/"/>
-    <category term="Netlify" scheme="https://fattymonkey.github.io/tags/Netlify/"/>
     <id>https://fattymonkey.github.io/posts/10403.html</id>
     <link href="https://fattymonkey.github.io/posts/10403.html"/>
     <published>2023-04-02T22:06:18.000Z</published>
@@ -47,11 +63,11 @@
       <name>Chen Zheng</name>
     </author>
     <category term="建站实录" scheme="https://fattymonkey.github.io/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
-    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
-    <category term="GitHub" scheme="https://fattymonkey.github.io/tags/GitHub/"/>
     <category term="EdgeOne" scheme="https://fattymonkey.github.io/tags/EdgeOne/"/>
     <category term="CDN" scheme="https://fattymonkey.github.io/tags/CDN/"/>
     <category term="DNS" scheme="https://fattymonkey.github.io/tags/DNS/"/>
+    <category term="Hexo" scheme="https://fattymonkey.github.io/tags/Hexo/"/>
+    <category term="GitHub" scheme="https://fattymonkey.github.io/tags/GitHub/"/>
     <id>https://fattymonkey.github.io/posts/10401.html</id>
     <link href="https://fattymonkey.github.io/posts/10401.html"/>
     <published>2023-03-31T23:03:10.000Z</published>
@@ -65,9 +81,9 @@
     </author>
     <category term="实操手记" scheme="https://fattymonkey.github.io/categories/%E5%AE%9E%E6%93%8D%E6%89%8B%E8%AE%B0/"/>
     <category term="Markdown" scheme="https://fattymonkey.github.io/tags/Markdown/"/>
+    <category term="Cloudflare" scheme="https://fattymonkey.github.io/tags/Cloudflare/"/>
     <category term="CDN" scheme="https://fattymonkey.github.io/tags/CDN/"/>
     <category term="DNS" scheme="https://fattymonkey.github.io/tags/DNS/"/>
-    <category term="Cloudflare" scheme="https://fattymonkey.github.io/tags/Cloudflare/"/>
     <id>https://fattymonkey.github.io/posts/10303.html</id>
     <link href="https://fattymonkey.github.io/posts/10303.html"/>
     <published>2023-03-03T00:20:06.000Z</published>
@@ -121,11 +137,11 @@
       <name>Chen Zheng</name>
     </author>
     <category term="技术杂谈" scheme="https://fattymonkey.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
-    <category term="EdgeOne" scheme="https://fattymonkey.github.io/tags/EdgeOne/"/>
-    <category term="Netlify" scheme="https://fattymonkey.github.io/tags/Netlify/"/>
     <category term="Github" scheme="https://fattymonkey.github.io/tags/Github/"/>
     <category term="Gitee" scheme="https://fattymonkey.github.io/tags/Gitee/"/>
     <category term="Vercel" scheme="https://fattymonkey.github.io/tags/Vercel/"/>
+    <category term="Netlify" scheme="https://fattymonkey.github.io/tags/Netlify/"/>
+    <category term="EdgeOne" scheme="https://fattymonkey.github.io/tags/EdgeOne/"/>
     <id>https://fattymonkey.github.io/posts/10202.html</id>
     <link href="https://fattymonkey.github.io/posts/10202.html"/>
     <published>2023-02-02T00:35:10.000Z</published>
