@@ -120,3 +120,13 @@ search:
   path: search.xml
   field: all
   content: true
+
+# RSS订阅
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20 # 订阅源最多显示20篇最新文章，0=全部
+  content: false # RSS内包含完整文章内容，false只显示摘要
+  content_limit: 140 # 摘要截断字数，content:false时生效
+  autodiscovery: true # 浏览器自动识别RSS订阅按钮

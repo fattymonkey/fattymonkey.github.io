@@ -1,6 +1,25 @@
 - const { nav, owner, copyright, custom_text } = theme.footer
 
 if nav
+  .footer_social
+    a.social_link(href="mailto:1185349843@qq.com" title="邮箱")
+      i.iconfont.icon-circle-youxiang
+    a.social_link(href="javascript:getCode('weixin')" title="微信" rel="noopener nofollow")
+      i.iconfont.icon-circle-weixin
+    a.social_link(href="javascript:getCode('qq')" title="QQ" rel="noopener nofollow")
+      i.iconfont.icon-circle-qq
+    a.social_link(href="https://weibo.com/u/5102287461" title="微博" target="_blank" rel="noopener nofollow")
+      i.iconfont.icon-circle-weibo
+    //- 回到顶部头像
+    img.footer_mini_logo.entered.loading(style="border-radius:50%" src="/img/avatar/boy.webp" onclick="btf.scrollToDest(0,500)" title="返回顶部")
+    a.social_link(href="https://gitee.com/fattymonkey" title="Gitee" target="_blank" rel="noopener nofollow")
+      i.iconfont.icon-circle-gitee
+    a.social_link(href="https://www.zhihu.com/people/fattymonkey" title="知乎" target="_blank" rel="noopener nofollow")
+      i.iconfont.icon-circle-zhihu
+    a.social_link(href="https://github.com/fattymonkey" title="GitHub" target="_blank" rel="noopener nofollow")
+      i.iconfont.icon-circle-github
+    a.social_link(href="/atom.xml" title="RSS" target="_blank" rel="noopener nofollow")
+      i.iconfont.icon-circle-rss
   .footer-flex
     for block in nav
       .footer-flex-items(style=`${ block.width ? 'flex-grow:' + block.width : '' }`)

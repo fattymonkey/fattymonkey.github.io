@@ -39,12 +39,15 @@
       margin: 14px 0 4px
 
     .card-info-social-icons
-      margin: 6px 0 -6px
+      margin 6px 10px -6px
+      display flex
+      justify-content space-between // 可选 space-between，看效果
+      align-items center
 
       .social-icon
         margin: 0 10px
         color: var(--font-color)
-        font-size: 1.4em
+        font-size 1.5em
 
       i
         transition: all .3s
@@ -67,6 +70,9 @@
 
       span
         padding-left: 10px
+        // 关键：文字向下偏移，自行调试数值 2px ~ 4px
+        position relative
+        top: 2.6px
 
   .item-headline
     padding-bottom: 6px
@@ -83,10 +89,15 @@
       transition: top .3s
 
   .card-tag-cloud
+    display flex
+    flex-wrap wrap
+    justify-content space-around
     a
       display: inline-block
       padding: 0 4px
       line-height: 1.8
+      // 取消原本inline-block自带空白间距干扰
+      margin 0
 
       &:hover
         color: $text-hover !important

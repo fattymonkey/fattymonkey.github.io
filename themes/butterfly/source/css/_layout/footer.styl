@@ -34,6 +34,62 @@
     width: auto
     vertical-align: text-bottom
 
+  /* ================================================= 页脚顶部社交图标区域 ================================================= */
+  .footer_social
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    padding: 20px 40px 0 40px
+    max-width: 1200px
+    width: 100%
+    /* 适配小屏幕 */
+    +maxWidth768()
+      padding: 20px 10px 0 10px
+
+    /* 1.八个社交链接 */
+    a.social_link
+      display: flex
+      margin: 1rem auto
+      border-radius: 3rem
+      width: 2em // a标签宽度
+      height: 2em // a标签高度
+      justify-content: center
+      align-items: center
+      transition: transform .3s
+      .iconfont
+        font-size: 2em // 跟a标签一样大
+      /* 在默认屏幕（大屏幕）上使用放大和过渡效果 */
+      &:hover
+        transform: scale(1.5)
+        transition: all .3s ease 0s
+        -webkit-transform: scale(1.5) //-webkit-解决浏览器兼容问题
+        -webkit-transition: all .5s ease 0s
+      /* 在小屏幕上取消放大和过渡效果 */
+      +maxWidth768()
+        &:hover
+          transform: none
+          transition: none
+          -webkit-transform: none /* 针对WebKit浏览器的取消放大效果 */
+    /* 2.中间返回顶部的头像 */
+    img.footer_mini_logo
+      width: 4rem
+      height: 4rem
+      margin: 0 auto
+      cursor: pointer
+      transition: cubic-bezier(0, 0, 0, 1.29) .5s
+      /* 在默认屏幕（大屏幕）上使用放大和过渡效果 */
+      &:hover
+        transform: scale(1.4)
+        transition: all .3s ease 0s
+        -webkit-transform: scale(1.5) //-webkit-解决浏览器兼容问题
+        -webkit-transition: all .5s ease 0s
+      /* 在小屏幕上取消放大和过渡效果 */
+      +maxWidth768()
+        &:hover
+          transform: none
+          transition: none
+          -webkit-transform: none /* 针对WebKit浏览器的取消放大效果 */
+
   .footer-flex
     display: flex
     flex-direction: row
@@ -49,9 +105,9 @@
     +maxWidth768()
       padding: 30px
       gap: 10px
-      /* 移动端每个栏目占40%,一行最多放2个 */
+      /* 移动端每个栏目占43%,一行最多放2个 */
       .footer-flex-items
-        flex 0 0 40%
+        flex 0 0 43%
         min-width unset
 
     .footer-flex-items

@@ -2,7 +2,7 @@
 title: 安装配置Nodejs的保姆级教程
 date: 2023-01-09 07:25:28
 updated: 2026-01-09 21:53:23
-description: 在macOS上搭建Nodejs开发环境，可不只是安装那么简单！
+description: Mac上搭建Nodejs开发环境，可不只是安装那么简单！
 categories:
   - 操作系统
 tags:

@@ -70,7 +70,7 @@ aside:
       unit: 天
     last_push_date:
       name: 最后更新时间
-    site_wordcount: 本站总字数
+    site_wordcount: 本站字数
     site_uv_name: 本站总访客数
     site_pv_name: 本站总浏览量
   more_button: 查看更多
