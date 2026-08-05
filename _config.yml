@@ -13,8 +13,8 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://fattymonkey.github.io # 域名备案完成之前，先用这个域名
-permalink: posts/:abbrlink.html    # 修改这里，使用hexo-abbrlink生成永久链接
+url: https://fattymonkey.com    # 域名备案完成了，改为最终域名
+permalink: posts/:abbrlink.html # 修改这里，使用hexo-abbrlink生成永久链接
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

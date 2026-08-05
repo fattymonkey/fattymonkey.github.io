@@ -1,5 +1,5 @@
 ---
-title: Butterfly主题之首页魔改
+title: Butterfly主题之首页魔改（一）
 date: 2023-04-04 08:06:18
 updated: 2026-04-04 19:33:58
 description: 给Butterfly主题首页进行细致的个性化魔改
@@ -1060,6 +1060,8 @@ social:
 打开`/themes/butterfly/source/css/_layout/aside.styl`文件，增加下面的代码：
 
 ![](https://img.czblogs.cn/posts/sitebuild/04/image-20260802230051684.webp)
+
+这个方案是临时方案，因为整个博客网站中还存在其他地方有类似的问题，暂时先改这一个，后面更新根治的办法。
 
 ## 7.03：社交弹窗
 

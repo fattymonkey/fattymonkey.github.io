@@ -2,7 +2,7 @@
 title: macOS安装命令行工具
 date: 2023-01-06 07:13:14
 updated: 2026-01-06 23:52:21
-description: 安装 Command Line Tools —— 搭建Mac开发环境的第一步
+description: Command Line Tools —— 搭建Mac开发环境的第一步
 categories:
   - 操作系统
 tags:
