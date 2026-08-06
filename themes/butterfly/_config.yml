@@ -771,7 +771,7 @@ canvas_nest:
   zIndex: -1
   # The number of lines
   count: 199       # 粒子数量，数字越大越耗性能
-  mobile: false    # 移动端
+  mobile: false    # 移动端不启用背景特效
 
 # 鼠标点击烟花特效
 fireworks:
