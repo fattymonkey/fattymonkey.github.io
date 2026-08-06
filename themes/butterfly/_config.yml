@@ -751,7 +751,7 @@ activate_power_mode:
 canvas_ribbon:
   enable: false
   # The size of ribbon
-  size: 150
+  size: 199
   # The opacity of ribbon (0 ~ 1)
   alpha: 0.6
   zIndex: -1
@@ -764,14 +764,14 @@ canvas_fluttering_ribbon:
 # 背景特效，鼠标连线粒子
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: true     # 关闭自带的特效，改用本地修复版的
   color: '0,0,255' # 线条RGB颜色，蓝色
   opacity: 0.7     # 线条透明度
   # The z-index property of the background
   zIndex: -1
   # The number of lines
   count: 199       # 粒子数量，数字越大越耗性能
-  mobile: true     # 移动端
+  mobile: false    # 移动端
 
 # 鼠标点击烟花特效
 fireworks:
