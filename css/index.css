@@ -4827,6 +4827,9 @@ figure.highlight pre .javascript .function {
     text-align: center;
   }
 }
+#footer .footer-other .footer_custom_text .footer-type-text {
+  white-space: nowrap;
+}
 #page-header {
   position: relative;
   width: 100%;

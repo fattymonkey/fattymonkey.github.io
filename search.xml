@@ -53,13 +53,13 @@
             
             <tag> Hexo </tag>
             
+            <tag> Netlify </tag>
+            
             <tag> Butterfly </tag>
             
             <tag> Twikoo </tag>
             
             <tag> MongoDB </tag>
-            
-            <tag> Netlify </tag>
             
         </tags>
       
@@ -258,11 +258,11 @@
             
             <tag> EdgeOne </tag>
             
-            <tag> Netlify </tag>
-            
             <tag> Gitee </tag>
             
             <tag> Vercel </tag>
+            
+            <tag> Netlify </tag>
             
         </tags>
       
@@ -491,28 +491,6 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>关于我页面正在完善中，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-user" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">关于我 · 建设中</h2>  <p style="opacity:0.6;">个人介绍持续整理，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Cookies 政策</title>
       <link href="/cookies/index.html"/>
       <url>/cookies/index.html</url>
@@ -524,55 +502,11 @@
     
     
     <entry>
-      <title>版权协议</title>
-      <link href="/copyright/index.html"/>
-      <url>/copyright/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>请在遵守本版权协议前提下阅读、转载本站内容。</p></div><h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><p>站点名称：繁体猴の客栈<br>站点域名：fattymonkey.com（fattymonkey.github.io）</p><h1 id="一、著作权归属"><a href="#一、著作权归属" class="headerlink" title="一、著作权归属"></a>一、著作权归属</h1><ol><li>本站所有原创文章、图文、代码示例，著作权归本站作者所有；</li><li>页面中引用的第三方图文、开源项目、公开资料版权归原权利人。</li></ol><h1 id="二、转载规范"><a href="#二、转载规范" class="headerlink" title="二、转载规范"></a>二、转载规范</h1><p>✅ <strong>允许条件</strong><br>非商业用途转载，同时满足以下全部要求：</p><ol><li>完整标明原文链接、作者来源；</li><li>不得篡改文章内容、删减段落；</li><li>禁止去除原文标识、宣称内容为自己原创；</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>未经许可将原创内容用于商业盈利、付费课程、付费文档；</li><li>大批量爬虫抓取全站内容进行镜像建站；</li><li>篡改原文后重新发布；</li><li>将站点代码、原创教程打包售卖。</li></ol><h1 id="三、开源代码说明"><a href="#三、开源代码说明" class="headerlink" title="三、开源代码说明"></a>三、开源代码说明</h1><p>文章内附带的代码片段，若无特殊声明，仅供个人学习研究使用；如需商用，请联系作者取得授权。</p><h1 id="四、侵权反馈"><a href="#四、侵权反馈" class="headerlink" title="四、侵权反馈"></a>四、侵权反馈</h1><p>如果你发现本站存在侵犯你著作权的内容，可联系站长，核验后将第一时间下架相关内容。</p><h1 id="五、协议修订"><a href="#五、协议修订" class="headerlink" title="五、协议修订"></a>五、协议修订</h1><p>本站保留随时修改本版权协议的权利，修改后公示于本页面，长期有效。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/comments/index.html"/>
-      <url>/comments/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎在此留下你的想法与疑问，期待你的声音</p></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">电影院 · 建设中</h2>  <p style="opacity:0.6;">正在整理影视资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开发面板</title>
-      <link href="/devpanel/index.html"/>
-      <url>/devpanel/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note primary flat"><p>本站专属开发跟踪清单：缺陷修复 + 样式美化 + 功能开发，实时同步站点开发状态，欢迎留言提出问题</p></div><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input disabled="" type="checkbox"> 域名备案完成后，还需公安联网备案</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，增加备案信息</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，修改绝对链接</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 社交图标弹出的二维码，适配Pjax，防止每个页面都加载一次</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航（已经开启）</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input checked="" disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式（放弃，沿用相对路径，方便预览）</li><li><input checked="" disabled="" type="checkbox"> 把所有的图片都改到博客根目录下（除文章插图），加快本地预览时的加载速度</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 增加各种统计页面</li><li><input disabled="" type="checkbox"> 增加隐私协议页面</li><li><input disabled="" type="checkbox"> 增加版权协议页面</li><li><input disabled="" type="checkbox"> 增加免责声明页面</li><li><input disabled="" type="checkbox"> 增加Cookies页面</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 所有协议页面关闭评论功能</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li><li><input checked="" disabled="" type="checkbox"> 微信和QQ的社交链接优化，改为弹窗展示二维码</li></ul><hr><h2 id="面板说明："><a href="#面板说明：" class="headerlink" title="面板说明："></a>面板说明：</h2><ul><li><input checked="" disabled="" type="checkbox"> 已完成：功能优化 &#x2F; 问题修复 已上线生效</li><li><input disabled="" type="checkbox"> 待处理：待开发、待优化、待修复项目，持续迭代中</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>关于我页面正在完善中，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-user" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">关于我 · 建设中</h2>  <p style="opacity:0.6;">个人介绍持续整理，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -590,33 +524,33 @@
     
     
     <entry>
-      <title>照片展</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙</div>      <p>收藏的一些壁紙</p>      <a href='/gallery/wallpaper'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">漫威</div>      <p>关于漫威的图片</p>      <a href='/gallery/marvel'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">OH MY GIRL</div>      <p>关于OH MY GIRL的图片</p>      <a href='/gallery/ohmygirl'></a>    </figcaption>  </figure></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">音乐汇 · 建设中</h2>  <p style="opacity:0.6;">正在整理曲目歌单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>隐私协议</title>
-      <link href="/privacy/index.html"/>
-      <url>/privacy/index.html</url>
+      <title>开发面板</title>
+      <link href="/devpanel/index.html"/>
+      <url>/devpanel/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>本协议说明本站收集、使用访客信息的规则，保护你的个人隐私。</p></div><h1 id="一、信息收集范围"><a href="#一、信息收集范围" class="headerlink" title="一、信息收集范围"></a>一、信息收集范围</h1><ol><li><strong>主动提供信息</strong>：在评论区自愿填写昵称、邮箱；邮箱仅用于评论回复通知，不会公开展示。</li><li><strong>自动采集信息</strong>：浏览器型号、访问时间、页面、匿名访问日志，仅用于统计站点访问情况。</li><li><strong>不会主动收集</strong>：真实姓名、身份证号、住址、银行卡等敏感隐私信息。</li></ol><h1 id="二、信息用途"><a href="#二、信息用途" class="headerlink" title="二、信息用途"></a>二、信息用途</h1><ol><li>回复访客评论、沟通交流；</li><li>统计站点访问热度，优化页面布局与内容；</li><li>排查网站异常访问、爬虫攻击；</li></ol><h1 id="三、信息共享说明"><a href="#三、信息共享说明" class="headerlink" title="三、信息共享说明"></a>三、信息共享说明</h1><ol><li>未经你明确同意，不会向第三方出售、出租你的个人信息；</li><li>第三方服务（评论系统、访问统计）收集的数据，遵守第三方自身隐私政策；</li></ol><h1 id="四、数据保存期限"><a href="#四、数据保存期限" class="headerlink" title="四、数据保存期限"></a>四、数据保存期限</h1><p>评论信息长期保存，你可联系站长申请删除自己发布的评论；<br>匿名访问日志定期清理，不作永久留存。</p><h1 id="五、访客权利"><a href="#五、访客权利" class="headerlink" title="五、访客权利"></a>五、访客权利</h1><p>你有权要求站长删除你发布的评论；可自行清理浏览器 Cookie 阻止非必要信息采集。</p><h1 id="六、安全保障"><a href="#六、安全保障" class="headerlink" title="六、安全保障"></a>六、安全保障</h1><p>站点采取合理技术手段保护数据，但无法绝对杜绝网络环境下的数据泄露风险，请谨慎主动提交敏感信息。</p><h1 id="七、协议更新"><a href="#七、协议更新" class="headerlink" title="七、协议更新"></a>七、协议更新</h1><p>本隐私协议可不定期更新，更新后发布于本页面，持续生效。</p>]]></content>
+        <content type="html"><![CDATA[<div class="note primary flat"><p>本站专属开发跟踪清单：缺陷修复 + 样式美化 + 功能开发，实时同步站点开发状态，欢迎留言提出问题</p></div><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集</li><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input disabled="" type="checkbox"> 域名备案完成后，还需公安联网备案</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，增加备案信息</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，修改绝对链接</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 社交图标弹出的二维码，适配Pjax，防止每个页面都加载一次</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航（已经开启）</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input checked="" disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式（放弃，沿用相对路径，方便预览）</li><li><input checked="" disabled="" type="checkbox"> 把所有的图片都改到博客根目录下（除文章插图），加快本地预览时的加载速度</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 增加各种统计页面</li><li><input disabled="" type="checkbox"> 增加隐私协议页面</li><li><input disabled="" type="checkbox"> 增加版权协议页面</li><li><input disabled="" type="checkbox"> 增加免责声明页面</li><li><input disabled="" type="checkbox"> 增加Cookies页面</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 所有协议页面关闭评论功能</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li><li><input checked="" disabled="" type="checkbox"> 微信和QQ的社交链接优化，改为弹窗展示二维码</li></ul><hr><h2 id="面板说明："><a href="#面板说明：" class="headerlink" title="面板说明："></a>面板说明：</h2><ul><li><input checked="" disabled="" type="checkbox"> 已完成：功能优化 &#x2F; 问题修复 已上线生效</li><li><input disabled="" type="checkbox"> 待处理：待开发、待优化、待修复项目，持续迭代中</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>请在遵守本版权协议前提下阅读、转载本站内容。</p></div><h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><p>站点名称：繁体猴の客栈<br>站点域名：fattymonkey.com（fattymonkey.github.io）</p><h1 id="一、著作权归属"><a href="#一、著作权归属" class="headerlink" title="一、著作权归属"></a>一、著作权归属</h1><ol><li>本站所有原创文章、图文、代码示例，著作权归本站作者所有；</li><li>页面中引用的第三方图文、开源项目、公开资料版权归原权利人。</li></ol><h1 id="二、转载规范"><a href="#二、转载规范" class="headerlink" title="二、转载规范"></a>二、转载规范</h1><p>✅ <strong>允许条件</strong><br>非商业用途转载，同时满足以下全部要求：</p><ol><li>完整标明原文链接、作者来源；</li><li>不得篡改文章内容、删减段落；</li><li>禁止去除原文标识、宣称内容为自己原创；</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>未经许可将原创内容用于商业盈利、付费课程、付费文档；</li><li>大批量爬虫抓取全站内容进行镜像建站；</li><li>篡改原文后重新发布；</li><li>将站点代码、原创教程打包售卖。</li></ol><h1 id="三、开源代码说明"><a href="#三、开源代码说明" class="headerlink" title="三、开源代码说明"></a>三、开源代码说明</h1><p>文章内附带的代码片段，若无特殊声明，仅供个人学习研究使用；如需商用，请联系作者取得授权。</p><h1 id="四、侵权反馈"><a href="#四、侵权反馈" class="headerlink" title="四、侵权反馈"></a>四、侵权反馈</h1><p>如果你发现本站存在侵犯你著作权的内容，可联系站长，核验后将第一时间下架相关内容。</p><h1 id="五、协议修订"><a href="#五、协议修订" class="headerlink" title="五、协议修订"></a>五、协议修订</h1><p>本站保留随时修改本版权协议的权利，修改后公示于本页面，长期有效。</p>]]></content>
       
     </entry>
     
@@ -634,22 +568,44 @@
     
     
     <entry>
-      <title>打赏列表</title>
-      <link href="/sponsor/index.html"/>
-      <url>/sponsor/index.html</url>
+      <title>留言板</title>
+      <link href="/comments/index.html"/>
+      <url>/comments/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note success flat"><p>感谢各位朋友的支持与鼓励！所有赞赏将用于服务器、域名与站点持续维护。</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">CodeTraveler</td><td align="center">微信</td><td align="center">20.00</td><td align="center">博客内容干货满满，持续更新！</td></tr><tr><td align="center">星野漫游者</td><td align="center">支付宝</td><td align="center">15.00</td><td align="center">学到很多Hexo优化技巧</td></tr><tr><td align="center">Dev小羊</td><td align="center">微信</td><td align="center">30.00</td><td align="center">字体优化教程非常实用</td></tr><tr><td align="center">匿名访客</td><td align="center">支付宝</td><td align="center">9.90</td><td align="center">支持博主继续创作</td></tr><tr><td align="center">CloudLover</td><td align="center">微信</td><td align="center">25.00</td><td align="center">期待更多前端调优分享</td></tr><tr><td align="center">阿泽</td><td align="center">微信</td><td align="center">18.80</td><td align="center">站点搭建文档很有参考价值</td></tr></tbody></table><blockquote><p>说明：不愿展示昵称的朋友统一标记为【匿名访客】，记录按赞赏时间倒序排列。</p></blockquote><div style="height: 40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:3rem;">  <i class="fas fa-heart" style="font-size:64px;opacity:0.5;color:#f472b6;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">赞赏支持者</h2>  <p style="opacity:0.6;">感恩每一份善意与认可</p></div>]]></content>
+        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎在此留下你的想法与疑问，期待你的声音</p></div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>照片展</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙</div>      <p>收藏的一些壁紙</p>      <a href='/gallery/wallpaper'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">漫威</div>      <p>关于漫威的图片</p>      <a href='/gallery/marvel'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">OH MY GIRL</div>      <p>关于OH MY GIRL的图片</p>      <a href='/gallery/ohmygirl'></a>    </figcaption>  </figure></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">电影院 · 建设中</h2>  <p style="opacity:0.6;">正在整理影视资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -667,6 +623,17 @@
     
     
     <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:64px;opacity:0.5;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">音乐汇 · 建设中</h2>  <p style="opacity:0.6;">正在整理曲目歌单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网站统计</title>
       <link href="/statistics/index.html"/>
       <url>/statistics/index.html</url>
@@ -678,11 +645,44 @@
     
     
     <entry>
+      <title>隐私协议</title>
+      <link href="/privacy/index.html"/>
+      <url>/privacy/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>本协议说明本站收集、使用访客信息的规则，保护你的个人隐私。</p></div><h1 id="一、信息收集范围"><a href="#一、信息收集范围" class="headerlink" title="一、信息收集范围"></a>一、信息收集范围</h1><ol><li><strong>主动提供信息</strong>：在评论区自愿填写昵称、邮箱；邮箱仅用于评论回复通知，不会公开展示。</li><li><strong>自动采集信息</strong>：浏览器型号、访问时间、页面、匿名访问日志，仅用于统计站点访问情况。</li><li><strong>不会主动收集</strong>：真实姓名、身份证号、住址、银行卡等敏感隐私信息。</li></ol><h1 id="二、信息用途"><a href="#二、信息用途" class="headerlink" title="二、信息用途"></a>二、信息用途</h1><ol><li>回复访客评论、沟通交流；</li><li>统计站点访问热度，优化页面布局与内容；</li><li>排查网站异常访问、爬虫攻击；</li></ol><h1 id="三、信息共享说明"><a href="#三、信息共享说明" class="headerlink" title="三、信息共享说明"></a>三、信息共享说明</h1><ol><li>未经你明确同意，不会向第三方出售、出租你的个人信息；</li><li>第三方服务（评论系统、访问统计）收集的数据，遵守第三方自身隐私政策；</li></ol><h1 id="四、数据保存期限"><a href="#四、数据保存期限" class="headerlink" title="四、数据保存期限"></a>四、数据保存期限</h1><p>评论信息长期保存，你可联系站长申请删除自己发布的评论；<br>匿名访问日志定期清理，不作永久留存。</p><h1 id="五、访客权利"><a href="#五、访客权利" class="headerlink" title="五、访客权利"></a>五、访客权利</h1><p>你有权要求站长删除你发布的评论；可自行清理浏览器 Cookie 阻止非必要信息采集。</p><h1 id="六、安全保障"><a href="#六、安全保障" class="headerlink" title="六、安全保障"></a>六、安全保障</h1><p>站点采取合理技术手段保护数据，但无法绝对杜绝网络环境下的数据泄露风险，请谨慎主动提交敏感信息。</p><h1 id="七、协议更新"><a href="#七、协议更新" class="headerlink" title="七、协议更新"></a>七、协议更新</h1><p>本隐私协议可不定期更新，更新后发布于本页面，持续生效。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OH MY GIRL</title>
       <link href="/gallery/ohmygirl/index.html"/>
       <url>/gallery/ohmygirl/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>打赏列表</title>
+      <link href="/sponsor/index.html"/>
+      <url>/sponsor/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>感谢各位朋友的支持与鼓励！所有赞赏将用于服务器、域名与站点持续维护。</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">CodeTraveler</td><td align="center">微信</td><td align="center">20.00</td><td align="center">博客内容干货满满，持续更新！</td></tr><tr><td align="center">星野漫游者</td><td align="center">支付宝</td><td align="center">15.00</td><td align="center">学到很多Hexo优化技巧</td></tr><tr><td align="center">Dev小羊</td><td align="center">微信</td><td align="center">30.00</td><td align="center">字体优化教程非常实用</td></tr><tr><td align="center">匿名访客</td><td align="center">支付宝</td><td align="center">9.90</td><td align="center">支持博主继续创作</td></tr><tr><td align="center">CloudLover</td><td align="center">微信</td><td align="center">25.00</td><td align="center">期待更多前端调优分享</td></tr><tr><td align="center">阿泽</td><td align="center">微信</td><td align="center">18.80</td><td align="center">站点搭建文档很有参考价值</td></tr></tbody></table><blockquote><p>说明：不愿展示昵称的朋友统一标记为【匿名访客】，记录按赞赏时间倒序排列。</p></blockquote><div style="height: 40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:3rem;">  <i class="fas fa-heart" style="font-size:64px;opacity:0.5;color:#f472b6;"></i>  <h2 style="margin:24px 0 12px 0;font-weight:500;">赞赏支持者</h2>  <p style="opacity:0.6;">感恩每一份善意与认可</p></div>]]></content>
       
     </entry>
     
