@@ -13,14 +13,66 @@
       link: https://blog.leonus.cn/
       avatar: https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5
       descr: 优秀的Butterfly
+    - name: 小唐の博客
+      link: https://www.yuque.com/tangluo
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=2643934721&s=5
+      descr: 折腾不止，记录成长
+    - name: 咕咕云梦泽
+      link: https://blog.pai233.top/
+      avatar: https://blog.pai233.top/img/avatar.jpg
+      descr: Write Down My Life.
+    - name: 云游君
+      link: https://www.yunyoujun.cn/
+      avatar: https://www.yunyoujun.cn/images/avatar.jpg
+      descr: 折腾Hexo的技术爱好者
+    - name: 小嘉的部落格
+      link: https://blog.imzjw.cn/
+      avatar: https://npm.elemecdn.com/nanshen/avatar.jpg
+      descr: 好记性不如烂笔头
+    - name: W4J1e's blog
+      link: https://hin.cool/
+      avatar: https://cdn2.hin.cool/pic/my/LonelyGod.ico
+      descr: 偏爱不务正业
+    - name: 晴天的博客
+      link: https://qtspace.cn/
+      avatar: https://qtspace.cn/img/avatar.jpg
+      descr: 认清生活的真相，并依然热爱它
+    - name: Xujiayao
+      link: https://blog.xujiayao.com/
+      avatar: https://blog.xujiayao.com/file/avatar.png
+      descr: 没有个性，如何签名？
+    - name: chiblog
+      link: https://chierhy.github.io/
+      avatar: https://pic4.zhimg.com/v2-da217cabde0a382120e68118571d60e3_r.jpg
+      descr: 神经蛙 | 生活与技术分享
+    - name: 套陆的博客
+      link: https://blog.tlhub.cn/
+      avatar: https://blog.tlhub.cn/img/avatar.jpg
+      descr: 套陆的个人技术博客
+    - name: Wotemo
+      link: https://www.wotemo.com/
+      avatar: https://www.wotemo.com/img/wotemo.jpg
+      descr: 似此星辰非昨夜，为谁风露立中宵。
+    - name: 贰猹的小窝
+      link: https://noionion.top/
+      avatar: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
+      descr: 用这生命中的每一秒，给自己一个不后悔的未来
+    - name: 羽墨志
+      link: https://yumozhi.com/
+      avatar: https://yumozhi.com/img/avatar.png
+      descr: 凡是过往，皆为序章！
+    - name: Guo Le's Blog
+      link: https://blog.guole.fun/
+      avatar: https://blog.guole.fun/img/gl.jpg
+      descr: 生命是独立是自由是爱与和平
 
 - class_name: 技术站点
-  class_desc: 一些优秀的技术站点
+  class_desc: 文档和社区等技术相关站点
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-cn/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: Hexo官方网站
+      descr: 快速、简洁且高效的博客框架
     - name: Butterfly
       link: https://butterfly.js.org
       avatar: https://butterfly.js.org/img/avatar.png
@@ -29,3 +81,207 @@
       link: https://www.pugjs.cn/
       avatar: https://www.pugjs.cn/img/logo.png
       descr: Pug模板引擎中文文档
+    - name: Stylus
+      link: https://www.stylus-lang.cn
+      avatar: /img/avatar/stylus.webp
+      descr: 富于表现力、动态的、健壮的 CSS
+    - name: MDN Web文档
+      link: https://developer.mozilla.org/zh-CN/
+      avatar: https://developer.mozilla.org/favicon.ico
+      descr: Web前端权威参考文档
+    - name: CSS‑Tricks
+      link: https://css-tricks.com/
+      avatar: https://css-tricks.com/favicon.ico
+      descr: CSS各种奇技淫巧
+    - name: Can I Use
+      link: https://caniuse.com/
+      avatar: https://caniuse.com/img/favicon-128.png
+      descr: 查询前端API浏览器兼容性
+    - name: Vite
+      link: https://cn.vitejs.dev/
+      avatar: https://cn.vitejs.dev/logo.svg
+      descr: 下一代前端构建工具
+    - name: Vue3 中文文档
+      link: https://cn.vuejs.org/
+      avatar: https://cn.vuejs.org/logo.svg
+      descr: 渐进式JavaScript框架
+    - name: Tailwind CSS
+      link: https://www.tailwindcss.cn/
+      avatar: https://www.tailwindcss.cn/favicons/favicon.ico
+      descr: 实用优先的CSS框架
+    - name: Node.js
+      link: https://nodejs.org/zh-cn/
+      avatar: https://nodejs.org/static/images/favicons/favicon.ico
+      descr: 基于Chrome V8的JS运行时
+    - name: Git 中文文档
+      link: https://git-scm.com/book/zh/v2
+      avatar: https://git-scm.com/favicon.ico
+      descr: 分布式版本控制系统
+    - name: 现代JS教程
+      link: https://zh.javascript.info/
+      avatar: https://zh.javascript.info/img/favicon/favicon.ico
+      descr: 高质量JavaScript学习教程
+
+- class_name: 工具资源
+  class_desc: 提升效率的在线工具
+  link_list:
+    - name: 阿里图标库
+      link: https://www.iconfont.cn/
+      avatar: /img/avatar/altb.webp
+      descr: 海量图标素材库
+    - name: JSON.cn
+      link: https://www.json.cn/
+      avatar: https://www.json.cn/favicon.ico
+      descr: JSON格式化校验工具
+    - name: Convertio
+      link: https://convertio.co/zh/
+      avatar: https://convertio.co/favicon.ico
+      descr: 万能文件格式在线转换
+    - name: 极捷工具
+      link: https://www.jijie.ink
+      avatar: https://www.jijie.ink/favicon.ico
+      descr: 免费便捷的在线工具
+    - name: Apifox
+      link: https://apifox.com/
+      avatar: https://apifox.com/favicon.ico
+      descr: API接口调试与文档工具
+    - name: Carbon
+      link: https://carbon.now.sh/
+      avatar: https://carbon.now.sh/favicon.ico
+      descr: 将代码生成精美截图
+    - name: Excalidraw
+      link: https://excalidraw.com/
+      avatar: https://excalidraw.com/favicon.ico
+      descr: 开源手绘风格在线白板
+    - name: favicon.io
+      link: https://favicon.io/
+      avatar: https://favicon.io/favicon.ico
+      descr: 网站图标一键生成
+    - name: Tool.lu
+      link: https://tool.lu/
+      avatar: https://tool.lu/favicon.ico
+      descr: 程序员综合在线工具箱
+    - name: TinyPNG
+      link: https://tinypng.com/
+      avatar: https://tinypng.com/images/apple-touch-icon.png
+      descr: 图片无损高比例压缩
+    - name: ProcessOn
+      link: https://www.processon.com/
+      avatar: https://www.processon.com/favicon.ico
+      descr: 在线流程图、思维导图绘制
+    - name: CodePen
+      link: https://codepen.io/
+      avatar: https://codepen.io/favicon.ico
+      descr: 前端代码在线预览调试
+    - name: Mdnice
+      link: https://editor.mdnice.com/
+      avatar: https://mdnice.com/favicon.ico
+      descr: Markdown 精美排版导出
+    - name: IT‑Tools
+      link: https://it-tools.tech/
+      avatar: https://it-tools.tech/favicon.ico
+      descr: 开源免费程序员工具箱
+    - name: 开源中国工具集
+      link: https://tool.oschina.net/
+      avatar: https://www.oschina.net/favicon.ico
+      descr: 正则、加解密、格式化等开发工具
+    - name: XnConvert
+      link: https://www.xnview.com/en/xnconvert/
+      avatar: https://www.xnview.com/img/app-xnconvert-512.png
+      descr: 最好的图片格式转换器
+
+- class_name: 开源社区 & 资讯站点
+  class_desc: 开源社区、技术资讯聚合平台
+  link_list:
+    - name: GitHub
+      link: https://github.com/
+      avatar: https://github.githubassets.com/favicons/favicon.svg
+      descr: 全球最大开源代码托管平台
+    - name: Gitee
+      link: https://gitee.com/
+      avatar: https://gitee.com/favicon.ico
+      descr: 国内代码托管与开源平台
+    - name: 掘金
+      link: https://juejin.cn/
+      avatar: /img/avatar/juejin.webp
+      descr: 国内主流技术内容社区
+    - name: InfoQ
+      link: https://www.infoq.cn/
+      avatar: /img/avatar/infoQ.webp
+      descr: 前沿技术资讯与行业洞察
+    - name: OSCHINA 开源中国
+      link: https://www.oschina.net/
+      avatar: https://www.oschina.net/favicon.ico
+      descr: 国内开源项目聚合社区
+    - name: HelloGitHub
+      link: https://hellogithub.com/
+      avatar: https://hellogithub.com/favicon.ico
+      descr: 分享有趣的开源项目
+    - name: 腾讯云开发者社区
+      link: https://cloud.tencent.com/developer
+      avatar: https://cloud.tencent.com/favicon.ico
+      descr: 云计算与后端技术资讯
+    - name: 知乎
+      link: https://www.zhihu.com/
+      avatar: https://static.zhihu.com/heifetz/favicon.ico
+      descr: 问答社区，多元观点与知识分享
+    - name: CSDN
+      link: https://blog.csdn.net/
+      avatar: https://g.csdnimg.cn/static/logo/favicon32.ico
+      descr: 国内老牌IT技术博客社区
+    - name: B站技术区
+      link: https://www.bilibili.com/
+      avatar: https://www.bilibili.com/favicon.ico
+      descr: 视频形式的编程与技术学习
+    - name: Stack Overflow
+      link: https://stackoverflow.com/
+      avatar: https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico
+      descr: 全球程序员问答求助社区
+
+- class_name: 阅读随笔
+  class_desc: 一些值得读一读的生活向独立博客
+  link_list:
+    - name: 爱范儿
+      link: https://www.ifanr.com/
+      avatar: https://www.ifanr.com/favicon.ico
+      descr: 科技人文生活观察
+    - name: 阮一峰的网络日志
+      link: https://www.ruanyifeng.com/blog/
+      avatar: https://www.ruanyifeng.com/blog/favicon.ico
+      descr: 读书、科技与人文随笔
+    - name: 土木坛子
+      link: https://tumutanzi.com/
+      avatar: https://tumutanzi.com/favicon.ico
+      descr: 生活旅行与时事思考
+    - name: 木遥的窗子
+      link: https://blog.fivest.one/
+      avatar: https://blog.fivest.one/favicon.ico
+      descr: 理性视角下的生活随笔
+    - name: 洛卡日记
+      link: https://luoca.cn/
+      avatar: https://bu.dusays.com/2026/03/16/69b80d8ed315d.jpg
+      descr: 阅读笔记与日常感悟留存
+    - name: 拉普达日记
+      link: https://lapuda.org/
+      avatar: https://lapuda.org/favicon.ico
+      descr: 简单清新的文字日记小站
+    - name: 伯正的博客
+      link: https://chenbozheng.com/
+      avatar: https://chenbozheng.com/favicon.ico
+      descr: 读书心得与旅途随记
+    - name: 槽边往事
+      link: https://www.hecaitou.com/
+      avatar: https://www.hecaitou.com/favicon.ico
+      descr: 和菜头的生活随笔与人间观察
+    - name: 长街短梦
+      link: https://wangyunzi.com/
+      avatar: /img/avatar/cjdm.webp
+      descr: 此行山高路远，我只剩口袋玫瑰一片
+    - name: 胡涂说
+      link: https://hutusi.com/
+      avatar: https://hutusi.com/favicon.ico
+      descr: 人文阅读、社会随笔专栏
+    - name: 星尘记事
+      link: https://starsei.com/
+      avatar: https://starsei.com/favicon.ico
+      descr: 记录日常与文字碎片
