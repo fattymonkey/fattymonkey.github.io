@@ -386,9 +386,13 @@ footer:
   owner:
     enable: true
     since: 2023
+    icp:
+      enable: true
+      number: '苏ICP备2026053039号'       # 替换成你自己的备案号
+      link: 'https://beian.miit.gov.cn/' # 工信部官网跳转地址，固定
   # Copyright of theme and framework
   copyright:
-    enable: true
+    enable: false
     version: false
   custom_text: 山河漫漫，伏案拾光，留存每一段瞎折腾的细碎日常
 

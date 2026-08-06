@@ -50,6 +50,9 @@ if nav
           != `&copy;&nbsp;${sinceYear} - ${currentYear} By ${config.author}`
         else
           != `&copy;&nbsp;${currentYear} By ${config.author}`
+        if owner.icp && owner.icp.enable
+          span.footer-separator |
+          a(href=owner.icp.link target="_blank" rel="noopener noreferrer")= owner.icp.number
     if copyright.enable
       - const v = copyright.version ? getVersion() : false
       span.framework-info

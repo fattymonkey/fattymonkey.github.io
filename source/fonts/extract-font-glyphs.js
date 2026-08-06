@@ -46,15 +46,20 @@ function scanAllHtml(dirPath) {
 // 执行全站扫描
 scanAllHtml(publicDir);
 
-// 只保留中文字符【重要！你原版脚本缺少这一步，混杂大量符号英文】
-const chineseReg = /[\u4e00-\u9fa5]/g;
-const onlyChineseList = allRawText.match(chineseReg) || [];
+// 只保留：汉字 + 中文标点 + 全角符号
+// 去掉半角英文字母、半角数字、半角符号
+const targetReg = /[\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]/g;
+const glyphList = allRawText.match(targetReg) || [];
 
-// 字符去重
-const uniqueCharSet = new Set(onlyChineseList);
-const uniqueCharString = [...uniqueCharSet].sort().join('');
+// 去重
+const uniqueCharSet = new Set(glyphList);
+// 过滤掉纯空白字符（中文全角空格 \u3000），避免无用字形
+const uniqueCharString = [...uniqueCharSet]
+  .filter(c => c !== '\u3000')
+  .sort()
+  .join('');
 
-// 自动创建目录，解决文件夹不存在报错
+// 输出文件
 fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });
 fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');
 
