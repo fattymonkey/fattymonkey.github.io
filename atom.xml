@@ -32,11 +32,11 @@
       <name>Chen Zheng</name>
     </author>
     <category term="建站实录" scheme="https://fattymonkey.com/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
-    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
     <category term="Twikoo" scheme="https://fattymonkey.com/tags/Twikoo/"/>
     <category term="MongoDB" scheme="https://fattymonkey.com/tags/MongoDB/"/>
+    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <id>https://fattymonkey.com/posts/10403.html</id>
     <link href="https://fattymonkey.com/posts/10403.html"/>
     <published>2023-04-02T22:06:18.000Z</published>
@@ -65,9 +65,9 @@
     <category term="建站实录" scheme="https://fattymonkey.com/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
     <category term="CDN" scheme="https://fattymonkey.com/tags/CDN/"/>
     <category term="DNS" scheme="https://fattymonkey.com/tags/DNS/"/>
-    <category term="EdgeOne" scheme="https://fattymonkey.com/tags/EdgeOne/"/>
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     <category term="GitHub" scheme="https://fattymonkey.com/tags/GitHub/"/>
+    <category term="EdgeOne" scheme="https://fattymonkey.com/tags/EdgeOne/"/>
     <id>https://fattymonkey.com/posts/10401.html</id>
     <link href="https://fattymonkey.com/posts/10401.html"/>
     <published>2023-03-31T23:03:10.000Z</published>
@@ -138,10 +138,10 @@
     </author>
     <category term="技术杂谈" scheme="https://fattymonkey.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
+    <category term="EdgeOne" scheme="https://fattymonkey.com/tags/EdgeOne/"/>
+    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
-    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
-    <category term="EdgeOne" scheme="https://fattymonkey.com/tags/EdgeOne/"/>
     <id>https://fattymonkey.com/posts/10202.html</id>
     <link href="https://fattymonkey.com/posts/10202.html"/>
     <published>2023-02-02T00:35:10.000Z</published>
@@ -158,7 +158,7 @@
     <id>https://fattymonkey.com/posts/10201.html</id>
     <link href="https://fattymonkey.com/posts/10201.html"/>
     <published>2023-01-31T23:35:10.000Z</published>
-    <summary>IP地址是什么？DNS是什么？ 二级域名又是什么？</summary>
+    <summary>IP地址是什么？DNS是什么？二级域名又是什么？</summary>
     <title>域名背后那些事儿</title>
     <updated>2026-02-01T12:48:50.000Z</updated>
   </entry>
@@ -183,8 +183,8 @@
     </author>
     <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    <category term="Python" scheme="https://fattymonkey.com/tags/Python/"/>
     <category term="CLT" scheme="https://fattymonkey.com/tags/CLT/"/>
+    <category term="Python" scheme="https://fattymonkey.com/tags/Python/"/>
     <id>https://fattymonkey.com/posts/10010.html</id>
     <link href="https://fattymonkey.com/posts/10010.html"/>
     <published>2023-01-09T22:12:28.000Z</published>
