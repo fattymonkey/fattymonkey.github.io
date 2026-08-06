@@ -134,6 +134,7 @@
     padding: 40px 20px
     width: 100%
     text-align: center
+    position: relative // 给绝对定位子元素做参照
 
     if hexo-config('footer.nav')
       padding: 10px 8px
@@ -146,3 +147,18 @@
     else
       .framework-info
         display: block
+
+    .footer_custom_text
+      position: absolute
+      right: 24px
+      bottom: 10px
+      white-space: nowrap
+      font-size: .9em
+
+      +maxWidth768()
+        // 移动端：取消右下角定位，变回居中，避免溢出乱掉
+        position: static
+        right: auto
+        bottom: auto
+        margin-top: 8px
+        text-align: center
