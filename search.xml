@@ -111,15 +111,15 @@
       
         <tags>
             
+            <tag> CDN </tag>
+            
+            <tag> DNS </tag>
+            
             <tag> Hexo </tag>
             
             <tag> GitHub </tag>
             
             <tag> EdgeOne </tag>
-            
-            <tag> CDN </tag>
-            
-            <tag> DNS </tag>
             
         </tags>
       
@@ -146,11 +146,11 @@
             
             <tag> Markdown </tag>
             
+            <tag> Cloudflare </tag>
+            
             <tag> CDN </tag>
             
             <tag> DNS </tag>
-            
-            <tag> Cloudflare </tag>
             
         </tags>
       
@@ -256,9 +256,9 @@
             
             <tag> Github </tag>
             
-            <tag> EdgeOne </tag>
-            
             <tag> Netlify </tag>
+            
+            <tag> EdgeOne </tag>
             
             <tag> Gitee </tag>
             
@@ -480,77 +480,11 @@
     
     
     <entry>
-      <title>图书馆</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>图书馆正在建设中，图书资源整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-book-open" style="font-size:4.5em;opacity:0.5;color:#84cc16;"></i>  <h2 style="margin:24px 0;font-weight:400;">图书馆 · 建设中</h2>  <p style="opacity:0.7;">正在整理书籍资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<div class="note warning flat"><p>关于我页面正在完善中，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-user-circle" style="font-size:4.5em;opacity:0.5;color:#8b5cf6;"></i>  <h2 style="margin:24px 0;font-weight:400;">关于我 · 建设中</h2>  <p style="opacity:0.7;">个人介绍内容正在完善，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>玩游戏</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:4.5em;opacity:0.5;color:#14b8a6;"></i>  <h2 style="margin:24px 0;font-weight:400;">游戏天地 · 建设中</h2>  <p style="opacity:0.7;">正在整理游戏记录，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>免责声明</title>
-      <link href="/disclaimer/index.html"/>
-      <url>/disclaimer/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-exclamation-triangle" style="font-size:4.5em;opacity:0.5;color:#f59e0b;"></i>  <h2 style="margin:24px 0;font-weight:400;">免责声明</h2>  <p style="opacity:0.7;">请知悉本站内容相关的责任与风险约定</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Cookies 政策</title>
-      <link href="/cookies/index.html"/>
-      <url>/cookies/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note primary flat"><p>本政策说明本站如何使用 Cookie 及同类本地存储技术，持续优化你的浏览体验</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-cookie" style="font-size:4.5em;opacity:0.5;color:#eab308;"></i>  <h2 style="margin:24px 0;font-weight:400;">Cookie 政策说明</h2>  <p style="opacity:0.7;">本站使用 Cookie 来提升您的浏览体验</p></div><h1 id="一、什么是-Cookie"><a href="#一、什么是-Cookie" class="headerlink" title="一、什么是 Cookie"></a>一、什么是 Cookie</h1><p>Cookie 是网站发送至你浏览器并存储在设备上的小型文本文件，能够保存浏览状态、偏好设置，帮助网站识别回访访客，提升访问流畅度。</p><h1 id="二、本站使用-Cookie-的目的"><a href="#二、本站使用-Cookie-的目的" class="headerlink" title="二、本站使用 Cookie 的目的"></a>二、本站使用 Cookie 的目的</h1><ol><li>记忆页面浏览设置、深色&#x2F;浅色模式偏好；</li><li>维持评论组件会话状态；</li><li>统计站点基础访问数据，用于站点优化；</li><li>区分新访客与回访访客，不用于追踪用户网络行为。</li></ol><h1 id="三、Cookie-分类"><a href="#三、Cookie-分类" class="headerlink" title="三、Cookie 分类"></a>三、Cookie 分类</h1><ul><li><strong>必要 Cookie</strong>：保障网站基础功能正常运行，无法关闭；</li><li><strong>功能性 Cookie</strong>：保存你的界面偏好，可通过浏览器设置拒绝；</li><li><strong>统计 Cookie</strong>：匿名汇总访问数据，不会收集姓名、手机号等个人信息。</li></ul><h1 id="四、你如何管理-Cookie"><a href="#四、你如何管理-Cookie" class="headerlink" title="四、你如何管理 Cookie"></a>四、你如何管理 Cookie</h1><p>你可以通过浏览器设置：阻止Cookie、清除已有Cookie、退出浏览器自动删除Cookie。<br>关闭 Cookie 可能导致评论系统、主题模式切换等功能异常。</p><h1 id="五、第三方-Cookie"><a href="#五、第三方-Cookie" class="headerlink" title="五、第三方 Cookie"></a>五、第三方 Cookie</h1><p>本站部分功能（评论系统、访问统计）可能由第三方服务写入Cookie，相关行为遵循对应服务商隐私条款。</p><h1 id="六、政策更新"><a href="#六、政策更新" class="headerlink" title="六、政策更新"></a>六、政策更新</h1><p>本站有权随时修订本 Cookie 政策，修订内容将直接在页面更新，不再单独通知。如有疑问，请通过页面评论或联系方式与站长沟通</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>照片展</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
-      
-        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-images" style="font-size:4.5em;opacity:0.5;color:#06b6d4;"></i>  <h2 style="margin:24px 0;font-weight:400;">照片展览</h2>  <p style="opacity:0.7;">收藏一些自己存下来的图片，分享给大家</p></div><div class="gallery-group-main"><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/shenqi/shenqi.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">神泣</div>      <p>3D魔幻大型多人网游</p>      <a href='/gallery/shenqi'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">漫威</div>      <p>关于漫威的图片</p>      <a href='/gallery/marvel'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">OH MY GIRL</div>      <p>关于OH MY GIRL的图片</p>      <a href='/gallery/ohmygirl'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1280-720/1280-720.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>1280*720</p>      <a href='/gallery/1280-720'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1920-1080/1920-1080.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>1920*1080</p>      <a href='/gallery/1920-1080'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/2100-1260/2100-1260.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>2100*1260</p>      <a href='/gallery/2100-1260'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/2560-1440/2560-1440.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 2K 16:9</div>      <p>2560*1440</p>      <a href='/gallery/2560-1440'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1680-1050/1680-1050.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10</div>      <p>1680*1050</p>      <a href='/gallery/1680-1050'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1920-1200/1920-1200.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10</div>      <p>1920*1200</p>      <a href='/gallery/1920-1200'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/2880-1800/2880-1800.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 高分 16:10</div>      <p>2880*1800</p>      <a href='/gallery/2880-1800'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/3840-2160/3840-2160.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 4K 16:10</div>      <p>3840*2160</p>      <a href='/gallery/3840-2160'></a>    </figcaption>  </figure></div>]]></content>
       
     </entry>
     
@@ -568,6 +502,50 @@
     
     
     <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发面板</title>
+      <link href="/devpanel/index.html"/>
+      <url>/devpanel/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>本站专属开发跟踪清单：缺陷修复 + 样式美化 + 功能开发，实时同步站点开发状态，欢迎留言提出问题</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-code" style="font-size:4.5em;opacity:0.5;color:#3b82f6;"></i>  <h2 style="margin:24px 0;font-weight:400;">本站的开发面板</h2>  <p style="opacity:0.7;">如果您发现本站问题，欢迎在下方评论区留言</p></div><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input disabled="" type="checkbox"> 域名备案完成后，还需公安联网备案</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，增加备案信息</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，修改绝对链接</li><li><input checked="" disabled="" type="checkbox"> 评论系统无法评论(降级Twikoo版本)</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li><li><input checked="" disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集（移动端取消背景特效）</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 社交图标弹出的二维码，适配Pjax，防止每个页面都加载一次</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航（已经开启）</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 友链(优秀网站)页面，去除评论区(comments: false)</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input checked="" disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式（放弃，沿用相对路径，方便预览）</li><li><input checked="" disabled="" type="checkbox"> 把所有的图片都改到博客根目录下（除文章插图），加快本地预览时的加载速度</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 休闲页面充实内容(照片展还差一些图片)</li><li><input disabled="" type="checkbox"> 页脚页面主体内容卡片比侧边栏长</li><li><input disabled="" type="checkbox"> 分类、标签、归档这三个页面充实内容</li><li><input disabled="" type="checkbox"> 留言板(访客留言)页面，充实内容</li><li><input disabled="" type="checkbox"> 各种统计页面，充实内容</li><li><input disabled="" type="checkbox"> 增加隐私协议页面，并充实内容</li><li><input disabled="" type="checkbox"> 增加版权协议页面，并充实内容</li><li><input disabled="" type="checkbox"> 增加免责声明页面，并充实内容</li><li><input disabled="" type="checkbox"> 增加Cookies页面，并充实内容</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input checked="" disabled="" type="checkbox"> 友链(优秀网站)页面，充实内容</li><li><input checked="" disabled="" type="checkbox"> 页脚的 cust_text 实现打字效果</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li><li><input checked="" disabled="" type="checkbox"> 微信和QQ的社交链接优化，改为弹窗展示二维码</li></ul><hr><h2 id="面板说明："><a href="#面板说明：" class="headerlink" title="面板说明："></a>面板说明：</h2><ul><li><input checked="" disabled="" type="checkbox"> 已完成：功能优化 &#x2F; 问题修复 已上线生效</li><li><input disabled="" type="checkbox"> 待处理：待开发、待优化、待修复项目，持续迭代中</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cookies 政策</title>
+      <link href="/cookies/index.html"/>
+      <url>/cookies/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>本政策说明本站如何使用 Cookie 及同类本地存储技术，持续优化你的浏览体验</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-cookie" style="font-size:4.5em;opacity:0.5;color:#eab308;"></i>  <h2 style="margin:24px 0;font-weight:400;">Cookie 政策说明</h2>  <p style="opacity:0.7;">本站使用 Cookie 来提升您的浏览体验</p></div><h1 id="一、什么是-Cookie"><a href="#一、什么是-Cookie" class="headerlink" title="一、什么是 Cookie"></a>一、什么是 Cookie</h1><p>Cookie 是网站发送至你浏览器并存储在设备上的小型文本文件，能够保存浏览状态、偏好设置，帮助网站识别回访访客，提升访问流畅度。</p><h1 id="二、本站使用-Cookie-的目的"><a href="#二、本站使用-Cookie-的目的" class="headerlink" title="二、本站使用 Cookie 的目的"></a>二、本站使用 Cookie 的目的</h1><ol><li>记忆页面浏览设置、深色&#x2F;浅色模式偏好；</li><li>维持评论组件会话状态；</li><li>统计站点基础访问数据，用于站点优化；</li><li>区分新访客与回访访客，不用于追踪用户网络行为。</li></ol><h1 id="三、Cookie-分类"><a href="#三、Cookie-分类" class="headerlink" title="三、Cookie 分类"></a>三、Cookie 分类</h1><ul><li><strong>必要 Cookie</strong>：保障网站基础功能正常运行，无法关闭；</li><li><strong>功能性 Cookie</strong>：保存你的界面偏好，可通过浏览器设置拒绝；</li><li><strong>统计 Cookie</strong>：匿名汇总访问数据，不会收集姓名、手机号等个人信息。</li></ul><h1 id="四、你如何管理-Cookie"><a href="#四、你如何管理-Cookie" class="headerlink" title="四、你如何管理 Cookie"></a>四、你如何管理 Cookie</h1><p>你可以通过浏览器设置：阻止Cookie、清除已有Cookie、退出浏览器自动删除Cookie。<br>关闭 Cookie 可能导致评论系统、主题模式切换等功能异常。</p><h1 id="五、第三方-Cookie"><a href="#五、第三方-Cookie" class="headerlink" title="五、第三方 Cookie"></a>五、第三方 Cookie</h1><p>本站部分功能（评论系统、访问统计）可能由第三方服务写入Cookie，相关行为遵循对应服务商隐私条款。</p><h1 id="六、政策更新"><a href="#六、政策更新" class="headerlink" title="六、政策更新"></a>六、政策更新</h1><p>本站有权随时修订本 Cookie 政策，修订内容将直接在页面更新，不再单独通知。如有疑问，请通过页面评论或联系方式与站长沟通</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图书馆</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>图书馆正在建设中，图书资源整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-book-open" style="font-size:4.5em;opacity:0.5;color:#84cc16;"></i>  <h2 style="margin:24px 0;font-weight:400;">图书馆 · 建设中</h2>  <p style="opacity:0.7;">正在整理书籍资料，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>版权协议</title>
       <link href="/copyright/index.html"/>
       <url>/copyright/index.html</url>
@@ -579,11 +557,44 @@
     
     
     <entry>
-      <title>电影院</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title></title>
+      <link href="/fonts/extract-font-glyphs.js"/>
+      <url>/fonts/extract-font-glyphs.js</url>
       
-        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:4.5em;opacity:0.5;color:#ec4899;"></i>  <h2 style="margin:24px 0;font-weight:400;">电影院 · 建设中</h2>  <p style="opacity:0.7;">正在整理影视片单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// 生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'all-font-glyphs.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    try {      const htmlContent = fs.readFileSync(fullFilePath, 'utf8');      const $ = cheerio.load(htmlContent, {        decodeEntities: false,        scriptingEnabled: false      });      // 移除不需要的区块，避免抓取脚本、样式、代码      $('script, style, noscript, template, pre, figure.highlight').remove();      // 页面正文      allRawText += $('body').text();      // 追加 alt title aria-label 文字      $('[alt]').each((_, el) => allRawText += $(el).attr('alt') || '');      $('[title]').each((_, el) => allRawText += $(el).attr('title') || '');      $('[aria-label]').each((_, el) => allRawText += $(el).attr('aria-label') || '');    } catch (err) {      console.warn(`文件解析跳过：${fullFilePath}，错误：${err.message}`);    }  });}// 执行全站扫描scanAllHtml(publicDir);// 只保留：汉字 + 中文标点 + 全角符号// 去掉半角英文字母、半角数字、半角符号const targetReg = /[\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]/g;const glyphList = allRawText.match(targetReg) || [];// 去重const uniqueCharSet = new Set(glyphList);// 过滤掉纯空白字符（中文全角空格 \u3000），避免无用字形const uniqueCharString = [...uniqueCharSet]  .filter(c => c !== '\u3000')  .sort()  .join('');// 输出文件fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字形提取已经完成,共收集：${uniqueCharString.length} 个汉字 =`);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>玩游戏</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>游戏板块正在建设中，游戏内容整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-gamepad" style="font-size:4.5em;opacity:0.5;color:#14b8a6;"></i>  <h2 style="margin:24px 0;font-weight:400;">游戏天地 · 建设中</h2>  <p style="opacity:0.7;">正在整理游戏记录，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>优质网站</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎发现更多优质站点，拓展视野与技术边界</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-link" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px 0;font-weight:400;">优质网站</h2>  <p style="opacity:0.7;">汇集优质博客、技术站点与实用工具资源</p></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>照片展</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
+      
+        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-images" style="font-size:4.5em;opacity:0.5;color:#06b6d4;"></i>  <h2 style="margin:24px 0;font-weight:400;">照片展览</h2>  <p style="opacity:0.7;">收藏一些自己存下来的图片，分享给大家</p></div><div class="gallery-group-main"><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/shenqi/shenqi.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">神泣</div>      <p>3D魔幻大型多人网游</p>      <a href='/gallery/shenqi'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">漫威</div>      <p>关于漫威的图片</p>      <a href='/gallery/marvel'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">OH MY GIRL</div>      <p>关于OH MY GIRL的图片</p>      <a href='/gallery/ohmygirl'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1280-720/1280-720.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>1280*720</p>      <a href='/gallery/1280-720'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1920-1080/1920-1080.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>1920*1080</p>      <a href='/gallery/1920-1080'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/2100-1260/2100-1260.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>2100*1260</p>      <a href='/gallery/2100-1260'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/2560-1440/2560-1440.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 2K 16:9</div>      <p>2560*1440</p>      <a href='/gallery/2560-1440'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1680-1050/1680-1050.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10</div>      <p>1680*1050</p>      <a href='/gallery/1680-1050'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/1920-1200/1920-1200.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10</div>      <p>1920*1200</p>      <a href='/gallery/1920-1200'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/2880-1800/2880-1800.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 高分 16:10</div>      <p>2880*1800</p>      <a href='/gallery/2880-1800'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/3840-2160/3840-2160.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 4K 16:10</div>      <p>3840*2160</p>      <a href='/gallery/3840-2160'></a>    </figcaption>  </figure></div>]]></content>
       
     </entry>
     
@@ -612,11 +623,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/fonts/extract-font-glyphs.js"/>
-      <url>/fonts/extract-font-glyphs.js</url>
+      <title>电影院</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
-        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// 生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'all-font-glyphs.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    try {      const htmlContent = fs.readFileSync(fullFilePath, 'utf8');      const $ = cheerio.load(htmlContent, {        decodeEntities: false,        scriptingEnabled: false      });      // 移除不需要的区块，避免抓取脚本、样式、代码      $('script, style, noscript, template, pre, figure.highlight').remove();      // 页面正文      allRawText += $('body').text();      // 追加 alt title aria-label 文字      $('[alt]').each((_, el) => allRawText += $(el).attr('alt') || '');      $('[title]').each((_, el) => allRawText += $(el).attr('title') || '');      $('[aria-label]').each((_, el) => allRawText += $(el).attr('aria-label') || '');    } catch (err) {      console.warn(`文件解析跳过：${fullFilePath}，错误：${err.message}`);    }  });}// 执行全站扫描scanAllHtml(publicDir);// 只保留：汉字 + 中文标点 + 全角符号// 去掉半角英文字母、半角数字、半角符号const targetReg = /[\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]/g;const glyphList = allRawText.match(targetReg) || [];// 去重const uniqueCharSet = new Set(glyphList);// 过滤掉纯空白字符（中文全角空格 \u3000），避免无用字形const uniqueCharString = [...uniqueCharSet]  .filter(c => c !== '\u3000')  .sort()  .join('');// 输出文件fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字形提取已经完成,共收集：${uniqueCharString.length} 个汉字 =`);]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>电影院正在建设中，影视资源整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-film" style="font-size:4.5em;opacity:0.5;color:#ec4899;"></i>  <h2 style="margin:24px 0;font-weight:400;">电影院 · 建设中</h2>  <p style="opacity:0.7;">正在整理影视片单，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站统计</title>
+      <link href="/statistics/index.html"/>
+      <url>/statistics/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>站点统计面板正在开发调试，数据可视化功能尚未开放，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-chart-line" style="font-size:4.5em;opacity:0.5;"></i>  <h2 style="margin:24px 0;font-weight:400;">站点统计 · 建设中</h2>  <p style="opacity:0.7;">访问数据、文章统计、可视化面板正在搭建</p></div>]]></content>
       
     </entry>
     
@@ -645,44 +667,22 @@
     
     
     <entry>
-      <title>网站统计</title>
-      <link href="/statistics/index.html"/>
-      <url>/statistics/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note warning flat"><p>站点统计面板正在开发调试，数据可视化功能尚未开放，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-chart-line" style="font-size:4.5em;opacity:0.5;"></i>  <h2 style="margin:24px 0;font-weight:400;">站点统计 · 建设中</h2>  <p style="opacity:0.7;">访问数据、文章统计、可视化面板正在搭建</p></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开发面板</title>
-      <link href="/devpanel/index.html"/>
-      <url>/devpanel/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note primary flat"><p>本站专属开发跟踪清单：缺陷修复 + 样式美化 + 功能开发，实时同步站点开发状态，欢迎留言提出问题</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-code" style="font-size:4.5em;opacity:0.5;color:#3b82f6;"></i>  <h2 style="margin:24px 0;font-weight:400;">本站的开发面板</h2>  <p style="opacity:0.7;">如果您发现本站问题，欢迎在下方评论区留言</p></div><h2 id="⏳-待解决（严重问题，必须修复）"><a href="#⏳-待解决（严重问题，必须修复）" class="headerlink" title="⏳ 待解决（严重问题，必须修复）"></a>⏳ 待解决（严重问题，必须修复）</h2><ul><li><input disabled="" type="checkbox"> 点击邮箱中的评论链接，跳转到博客时不能定位到具体评论</li><li><input disabled="" type="checkbox"> 域名备案完成后，还需公安联网备案</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，增加备案信息</li><li><input checked="" disabled="" type="checkbox"> 域名备案完成后，修改绝对链接</li><li><input checked="" disabled="" type="checkbox"> 评论系统无法评论(降级Twikoo版本)</li><li><input checked="" disabled="" type="checkbox"> 网站图标favicon不是透明图标，能明显看到有正方形的白底</li><li><input checked="" disabled="" type="checkbox"> 背景特效 canvas_nest 移动端，点击后粒子永久聚集（移动端取消背景特效）</li></ul><h2 id="🎨-待优化（界面美化，功能调整）"><a href="#🎨-待优化（界面美化，功能调整）" class="headerlink" title="🎨 待优化（界面美化，功能调整）"></a>🎨 待优化（界面美化，功能调整）</h2><ul><li><input disabled="" type="checkbox"> 移动端全宽度布局兼容性调试</li><li><input disabled="" type="checkbox"> 给每篇文章增加keywords</li><li><input disabled="" type="checkbox"> RSS页面增加订阅二维码展示</li><li><input disabled="" type="checkbox"> 文章页图片加载中时，没有提示</li><li><input disabled="" type="checkbox"> 侧边栏自定义添加栏目（官网有教程）</li><li><input disabled="" type="checkbox"> 对于非技术的文章，不需要文章过期提醒</li><li><input disabled="" type="checkbox"> 文章添加系列标识 card_post_series</li><li><input disabled="" type="checkbox"> 右下角按钮排序再看一下，看看需要修改不</li><li><input disabled="" type="checkbox"> 非文章页不需要侧边栏，去除非文章页的侧边栏</li><li><input disabled="" type="checkbox"> 非文章页不需要评论区，去除非文章页的评论区</li><li><input disabled="" type="checkbox"> 归档页文章排序改成由访客自己选择（创建时间或更新时间）</li><li><input disabled="" type="checkbox"> 社交图标弹出的二维码，适配Pjax，防止每个页面都加载一次</li><li><input checked="" disabled="" type="checkbox"> 页脚菜单栏整体美化</li><li><input checked="" disabled="" type="checkbox"> 评估是否开启Pjax无刷新导航（已经开启）</li><li><input checked="" disabled="" type="checkbox"> 页脚社交栏整体美化，给社交图标匹配各平台品牌色</li><li><input checked="" disabled="" type="checkbox"> 侧边栏的标签卡片中标签排列不好看，改成两端对齐</li><li><input checked="" disabled="" type="checkbox"> 友链(优秀网站)页面，去除评论区(comments: false)</li><li><input checked="" disabled="" type="checkbox"> 主题配置文件保留两张默认cover（文章自定义cover）</li><li><input checked="" disabled="" type="checkbox"> 文章页顶部图不默认使用封面图，除非设置top_img后才显示顶部图</li><li><input checked="" disabled="" type="checkbox"> 还未开发的页面，页面中的提醒，用标签外挂来修饰（参考打赏列表页面）</li><li><input checked="" disabled="" type="checkbox"> 公共图片都压缩一下，配置改为url格式（放弃，沿用相对路径，方便预览）</li><li><input checked="" disabled="" type="checkbox"> 把所有的图片都改到博客根目录下（除文章插图），加快本地预览时的加载速度</li></ul><h2 id="🚧-待开发（二次开发，功能增加）"><a href="#🚧-待开发（二次开发，功能增加）" class="headerlink" title="🚧 待开发（二次开发，功能增加）"></a>🚧 待开发（二次开发，功能增加）</h2><ul><li><input disabled="" type="checkbox"> 休闲页面充实内容(照片展还差一些图片)</li><li><input disabled="" type="checkbox"> 页脚页面主体内容卡片比侧边栏长</li><li><input disabled="" type="checkbox"> 分类、标签、归档这三个页面充实内容</li><li><input disabled="" type="checkbox"> 留言板(访客留言)页面，充实内容</li><li><input disabled="" type="checkbox"> 各种统计页面，充实内容</li><li><input disabled="" type="checkbox"> 增加隐私协议页面，并充实内容</li><li><input disabled="" type="checkbox"> 增加版权协议页面，并充实内容</li><li><input disabled="" type="checkbox"> 增加免责声明页面，并充实内容</li><li><input disabled="" type="checkbox"> 增加Cookies页面，并充实内容</li><li><input disabled="" type="checkbox"> 侧边栏添加访客地图</li><li><input disabled="" type="checkbox"> 增加网站音乐播放器</li><li><input disabled="" type="checkbox"> 做一个资源下载的页面，放文件，如字体文件</li><li><input checked="" disabled="" type="checkbox"> 友链(优秀网站)页面，充实内容</li><li><input checked="" disabled="" type="checkbox"> 页脚的 cust_text 实现打字效果</li><li><input checked="" disabled="" type="checkbox"> 增加打赏列表页面，记录访客的打赏记录</li><li><input checked="" disabled="" type="checkbox"> 增加开发面板页面，记录网站问题与解决状态</li><li><input checked="" disabled="" type="checkbox"> 微信和QQ的社交链接优化，改为弹窗展示二维码</li></ul><hr><h2 id="面板说明："><a href="#面板说明：" class="headerlink" title="面板说明："></a>面板说明：</h2><ul><li><input checked="" disabled="" type="checkbox"> 已完成：功能优化 &#x2F; 问题修复 已上线生效</li><li><input disabled="" type="checkbox"> 待处理：待开发、待优化、待修复项目，持续迭代中</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>优质网站</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎发现更多优质站点，拓展视野与技术边界</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-link" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px 0;font-weight:400;">优质网站</h2>  <p style="opacity:0.7;">汇集优质博客、技术站点与实用工具资源</p></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>壁纸 1280*720</title>
       <link href="/gallery/1280-720/index.html"/>
       <url>/gallery/1280-720/index.html</url>
       
         <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-image" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 1280*720</h2>  <p style="opacity:0.7;">精选16:9画幅，适配电脑桌面的高清壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/1280-720/00.jpeg","alt":"","title":""},{"url":"/img/1280-720/01.jpeg","alt":"","title":""},{"url":"/img/1280-720/02.jpeg","alt":"","title":""},{"url":"/img/1280-720/03.jpeg","alt":"","title":""},{"url":"/img/1280-720/04.jpeg","alt":"","title":""},{"url":"/img/1280-720/05.jpeg","alt":"","title":""},{"url":"/img/1280-720/06.jpeg","alt":"","title":""},{"url":"/img/1280-720/07.jpeg","alt":"","title":""},{"url":"/img/1280-720/08.jpeg","alt":"","title":""},{"url":"/img/1280-720/09.jpeg","alt":"","title":""},{"url":"/img/1280-720/10.jpeg","alt":"","title":""},{"url":"/img/1280-720/11.jpeg","alt":"","title":""},{"url":"/img/1280-720/12.jpeg","alt":"","title":""},{"url":"/img/1280-720/13.jpeg","alt":"","title":""},{"url":"/img/1280-720/14.jpeg","alt":"","title":""},{"url":"/img/1280-720/15.jpeg","alt":"","title":""},{"url":"/img/1280-720/16.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸 1920*1080</title>
+      <link href="/gallery/1920-1080/index.html"/>
+      <url>/gallery/1920-1080/index.html</url>
+      
+        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-tv" style="font-size:4.5em;opacity:0.5;color:#4f46e5;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 1920*1080</h2>  <p style="opacity:0.7;">标准16:9全高清，主流显示器通用壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/1920-1080/00.jpeg","alt":"","title":""},{"url":"/img/1920-1080/01.jpeg","alt":"","title":""},{"url":"/img/1920-1080/02.jpeg","alt":"","title":""},{"url":"/img/1920-1080/03.jpeg","alt":"","title":""},{"url":"/img/1920-1080/04.jpeg","alt":"","title":""},{"url":"/img/1920-1080/05.jpeg","alt":"","title":""},{"url":"/img/1920-1080/06.jpeg","alt":"","title":""},{"url":"/img/1920-1080/07.jpeg","alt":"","title":""},{"url":"/img/1920-1080/08.jpeg","alt":"","title":""},{"url":"/img/1920-1080/09.jpeg","alt":"","title":""},{"url":"/img/1920-1080/10.jpeg","alt":"","title":""},{"url":"/img/1920-1080/11.jpeg","alt":"","title":""},{"url":"/img/1920-1080/12.jpeg","alt":"","title":""},{"url":"/img/1920-1080/13.jpeg","alt":"","title":""},{"url":"/img/1920-1080/14.jpeg","alt":"","title":""},{"url":"/img/1920-1080/15.jpeg","alt":"","title":""},{"url":"/img/1920-1080/16.jpeg","alt":"","title":""},{"url":"/img/1920-1080/17.jpeg","alt":"","title":""},{"url":"/img/1920-1080/18.jpeg","alt":"","title":""}]</div>  </div>]]></content>
       
     </entry>
     
@@ -700,17 +700,6 @@
     
     
     <entry>
-      <title>壁纸 2100*1260</title>
-      <link href="/gallery/2100-1260/index.html"/>
-      <url>/gallery/2100-1260/index.html</url>
-      
-        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-monitor" style="font-size:4.5em;opacity:0.5;color:#0284c7;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 2100*1260</h2>  <p style="opacity:0.7;">16:9比例，高分辨率定制画幅壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/2100-1260/00.jpeg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>壁纸 1920*1200</title>
       <link href="/gallery/1920-1200/index.html"/>
       <url>/gallery/1920-1200/index.html</url>
@@ -722,11 +711,55 @@
     
     
     <entry>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-exclamation-triangle" style="font-size:4.5em;opacity:0.5;color:#f59e0b;"></i>  <h2 style="margin:24px 0;font-weight:400;">免责声明</h2>  <p style="opacity:0.7;">请知悉本站内容相关的责任与风险约定</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸 2100*1260</title>
+      <link href="/gallery/2100-1260/index.html"/>
+      <url>/gallery/2100-1260/index.html</url>
+      
+        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-monitor" style="font-size:4.5em;opacity:0.5;color:#0284c7;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 2100*1260</h2>  <p style="opacity:0.7;">16:9比例，高分辨率定制画幅壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/2100-1260/00.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OH MY GIRL</title>
+      <link href="/gallery/ohmygirl/index.html"/>
+      <url>/gallery/ohmygirl/index.html</url>
+      
+        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-star" style="font-size:4.5em;opacity:0.5;color:#f472b6;"></i>  <h2 style="margin:24px 0;font-weight:400;">Oh My Girl</h2>  <p style="opacity:0.7;">珍藏舞台光影，记录女团的璀璨瞬间</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>壁纸 4K 2560*1440</title>
       <link href="/gallery/2560-1440/index.html"/>
       <url>/gallery/2560-1440/index.html</url>
       
         <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-monitor" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 2560*1440</h2>  <p style="opacity:0.7;">2K超清16:9，主流2K显示器专用壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/2560-1440/00.jpeg","alt":"","title":""},{"url":"/img/2560-1440/01.jpeg","alt":"","title":""},{"url":"/img/2560-1440/02.jpeg","alt":"","title":""},{"url":"/img/2560-1440/03.jpeg","alt":"","title":""},{"url":"/img/2560-1440/04.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>神泣（Shaiya）</title>
+      <link href="/gallery/shenqi/index.html"/>
+      <url>/gallery/shenqi/index.html</url>
+      
+        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-dragon" style="font-size:4.5em;opacity:0.5;color:#7c3aed;"></i>  <h2 style="margin:24px 0;font-weight:400;">神泣 Shaiya</h2>  <p style="opacity:0.7;">重温魔幻大陆，留存怀旧网游的光影记忆</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/shenqi/shenqi01.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi02.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi03.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi04.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi05.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi06.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi07.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi08.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi09.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi10.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi11.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi12.jpeg","alt":"","title":""},{"url":"/img/shenqi/shenqi13.jpeg","alt":"","title":""},{"url":"/img/shenqi/shenqi14.jpeg","alt":"","title":""}]</div>  </div>]]></content>
       
     </entry>
     
@@ -749,39 +782,6 @@
       <url>/gallery/3840-2160/index.html</url>
       
         <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-monitor" style="font-size:4.5em;opacity:0.5;color:#5b21b6;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 3840*2160</h2>  <p style="opacity:0.7;">4K超高清16:9，高分辨率大屏壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/3840-2160/00.jpeg","alt":"","title":""},{"url":"/img/3840-2160/01.jpeg","alt":"","title":""},{"url":"/img/3840-2160/02.jpeg","alt":"","title":""},{"url":"/img/3840-2160/03.jpeg","alt":"","title":""},{"url":"/img/3840-2160/04.jpeg","alt":"","title":""},{"url":"/img/3840-2160/05.jpeg","alt":"","title":""},{"url":"/img/3840-2160/06.jpeg","alt":"","title":""},{"url":"/img/3840-2160/07.jpeg","alt":"","title":""},{"url":"/img/3840-2160/08.jpeg","alt":"","title":""},{"url":"/img/3840-2160/09.jpeg","alt":"","title":""},{"url":"/img/3840-2160/10.jpeg","alt":"","title":""},{"url":"/img/3840-2160/11.jpeg","alt":"","title":""},{"url":"/img/3840-2160/12.jpeg","alt":"","title":""},{"url":"/img/3840-2160/13.jpeg","alt":"","title":""},{"url":"/img/3840-2160/14.jpeg","alt":"","title":""},{"url":"/img/3840-2160/15.jpeg","alt":"","title":""},{"url":"/img/3840-2160/16.jpeg","alt":"","title":""},{"url":"/img/3840-2160/17.jpeg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>神泣（Shaiya）</title>
-      <link href="/gallery/shenqi/index.html"/>
-      <url>/gallery/shenqi/index.html</url>
-      
-        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-dragon" style="font-size:4.5em;opacity:0.5;color:#7c3aed;"></i>  <h2 style="margin:24px 0;font-weight:400;">神泣 Shaiya</h2>  <p style="opacity:0.7;">重温魔幻大陆，留存怀旧网游的光影记忆</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/shenqi/shenqi01.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi02.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi03.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi04.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi05.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi06.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi07.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi08.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi09.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi10.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi11.webp","alt":"","title":""},{"url":"/img/shenqi/shenqi12.jpeg","alt":"","title":""},{"url":"/img/shenqi/shenqi13.jpeg","alt":"","title":""},{"url":"/img/shenqi/shenqi14.jpeg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>壁纸 1920*1080</title>
-      <link href="/gallery/1920-1080/index.html"/>
-      <url>/gallery/1920-1080/index.html</url>
-      
-        <content type="html"><![CDATA[<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-tv" style="font-size:4.5em;opacity:0.5;color:#4f46e5;"></i>  <h2 style="margin:24px 0;font-weight:400;">壁纸 1920*1080</h2>  <p style="opacity:0.7;">标准16:9全高清，主流显示器通用壁纸素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/1920-1080/00.jpeg","alt":"","title":""},{"url":"/img/1920-1080/01.jpeg","alt":"","title":""},{"url":"/img/1920-1080/02.jpeg","alt":"","title":""},{"url":"/img/1920-1080/03.jpeg","alt":"","title":""},{"url":"/img/1920-1080/04.jpeg","alt":"","title":""},{"url":"/img/1920-1080/05.jpeg","alt":"","title":""},{"url":"/img/1920-1080/06.jpeg","alt":"","title":""},{"url":"/img/1920-1080/07.jpeg","alt":"","title":""},{"url":"/img/1920-1080/08.jpeg","alt":"","title":""},{"url":"/img/1920-1080/09.jpeg","alt":"","title":""},{"url":"/img/1920-1080/10.jpeg","alt":"","title":""},{"url":"/img/1920-1080/11.jpeg","alt":"","title":""},{"url":"/img/1920-1080/12.jpeg","alt":"","title":""},{"url":"/img/1920-1080/13.jpeg","alt":"","title":""},{"url":"/img/1920-1080/14.jpeg","alt":"","title":""},{"url":"/img/1920-1080/15.jpeg","alt":"","title":""},{"url":"/img/1920-1080/16.jpeg","alt":"","title":""},{"url":"/img/1920-1080/17.jpeg","alt":"","title":""},{"url":"/img/1920-1080/18.jpeg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>OH MY GIRL</title>
-      <link href="/gallery/ohmygirl/index.html"/>
-      <url>/gallery/ohmygirl/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":"","title":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":"","title":""}]</div>  </div>]]></content>
       
     </entry>
     
