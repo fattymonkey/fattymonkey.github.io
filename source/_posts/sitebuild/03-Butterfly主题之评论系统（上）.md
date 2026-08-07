@@ -1,5 +1,5 @@
 ---
-title: Butterfly主题之评论系统
+title: Butterfly主题之评论系统（上）
 date: 2023-04-03 06:06:18
 updated: 2026-04-03 19:33:58
 description: Hexo + Butterfly + Twikoo，保姆级教程
@@ -10,7 +10,6 @@ tags:
   - Butterfly
   - Twikoo
   - MongoDB
-  - Twikoo
   - Netlify
 abbrlink: 10403
 cover: img/covers/sitebuild/03.webp

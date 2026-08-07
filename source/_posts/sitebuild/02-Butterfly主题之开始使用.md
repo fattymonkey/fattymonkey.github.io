@@ -1816,7 +1816,7 @@ canvas_nest:
   zIndex: -1
   # The number of lines
   count: 199        # 粒子数量，数字越大越耗性能
-  mobile: true     # 移动端
+  mobile: false     # 移动端存在严重问题，不启用
 ```
 
 ## 11.15：鼠标点击的特效

@@ -1,5 +1,5 @@
 ---
-title: Butterfly主题之首页魔改（一）
+title: Butterfly主题之首页魔改（上）
 date: 2023-04-04 08:06:18
 updated: 2026-04-04 19:33:58
 description: 给Butterfly主题首页进行细致的个性化魔改
