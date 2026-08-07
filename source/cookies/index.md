@@ -8,6 +8,12 @@ date: 2023-01-01 06:00:00
 本政策说明本站如何使用 Cookie 及同类本地存储技术，持续优化你的浏览体验
 {% endnote %}
 
+<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <i class="fas fa-cookie" style="font-size:4.5em;opacity:0.5;color:#eab308;"></i>
+  <h2 style="margin:24px 0;font-weight:400;">Cookie 政策说明</h2>
+  <p style="opacity:0.7;">本站使用 Cookie 来提升您的浏览体验</p>
+</div>
+
 
 # 一、什么是 Cookie
 Cookie 是网站发送至你浏览器并存储在设备上的小型文本文件，能够保存浏览状态、偏好设置，帮助网站识别回访访客，提升访问流畅度。

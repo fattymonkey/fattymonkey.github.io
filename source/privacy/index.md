@@ -8,6 +8,11 @@ date: 2023-01-01 06:00:00
 本协议说明本站收集、使用访客信息的规则，保护你的个人隐私。
 {% endnote %}
 
+<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <i class="fas fa-user-shield" style="font-size:4.5em;opacity:0.5;color:#6366f1;"></i>
+  <h2 style="margin:24px 0;font-weight:400;">隐私政策说明</h2>
+  <p style="opacity:0.7;">尊重并保护每一位用户的个人隐私信息</p>
+</div>
 
 # 一、信息收集范围
 1. **主动提供信息**：在评论区自愿填写昵称、邮箱；邮箱仅用于评论回复通知，不会公开展示。

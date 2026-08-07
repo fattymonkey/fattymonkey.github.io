@@ -8,6 +8,11 @@ date: 2023-01-01 06:00:00
 访问本站即视为你阅读并同意以下免责条款。
 {% endnote %}
 
+<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <i class="fas fa-exclamation-triangle" style="font-size:4.5em;opacity:0.5;color:#f59e0b;"></i>
+  <h2 style="margin:24px 0;font-weight:400;">免责声明</h2>
+  <p style="opacity:0.7;">请知悉本站内容相关的责任与风险约定</p>
+</div>
 
 # 一、内容性质说明
 本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，**不构成专业指导建议**。

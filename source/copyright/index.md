@@ -8,6 +8,11 @@ date: 2023-01-01 06:00:00
 请在遵守本版权协议前提下阅读、转载本站内容。
 {% endnote %}
 
+<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <i class="fas fa-copyright" style="font-size:4.5em;opacity:0.5;color:#22c55e;"></i>
+  <h2 style="margin:24px 0;font-weight:400;">版权协议说明</h2>
+  <p style="opacity:0.7;">请遵守本站相关内容版权与转载约定</p>
+</div>
 
 # 版权协议
 站点名称：繁体猴の客栈

@@ -8,6 +8,12 @@ date: 2023-01-01 06:00:00
 感谢各位朋友的支持与鼓励！所有赞赏将用于服务器、域名与站点持续维护。
 {% endnote %}
 
+<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <i class="fas fa-heart" style="font-size:4.5em;opacity:0.5;color:#f472b6;"></i>
+  <h2 style="margin:24px 0;font-weight:400;">赞赏支持者</h2>
+  <p style="opacity:0.7;">感恩每一份善意与认可</p>
+</div>
+
 | 客官大名 | 渠道 | 金额 | 留言 |
 | :----: | :----: | :----: | :----: |
 | CodeTraveler | 微信 | 20.00 | 博客内容干货满满，持续更新！ |
@@ -18,9 +24,3 @@ date: 2023-01-01 06:00:00
 | 阿泽 | 微信 | 18.80 | 站点搭建文档很有参考价值 |
 
 > 说明：不愿展示昵称的朋友统一标记为【匿名访客】，记录按赞赏时间倒序排列。
-
-<div style="height: 40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:3rem;">
-  <i class="fas fa-heart" style="font-size:64px;opacity:0.5;color:#f472b6;"></i>
-  <h2 style="margin:24px 0 12px 0;font-weight:500;">赞赏支持者</h2>
-  <p style="opacity:0.6;">感恩每一份善意与认可</p>
-</div>

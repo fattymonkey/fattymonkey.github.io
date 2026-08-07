@@ -8,9 +8,9 @@ date: 2023-01-01 06:00:00
 游戏板块正在建设中，游戏内容整理开发，敬请期待！
 {% endnote %}
 
-<div style="height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
-  <i class="fas fa-gamepad" style="font-size:64px;opacity:0.5;"></i>
-  <h2 style="margin:24px 0 12px 0;font-weight:500;">游戏 · 建设中</h2>
-  <p style="opacity:0.6;">正在整理游戏相关内容，敬请期待</p>
-  <a href="/" class="btn" style="margin-top:32px;">返回首页</a>
+<div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <i class="fas fa-gamepad" style="font-size:4.5em;opacity:0.5;color:#14b8a6;"></i>
+  <h2 style="margin:24px 0;font-weight:400;">游戏天地 · 建设中</h2>
+  <p style="opacity:0.7;">正在整理游戏记录，敬请期待</p>
+  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a>
 </div>

@@ -186,7 +186,7 @@ snackbar_css:
 twikoo:
   name: twikoo
   file: dist/twikoo.all.min.js
-  version: 1.7.14
+  version: 1.6.27 # 将默认的1.7.14改为1.6.27
 typed:
   name: typed.js
   file: dist/typed.umd.js
