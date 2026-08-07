@@ -24,7 +24,7 @@
     <link href="https://fattymonkey.com/posts/10404.html"/>
     <published>2023-04-04T00:06:18.000Z</published>
     <summary>给Butterfly主题首页进行细致的个性化魔改</summary>
-    <title>Butterfly主题之首页魔改（一）</title>
+    <title>Butterfly主题之首页魔改（上）</title>
     <updated>2026-04-04T11:33:58.000Z</updated>
   </entry>
   <entry>
@@ -34,14 +34,14 @@
     <category term="建站实录" scheme="https://fattymonkey.com/categories/%E5%BB%BA%E7%AB%99%E5%AE%9E%E5%BD%95/"/>
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
+    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <category term="Twikoo" scheme="https://fattymonkey.com/tags/Twikoo/"/>
     <category term="MongoDB" scheme="https://fattymonkey.com/tags/MongoDB/"/>
-    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <id>https://fattymonkey.com/posts/10403.html</id>
     <link href="https://fattymonkey.com/posts/10403.html"/>
     <published>2023-04-02T22:06:18.000Z</published>
     <summary>Hexo + Butterfly + Twikoo，保姆级教程</summary>
-    <title>Butterfly主题之评论系统</title>
+    <title>Butterfly主题之评论系统（上）</title>
     <updated>2026-04-03T11:33:58.000Z</updated>
   </entry>
   <entry>
@@ -138,10 +138,10 @@
     </author>
     <category term="技术杂谈" scheme="https://fattymonkey.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
     <category term="EdgeOne" scheme="https://fattymonkey.com/tags/EdgeOne/"/>
-    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <id>https://fattymonkey.com/posts/10202.html</id>
     <link href="https://fattymonkey.com/posts/10202.html"/>
     <published>2023-02-02T00:35:10.000Z</published>
@@ -183,8 +183,8 @@
     </author>
     <category term="操作系统" scheme="https://fattymonkey.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <category term="macOS" scheme="https://fattymonkey.com/tags/macOS/"/>
-    <category term="CLT" scheme="https://fattymonkey.com/tags/CLT/"/>
     <category term="Python" scheme="https://fattymonkey.com/tags/Python/"/>
+    <category term="CLT" scheme="https://fattymonkey.com/tags/CLT/"/>
     <id>https://fattymonkey.com/posts/10010.html</id>
     <link href="https://fattymonkey.com/posts/10010.html"/>
     <published>2023-01-09T22:12:28.000Z</published>
