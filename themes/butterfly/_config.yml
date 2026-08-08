@@ -160,7 +160,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 6
+index_layout: 3
 # 首页文章卡片的节选内容
 # Display the article introduction on homepage
 # 1: description
@@ -765,7 +765,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true     # 关闭自带的特效，改用本地修复版的
-  color: '0,0,255' # 线条RGB颜色，蓝色
+  color: '250,204,21' # 线条RGB颜色，蓝色
   opacity: 0.7     # 线条透明度
   # The z-index property of the background
   zIndex: -1
