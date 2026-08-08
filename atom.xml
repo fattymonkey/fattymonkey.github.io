@@ -50,8 +50,8 @@
     <category term="Hexo" scheme="https://fattymonkey.com/tags/Hexo/"/>
     <category term="Butterfly" scheme="https://fattymonkey.com/tags/Butterfly/"/>
     <category term="Twikoo" scheme="https://fattymonkey.com/tags/Twikoo/"/>
-    <category term="MongoDB" scheme="https://fattymonkey.com/tags/MongoDB/"/>
     <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
+    <category term="MongoDB" scheme="https://fattymonkey.com/tags/MongoDB/"/>
     <id>https://fattymonkey.com/posts/10403.html</id>
     <link href="https://fattymonkey.com/posts/10403.html"/>
     <published>2023-04-02T22:06:18.000Z</published>
@@ -152,11 +152,11 @@
       <name>Chen Zheng</name>
     </author>
     <category term="技术杂谈" scheme="https://fattymonkey.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
-    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     <category term="EdgeOne" scheme="https://fattymonkey.com/tags/EdgeOne/"/>
-    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
+    <category term="Github" scheme="https://fattymonkey.com/tags/Github/"/>
     <category term="Gitee" scheme="https://fattymonkey.com/tags/Gitee/"/>
     <category term="Vercel" scheme="https://fattymonkey.com/tags/Vercel/"/>
+    <category term="Netlify" scheme="https://fattymonkey.com/tags/Netlify/"/>
     <id>https://fattymonkey.com/posts/10202.html</id>
     <link href="https://fattymonkey.com/posts/10202.html"/>
     <published>2023-02-02T00:35:10.000Z</published>
