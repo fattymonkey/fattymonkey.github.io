@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Butterfly主题之评论系统（下）</title>
+      <link href="/posts/10405.html"/>
+      <url>/posts/10405.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>参照我之前的文章<a href="https://www.fattymonkey.com/posts/10403.html">《Butterfly主题之评论系统（上）》</a>，给博客配置了 Twikoo 评论系统，但是没有测试。结果我最近在测试的时候发现了一个严重的问题：当在评论区输入了昵称后，第一次点击页面任何地方，邮箱都会自动生成，但是再点击其他任何地方（或者稍等半秒），昵称输入框会被自动清空。</p><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>刚开始，我查阅了很多资料，所有的相关资料都把问题的原因指向了 Pjax，我也在这个方向上努力了很多，试过各种办法去适配 Pjax，最终都没有解决这个问题。</p><p>直到最后，我实在没办法了，去访问 Twikoo 官网，看看有没有什么办法，结果在官网自己的评论区测试时，发现它自己就存在这个问题，搞半天原来是它自己这个版本的bug（1.7.14）！</p><p>解决办法就是降级 Twikoo，开源社区公认问题最少的版本是 1.6.27。修改博客根目录下的<code>plugins.yml</code>文件即可：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">twikoo</span></span><br><span class="line">  <span class="attr">file:</span> <span class="string">dist/twikoo.all.min.js</span></span><br><span class="line">  <span class="attr">version:</span> <span class="number">1.6</span><span class="number">.27</span> <span class="comment"># 将默认的1.7.14改为1.6.27</span></span><br></pre></td></tr></table></figure><p>这样一来，上述描述的问题就不存在了。但是我又有一个担心，因为之前在配置 Twikoo 时，在它的官网上有明确说明：</p><p><img src="https://img.czblogs.cn/posts/sitebuild/05/image-20260807205523294.webp" loading='lazy'></p><p>如果我只降级了前端部署的版本，那大概率会出现问题，所以我必须要测试一下，不能像部署时那样，没测试就收工了。</p><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>修改了前端的版本后，重新部署博客网站，然后自己测试一下评论，发现没有任何问题，至少下面几项没有问题：</p><ul><li>访客评论；</li><li>邮件通知；</li><li>博客展示；</li></ul><p>这样基本就没什么问题了，以后再开发新功能要都要严格测试下才放心～～</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站实录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Butterfly </tag>
+            
+            <tag> Twikoo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly主题之首页魔改（上）</title>
       <link href="/posts/10404.html"/>
       <url>/posts/10404.html</url>
@@ -256,9 +285,9 @@
             
             <tag> Github </tag>
             
-            <tag> Netlify </tag>
-            
             <tag> EdgeOne </tag>
+            
+            <tag> Netlify </tag>
             
             <tag> Gitee </tag>
             
@@ -480,17 +509,6 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="/comments/index.html"/>
-      <url>/comments/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎在此留下你的想法与疑问，期待你的声音</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-comments" style="font-size:4.5em;opacity:0.5;"></i>  <h2 style="margin:24px 0;font-weight:400;">留言板 · 期待中</h2>  <p style="opacity:0.7;">你有任何想法都可以告诉我哦，甚至你想吃什么</p></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图书馆</title>
       <link href="/books/index.html"/>
       <url>/books/index.html</url>
@@ -502,11 +520,11 @@
     
     
     <entry>
-      <title>免责声明</title>
-      <link href="/disclaimer/index.html"/>
-      <url>/disclaimer/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-exclamation-triangle" style="font-size:4.5em;opacity:0.5;color:#f59e0b;"></i>  <h2 style="margin:24px 0;font-weight:400;">免责声明</h2>  <p style="opacity:0.7;">请知悉本站内容相关的责任与风险约定</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
+        <content type="html"><![CDATA[<div class="note warning flat"><p>关于我页面正在完善中，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-user-circle" style="font-size:4.5em;opacity:0.5;color:#8b5cf6;"></i>  <h2 style="margin:24px 0;font-weight:400;">关于我 · 建设中</h2>  <p style="opacity:0.7;">个人介绍内容正在完善，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -524,11 +542,11 @@
     
     
     <entry>
-      <title>版权协议</title>
-      <link href="/copyright/index.html"/>
-      <url>/copyright/index.html</url>
+      <title>留言板</title>
+      <link href="/comments/index.html"/>
+      <url>/comments/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note primary flat"><p>请在遵守本版权协议前提下阅读、转载本站内容。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-copyright" style="font-size:4.5em;opacity:0.5;color:#22c55e;"></i>  <h2 style="margin:24px 0;font-weight:400;">版权协议说明</h2>  <p style="opacity:0.7;">请遵守本站相关内容版权与转载约定</p></div><h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><p>站点名称：繁体猴の客栈<br>站点域名：fattymonkey.com（fattymonkey.github.io）</p><h1 id="一、著作权归属"><a href="#一、著作权归属" class="headerlink" title="一、著作权归属"></a>一、著作权归属</h1><ol><li>本站所有原创文章、图文、代码示例，著作权归本站作者所有；</li><li>页面中引用的第三方图文、开源项目、公开资料版权归原权利人。</li></ol><h1 id="二、转载规范"><a href="#二、转载规范" class="headerlink" title="二、转载规范"></a>二、转载规范</h1><p>✅ <strong>允许条件</strong><br>非商业用途转载，同时满足以下全部要求：</p><ol><li>完整标明原文链接、作者来源；</li><li>不得篡改文章内容、删减段落；</li><li>禁止去除原文标识、宣称内容为自己原创；</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>未经许可将原创内容用于商业盈利、付费课程、付费文档；</li><li>大批量爬虫抓取全站内容进行镜像建站；</li><li>篡改原文后重新发布；</li><li>将站点代码、原创教程打包售卖。</li></ol><h1 id="三、开源代码说明"><a href="#三、开源代码说明" class="headerlink" title="三、开源代码说明"></a>三、开源代码说明</h1><p>文章内附带的代码片段，若无特殊声明，仅供个人学习研究使用；如需商用，请联系作者取得授权。</p><h1 id="四、侵权反馈"><a href="#四、侵权反馈" class="headerlink" title="四、侵权反馈"></a>四、侵权反馈</h1><p>如果你发现本站存在侵犯你著作权的内容，可联系站长，核验后将第一时间下架相关内容。</p><h1 id="五、协议修订"><a href="#五、协议修订" class="headerlink" title="五、协议修订"></a>五、协议修订</h1><p>本站保留随时修改本版权协议的权利，修改后公示于本页面，长期有效。</p>]]></content>
+        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎在此留下你的想法与疑问，期待你的声音</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-comments" style="font-size:4.5em;opacity:0.5;"></i>  <h2 style="margin:24px 0;font-weight:400;">留言板 · 期待中</h2>  <p style="opacity:0.7;">你有任何想法都可以告诉我哦，甚至你想吃什么</p></div>]]></content>
       
     </entry>
     
@@ -546,22 +564,33 @@
     
     
     <entry>
-      <title>照片展 Gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>免责声明</title>
+      <link href="/disclaimer/index.html"/>
+      <url>/disclaimer/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note success flat"><p>照片展览总合集，汇总随拍、各类壁纸、插画等图像内容，浏览不同分类相册</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-images" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px;font-weight:400;">照片展 Gallery</h2>  <p style="opacity:0.7;">收集各类图像碎片，浏览不同主题相册</p></div><div class="gallery-group-main"><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/shaiya/shaiya.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">神泣 Shaiya</div>      <p>3D魔幻大型多人网游</p>      <a href='/gallery/shaiya'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/snapshots/snapshots.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">随拍 Snapshots</div>      <p>日常随拍的有趣记忆</p>      <a href='/gallery/snapshots'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1280-720/1280-720.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>1280×720</p>      <a href='/gallery/1280-720'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1920-1080/1920-1080.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9 全高清</div>      <p>1920×1080</p>      <a href='/gallery/1920-1080'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/2560-1440/2560-1440.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9 高清2K</div>      <p>2560×1440</p>      <a href='/gallery/2560-1440'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/3840-2160/3840-2160.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9 高清4K</div>      <p>3840×2160</p>      <a href='/gallery/3840-2160'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1680-1050/1680-1050.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10 老式宽</div>      <p>1680×1050</p>      <a href='/gallery/1680-1050'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1920-1200/1920-1200.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10 经典高</div>      <p>1920×1200</p>      <a href='/gallery/1920-1200'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/2880-1800/2880-1800.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10 高分屏</div>      <p>2880×1800</p>      <a href='/gallery/2880-1800'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/3440-1440/3440-1440.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 21:9 带鱼屏</div>      <p>3440×1440</p>      <a href='/gallery/3440-1440'></a>    </figcaption>  </figure></div>]]></content>
+        <content type="html"><![CDATA[<div class="note primary flat"><p>访问本站即视为你阅读并同意以下免责条款。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-exclamation-triangle" style="font-size:4.5em;opacity:0.5;color:#f59e0b;"></i>  <h2 style="margin:24px 0;font-weight:400;">免责声明</h2>  <p style="opacity:0.7;">请知悉本站内容相关的责任与风险约定</p></div><h1 id="一、内容性质说明"><a href="#一、内容性质说明" class="headerlink" title="一、内容性质说明"></a>一、内容性质说明</h1><p>本站所有文章、教程、技术方案仅代表作者个人观点，仅供学习交流参考，<strong>不构成专业指导建议</strong>。<br>访客依据本站内容操作产生的任何风险、损失，由访客自行承担。</p><h1 id="二、第三方链接说明"><a href="#二、第三方链接说明" class="headerlink" title="二、第三方链接说明"></a>二、第三方链接说明</h1><p>网站内可能包含指向外部站点的超链接。外部网站内容不受本站管控，访问第三方站点产生的风险本站不承担责任。</p><h1 id="三、内容准确性"><a href="#三、内容准确性" class="headerlink" title="三、内容准确性"></a>三、内容准确性</h1><p>作者尽力保证内容准确，但不承诺文章不存在疏漏、错误、时效性偏差。技术环境持续迭代，部分教程可能随软件版本更新失效。</p><h1 id="四、外部资源"><a href="#四、外部资源" class="headerlink" title="四、外部资源"></a>四、外部资源</h1><p>本站引用的第三方图片、开源资料、工具链接，版权归原作者，如存在侵权可联系站长处理。</p><h1 id="五、可用性免责"><a href="#五、可用性免责" class="headerlink" title="五、可用性免责"></a>五、可用性免责</h1><p>不保证网站永久不间断访问，可能因服务器维护、域名、部署调整出现短暂无法访问情况。</p><h1 id="六、禁止用途"><a href="#六、禁止用途" class="headerlink" title="六、禁止用途"></a>六、禁止用途</h1><p>请勿利用本站内容从事违法违规行为，一旦发生，相关法律责任由行为人独立承担。</p><h1 id="七、声明修订"><a href="#七、声明修订" class="headerlink" title="七、声明修订"></a>七、声明修订</h1><p>本站可随时修订本免责声明，新版本公示于本页面，访客持续访问即代表接受更新后的条款。</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>版权协议</title>
+      <link href="/copyright/index.html"/>
+      <url>/copyright/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note warning flat"><p>关于我页面正在完善中，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-user-circle" style="font-size:4.5em;opacity:0.5;color:#8b5cf6;"></i>  <h2 style="margin:24px 0;font-weight:400;">关于我 · 建设中</h2>  <p style="opacity:0.7;">个人介绍内容正在完善，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[<div class="note primary flat"><p>请在遵守本版权协议前提下阅读、转载本站内容。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-copyright" style="font-size:4.5em;opacity:0.5;color:#22c55e;"></i>  <h2 style="margin:24px 0;font-weight:400;">版权协议说明</h2>  <p style="opacity:0.7;">请遵守本站相关内容版权与转载约定</p></div><h1 id="版权协议"><a href="#版权协议" class="headerlink" title="版权协议"></a>版权协议</h1><p>站点名称：繁体猴の客栈<br>站点域名：fattymonkey.com（fattymonkey.github.io）</p><h1 id="一、著作权归属"><a href="#一、著作权归属" class="headerlink" title="一、著作权归属"></a>一、著作权归属</h1><ol><li>本站所有原创文章、图文、代码示例，著作权归本站作者所有；</li><li>页面中引用的第三方图文、开源项目、公开资料版权归原权利人。</li></ol><h1 id="二、转载规范"><a href="#二、转载规范" class="headerlink" title="二、转载规范"></a>二、转载规范</h1><p>✅ <strong>允许条件</strong><br>非商业用途转载，同时满足以下全部要求：</p><ol><li>完整标明原文链接、作者来源；</li><li>不得篡改文章内容、删减段落；</li><li>禁止去除原文标识、宣称内容为自己原创；</li></ol><p>❌ <strong>禁止行为</strong></p><ol><li>未经许可将原创内容用于商业盈利、付费课程、付费文档；</li><li>大批量爬虫抓取全站内容进行镜像建站；</li><li>篡改原文后重新发布；</li><li>将站点代码、原创教程打包售卖。</li></ol><h1 id="三、开源代码说明"><a href="#三、开源代码说明" class="headerlink" title="三、开源代码说明"></a>三、开源代码说明</h1><p>文章内附带的代码片段，若无特殊声明，仅供个人学习研究使用；如需商用，请联系作者取得授权。</p><h1 id="四、侵权反馈"><a href="#四、侵权反馈" class="headerlink" title="四、侵权反馈"></a>四、侵权反馈</h1><p>如果你发现本站存在侵犯你著作权的内容，可联系站长，核验后将第一时间下架相关内容。</p><h1 id="五、协议修订"><a href="#五、协议修订" class="headerlink" title="五、协议修订"></a>五、协议修订</h1><p>本站保留随时修改本版权协议的权利，修改后公示于本页面，长期有效。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>照片展 Gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>照片展览总合集，汇总随拍、各类壁纸、插画等图像内容，浏览不同分类相册</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-images" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px;font-weight:400;">照片展 Gallery</h2>  <p style="opacity:0.7;">收集各类图像碎片，浏览不同主题相册</p></div><div class="gallery-group-main"><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/shaiya/shaiya.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">神泣 Shaiya</div>      <p>3D魔幻大型多人网游</p>      <a href='/gallery/shaiya'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/snapshots/snapshots.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">随拍 Snapshots</div>      <p>日常随拍的有趣记忆</p>      <a href='/gallery/snapshots'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1280-720/1280-720.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9</div>      <p>1280×720</p>      <a href='/gallery/1280-720'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1920-1080/1920-1080.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9 全高清</div>      <p>1920×1080</p>      <a href='/gallery/1920-1080'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/2560-1440/2560-1440.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9 高清2K</div>      <p>2560×1440</p>      <a href='/gallery/2560-1440'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/3840-2160/3840-2160.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:9 高清4K</div>      <p>3840×2160</p>      <a href='/gallery/3840-2160'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1680-1050/1680-1050.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10 老式宽</div>      <p>1680×1050</p>      <a href='/gallery/1680-1050'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/1920-1200/1920-1200.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10 经典高</div>      <p>1920×1200</p>      <a href='/gallery/1920-1200'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/2880-1800/2880-1800.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 16:10 高分屏</div>      <p>2880×1800</p>      <a href='/gallery/2880-1800'></a>    </figcaption>  </figure><figure class="gallery-group">    <img class="gallery-group-img no-lightbox" src='/img/gallery/3440-1440/3440-1440.webp' alt="Group Image Gallery" loading='lazy'>    <figcaption>      <div class="gallery-group-name">壁紙 21:9 带鱼屏</div>      <p>3440×1440</p>      <a href='/gallery/3440-1440'></a>    </figcaption>  </figure></div>]]></content>
       
     </entry>
     
@@ -590,17 +619,6 @@
     
     
     <entry>
-      <title>优质网站</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎发现更多优质站点，拓展视野与技术边界</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-link" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px 0;font-weight:400;">优质网站</h2>  <p style="opacity:0.7;">汇集优质博客、技术站点与实用工具资源</p></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影院</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -612,11 +630,22 @@
     
     
     <entry>
-      <title>打赏列表</title>
-      <link href="/sponsor/index.html"/>
-      <url>/sponsor/index.html</url>
+      <title>优质网站</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note success flat"><p>感谢各位朋友的支持与鼓励！所有赞赏将用于服务器、域名与站点持续维护。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-heart" style="font-size:4.5em;opacity:0.5;color:#f472b6;"></i>  <h2 style="margin:24px 0;font-weight:400;">赞赏支持者</h2>  <p style="opacity:0.7;">感恩每一份善意与认可</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">CodeTraveler</td><td align="center">微信</td><td align="center">20.00</td><td align="center">博客内容干货满满，持续更新！</td></tr><tr><td align="center">星野漫游者</td><td align="center">支付宝</td><td align="center">15.00</td><td align="center">学到很多Hexo优化技巧</td></tr><tr><td align="center">Dev小羊</td><td align="center">微信</td><td align="center">30.00</td><td align="center">字体优化教程非常实用</td></tr><tr><td align="center">匿名访客</td><td align="center">支付宝</td><td align="center">9.90</td><td align="center">支持博主继续创作</td></tr><tr><td align="center">CloudLover</td><td align="center">微信</td><td align="center">25.00</td><td align="center">期待更多前端调优分享</td></tr><tr><td align="center">阿泽</td><td align="center">微信</td><td align="center">18.80</td><td align="center">站点搭建文档很有参考价值</td></tr></tbody></table><blockquote><p>说明：不愿展示昵称的朋友统一标记为【匿名访客】，记录按赞赏时间倒序排列。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<div class="note success flat"><p>欢迎发现更多优质站点，拓展视野与技术边界</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-link" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px 0;font-weight:400;">优质网站</h2>  <p style="opacity:0.7;">汇集优质博客、技术站点与实用工具资源</p></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐汇</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:4.5em;opacity:0.5;color:#f97316;"></i>  <h2 style="margin:24px 0;font-weight:400;">音乐汇 · 建设中</h2>  <p style="opacity:0.7;">正在整理歌单曲目，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
       
     </entry>
     
@@ -628,17 +657,6 @@
       <url>/privacy/index.html</url>
       
         <content type="html"><![CDATA[<div class="note primary flat"><p>本协议说明本站收集、使用访客信息的规则，保护你的个人隐私。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-user-shield" style="font-size:4.5em;opacity:0.5;color:#6366f1;"></i>  <h2 style="margin:24px 0;font-weight:400;">隐私政策说明</h2>  <p style="opacity:0.7;">尊重并保护每一位用户的个人隐私信息</p></div><h1 id="一、信息收集范围"><a href="#一、信息收集范围" class="headerlink" title="一、信息收集范围"></a>一、信息收集范围</h1><ol><li><strong>主动提供信息</strong>：在评论区自愿填写昵称、邮箱；邮箱仅用于评论回复通知，不会公开展示。</li><li><strong>自动采集信息</strong>：浏览器型号、访问时间、页面、匿名访问日志，仅用于统计站点访问情况。</li><li><strong>不会主动收集</strong>：真实姓名、身份证号、住址、银行卡等敏感隐私信息。</li></ol><h1 id="二、信息用途"><a href="#二、信息用途" class="headerlink" title="二、信息用途"></a>二、信息用途</h1><ol><li>回复访客评论、沟通交流；</li><li>统计站点访问热度，优化页面布局与内容；</li><li>排查网站异常访问、爬虫攻击；</li></ol><h1 id="三、信息共享说明"><a href="#三、信息共享说明" class="headerlink" title="三、信息共享说明"></a>三、信息共享说明</h1><ol><li>未经你明确同意，不会向第三方出售、出租你的个人信息；</li><li>第三方服务（评论系统、访问统计）收集的数据，遵守第三方自身隐私政策；</li></ol><h1 id="四、数据保存期限"><a href="#四、数据保存期限" class="headerlink" title="四、数据保存期限"></a>四、数据保存期限</h1><p>评论信息长期保存，你可联系站长申请删除自己发布的评论；<br>匿名访问日志定期清理，不作永久留存。</p><h1 id="五、访客权利"><a href="#五、访客权利" class="headerlink" title="五、访客权利"></a>五、访客权利</h1><p>你有权要求站长删除你发布的评论；可自行清理浏览器 Cookie 阻止非必要信息采集。</p><h1 id="六、安全保障"><a href="#六、安全保障" class="headerlink" title="六、安全保障"></a>六、安全保障</h1><p>站点采取合理技术手段保护数据，但无法绝对杜绝网络环境下的数据泄露风险，请谨慎主动提交敏感信息。</p><h1 id="七、协议更新"><a href="#七、协议更新" class="headerlink" title="七、协议更新"></a>七、协议更新</h1><p>本隐私协议可不定期更新，更新后发布于本页面，持续生效。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/fonts/extract-font-glyphs.js"/>
-      <url>/fonts/extract-font-glyphs.js</url>
-      
-        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// 生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'all-font-glyphs.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    try {      const htmlContent = fs.readFileSync(fullFilePath, 'utf8');      const $ = cheerio.load(htmlContent, {        decodeEntities: false,        scriptingEnabled: false      });      // 移除不需要的区块，避免抓取脚本、样式、代码      $('script, style, noscript, template, pre, figure.highlight').remove();      // 页面正文      allRawText += $('body').text();      // 追加 alt title aria-label 文字      $('[alt]').each((_, el) => allRawText += $(el).attr('alt') || '');      $('[title]').each((_, el) => allRawText += $(el).attr('title') || '');      $('[aria-label]').each((_, el) => allRawText += $(el).attr('aria-label') || '');    } catch (err) {      console.warn(`文件解析跳过：${fullFilePath}，错误：${err.message}`);    }  });}// 执行全站扫描scanAllHtml(publicDir);// 只保留：汉字 + 中文标点 + 全角符号// 去掉半角英文字母、半角数字、半角符号const targetReg = /[\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]/g;const glyphList = allRawText.match(targetReg) || [];// 去重const uniqueCharSet = new Set(glyphList);// 过滤掉纯空白字符（中文全角空格 \u3000），避免无用字形const uniqueCharString = [...uniqueCharSet]  .filter(c => c !== '\u3000')  .sort()  .join('');// 输出文件fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字形提取已经完成,共收集：${uniqueCharString.length} 个汉字 =`);]]></content>
       
     </entry>
     
@@ -667,11 +685,22 @@
     
     
     <entry>
-      <title>音乐汇</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>打赏列表</title>
+      <link href="/sponsor/index.html"/>
+      <url>/sponsor/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note warning flat"><p>音乐汇正在建设中，曲库资源整理开发，敬请期待！</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-music" style="font-size:4.5em;opacity:0.5;color:#f97316;"></i>  <h2 style="margin:24px 0;font-weight:400;">音乐汇 · 建设中</h2>  <p style="opacity:0.7;">正在整理歌单曲目，敬请期待</p>  <a href="/" class="btn" style="margin-top:32px;font-size:1.2em">返回首页</a></div>]]></content>
+        <content type="html"><![CDATA[<div class="note success flat"><p>感谢各位朋友的支持与鼓励！所有赞赏将用于服务器、域名与站点持续维护。</p></div><div style="height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-heart" style="font-size:4.5em;opacity:0.5;color:#f472b6;"></i>  <h2 style="margin:24px 0;font-weight:400;">赞赏支持者</h2>  <p style="opacity:0.7;">感恩每一份善意与认可</p></div><table><thead><tr><th align="center">客官大名</th><th align="center">渠道</th><th align="center">金额</th><th align="center">留言</th></tr></thead><tbody><tr><td align="center">CodeTraveler</td><td align="center">微信</td><td align="center">20.00</td><td align="center">博客内容干货满满，持续更新！</td></tr><tr><td align="center">星野漫游者</td><td align="center">支付宝</td><td align="center">15.00</td><td align="center">学到很多Hexo优化技巧</td></tr><tr><td align="center">Dev小羊</td><td align="center">微信</td><td align="center">30.00</td><td align="center">字体优化教程非常实用</td></tr><tr><td align="center">匿名访客</td><td align="center">支付宝</td><td align="center">9.90</td><td align="center">支持博主继续创作</td></tr><tr><td align="center">CloudLover</td><td align="center">微信</td><td align="center">25.00</td><td align="center">期待更多前端调优分享</td></tr><tr><td align="center">阿泽</td><td align="center">微信</td><td align="center">18.80</td><td align="center">站点搭建文档很有参考价值</td></tr></tbody></table><blockquote><p>说明：不愿展示昵称的朋友统一标记为【匿名访客】，记录按赞赏时间倒序排列。</p></blockquote>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/fonts/extract-font-glyphs.js"/>
+      <url>/fonts/extract-font-glyphs.js</url>
+      
+        <content type="html"><![CDATA[const fs = require('fs');const path = require('path');const cheerio = require('cheerio');// 生成的静态页面根目录const publicDir = path.resolve(__dirname, '../../public');// 输出：全站去重字符清单const charOutputFile = path.join(__dirname, 'all-font-glyphs.txt');let allRawText = '';// 递归遍历读取所有html页面文字function scanAllHtml(dirPath) {  const fileList = fs.readdirSync(dirPath);  fileList.forEach(fileName => {    const fullFilePath = path.join(dirPath, fileName);    const stat = fs.statSync(fullFilePath);    // 递归进入子文件夹    if (stat.isDirectory()) {      scanAllHtml(fullFilePath);      return;    }    // 只处理html后缀文件    if (!fileName.endsWith('.html')) return;    try {      const htmlContent = fs.readFileSync(fullFilePath, 'utf8');      const $ = cheerio.load(htmlContent, {        decodeEntities: false,        scriptingEnabled: false      });      // 移除不需要的区块，避免抓取脚本、样式、代码      $('script, style, noscript, template, pre, figure.highlight').remove();      // 页面正文      allRawText += $('body').text();      // 追加 alt title aria-label 文字      $('[alt]').each((_, el) => allRawText += $(el).attr('alt') || '');      $('[title]').each((_, el) => allRawText += $(el).attr('title') || '');      $('[aria-label]').each((_, el) => allRawText += $(el).attr('aria-label') || '');    } catch (err) {      console.warn(`文件解析跳过：${fullFilePath}，错误：${err.message}`);    }  });}// 执行全站扫描scanAllHtml(publicDir);// 只保留：汉字 + 中文标点 + 全角符号// 去掉半角英文字母、半角数字、半角符号const targetReg = /[\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]/g;const glyphList = allRawText.match(targetReg) || [];// 去重const uniqueCharSet = new Set(glyphList);// 过滤掉纯空白字符（中文全角空格 \u3000），避免无用字形const uniqueCharString = [...uniqueCharSet]  .filter(c => c !== '\u3000')  .sort()  .join('');// 输出文件fs.mkdirSync(path.dirname(charOutputFile), { recursive: true });fs.writeFileSync(charOutputFile, uniqueCharString, 'utf8');console.log(`  ===================== ✅ 全站字形提取已经完成,共收集：${uniqueCharString.length} 个汉字 =`);]]></content>
       
     </entry>
     
@@ -711,33 +740,11 @@
     
     
     <entry>
-      <title>壁纸（3440×1440）</title>
-      <link href="/gallery/3440-1440/index.html"/>
-      <url>/gallery/3440-1440/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>3440×1440 分辨率壁纸合集，21:9 超宽比例，适配曲面带鱼屏显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#7c3aed;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 3440×1440</h2>  <p style="opacity:0.7;">超宽全景视野，沉浸式桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/3440-1440/00.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/01.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/02.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/03.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/04.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/05.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/06.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/07.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/08.jpeg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>壁纸（1920×1080）</title>
       <link href="/gallery/1920-1080/index.html"/>
       <url>/gallery/1920-1080/index.html</url>
       
         <content type="html"><![CDATA[<div class="note success flat"><p>1920×1080 分辨率壁纸合集，16:9 比例，主流通用，适配绝大多数电脑显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#2563eb;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 1920×1080</h2>  <p style="opacity:0.7;">全高清画质，通用百搭桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/1920-1080/00.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/01.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/02.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/03.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/04.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/05.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/06.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/07.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/08.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/09.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/10.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/11.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/12.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/13.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/14.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/15.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/16.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/17.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1080/18.jpeg","alt":"","title":""}]</div>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>壁纸（1920×1200）</title>
-      <link href="/gallery/1920-1200/index.html"/>
-      <url>/gallery/1920-1200/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="note success flat"><p>1920×1200 分辨率壁纸合集，16:10 比例，竖向视野更广，适配老式高分显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#0891b2;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 1920×1200</h2>  <p style="opacity:0.7;">经典宽屏，舒适视野桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/1920-1200/00.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/01.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/02.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/03.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/04.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/05.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/06.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/07.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/08.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/09.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/10.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/11.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/12.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/13.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/14.jpeg","alt":"","title":""}]</div>  </div>]]></content>
       
     </entry>
     
@@ -755,22 +762,44 @@
     
     
     <entry>
-      <title>随拍回忆（Snapshots）</title>
-      <link href="/gallery/snapshots/index.html"/>
-      <url>/gallery/snapshots/index.html</url>
+      <title>壁纸（3840×2160）</title>
+      <link href="/gallery/3840-2160/index.html"/>
+      <url>/gallery/3840-2160/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note success flat"><p>存放日常随手拍下的生活碎片，没有刻意构图，记录转瞬即逝的人间光景</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-camera" style="font-size:4.5em;opacity:0.5;color:#059669;"></i>  <h2 style="margin:24px;font-weight:400;">随拍 Snapshots</h2>  <p style="opacity:0.7;">捕捉偶然瞬间，留存平凡生活片段</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/snapshots/00.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/01.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/02.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/03.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/04.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/05.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/06.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/07.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/08.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/09.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/10.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/11.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/12.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/13.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/14.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/15.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/16.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/17.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/18.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/19.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/20.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/21.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+        <content type="html"><![CDATA[<div class="note success flat"><p>3840×2160 分辨率壁纸合集，16:9 比例，4K超高清画质，适配大屏高端显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#dc2626;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 3840×2160</h2>  <p style="opacity:0.7;">超高清画质4K，极致细节桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/3840-2160/00.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/01.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/02.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/03.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/04.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/05.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/06.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/07.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/08.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/09.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/10.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/11.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/12.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/13.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/14.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/15.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/16.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/17.jpeg","alt":"","title":""}]</div>  </div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>壁纸（3840×2160）</title>
-      <link href="/gallery/3840-2160/index.html"/>
-      <url>/gallery/3840-2160/index.html</url>
+      <title>壁纸（1920×1200）</title>
+      <link href="/gallery/1920-1200/index.html"/>
+      <url>/gallery/1920-1200/index.html</url>
       
-        <content type="html"><![CDATA[<div class="note success flat"><p>3840×2160 分辨率壁纸合集，16:9 比例，4K超高清画质，适配大屏高端显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#dc2626;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 3840×2160</h2>  <p style="opacity:0.7;">超高清画质4K，极致细节桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/3840-2160/00.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/01.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/02.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/03.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/04.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/05.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/06.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/07.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/08.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/09.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/10.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/11.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/12.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/13.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/14.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/15.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/16.jpeg","alt":"","title":""},{"url":"/img/gallery/3840-2160/17.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+        <content type="html"><![CDATA[<div class="note success flat"><p>1920×1200 分辨率壁纸合集，16:10 比例，竖向视野更广，适配老式高分显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#0891b2;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 1920×1200</h2>  <p style="opacity:0.7;">经典宽屏，舒适视野桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/1920-1200/00.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/01.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/02.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/03.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/04.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/05.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/06.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/07.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/08.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/09.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/10.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/11.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/12.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/13.jpeg","alt":"","title":""},{"url":"/img/gallery/1920-1200/14.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸（3440×1440）</title>
+      <link href="/gallery/3440-1440/index.html"/>
+      <url>/gallery/3440-1440/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>3440×1440 分辨率壁纸合集，21:9 超宽比例，适配曲面带鱼屏显示器设备</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-desktop" style="font-size:4.5em;opacity:0.5;color:#7c3aed;"></i>  <h2 style="margin:24px;font-weight:400;">壁纸 3440×1440</h2>  <p style="opacity:0.7;">超宽全景视野，沉浸式桌面素材</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/3440-1440/00.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/01.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/02.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/03.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/04.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/05.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/06.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/07.jpeg","alt":"","title":""},{"url":"/img/gallery/3440-1440/08.jpeg","alt":"","title":""}]</div>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随拍回忆（Snapshots）</title>
+      <link href="/gallery/snapshots/index.html"/>
+      <url>/gallery/snapshots/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>存放日常随手拍下的生活碎片，没有刻意构图，记录转瞬即逝的人间光景</p></div><div style="height:30vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">  <i class="fas fa-camera" style="font-size:4.5em;opacity:0.5;color:#059669;"></i>  <h2 style="margin:24px;font-weight:400;">随拍 Snapshots</h2>  <p style="opacity:0.7;">捕捉偶然瞬间，留存平凡生活片段</p></div><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"/img/gallery/snapshots/00.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/01.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/02.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/03.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/04.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/05.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/06.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/07.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/08.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/09.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/10.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/11.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/12.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/13.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/14.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/15.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/16.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/17.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/18.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/19.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/20.jpeg","alt":"","title":""},{"url":"/img/gallery/snapshots/21.jpeg","alt":"","title":""}]</div>  </div>]]></content>
       
     </entry>
     
