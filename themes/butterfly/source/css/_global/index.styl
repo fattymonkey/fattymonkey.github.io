@@ -41,6 +41,11 @@
   // 自定义变量
   --monkey-mark-bg: $monkey-light-mark-bg
   --monkey-card-bg: $monkey-light-card-bg
+  --monkey-btn-bg: $monkey-light-main-color
+  --monkey-scrollbar-color: $monkey-light-scrollbar-color
+  --monkey-search-color: $monkey-light-search-color
+  --monkey-hr-border: lighten($monkey-light-hr-color, 50%)
+  --monkey-hr-before-color: lighten($monkey-light-hr-color, 30%)
 
 // tags plugin
 :root
@@ -121,7 +126,7 @@ body
 @-moz-document url-prefix()
   *
     scrollbar-width: thin
-    scrollbar-color: var(--scrollbar-color) transparent
+    scrollbar-color: var(--monkey-scrollbar-color) transparent
 
 // scrollbar - chrome/safari
 *::-webkit-scrollbar
@@ -129,7 +134,7 @@ body
   height: 5px
 
 *::-webkit-scrollbar-thumb
-  background: var(--scrollbar-color)
+  background: var(--monkey-scrollbar-color)
 
 *::-webkit-scrollbar-track
   background-color: transparent

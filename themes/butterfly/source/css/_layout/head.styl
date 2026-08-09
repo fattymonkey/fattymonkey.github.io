@@ -314,15 +314,21 @@
     .site-icon
       margin-right: 6px
       height: 36px
-      vertical-align: middle
 
     .nav-page-title
       display: none
 
+  // 搜索+汉堡容器
+  #menus
+    display: flex
+    align-items: center
+    gap: 8px
+    margin-left: 4px  // 和前面导航菜单拉开一点空隙
+
   #toggle-menu
     display: none
-    padding: 2px 0 0 6px
-    vertical-align: top
+    // 强制和导航菜单项字号统一
+    font-size: .78em
 
     &:hover
       color: var(--white)
@@ -330,7 +336,6 @@
   a,
   span.site-page
     color: var(--light-grey)
-
     &:hover
       color: var(--white)
 
@@ -339,17 +344,35 @@
     font-weight: bold
 
   .menus_items
-    display: inline
+    display: flex
+    align-items: center
+    gap: 2px
 
     .menus_item
       position: relative
-      display: inline-block
-      padding: 0 0 0 14px
+      display: flex
+      align-items: center
+
+      &::after
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        height: 14px
+        top: 100%
+        pointer-events: auto
+
+      > .site-page
+        padding: 8px
+        border-radius: 12px
+        transition: all 0.22s ease
+        &:hover
+          background: var(--monkey-btn-bg)
+          color: #FFFFFF
 
       &:hover
         .menus_item_child
           display: block
-
         & > span > i:last-child
           transform: rotate(180deg)
 
@@ -360,107 +383,70 @@
       .menus_item_child
         position: absolute
         right: 0
+        top: calc(100% + 8px)
         display: none
-        margin-top: 8px
+        margin-top: 0
         padding: 0
         width: max-content
         background-color: var(--sidebar-bg)
         box-shadow: 0 5px 20px -4px rgba($dark-black, .5)
         animation: sub_menus .3s .1s ease both
-        addBorderRadius(5)
-
-        &:before
-          position: absolute
-          top: -8px
-          left: 0
-          width: 100%
-          height: 20px
-          content: ''
+        addBorderRadius(13)
+        overflow: hidden
 
         li
           list-style: none
-
-          &:hover
-            background: var(--text-bg-hover)
-
           if hexo-config('rounded_corners_ui')
             &:first-child
-              border-top-left-radius: 5px
-              border-top-right-radius: 5px
-
+              border-top-left-radius: 12px
+              border-top-right-radius: 12px
             &:last-child
-              border-bottom-right-radius: 5px
-              border-bottom-left-radius: 5px
+              border-bottom-right-radius: 12px
+              border-bottom-left-radius: 12px
 
           a
-            display: inline-block
+            display: block
             padding: 8px 16px
             width: 100%
+            border-radius: 12px
+            transition: all 0.22s ease
             color: var(--font-color) !important
             text-shadow: none !important
+            &:hover
+              background: var(--monkey-btn-bg)
+              color: #FFFFFF !important
 
+  // 移动端隐藏菜单
   &.hide-menu
     #toggle-menu
-      display: inline-block !important
-
-      .site-page
-        font-size: inherit
-
+      display: inline-block
     .menus_items
       display: none
-
     #search-button span:not(.site-page)
       display: none
 
   #search-button
-    display: inline
-    padding: 0 0 0 14px
+    display: flex
+    align-items: center
+    gap: 4px
+    padding: 8px
+    border-radius: 12px
+    transition: all 0.22s ease
+    cursor: pointer
+    // font-size: .78em
+    // transform: translateY(-1px)
+
+    &:hover
+      background: var(--monkey-btn-bg)
+      color: #FFFFFF
+
+    > .site-page
+      padding: 0
+      display: flex
+      align-items: center
+      gap: 4px
 
   .site-page
     position: relative
-    padding-bottom: 6px
-    text-shadow: 1px 1px 2px rgba($dark-black, .3)
     font-size: .78em
     cursor: pointer
-
-    &:not(.child)
-      &:after
-        position: absolute
-        bottom: 0
-        left: 0
-        z-index: -1
-        width: 0
-        height: 3px
-        background-color: lighten($theme-color, 30%)
-        content: ''
-        transition: all .3s ease-in-out
-        addBorderRadius()
-
-      &:hover
-        &:after
-          width: 100%
-
-  .nav-page-title
-    position: relative
-    overflow: hidden
-
-    & > :first-child,
-    & > :last-child
-      display: inline-block
-      transition: all .3s ease-in-out
-
-    & > :last-child
-      position: absolute
-      top: 50%
-      left: 0
-      opacity: 0
-      transform: translateY(-50%) translateY(-10px)
-
-    &:hover
-      & > :last-child
-        opacity: 1
-        transform: translateY(-50%) translateY(0)
-
-      & > :first-child
-        opacity: 0
-        transform: translateY(10px)

@@ -24,7 +24,7 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 14px
-    color: $search-color
+    color: var(--monkey-search-color)
     font-size: 1.4em
     line-height: 1
 
@@ -42,7 +42,7 @@
       transition: all .2s ease
 
       &:hover
-        color: $search-color
+        color: var(--monkey-search-color)
 
   .local-search-input,
   #algolia-search-input
@@ -55,7 +55,7 @@
       padding: 5px 14px
       width: 100%
       outline: none
-      border: 2px solid $search-color
+      border: 2px solid var(--monkey-search-color)
       border-radius: 40px
       background: var(--search-bg)
       color: var(--search-input-color)
@@ -93,7 +93,7 @@
         margin-right: 6px
         margin-top: 3px
         min-width: 24px
-        color: $search-color
+        color: var(--monkey-search-color)
         content: attr(value) '.'
         font-weight: bold
         font-style: italic
@@ -107,7 +107,7 @@
         color: var(--search-a-color)
 
         &:hover
-          color: $search-color
+          color: var(--monkey-search-color)
 
       .search-result-title,
       .algolia-hits-item-title
