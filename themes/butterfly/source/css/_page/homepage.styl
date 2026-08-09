@@ -8,6 +8,20 @@ $indexEnable = hexo-config('cover.index_enable')
     overflow: hidden
     margin-bottom: 20px
 
+    /* 伪元素增加border-radius，和卡片圆角保持一致 */
+    &::after
+      content: ""
+      position: absolute
+      inset: 0
+      z-index: 99
+      pointer-events: none
+      transition: box-shadow 0.2s ease
+      box-shadow: inset 0 0 0 0 transparent
+      border-radius: 12px
+
+    &:hover::after
+      box-shadow: inset 0 0 0 3px var(--monkey-border-color)
+
     if $indexLayout == 6 || ($indexLayout == 7)
       display: inline-block
       width: calc(100% / 2 - 8px)
@@ -130,7 +144,7 @@ $indexEnable = hexo-config('cover.index_enable')
           font-size: 1.43em
 
         &:hover
-          color: $text-hover
+          color: var(--monkey-text-hover)
 
       & > .article-meta-wrap
         margin: 6px 0
@@ -182,7 +196,7 @@ $indexEnable = hexo-config('cover.index_enable')
           color: var(--card-meta)
 
           &:hover
-            color: $text-hover
+            color: var(--monkey-text-hover)
             text-decoration: underline
 
       & > .content
