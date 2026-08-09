@@ -20,7 +20,7 @@
 
               let listResult = ""
               const lists = str[i].link_list
-              if (!{random === true}) {
+              if (!random) {
                 lists.sort(() => Math.random() - 0.5)
               }
               for(let j = 0; j < lists.length; j++){
@@ -38,8 +38,8 @@
 
               result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
             }
-
-            document.querySelector(".flink").insertAdjacentHTML("afterbegin", result)
+            // 关键修复：由 afterbegin → innerHTML，不再插到容器最顶部
+            document.querySelector(".flink").innerHTML = result
             window.lazyLoadInstance && window.lazyLoadInstance.update()
           }
 
@@ -78,5 +78,6 @@
 
           - result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
 
-        - pageContent = result + pageContent
+        // 修复：原来 result + pageContent 会把友链放到页面内容前面，调换顺序
+        - pageContent = pageContent + result
     != pageContent
